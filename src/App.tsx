@@ -1,6 +1,6 @@
 import routers from './router'
 import { useRoutes } from 'react-router-dom'
-
+import 'animate.css'
 import './App.less'
 
 function App() {

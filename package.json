@@ -15,6 +15,7 @@
     "@types/react-dom": "^18.0.5",
     "@vcarl/remark-headings": "^0.0.1",
     "ahooks": "^3.4.1",
+    "animate.css": "^4.1.1",
     "antd": "^4.20.6",
     "craco-alias": "^3.0.1",
     "craco-less": "^2.0.0",
