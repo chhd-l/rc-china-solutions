@@ -10,7 +10,7 @@ const renderMenuList = (data: typeof solutionsData) => {
   return (
     <>
       {data.map((item) => (
-        <div key={item.title} className=" max-w-rc300">
+        <div key={item.title} className="mr-rc43">
           <div className=" text-gray-500 text-rc14 font-bold hover:text-black">{item.title}</div>
           {item.list.map((child) => (
             <div key={child.label} className=" text-gray-800 text-rc16 leading-rc36 cursor-pointer hover:text-black">
