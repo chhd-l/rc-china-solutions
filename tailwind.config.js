@@ -12,9 +12,10 @@ module.exports = {
         200: '#F9F9F9',
         300: '#AEAEB0',
         400: '#CCCCCC',
-        500: '#E6E6E6 ',
+        500: '#8C8C8C',
         600: '#f4f4f4',
         700: '#E3E3E3',
+        800: '#4C4C4C',
       },
       blue: {
         500: '#B6E1FD',
@@ -34,6 +35,7 @@ module.exports = {
         rc284: '284px',
         rc384: '384px',
         rc242: '242px',
+        rc300: '300px',
         rc342: '342px',
         rc377: '377px',
         rc450: '450px',
@@ -67,6 +69,7 @@ module.exports = {
       },
       lineHeight: {
         rc26: '26px',
+        rc36: '36px',
         rc80: '80px',
       },
       fontSize: {
@@ -93,6 +96,8 @@ module.exports = {
         rc41: '41px',
         rc43: '43px',
         rc44: '44px',
+        rc50: '50px',
+        rc60: '60px',
         rc110: '110px !important',
       },
       margin: {
@@ -126,6 +131,7 @@ module.exports = {
       },
       inset: {
         rc50: '50px',
+        rc62: '62px',
         rc160: '160px',
       },
     },

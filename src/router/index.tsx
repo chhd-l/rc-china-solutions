@@ -13,17 +13,17 @@ const routers: RouteObject[] = [
         index: true,
         element: <Home />,
       },
+      {
+        path: '/solutions',
+        element: <Solutions />,
+        children: [],
+      },
+      {
+        path: '/resources',
+        element: <Resources />,
+        children: [],
+      },
     ],
-  },
-  {
-    path: '/solutions',
-    element: <Solutions />,
-    children: [],
-  },
-  {
-    path: '/resources',
-    element: <Resources />,
-    children: [],
   },
 ]
 

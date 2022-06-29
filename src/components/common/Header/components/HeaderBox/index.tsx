@@ -6,4 +6,6 @@ export const HeaderBox = styled.div`
   background-color: #000000;
   display: flex;
   align-items: center;
+  padding: 0 60px;
+  position: relative;
 `
