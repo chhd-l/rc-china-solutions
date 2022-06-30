@@ -1,9 +1,9 @@
 import { RouteObject } from 'react-router-dom'
 import Layout from '../components/common/Layout'
 import Home from '../views/Home'
-import { Resources } from '../views/Resources'
-import { Solutions } from '../views/Solutions'
 import SupplyChainControlTower from '../views/Solutions/SupplyChainControlTower'
+import Resources from '../views/Resources'
+import Solutions from '../views/Solutions'
 
 const routers: RouteObject[] = [
   {
