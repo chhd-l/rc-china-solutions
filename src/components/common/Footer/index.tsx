@@ -7,9 +7,9 @@ const Footer = () => {
       <div className="FooterLeft flex flex-col">
         <div className="flex-1 flex">
             {
-                LeftContent.map((item, idx) => <div className={`${idx !== 0 && 'flex-1'} LeftContent`}>
+                LeftContent.map((item, idx) => <div key={idx} className={`${idx !== 0 && 'flex-1'} LeftContent`}>
                     <div className={`${idx === 0 && 'hover:cursor-pointer hover:underline'} title mb-rc20`}>{item.title}</div>
-                    {item.span.map(str => <div className='h-rc38 hover:cursor-pointer hover:underline'>{str}</div>)}
+                    {item.span.map((str, index) => <div key={index} className='h-rc38 hover:cursor-pointer hover:underline'>{str}</div>)}
                 </div>)
             }
         </div>
