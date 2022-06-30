@@ -1,34 +1,49 @@
+import { useNavigate } from 'react-router-dom'
 import { Current } from '../Menu'
-import { resourcesData, solutionsData } from './data'
+import { resourcesData, solutionsData } from '../Menu/data'
 
 type SubMenuProps = {
   current: Current
   getCurrent: (key: Current) => void
+  subMenuData: any[]
 }
 
-const renderMenuList = (data: typeof solutionsData) => {
-  return (
-    <>
-      {data.map((item) => (
-        <div key={item.title} className="ml-rc43">
-          <div className=" text-gray-500 text-rc14 font-bold hover:text-black">{item.title}</div>
-          {item.list.map((child) => (
-            <div key={child.label} className=" text-gray-800 text-rc16 leading-rc36 cursor-pointer hover:text-black">
-              {child.label}
-            </div>
-          ))}
-        </div>
-      ))}
-    </>
-  )
+type Item = {
+  label: string
+  path: string
 }
 
-const MenuContent = {
-  default: '',
-  Solutions: renderMenuList(solutionsData),
-  Resources: renderMenuList(resourcesData),
-}
-export const SubMenu = ({ current, getCurrent }: SubMenuProps) => {
+const SubMenu = ({ current, getCurrent, subMenuData }: SubMenuProps) => {
+  const navigator = useNavigate()
+  const renderMenuList = (data: typeof subMenuData) => {
+    return (
+      <>
+        {data.map((item) => (
+          <div key={item.title} className="ml-rc43">
+            <div className=" text-gray-500 text-rc14 font-bold hover:text-black">{item.title}</div>
+            {item.list.map((child: Item) => (
+              <div
+                onClick={(e) => {
+                  e.stopPropagation()
+                  navigator(child.path)
+                }}
+                key={child.label}
+                className=" text-gray-800 text-rc16 leading-rc36 cursor-pointer hover:text-black"
+              >
+                {child.label}
+              </div>
+            ))}
+          </div>
+        ))}
+      </>
+    )
+  }
+
+  const MenuContent = {
+    default: '',
+    Solutions: renderMenuList(solutionsData),
+    Resources: renderMenuList(resourcesData),
+  }
   return (
     <>
       {current !== 'default' && (
@@ -43,3 +58,5 @@ export const SubMenu = ({ current, getCurrent }: SubMenuProps) => {
     </>
   )
 }
+
+export default SubMenu

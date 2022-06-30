@@ -3,7 +3,7 @@ import Layout from '../components/common/Layout'
 import Home from '../views/Home'
 import { Resources } from '../views/Resources'
 import { Solutions } from '../views/Solutions'
-import SupplyChainControlTower from '../views/SupplyChainControlTower'
+import SupplyChainControlTower from '../views/Solutions/SupplyChainControlTower'
 
 const routers: RouteObject[] = [
   {
@@ -17,16 +17,17 @@ const routers: RouteObject[] = [
       {
         path: '/solutions',
         element: <Solutions />,
-        children: [],
+        children: [
+          {
+            path: 'SupplyChainControlTower',
+            element: <SupplyChainControlTower />,
+            children: [],
+          },
+        ],
       },
       {
         path: '/resources',
         element: <Resources />,
-        children: [],
-      },
-      {
-        path: '/SupplyChainControlTower',
-        element: <SupplyChainControlTower />,
         children: [],
       },
     ],

@@ -2,20 +2,11 @@ import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 import { DownOutlined } from '@ant-design/icons'
 import { ValuesType } from '../../../../../type'
-import { SubMenu } from '../SubMenu'
 import { useState } from 'react'
-const items = [
-  {
-    label: 'Solutions',
-    path: '/solutions',
-  },
-  {
-    label: 'Resources',
-    path: '/resources',
-  },
-] as const
+import { MenuData } from './data'
+import SubMenu from '../SubMenu'
 
-export type Current = ValuesType<typeof items>['label'] | 'default'
+export type Current = ValuesType<typeof MenuData>['label'] | 'default'
 
 const MenuItem = styled.div`
   color: #eaeaea;
@@ -37,7 +28,7 @@ export const Menu = () => {
 
   return (
     <div className="flex flex-row justify-center w-full h-full">
-      {items.map((item) => (
+      {MenuData.map((item) => (
         <MenuItem
           key={item.label}
           onClick={() => navigate(item.path)}
@@ -45,8 +36,7 @@ export const Menu = () => {
           onMouseLeave={() => setCurrent('default')}
         >
           {item.label}
-          {/* <DownOutlined /> */}
-          {<SubMenu current={current} getCurrent={getCurrent} />}
+          {<SubMenu current={current} getCurrent={getCurrent} subMenuData={item.children} />}
         </MenuItem>
       ))}
     </div>

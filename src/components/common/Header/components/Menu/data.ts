@@ -16,7 +16,7 @@ export const solutionsData = [
       },
       {
         label: 'Supply Chain Control Tower',
-        path: '',
+        path: '/solutions/SupplyChainControlTower',
       },
       {
         label: 'Integrated Business Planning (IBP)',
@@ -103,3 +103,16 @@ export const resourcesData = [
     ],
   },
 ]
+
+export const MenuData = [
+  {
+    label: 'Solutions',
+    path: '/solutions',
+    children: solutionsData,
+  },
+  {
+    label: 'Resources',
+    path: '/resources',
+    children: resourcesData,
+  },
+] as const
