@@ -7,15 +7,6 @@ import { Button } from 'antd'
 import { SubMenu } from './components/SubMenu'
 
 export const Header = () => {
-  const [current, setCurrent] = useState('')
-
-  // const onClick: MenuProps['onClick'] = (e) => {
-  //   console.log('click ', e)
-  //   setCurrent(e.key)
-  // }
-
-  // const getCurrent = (key: string) => setCurrent(key)
-
   return (
     <HeaderBox>
       <img src={LOGO_white} alt="" className="h-rc18 w-rc97" />

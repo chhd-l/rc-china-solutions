@@ -3,7 +3,7 @@ import { resourcesData, solutionsData } from './data'
 
 type SubMenuProps = {
   current: Current
-  getCurrent: (key: string) => void
+  getCurrent: (key: Current) => void
 }
 
 const renderMenuList = (data: typeof solutionsData) => {
@@ -24,19 +24,22 @@ const renderMenuList = (data: typeof solutionsData) => {
 }
 
 const MenuContent = {
+  default: '',
   Solutions: renderMenuList(solutionsData),
   Resources: renderMenuList(resourcesData),
 }
 export const SubMenu = ({ current, getCurrent }: SubMenuProps) => {
   return (
-    current && (
-      <div
-        className="w-full h-rc500 bg-white  fixed left-0  top-rc62 flex flex-row justify-center py-rc60  animate__animated animate__fadeIn"
-        onMouseEnter={() => getCurrent(current)}
-        onMouseLeave={() => getCurrent('')}
-      >
-        {MenuContent[current]}
-      </div>
-    )
+    <>
+      {current !== 'default' && (
+        <div
+          className="w-full h-rc500 bg-white  fixed z-10 left-0  top-rc62 flex flex-row justify-center py-rc60  animate__animated animate__fadeIn"
+          onMouseEnter={() => getCurrent(current)}
+          onMouseLeave={() => getCurrent('default')}
+        >
+          {MenuContent[current]}
+        </div>
+      )}
+    </>
   )
 }

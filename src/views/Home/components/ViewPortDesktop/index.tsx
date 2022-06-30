@@ -9,7 +9,7 @@ export const ViewPortDesktop = () => {
           Because planning impacts your <strong>P&L</strong> and the <strong>planet.</strong>
         </div>
         <div className=" text-rc18 font-light opacity-60 mt-rc33">
-          o9’s Digital Brain platform is helping global companies across industries transform{' '}
+          o9’s Digital Brain platform is helping global companies across industries transform
           <strong>supply chain, revenue, P&L planning, and decision-making</strong> for digital age volatility and
           complexity.
         </div>
