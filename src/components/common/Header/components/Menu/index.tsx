@@ -15,7 +15,7 @@ const items = [
   },
 ] as const
 
-export type Current = ValuesType<typeof items>['label']
+export type Current = ValuesType<typeof items>['label'] | 'default'
 
 const MenuItem = styled.div`
   color: #eaeaea;
@@ -23,7 +23,7 @@ const MenuItem = styled.div`
   font-weight: 600;
   padding: 0 42px;
   cursor: pointer;
-  height: 62px;
+  /* height: 62px; */
   line-height: 62px;
   :hover {
     color: var(--primary-color);
@@ -32,8 +32,8 @@ const MenuItem = styled.div`
 
 export const Menu = () => {
   const navigate = useNavigate()
-  const [current, setCurrent] = useState('')
-  const getCurrent = (key: string) => setCurrent(key)
+  const [current, setCurrent] = useState<Current>('default')
+  const getCurrent = (key: Current) => setCurrent(key)
 
   return (
     <div className="flex flex-row justify-center w-full h-full">
@@ -42,7 +42,7 @@ export const Menu = () => {
           key={item.label}
           onClick={() => navigate(item.path)}
           onMouseEnter={() => setCurrent(item.label)}
-          onMouseLeave={() => setCurrent('')}
+          onMouseLeave={() => setCurrent('default')}
         >
           {item.label}
           {/* <DownOutlined /> */}
