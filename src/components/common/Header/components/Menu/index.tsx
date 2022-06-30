@@ -27,7 +27,7 @@ export const Menu = () => {
   const getCurrent = (key: Current) => setCurrent(key)
 
   return (
-    <div className="flex flex-row justify-center w-full h-full">
+    <div className="flex flex-row justify-center  h-full">
       {MenuData.map((item) => (
         <MenuItem
           key={item.label}

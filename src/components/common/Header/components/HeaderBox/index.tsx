@@ -8,4 +8,5 @@ export const HeaderBox = styled.div`
   align-items: center;
   padding: 0 60px;
   position: relative;
+  justify-content: space-between;
 `
