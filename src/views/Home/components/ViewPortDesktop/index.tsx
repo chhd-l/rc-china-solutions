@@ -1,4 +1,5 @@
 import { NectarButton } from '../../../../components/common/NectarButton'
+import { Hub_Landing_Banner } from '../../../../lib/home'
 
 export const ViewPortDesktop = () => {
   return (
@@ -16,11 +17,9 @@ export const ViewPortDesktop = () => {
         <NectarButton>Learn more</NectarButton>
       </div>
       <div className="w-rc864 h-rc793">
-        <video
-          loop
-          src="https://o9solutions.com/wp-content/uploads/2021/08/EKG-3D-cube-animation-5.mp4"
-          className="w-full h-full"
-        ></video>
+        <video loop src={Hub_Landing_Banner} className="w-full h-full">
+          111
+        </video>
       </div>
     </div>
   )
