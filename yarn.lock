@@ -4307,14 +4307,6 @@ es-to-primitive@^1.2.1:
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
 
-esast@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.npmjs.org/esast/-/esast-0.1.0.tgz#cba8ab9af5866f119ef7501f221fb42209ef91cf"
-  integrity sha512-2Fe51IJGC81qzl9W+oHGrWI4aQ5561Zdduv1dqW5gCbEQq6Pf9HhRHlLIyumdt5t5/EbTiAbzaBALY2k3jJOxw==
-  dependencies:
-    escodegen "^1.9.1"
-    straits "^1.0.0"
-
 escalade@^3.1.1:
   version "3.1.1"
   resolved "https://registry.npmmirror.com/escalade/-/escalade-3.1.1.tgz"
@@ -4344,18 +4336,6 @@ escape-string-regexp@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-5.0.0.tgz#4683126b500b61762f2dbebace1806e8be31b1c8"
   integrity sha512-/veY75JbMK4j1yjvuUxuVsiS/hr/4iHs9FTT6cgTexxdE0Ly/glccBAkloH/DofkjRbZU3bnoj38mOmhkZ0lHw==
-
-escodegen@^1.9.1:
-  version "1.14.3"
-  resolved "https://registry.npmjs.org/escodegen/-/escodegen-1.14.3.tgz#4e7b81fba61581dc97582ed78cab7f0e8d63f503"
-  integrity sha512-qFcX0XJkdg+PB3xjZZG/wKSuT1PnQWx57+TVSjIMmILd2yC/6ByYElPwJnslDsuWuSAp4AwJGumarAAmJch5Kw==
-  dependencies:
-    esprima "^4.0.1"
-    estraverse "^4.2.0"
-    esutils "^2.0.2"
-    optionator "^0.8.1"
-  optionalDependencies:
-    source-map "~0.6.1"
 
 escodegen@^2.0.0:
   version "2.0.0"
@@ -4602,7 +4582,7 @@ esrecurse@^4.3.0:
   dependencies:
     estraverse "^5.2.0"
 
-estraverse@^4.1.1, estraverse@^4.2.0:
+estraverse@^4.1.1:
   version "4.3.0"
   resolved "https://registry.npmmirror.com/estraverse/-/estraverse-4.3.0.tgz"
   integrity sha512-39nnKffWz8xN1BU/2c79n9nB9HDzo0niYUqx6xyqUnyoAnQyyWpOTdZEeiCch8BBu515t4wp9ZmgVfVhn9EBpw==
@@ -9758,11 +9738,6 @@ statuses@2.0.1:
   version "1.5.0"
   resolved "https://registry.npmmirror.com/statuses/-/statuses-1.5.0.tgz"
   integrity sha512-OpZ3zP+jT1PI7I8nemJX4AKmAX070ZkYPVWV/AaKTJl+tXCTGyVdC1a4SL8RUQYEwk/f34ZX8UTykN68FwrqAA==
-
-straits@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/straits/-/straits-1.0.0.tgz#fbfaff65a822f66e928c992e5fc3afe0292f0fa5"
-  integrity sha512-PGcectNj37D0xPEkZbeIjV+qtYPNPcDexzSkJAH48XFJ3VD7FLXTWkV7+8yA658BWm4rICfPt1UgTzpukUO5eQ==
 
 string-convert@^0.2.0:
   version "0.2.1"
