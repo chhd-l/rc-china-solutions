@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex-1 flex">
             {
                 LeftContent.map((item, idx) => <div className={`${idx !== 0 && 'flex-1'} LeftContent`}>
-                    <div className='title mb-rc20'>{item.title}</div>
+                    <div className={`${idx === 0 && 'hover:cursor-pointer hover:underline'} title mb-rc20`}>{item.title}</div>
                     {item.span.map(str => <div className='h-rc38 hover:cursor-pointer hover:underline'>{str}</div>)}
                 </div>)
             }
