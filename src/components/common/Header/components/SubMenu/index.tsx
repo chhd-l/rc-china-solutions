@@ -10,7 +10,7 @@ const renderMenuList = (data: typeof solutionsData) => {
   return (
     <>
       {data.map((item) => (
-        <div key={item.title} className="mr-rc43">
+        <div key={item.title} className="ml-rc43">
           <div className=" text-gray-500 text-rc14 font-bold hover:text-black">{item.title}</div>
           {item.list.map((child) => (
             <div key={child.label} className=" text-gray-800 text-rc16 leading-rc36 cursor-pointer hover:text-black">
@@ -31,7 +31,7 @@ export const SubMenu = ({ current, getCurrent }: SubMenuProps) => {
   return (
     current && (
       <div
-        className="w-full h-rc500 bg-white  fixed left-0  top-rc62 flex flex-row justify-center py-rc60"
+        className="w-full h-rc500 bg-white  fixed left-0  top-rc62 flex flex-row justify-center py-rc60  animate__animated animate__fadeIn"
         onMouseEnter={() => getCurrent(current)}
         onMouseLeave={() => getCurrent('')}
       >
