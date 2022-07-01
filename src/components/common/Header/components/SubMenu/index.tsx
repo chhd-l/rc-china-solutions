@@ -25,6 +25,7 @@ const SubMenu = ({ current, getCurrent, subMenuData }: SubMenuProps) => {
               <div
                 onClick={(e) => {
                   e.stopPropagation()
+                  console.log(child)
                   navigator(child.path)
                   getCurrent('default')
                 }}

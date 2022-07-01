@@ -27,6 +27,7 @@ module.exports = {
       width: {
         rc12: '12px',
         rc28: '28px',
+        rc51: '51px',
         rc97: '97px',
         rc213: '213px',
         rc273: '273px',
@@ -59,6 +60,7 @@ module.exports = {
         rc38: '38px',
         rc49: '49px',
         rc50: '50px',
+        rc51: '51px',
         rc57: '57px',
         rc70: '70px',
         rc77: '77px',
@@ -136,6 +138,7 @@ module.exports = {
         rc_33: '33%',
         rc5: '5px',
         rc6: '6px',
+        rc9: '9px',
         rc18: '18px',
         rc20: '20px',
         rc24: '24px',
