@@ -1,5 +1,5 @@
 import { NectarButton } from '../../../../components/common/NectarButton'
-import { Hub_Landing_Banner } from '../../../../lib/home'
+import EKG_3D_cube_animation from '../../../../assets/video/EKG-3D-cube-animation-5.mp4'
 import logos_home_1_1 from '../../../../assets/image/logos-home-1-1.png'
 
 export const ViewPortDesktop = () => {
@@ -8,7 +8,7 @@ export const ViewPortDesktop = () => {
       <div className="flex flex-row items-start  flex-wrap lg:flex-nowrap">
         <div className=" text-white ">
           <strong className=" text-7vh">The :o9 Digital Brain platform</strong>
-          <div className=" text-rc36 font-light leading-rc60">
+          <div className=" text-rc36 font-light leading-rc60 w-4/6">
             Because planning impacts your <strong>P&L</strong> and the <strong>planet.</strong>
           </div>
           <div className=" text-rc18 font-light opacity-60 mt-rc33">
@@ -18,8 +18,8 @@ export const ViewPortDesktop = () => {
           </div>
           <NectarButton className="mt-rc50">Learn more</NectarButton>
         </div>
-        <video loop src={Hub_Landing_Banner} className="w-rc691 h-rc479">
-          111
+        <video loop className="w-rc691 h-rc479" autoPlay muted playsInline preload="auto">
+          <source src={EKG_3D_cube_animation} type="video/mp4" />
         </video>
       </div>
       <p className=" text-center  text-white text-rc17 mt-rc_5">Trusted by leaders across industry verticals.</p>

@@ -20,12 +20,14 @@ module.exports = {
       blue: {
         500: '#B6E1FD',
         600: '#058CDF',
+        700: '#0037ff',
       },
     },
 
     extend: {
       width: {
         rc12: '12px',
+        rc18: '18px',
         rc28: '28px',
         rc51: '51px',
         rc97: '97px',
@@ -55,6 +57,7 @@ module.exports = {
       },
       height: {
         rc14: '14px',
+        rc16: '16px',
         rc18: '18px',
         rc26: '26px',
         rc38: '38px',
@@ -81,9 +84,11 @@ module.exports = {
         18: '300px',
       },
       lineHeight: {
+        rc16: '16px',
         rc26: '26px',
         rc36: '36px',
         rc48: '48px',
+        rc51: '51px',
         rc60: '60px',
         rc80: '80px',
         rc111: '111px',
@@ -133,7 +138,6 @@ module.exports = {
         rc_7: '7%',
         rc_10: '10%',
         rc_11: '11%',
-
         rc_19: '19%',
         rc_33: '33%',
         rc5: '5px',
@@ -163,6 +167,7 @@ module.exports = {
         rc_058CDF: '#058CDF',
       },
       inset: {
+        rc43: '43px',
         rc50: '50px',
         rc62: '62px',
         rc160: '160px',

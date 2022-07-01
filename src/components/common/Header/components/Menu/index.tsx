@@ -14,7 +14,6 @@ const MenuItem = styled.div`
   font-weight: 600;
   padding: 0 42px;
   cursor: pointer;
-  /* height: 62px; */
   line-height: 62px;
   :hover {
     color: var(--primary-color);
@@ -31,10 +30,7 @@ export const Menu = () => {
       {MenuData.map((item) => (
         <MenuItem
           key={item.label}
-          onClick={(e) => {
-            e.stopPropagation()
-            navigate(item.path)
-          }}
+          onClick={() => navigate(item.path)}
           onMouseEnter={() => setCurrent(item.label)}
           onMouseLeave={() => setCurrent('default')}
         >
