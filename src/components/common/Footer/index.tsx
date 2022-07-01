@@ -21,7 +21,7 @@ const Footer = () => {
           <span>o9 Guides</span>
         </div>
       </div>
-      <div className='FooterRight flex-1'>english</div>
+      <div className='FooterRight flex-1'></div>
     </div>
   )
 }
