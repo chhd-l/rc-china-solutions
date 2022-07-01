@@ -15,20 +15,26 @@ const routers: RouteObject[] = [
         element: <Home />,
       },
       {
-        path: '/solutions',
-        element: <Solutions />,
+        path: 'solutions',
         children: [
           {
-            path: 'SupplyChainControlTower',
+            element: <Solutions />,
+            index: true,
+          },
+          {
+            path: 'supplychaincontroltower',
             element: <SupplyChainControlTower />,
-            children: [],
           },
         ],
       },
       {
         path: '/resources',
-        element: <Resources />,
-        children: [],
+        children: [
+          {
+            index: true,
+            element: <Resources />,
+          },
+        ],
       },
     ],
   },

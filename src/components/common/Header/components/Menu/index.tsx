@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 import { DownOutlined } from '@ant-design/icons'
 import { ValuesType } from '../../../../../type'
@@ -31,7 +31,10 @@ export const Menu = () => {
       {MenuData.map((item) => (
         <MenuItem
           key={item.label}
-          onClick={() => navigate(item.path)}
+          onClick={(e) => {
+            e.stopPropagation()
+            navigate(item.path)
+          }}
           onMouseEnter={() => setCurrent(item.label)}
           onMouseLeave={() => setCurrent('default')}
         >
