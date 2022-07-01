@@ -1,7 +1,7 @@
 import { RouteObject } from 'react-router-dom'
 import Layout from '../components/common/Layout'
 import Home from '../views/Home'
-import SupplyChainControlTower from '../views/Solutions/SupplyChainControlTower'
+import SupplyChainControlTower from '../views/Solutions/components/SupplyChainControlTower'
 import Resources from '../views/Resources'
 import Solutions from '../views/Solutions'
 

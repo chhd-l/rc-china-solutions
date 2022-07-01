@@ -1,17 +1,102 @@
 .Solutions {
-    padding-top: 103px;
-    background: #1A191A;
-    color: #fff;
-    .header {
-        margin: 0 auto 80px;
-        width: 785px;
-        font-size: 45px;
-        font-family: o9Sans Helvetica-Light, Helvetica;
-        font-weight: 300;
-        color: #acacac;
-        line-height: 56px;
-        > span {
-            color: #fff;
-        }
+  padding: 103px 115px 145px;
+  background: #111;
+  color: #fff;
+  .header {
+    margin: 0 187px 80px;
+    font-size: 45px;
+    font-family: o9Sans Helvetica-Light, Helvetica;
+    font-weight: 300;
+    color: #acacac;
+    > span {
+      color: #fff;
     }
+  }
+  .headerInpput {
+    .ant-input {
+      padding-left: 44px;
+      height: 56px;
+      border-radius: 30px;
+      background-color: #111;
+      border-color: #999;
+      color: #fff;
+      &:hover {
+        background-color: #000;
+        border-color: #fff;
+      }
+      &::placeholder {
+        color: rgb(227, 227, 227);
+      }
+    }
+  }
+  .Management {
+    > div {
+      margin-top: 115px;
+    }
+    .Managementlable {
+      margin-bottom: 20px;
+      height: 5rem;
+      font-size: 22px;
+      font-family: Helvetica-Bold, Helvetica;
+      font-weight: bold;
+      color: #ffffff;
+      border-bottom: 1px solid #3b3b3b;
+      transition: all 0.2s ease;
+      > img {
+        margin-right: 10px;
+        opacity: 0.2;
+        transition: all 0.25s ease;
+      }
+      &:hover {
+        img {
+          margin: 0;
+          opacity: 1 !important;
+        }
+      }
+    }
+    .ManagementItem {
+      padding: 17px;
+      height: 14rem;
+      border: 1px solid #3b3b3b;
+      font-size: 12px;
+      font-family: Helvetica;
+      color: #9c9c9c;
+      > div {
+        &:first-child {
+          width: 93px;
+          height: 52px;
+        }
+        .ManagementItemPlan {
+          font-size: 18px;
+          font-family: Helvetica;
+          color: #f0f0f0;
+        }
+      }
+    }
+  }
+  .hoverRed {
+    &:hover {
+      border-color: red;
+    }
+  }
+  .hoverPurple {
+    &:hover {
+      border-color: purple;
+    }
+  }
+  .hoverGreed {
+    &:hover {
+      border-color: green;
+    }
+  }
+  .hoverOrange {
+    &:hover {
+      border-color: orange;
+    }
+  }
+  .hoverBlue {
+    &:hover {
+      border-color: blue;
+    }
+  }
 }
