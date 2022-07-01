@@ -26,6 +26,7 @@ const SubMenu = ({ current, getCurrent, subMenuData }: SubMenuProps) => {
                 onClick={(e) => {
                   e.stopPropagation()
                   navigator(child.path)
+                  getCurrent('default')
                 }}
                 key={child.label}
                 className=" text-gray-800 text-rc16 leading-rc36 cursor-pointer hover:text-black"
