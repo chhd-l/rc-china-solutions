@@ -1,11 +1,12 @@
 import { NectarButton } from '../../../../components/common/NectarButton'
 import { Hub_Landing_Banner } from '../../../../lib/home'
+import logos_home_1_1 from '../../../../assets/image/logos-home-1-1.png'
 
 export const ViewPortDesktop = () => {
   return (
-    <div className="bg-gray-700 py-rc60 px-rc58">
-      <div className="flex flex-row items-start">
-        <div className=" text-white ml-rc134">
+    <div className="bg-gray-700 py-rc60  px-rc_7">
+      <div className="flex flex-row items-start  flex-wrap lg:flex-nowrap">
+        <div className=" text-white ">
           <strong className=" text-7vh">The :o9 Digital Brain platform</strong>
           <div className=" text-rc36 font-light leading-rc60">
             Because planning impacts your <strong>P&L</strong> and the <strong>planet.</strong>
@@ -21,7 +22,8 @@ export const ViewPortDesktop = () => {
           111
         </video>
       </div>
-      <p className=" text-center  text-white text-rc17">Trusted by leaders across industry verticals.</p>
+      <p className=" text-center  text-white text-rc17 mt-rc_5">Trusted by leaders across industry verticals.</p>
+      <img src={logos_home_1_1} alt="" className="h-rc50 w-rc1470 m-auto" />
     </div>
   )
 }

@@ -3,10 +3,12 @@ import styled from 'styled-components'
 type NectarButtonProps = {
   borderColor?: string
   width?: string
+  hoverBorderColor?: string
+  color?: string
 }
 export const NectarButton = styled.div<NectarButtonProps>`
   background-color: transparent;
-  color: var(--primary-color);
+  color: ${(props) => props.color || '#ffffff'};
   font-weight: bold;
   border: 3px solid ${(props) => props.borderColor || '#999'};
   /* width: ${(props) => props?.width || '162px'}; */
@@ -16,6 +18,6 @@ export const NectarButton = styled.div<NectarButtonProps>`
   cursor: pointer;
   display: inline-block;
   :hover {
-    border: 3px solid var(--primary-color);
+    border: 3px solid ${(props) => props.hoverBorderColor || '#ffffff'};
   }
 `
