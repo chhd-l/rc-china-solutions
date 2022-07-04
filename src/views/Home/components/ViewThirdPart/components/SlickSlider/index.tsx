@@ -7,7 +7,7 @@ type ImgProps = {
   backgroundImg: string
 }
 const Img = styled.div<ImgProps>`
-  background: url(${(props) => props.backgroundImg}) center no-repeat;
+  background: url(${(props) => props.backgroundImg}) no-repeat;
   background-size: 100% 100%;
   width: 384px;
   height: 306px;
