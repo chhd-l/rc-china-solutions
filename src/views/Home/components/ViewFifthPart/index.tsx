@@ -28,8 +28,14 @@ const ViewFifthPart = () => {
       </Row>
       <Row>
         <Col span={24}>
-          <MyImage image={hiring_home}>1111</MyImage>
+          <div className="w-full h-full">
+            <MyImage image={hiring_home}>1111</MyImage>
+          </div>
         </Col>
+      </Row>
+      <Row>
+        <Col>Amazing and growing network coming together to deliver to our global clients</Col>
+        <Col></Col>
       </Row>
     </>
   )
