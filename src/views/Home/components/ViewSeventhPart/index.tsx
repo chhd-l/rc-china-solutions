@@ -18,31 +18,26 @@ const ViewSeventhPart = () => {
         xs={{ span: 18, offset: 3 }}
         sm={{ span: 16, offset: 4 }}
         md={{ span: 14, offset: 5 }}
-        lg={{ span: 8, offset: 3 }}
+        lg={{ span: 16, offset: 4 }}
         xl={{ span: 16, offset: 4 }}
       >
         <Row>
-          <Col
-            xs={{ span: 18, offset: 3 }}
-            sm={{ span: 16, offset: 4 }}
-            md={{ span: 16, offset: 4 }}
-            lg={{ span: 16, offset: 4 }}
-            xl={{ span: 24, offset: 0 }}
-          >
+          <Col span={24}>
             <h2 className=" text-rc40 font-light">
               <strong className=" font-semibold">Get the latest insights</strong> into the world of the supply chain.
             </h2>
           </Col>
-          <Col
-            xs={{ span: 18, offset: 3 }}
-            sm={{ span: 16, offset: 4 }}
-            md={{ span: 16, offset: 4 }}
-            lg={{ span: 16, offset: 4 }}
-            xl={{ span: 24, offset: 0 }}
-          >
+          <Col span={24}>
             <Row>
               {sightsList.map((item) => (
-                <Col span={7} className=" bg-gray-200 group mr-8  overflow-hidden">
+                <Col
+                  xs={{ span: 20, offset: 2 }}
+                  sm={{ span: 20, offset: 2 }}
+                  md={{ span: 20, offset: 2 }}
+                  lg={{ span: 20, offset: 2 }}
+                  xl={{ span: 7, offset: 0 }}
+                  className=" bg-gray-200 group mr-8  overflow-hidden"
+                >
                   <Col span={24} className="relative">
                     <img src={item.img} alt="" className="w-full h-full rounded-t-lg" />
                     <FloatingTips className=" transform -translate-y-full group-hover:translate-y-0">

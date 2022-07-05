@@ -39,7 +39,7 @@ const ViewSixthPart = () => {
           xs={{ span: 18, offset: 3 }}
           sm={{ span: 16, offset: 4 }}
           md={{ span: 14, offset: 5 }}
-          lg={{ span: 8, offset: 3 }}
+          lg={{ span: 16, offset: 4 }}
           xl={{ span: 16, offset: 4 }}
           className=" bg-black"
         >
