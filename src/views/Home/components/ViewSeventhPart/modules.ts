@@ -11,9 +11,9 @@ export const sightsList = [
   },
   {
     img: insights_2,
-    title: 'o9 Solutions',
+    title: 'Deloitte Solutions',
     tip: 'News',
-    desc: 'o9 Solutions Supports Chow Sang Sang’s Expansion in Greater China With the Digital Transformation of Its Planning and Decision-Making Processes',
+    desc: 'Deloitte Solutions Supports Chow Sang Sang’s Expansion in Greater China With the Digital Transformation of Its Planning and Decision-Making Processes',
   },
   {
     img: insights_3,

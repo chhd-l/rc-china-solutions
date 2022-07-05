@@ -46,7 +46,7 @@ export const Topreasons_content = [
   },
   {
     icon: SupplyChainControlTower_Topreasons_4,
-    span1: 'Take away the guesswork. o9’s',
+    span1: 'Take away the guesswork. Deloitte’s',
     strong: ' AI/ML framework',
     span2:
       ' learns from multiple historical drivers to come up with a better forecast considering all the planned initiatives and events in the future.',
@@ -63,7 +63,7 @@ export const Topreasons_content = [
     span1: 'Rally around a ',
     strong: 'single source of truth.',
     span2:
-      ' o9’s platform provides a 360 view of external and internal drivers of demand, streamlining cross-functional collaboration.',
+      ' Deloitte’s platform provides a 360 view of external and internal drivers of demand, streamlining cross-functional collaboration.',
   },
 ]
 

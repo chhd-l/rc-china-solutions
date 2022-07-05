@@ -15,7 +15,7 @@ const ViewFifthPart = () => {
           lg={{ span: 8, offset: 3 }}
           xl={{ span: 16, offset: 4 }}
         >
-          Why are global companies partnering with :o9 for their Digital Transformation?
+          Why are global companies partnering with :Deloitte for their Digital Transformation?
         </Col>
         <Col
           xs={{ span: 18, offset: 3 }}

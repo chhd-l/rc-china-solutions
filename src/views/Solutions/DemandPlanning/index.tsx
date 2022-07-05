@@ -24,7 +24,7 @@ const DemandPlanning = () => {
         </div>
         <div className="mt-rc18 font-bold text-rc16 cursor-pointer">
           <span>——</span>
-          <span className="ml-rc10">Why choose o9?</span>
+          <span className="ml-rc10">Why choose Deloitte?</span>
           <NectarButton className="ml-rc25" color="#000" hoverBorderColor="red">
             Request a demo
           </NectarButton>
@@ -49,7 +49,7 @@ const DemandPlanning = () => {
                 finance organizations.
               </div>
               <div className="text-rc20 px-rc_10">
-                o9’s demand planning software is not just helping organizations predict demand better, it is also
+                Deloitte’s demand planning software is not just helping organizations predict demand better, it is also
                 helping them sense, analyze, plan and shape demand to optimize both short-term and long-term sales and
                 margin performance.
               </div>
@@ -70,15 +70,16 @@ const DemandPlanning = () => {
             </div>
             <div className="border-t border-solid pt-rc20 dividon_02 flex-2">
               More and more data is becoming available. Real-time signals from supply chain disruptions and market
-              opportunities should alert planners instantly. Leveraging the o9 AI scenario capabilities, solutions to
-              these disruptions are presented and highlighted with lead-time and cost implications. The o9 Control Tower
-              allows enterprises to connect and harmonize planning and execution seamlessly on a common AI platform.
+              opportunities should alert planners instantly. Leveraging the Deloitte AI scenario capabilities, solutions
+              to these disruptions are presented and highlighted with lead-time and cost implications. The Deloitte
+              Control Tower allows enterprises to connect and harmonize planning and execution seamlessly on a common AI
+              platform.
             </div>
           </div>
         </section>
         <section className="section_04">
           <DividerLeft dividerColor="rgba(0, 0, 0, 0.2)">Top reasons</DividerLeft>
-          <div className="text-rc35 mt-rc25 mb-rc45 tracking-rc5">Why customers choose o9</div>
+          <div className="text-rc35 mt-rc25 mb-rc45 tracking-rc5">Why customers choose Deloitte</div>
           <div className="flex flex-wrap justify-between">
             {Topreasons_content.map((item, idx) => (
               <div className="w-rc_30 mb-rc25" key={idx}>
@@ -97,7 +98,7 @@ const DemandPlanning = () => {
             <h5 className="text-white">Use cases</h5>
           </DividerLeft>
           <div className="text-rc45 max-w-rc1000 leading-rc55 mt-rc20 mb-rc45">
-            o9’s demand planning software brings together
+            Deloitte’s demand planning software brings together
             <span className="text-gray-999">
               predictive analytics, assumptions visibility, collaboration, and post-game analytics.
             </span>
@@ -121,14 +122,14 @@ const DemandPlanning = () => {
             </div>
             <div className="flex justify-between">
               <div className="w-rc_47">
-                o9’s next-generation demand planning software capabilities are helping global enterprises improve
+                Deloitte’s next-generation demand planning software capabilities are helping global enterprises improve
                 forecast accuracy, which directly correlates to better plans and improved financial performance. And
                 when a business plans better, it creates operational efficiencies that significantly reduce wastage.
               </div>
               <div className="w-rc_47">
-                The o9 Control Tower can help reduce costly expediting by proactively sensing demand and supply changes
-                and then recommending optimal transportation modes and flow paths that enable you to meet your customer
-                service objectives without excessive CO2 emissions and suboptimal asset utilization.
+                The Deloitte Control Tower can help reduce costly expediting by proactively sensing demand and supply
+                changes and then recommending optimal transportation modes and flow paths that enable you to meet your
+                customer service objectives without excessive CO2 emissions and suboptimal asset utilization.
               </div>
             </div>
           </div>

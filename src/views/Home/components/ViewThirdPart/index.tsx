@@ -36,7 +36,7 @@ const ViewThirdPart = () => {
       </div>
 
       <div className=" text-rc22 font-thin bg-gray-300 ">
-        <span className="leading-rc111">The o9 Digital Brain is uniquely tailored to your industry</span>
+        <span className="leading-rc111">The Deloitte Digital Brain is uniquely tailored to your industry</span>
         <SlickSlider slickGoTo={slickGoTo} setSlideIndex={(count) => setSlideIndex(count)} />
         <NectarButton color="#000000" hoverBorderColor="#000000" className=" mt-rc30 mb-rc80">
           View all industries
