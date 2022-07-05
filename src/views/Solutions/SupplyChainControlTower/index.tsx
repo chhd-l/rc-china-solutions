@@ -115,7 +115,7 @@ const SupplyChainControlTower = () => {
           <DividerLeft dividerColor="rgba(0, 0, 0, 0.2)">
             <h5>Top reasons</h5>
           </DividerLeft>
-          <div className="text-rc35 mt-rc25 mb-rc45 tracking-rc5">Why customers choose o9</div>
+          <div className="text-rc35 mt-rc25 mb-rc45 tracking-rc5">Why customers choose Deloitte</div>
           <div className="flex flex-wrap justify-between">
             {Topreasons_content.map((item, idx) => (
               <div className="w-rc_30 mb-rc25" key={idx}>
@@ -167,9 +167,9 @@ const SupplyChainControlTower = () => {
                 happier in their jobs.
               </div>
               <div className="w-rc_47 pt-rc15 border-t border-solid border-gray-rgba209">
-                The o9 Control Tower can help reduce costly expediting by proactively sensing demand and supply changes
-                and then recommending optimal transportation modes and flow paths that enable you to meet your customer
-                service objectives without excessive CO2 emissions and suboptimal asset utilization.
+                The Deloitte Control Tower can help reduce costly expediting by proactively sensing demand and supply
+                changes and then recommending optimal transportation modes and flow paths that enable you to meet your
+                customer service objectives without excessive CO2 emissions and suboptimal asset utilization.
               </div>
             </div>
           </div>
@@ -181,14 +181,14 @@ const SupplyChainControlTower = () => {
           </div>
           <div className="leading-rc32 pr-rc35 flex-1">
             <div className="text-rc35 leading-rc43 mb-rc45">
-              The o9 Control Tower enables companies to Sense, Translate, Solve, Execute, and Learn using a robust AI
-              enabled platform.
+              The Deloitte Control Tower enables companies to Sense, Translate, Solve, Execute, and Learn using a robust
+              AI enabled platform.
             </div>
             <div className="mb-rc27">
-              The o9 Control Tower utilizes advanced machine learning that enables superior supply chain results. It
-              begins with “Sense” capabilities that detect internal as well as external demand and supply disruptions.
-              It is followed by “Translate” capabilities which helps to highlight risks and determine the potential
-              impact of the disruption.
+              The Deloitte Control Tower utilizes advanced machine learning that enables superior supply chain results.
+              It begins with “Sense” capabilities that detect internal as well as external demand and supply
+              disruptions. It is followed by “Translate” capabilities which helps to highlight risks and determine the
+              potential impact of the disruption.
             </div>
             <div>
               Next, “Solve” capabilities provide decision support by prescribing resolutions to help mitigate the impact
@@ -201,7 +201,7 @@ const SupplyChainControlTower = () => {
         </section>
         <section className="section_08 flex">
           <div className="mr-rc60 flex-1">
-            Get real time visibility. Leverage the o9 Digital Brain in your business.
+            Get real time visibility. Leverage the Deloitte Digital Brain in your business.
           </div>
           <div className="flex-1">
             <Input placeholder="(Company) Email" />
