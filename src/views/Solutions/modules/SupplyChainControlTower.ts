@@ -62,6 +62,25 @@ export const Topreasons_content = [
     strong: 'connect',
     span2: ' short-term S&OE planning to ',
     strong2: 'longer term IBP',
-    span3: ' on a common platform.'
+    span3: ' on a common platform.',
+  },
+]
+
+export const UseCases_content = [
+  {
+    start: 'Improved visibility to demand and supply changes',
+    span: ': Lack of integration to sources of demand and supply changes makes visibility poor and often late, reducing time available for response,',
+  },
+  {
+    start: 'Real-time  scenario analysis',
+    span: ': Even when visibility is available, users don’t have real time ability to assess various alternative choices of resolving the issues, resulting in often late and sub-optimal decisions.',
+  },
+  {
+    start: 'Automation at scale',
+    span: ': Even when visibility is available, users don’t have real time ability to assess various alternative choices of resolving the issues, resulting in often late and sub-optimal decisions.',
+  },
+  {
+    start: 'Exceed your customer expectations',
+    span: ': Deliver your customers needs on-time and in-full with the optimal supply chain strategy and flow plan.',
   },
 ]

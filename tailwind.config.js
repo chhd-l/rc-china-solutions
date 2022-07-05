@@ -31,6 +31,7 @@ module.exports = {
     extend: {
       width: {
         rc_30: '30%',
+        rc_47: '47%',
         rc8: '8px',
         rc11: '11px',
         rc12: '12px',
@@ -66,7 +67,8 @@ module.exports = {
         rc1470: '1470px',
       },
       maxWidth: {
-        rc1000: '1000px !important'
+        rc800: '800px !important',
+        rc1000: '1000px !important',
       },
       height: {
         rc_35: '35%',
