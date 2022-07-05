@@ -9,7 +9,7 @@ const ViewThirdPart = () => {
   const [updateCount, setUpdateCount] = useState(0)
   const [slider, setSlider] = useState()
 
-  const slickGoTo = (e) => {
+  const slickGoTo = (e: any) => {
     console.log('e', e)
     setSlider(e)
   }
@@ -21,14 +21,14 @@ const ViewThirdPart = () => {
         <div
           onClick={() => {
             console.log('slideIndex', slideIndex)
-            slider.slickGoTo(slideIndex)
+            // slider.slickGoTo(slideIndex)
           }}
           className="h-rc51 w-rc51 bg-black text-center flex items-center cursor-pointer mx-rc9 justify-center hover:bg-blue-700 "
         >
           <img src={leftArrow} alt="" className=" h-rc16 w-rc18" />
         </div>
         <div
-          onClick={() => slider.slickGoTo(slideIndex)}
+          // onClick={() => slider.slickGoTo(slideIndex)}
           className="h-rc51 w-rc51 bg-black text-center flex items-center cursor-pointer justify-center hover:bg-blue-700 "
         >
           <img src={rightArrow} alt="" className=" h-rc16 w-rc18" />

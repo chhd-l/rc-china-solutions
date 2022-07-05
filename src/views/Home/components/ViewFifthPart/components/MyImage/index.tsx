@@ -5,7 +5,8 @@ type MyImageProps = {
 }
 export const MyImage = styled.div<MyImageProps>`
   background: url(${(props) => props.image}) center no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   width: 100%;
-  height: 100vh;
+  /* padding: 300px 0 86px; */
+  background-position: center center;
 `
