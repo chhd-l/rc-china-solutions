@@ -4,6 +4,8 @@ import Home from '../views/Home'
 import SupplyChainControlTower from '../views/Solutions/SupplyChainControlTower'
 import Resources from '../views/Resources'
 import Solutions from '../views/Solutions'
+import TheDigitalBrain from '../views/Solutions/TheDigitalBrain'
+import DemandPlanning from '../views/Solutions/DemandPlanning'
 
 const routers: RouteObject[] = [
   {
@@ -22,8 +24,16 @@ const routers: RouteObject[] = [
             index: true,
           },
           {
-            path: 'supplychaincontroltower',
+            path: 'supply-chain-control-tower',
             element: <SupplyChainControlTower />,
+          },
+          {
+            path: 'the-digital-brain',
+            element: <TheDigitalBrain />,
+          },
+          {
+            path: 'demand-planning',
+            element: <DemandPlanning />,
           },
         ],
       },

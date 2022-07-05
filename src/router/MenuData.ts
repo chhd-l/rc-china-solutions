@@ -4,7 +4,7 @@ export const solutionsData = [
     list: [
       {
         label: 'Demand Planning',
-        path: '',
+        path: '/solutions/demand-planning',
       },
       {
         label: 'S&OP',
@@ -16,7 +16,7 @@ export const solutionsData = [
       },
       {
         label: 'Supply Chain Control Tower',
-        path: '/solutions/supplychaincontroltower',
+        path: '/solutions/supply-chain-control-tower',
       },
       {
         label: 'Integrated Business Planning (IBP)',
@@ -41,7 +41,7 @@ export const solutionsData = [
       },
       {
         label: 'The Digital Brain',
-        path: '',
+        path: '/solutions/the-digital-brain',
       },
       {
         label: 'Technology',

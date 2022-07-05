@@ -1,0 +1,110 @@
+@keyframes AllrelatedresourcesMoveOut {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes AllrelatedresourcesMoveIn {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+  }
+
+.SupplyChainControlTower {
+  padding: 35px 0 100px;
+  .headerTitle_1 {
+    max-width: 900px;
+    margin-top: 180px;
+  }
+  .dividon_01 {
+    border-color: #616161;
+  }
+  .section_01 {
+    padding-bottom: 415px;
+    .bg_1 {
+      top: -50px;
+      background-color: red;
+    }
+  }
+  .section_02 {
+    padding: 385px 90px 140px;
+    background-color: #eaeaea;
+    .dividon_02 {
+      border-color: rgba(0, 0, 0, 0.12);
+    }
+    .bg_2 {
+      padding: 15px;
+      border-radius: 10px;
+      width: 1000px;
+      top: -256px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #000;
+      border: 1px solid #fff;
+    }
+  }
+  .section_03 {
+    padding: 55px 90px;
+    > div {
+      padding: 55px;
+    }
+    .Resources {
+      > div {
+        &:first-child {
+          width: 21%;
+          margin-right: 55px;
+        }
+      }
+      .ResourceBtn {
+        padding: 8px 20px;
+        background-color: #414141;
+        transition: all 0.3s ease;
+        &:hover {
+          padding-left: 30px;
+          background-color: blue;
+        }
+      }
+    }
+    .Allrelatedresources {
+      position: relative;
+      padding-bottom: 4px;
+      overflow: hidden;
+      &:hover {
+        &::after {
+            animation-name: AllrelatedresourcesMoveIn !important;
+            transform: translateX(100%);
+        }
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        transition: all .3s;
+        height: 1px;
+        background-color: #fff;
+        animation-duration: .3s;
+        animation-name: AllrelatedresourcesMoveOut;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+      }
+    }
+  }
+  .section_04 {
+    padding: 88px 90px 130px;
+  }
+  .section_05 {
+    padding: 150px 90px;
+  }
+  .section_06 {
+    padding: 150px 90px 50px;
+    background: linear-gradient(to bottom,rgba(0,0,0,0.01) 0%,#000000 100%);
+    opacity: 1;
+  }
+}

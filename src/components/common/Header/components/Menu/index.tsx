@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 import { ValuesType } from '../../../../../type'
 import { useState } from 'react'
-import { MenuData } from './data'
+import { MenuData } from '../../../../../router/MenuData'
 import SubMenu from '../SubMenu'
 
 export type Current = ValuesType<typeof MenuData>['label'] | 'default'

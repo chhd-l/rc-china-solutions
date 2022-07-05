@@ -64,7 +64,7 @@ const ViewSecondPart = () => {
           xs={{ span: 16, offset: 4 }}
           sm={{ span: 16, offset: 4 }}
           md={{ span: 14, offset: 5 }}
-          lg={{ span: 14, offset: 5 }}
+          lg={{ span: 16, offset: 4 }}
           xl={{ span: 16, offset: 4 }}
           className=" bg-black h-rc500"
         ></Col>

@@ -1,4 +1,3 @@
-import { useRef, useState } from 'react'
 import Slider from 'react-slick'
 import styled from 'styled-components'
 import { slickImgList } from '../../module'
@@ -73,9 +72,9 @@ const SlickSlider = ({ slickGoTo, setSlideIndex }: SlickSliderProps) => {
     <div>
       <Slider ref={(sliderParams) => slickGoTo(sliderParams)} {...settings}>
         {slickImgList.map((item) => (
-          <div key={item.path} style={{ width: 480, height: 565 }}>
+          <div key={item.path} style={{ width: 480, height: 565 }} className="group">
             <Img backgroundImg={item.path}>
-              <span className="text-rc24 absolute left-rc10 bottom-4 hover:underline">{item.title}</span>
+              <span className="text-rc24 absolute left-rc10 bottom-4  group-hover:underline">{item.title}</span>
               {/* <div className=" text-rc24 absolute left-rc10 h-rc_35 my-rc_10 bottom-0  text-left">
                 <a className=" inline-flex items-end">{item.title}</a>
               </div> */}
