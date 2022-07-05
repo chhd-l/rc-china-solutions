@@ -1,10 +1,18 @@
 import { Col, Row } from 'antd'
+import DividerLeft from '../../../../components/DividerLeft'
 import { FloatingTips } from './components/FloatingTips'
 import { sightsList } from './modules'
 
 const ViewSeventhPart = () => {
   return (
     <Row className=" bg-white">
+      <Col span={16} offset={4}>
+        <DividerLeft ParentBox={{ style: { marginBottom: '30px' } }} SubBox={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+          <h5 className="text-rc18 font-normal">
+            <strong className=" font-semibold text-rc22">Discover</strong> our newsroom
+          </h5>
+        </DividerLeft>
+      </Col>
       <Col
         xs={{ span: 18, offset: 3 }}
         sm={{ span: 16, offset: 4 }}
