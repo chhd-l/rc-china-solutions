@@ -127,6 +127,10 @@ const SupplyChainControlTower = () => {
         </section>
         <section className="section_05 bg-black text-white">
           <DividerLeft SubBox={{backgroundColor: 'rgba(255, 255, 255, 0.2)'}}>Use cases</DividerLeft>
+          <div className='text-rc45 max-w-rc1000 leading-rc55'>
+           With the o9 Supply Chain Control tower our customers are able to 
+            <span className='text-gray-999'>take fast, high quality decisions that mitigate risk and capture market opportunities.</span>
+          </div>
         </section>
       </main>
     </div>
