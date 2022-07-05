@@ -7,8 +7,8 @@ import { sightsList } from './modules'
 const ViewSeventhPart = () => {
   return (
     <Row className=" bg-white">
-      <Col span={16} offset={4}>
-        <DividerLeft ParentBox={{ style: { marginBottom: '30px' } }} SubBox={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+      <Col span={16} offset={4} className='mb-rc30'>
+        <DividerLeft dividerColor='rgba(0, 0, 0, 0.2)' >
           <h5 className="text-rc18 font-normal">
             <strong className=" font-semibold text-rc22">Discover</strong> our newsroom
           </h5>
