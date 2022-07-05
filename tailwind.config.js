@@ -10,6 +10,7 @@ module.exports = {
       gray: {
         'rgba209': 'rgba(209,209,209,0.38)',
         '2a2a2a': '#2a2a2a',
+        'e5e6e5': '#e5e6e5',
         100: '#E5E5E5',
         200: '#F1F1F1',
         300: '#F2F2F2',
@@ -50,6 +51,7 @@ module.exports = {
         rc50: '50px',
         rc51: '51px',
         rc97: '97px',
+        rc100: '100px',
         rc213: '213px',
         rc273: '273px',
         rc275: '275px',
@@ -91,6 +93,7 @@ module.exports = {
         rc22: '22px',
         rc26: '26px',
         rc30: '30px',
+        rc35: '35px',
         rc38: '38px',
         rc49: '49px',
         rc50: '50px',

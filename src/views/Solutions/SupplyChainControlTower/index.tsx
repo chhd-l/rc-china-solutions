@@ -5,12 +5,18 @@ import SupplyChainControlTower_bg_02 from '../../../assets/image/SupplyChainCont
 import SupplyChainControlTower_Resources from '../../../assets/image/SupplyChainControlTower_Resources.png'
 import SupplyChainControlTower_UseCases_1 from '../../../assets/image/SupplyChainControlTower_UseCases_1.png'
 import SupplyChainControlTower_section_07 from '../../../assets/image/SupplyChainControlTower_section_07.png'
+import SupplyChainControlTower_leftIcon from '../../../assets/image/SupplyChainControlTower_leftIcon.png'
 import './index.less'
-import { section_03_content, Topreasons_content, UseCases_content } from '../modules/SupplyChainControlTower'
+import {
+  section_03_content,
+  Topreasons_content,
+  UseCases_content,
+} from '../modules/SupplyChainControlTower'
 import DividerLeft from '../../../components/DividerLeft'
 import { Input } from 'antd'
 
 const SupplyChainControlTower = () => {
+
   return (
     <div className="SupplyChainControlTower">
       <header className="pb-rc132 pl-rc90 pr-rc90">
@@ -175,15 +181,15 @@ const SupplyChainControlTower = () => {
         </section>
         <section className="section_07 bg-black text-rc17 text-white flex">
           <div className="w-rc517 mr-rc60">
-            <img className='mb-rc24' src={SupplyChainControlTower_section_07} alt="" />
+            <img className="mb-rc24" src={SupplyChainControlTower_section_07} alt="" />
             <div className="text-center">Video Example: Unplanned Maintenance</div>
           </div>
-          <div className='leading-rc32 pr-rc35 flex-1'>
-            <div className='text-rc35 leading-rc43 mb-rc45'>
+          <div className="leading-rc32 pr-rc35 flex-1">
+            <div className="text-rc35 leading-rc43 mb-rc45">
               The o9 Control Tower enables companies to Sense, Translate, Solve, Execute, and Learn using a robust AI
               enabled platform.
             </div>
-            <div className='mb-rc27'>
+            <div className="mb-rc27">
               The o9 Control Tower utilizes advanced machine learning that enables superior supply chain results. It
               begins with “Sense” capabilities that detect internal as well as external demand and supply disruptions.
               It is followed by “Translate” capabilities which helps to highlight risks and determine the potential
@@ -198,12 +204,74 @@ const SupplyChainControlTower = () => {
             </div>
           </div>
         </section>
-        <section className='section_08 flex'>
-              <div className='mr-rc60 flex-1'>Get real time visibility. Leverage the o9 Digital Brain in your business.</div>
-              <div className='flex-1'>
-                <Input placeholder="(Company) Email" />
-                <Input placeholder="133 667 552" />
-              </div>
+        <section className="section_08 flex">
+          <div className="mr-rc60 flex-1 text-rc35 leading-rc43">
+            Get real time visibility. Leverage the o9 Digital Brain in your business.
+          </div>
+          <div className="flex-1">
+            <Input placeholder="(Company) Email" />
+            <Input placeholder="133 667 552" />
+          </div>
+        </section>
+        <section className="section_09">
+          <div className="mb-rc45 text-rc35">Related Solutions</div>
+          <div className="flex flex-wrap">
+            <div
+              className="group RelatedSolutions_1 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30"
+            >
+              <div className='w-rc100 h-full' />
+              <div>Supply Chain Master Planning</div>
+              <img
+                className="transition-all opacity-0 transform -translate-x-1/2 h-rc35 group-hover:translate-x-0 group-hover:opacity-100"
+                src={SupplyChainControlTower_leftIcon}
+                alt=""
+              />
+            </div>
+            <div
+              className="group RelatedSolutions_1 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30"
+            >
+              <div className='w-rc100 h-full' />
+              <div>Supply Chain Master Planning</div>
+              <img
+                className="transition-all opacity-0 transform -translate-x-1/2 h-rc35 group-hover:translate-x-0 group-hover:opacity-100"
+                src={SupplyChainControlTower_leftIcon}
+                alt=""
+              />
+            </div>
+            <div
+              className="group RelatedSolutions_2 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30"
+            >
+              <div className='w-rc100 h-full' />
+              <div>Supply Chain Master Planning</div>
+              <img
+                className="transition-all opacity-0 transform -translate-x-1/2 h-rc35 group-hover:translate-x-0 group-hover:opacity-100"
+                src={SupplyChainControlTower_leftIcon}
+                alt=""
+              />
+            </div>
+            <div
+              className="group RelatedSolutions_3 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30"
+            >
+              <div className='w-rc100 h-full' />
+              <div>Supply Chain Master Planning</div>
+              <img
+                className="transition-all opacity-0 transform -translate-x-1/2 h-rc35 group-hover:translate-x-0 group-hover:opacity-100"
+                src={SupplyChainControlTower_leftIcon}
+                alt=""
+              />
+            </div>
+            <div
+              className="group RelatedSolutions_4 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30"
+            >
+              <div className='w-rc100 h-full' />
+              <div>Supply Chain Master Planning</div>
+              <img
+                className="opacity-0 transform -translate-x-1/2 h-rc35 group-hover:translate-x-0 group-hover:opacity-100"
+                src={SupplyChainControlTower_leftIcon}
+                alt=""
+              />
+            </div>
+          </div>
         </section>
       </main>
     </div>
