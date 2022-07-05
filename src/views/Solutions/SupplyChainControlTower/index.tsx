@@ -5,6 +5,7 @@ import SupplyChainControlTower_bg_02 from '../../../assets/image/SupplyChainCont
 import SupplyChainControlTower_Resources from '../../../assets/image/SupplyChainControlTower_Resources.png'
 import './index.less'
 import { section_03_content, Topreasons_content } from '../modules/SupplyChainControlTower'
+import DividerLeft from '../../../components/DividerLeft'
 
 const SupplyChainControlTower = () => {
   return (
@@ -80,7 +81,7 @@ const SupplyChainControlTower = () => {
             <div className="flex justify-between Resources mb-rc24">
               <div>
                 <div className="flex items-center text-rc18 mb-rc30">
-                  <span className="w-rc8 h-rc8 bg-blue-700 mr-rc15" /> Resources
+                  <span className="w-rc8 h-rc8 bg-blue-400 mr-rc15" /> Resources
                 </div>
                 <div className="text-rc35 leading-rc42">
                   View our related <span className="font-bold">white papers and use cases.</span>
@@ -107,19 +108,25 @@ const SupplyChainControlTower = () => {
           </div>
         </section>
         <section className="section_04">
-          <div className='flex items-center h-rc18'>
-            <div className='text-rc22 h-rc_110 pr-rc20 tracking-rc7'>Top reasons</div>
-            <div className='flex-1 h-rc1 divider' />
+          <DividerLeft SubBox={{backgroundColor: 'rgba(0, 0, 0, 0.2)'}}>Top reasons</DividerLeft>
+          <div className="text-rc35 mt-rc25 mb-rc45 tracking-rc5">Why customers choose o9</div>
+          <div className="flex flex-wrap justify-between">
+            {Topreasons_content.map((item, idx) => (
+              <div className="w-rc_30 mb-rc25" key={idx}>
+                <img className="w-rc32 mb-rc12" src={item.icon} alt="" />
+                <p className="text-rc17 leading-rc32">
+                  {item.span1}
+                  <strong>{item.strong}</strong>
+                  {item.span2}
+                  <strong>{item?.strong2}</strong>
+                  {item?.span3}
+                </p>
+              </div>
+            ))}
           </div>
-          <div className='text-rc35 mt-rc20 mb-rc45 tracking-rc5'>Why customers choose o9</div>
-          <div className='flex flex-wrap justify-between'>
-            {
-              Topreasons_content.map((item, idx) => <div className='w-rc_30' key={idx}>
-                <div />
-                <p>{item.span1}{item.strong}{item.span2}{item?.span3}{item?.strong2}</p>
-              </div>)
-            }
-          </div>
+        </section>
+        <section className="section_05 bg-black text-white">
+          <DividerLeft SubBox={{backgroundColor: 'rgba(255, 255, 255, 0.2)'}}>Use cases</DividerLeft>
         </section>
       </main>
     </div>
