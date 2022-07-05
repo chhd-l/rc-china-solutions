@@ -37,6 +37,7 @@ const ViewSeventhPart = () => {
                   lg={{ span: 20, offset: 2 }}
                   xl={{ span: 7, offset: 0 }}
                   className=" bg-gray-200 group mr-8  overflow-hidden"
+                  key={item.title}
                 >
                   <Col span={24} className="relative">
                     <img src={item.img} alt="" className="w-full h-full rounded-t-lg" />

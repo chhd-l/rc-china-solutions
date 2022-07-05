@@ -37,15 +37,28 @@ const ViewSixthPart = () => {
       <Row className="mt-rc_7">
         <Col
           xs={{ span: 18, offset: 3 }}
-          sm={{ span: 16, offset: 4 }}
-          md={{ span: 14, offset: 5 }}
-          lg={{ span: 16, offset: 4 }}
+          sm={{ span: 18, offset: 3 }}
+          md={{ span: 18, offset: 3 }}
+          lg={{ span: 20, offset: 2 }}
           xl={{ span: 16, offset: 4 }}
           className=" bg-black"
         >
           <Row justify="space-around" className="p-rc84 " gutter={69}>
-            <Col span={12} className=" bg-white"></Col>
-            <Col span={12}>
+            <Col
+              xs={{ span: 18, offset: 3 }}
+              sm={{ span: 18, offset: 3 }}
+              md={{ span: 18, offset: 3 }}
+              lg={{ span: 20, offset: 2 }}
+              xl={{ span: 12, offset: 0 }}
+              className=" bg-white"
+            ></Col>
+            <Col
+              xs={{ span: 18, offset: 3 }}
+              sm={{ span: 18, offset: 3 }}
+              md={{ span: 18, offset: 3 }}
+              lg={{ span: 20, offset: 2 }}
+              xl={{ span: 12, offset: 0 }}
+            >
               <h3 className="text-white  text-rc28 font-light">
                 <strong className=" font-bold">aim</strong> for <strong className="font-bold  text-yellow">10x</strong>{' '}
                 value improvement.
