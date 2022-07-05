@@ -1,5 +1,6 @@
 import { Col, Row } from 'antd'
 import DividerLeft from '../../../../components/DividerLeft'
+import { Arrow } from './components/Arrow'
 import { FloatingTips } from './components/FloatingTips'
 import { sightsList } from './modules'
 
@@ -61,6 +62,17 @@ const ViewSeventhPart = () => {
             </Row>
           </Col>
         </Row>
+      </Col>
+      <Col
+        xs={{ span: 18, offset: 3 }}
+        sm={{ span: 16, offset: 4 }}
+        md={{ span: 14, offset: 5 }}
+        lg={{ span: 8, offset: 3 }}
+        xl={{ span: 16, offset: 4 }}
+        className=" my-rc_7"
+      >
+        <Arrow>Read our blog</Arrow>
+        <Arrow>Latest News</Arrow>
       </Col>
     </Row>
   )
