@@ -3,9 +3,12 @@ import SupplyChainControlTowerLogo from '../../../assets/image/SupplyChainContro
 import SupplyChainControlTower_bg_01 from '../../../assets/image/SupplyChainControlTower_bg_01.png'
 import SupplyChainControlTower_bg_02 from '../../../assets/image/SupplyChainControlTower_bg_02.png'
 import SupplyChainControlTower_Resources from '../../../assets/image/SupplyChainControlTower_Resources.png'
+import SupplyChainControlTower_UseCases_1 from '../../../assets/image/SupplyChainControlTower_UseCases_1.png'
+import SupplyChainControlTower_section_07 from '../../../assets/image/SupplyChainControlTower_section_07.png'
 import './index.less'
 import { section_03_content, Topreasons_content, UseCases_content } from '../modules/SupplyChainControlTower'
 import DividerLeft from '../../../components/DividerLeft'
+import { Input } from 'antd'
 
 const SupplyChainControlTower = () => {
   return (
@@ -108,7 +111,9 @@ const SupplyChainControlTower = () => {
           </div>
         </section>
         <section className="section_04">
-          <DividerLeft dividerColor='rgba(0, 0, 0, 0.2)'>Top reasons</DividerLeft>
+          <DividerLeft dividerColor="rgba(0, 0, 0, 0.2)">
+            <h5>Top reasons</h5>
+          </DividerLeft>
           <div className="text-rc35 mt-rc25 mb-rc45 tracking-rc5">Why customers choose o9</div>
           <div className="flex flex-wrap justify-between">
             {Topreasons_content.map((item, idx) => (
@@ -126,7 +131,9 @@ const SupplyChainControlTower = () => {
           </div>
         </section>
         <section className="section_05 bg-black text-white">
-          <DividerLeft dividerColor='rgba(255, 255, 255, 0.2)' ><h5 className='text-white'>Use cases</h5></DividerLeft>
+          <DividerLeft dividerColor="rgba(255, 255, 255, 0.2)">
+            <h5 className="text-white">Use cases</h5>
+          </DividerLeft>
           <div className="text-rc45 max-w-rc1000 leading-rc55 mt-rc20 mb-rc45">
             With the o9 Supply Chain Control tower our customers are able to
             <span className="text-gray-999">
@@ -136,7 +143,7 @@ const SupplyChainControlTower = () => {
           <div className="flex flex-wrap justify-between">
             {UseCases_content.map((item, idx) => (
               <div className="flex w-rc_47 text-rc17 mb-rc8 leading-rc32" key={idx}>
-                <div className="pr-rc15">√</div>
+                <img className="mr-rc15 mt-rc10 h-rc22" src={SupplyChainControlTower_UseCases_1} alt="" />
                 <div>
                   <span className="font-bold">{item.start}</span>
                   {item.span}
@@ -145,21 +152,58 @@ const SupplyChainControlTower = () => {
             ))}
           </div>
         </section>
-        <section className="section_06">
-          <div className='max-w-rc800 m-auto text-white'>
-            <div className='text-rc45 leading-rc55'>Plan better. Create an efficient supply chain. Make the planet a healthy place to live</div>
-            <div className='flex justify-between'>
-              <div className='w-rc_47'>
+        <section className="section_06 relative overflow-hidden">
+          <div className="using-image absolute top-0 left-0">
+            <div className="section_06_bg" />
+          </div>
+          <div className="max-w-rc800 m-auto text-white">
+            <div className="text-rc45 leading-rc55">
+              Plan better. Create an efficient supply chain. Make the planet a healthy place to live
+            </div>
+            <div className="flex justify-between text-rc17 leading-rc32 mt-rc60">
+              <div className="w-rc_47 pt-rc15 border-t border-solid border-gray-rgba209">
                 An efficient and proactive supply chain makes our planet a more healthy place to live and your employees
                 happier in their jobs.
               </div>
-              <div className='w-rc_47'>
+              <div className="w-rc_47 pt-rc15 border-t border-solid border-gray-rgba209">
                 The o9 Control Tower can help reduce costly expediting by proactively sensing demand and supply changes
                 and then recommending optimal transportation modes and flow paths that enable you to meet your customer
                 service objectives without excessive CO2 emissions and suboptimal asset utilization.
               </div>
             </div>
           </div>
+        </section>
+        <section className="section_07 bg-black text-rc17 text-white flex">
+          <div className="w-rc517 mr-rc60">
+            <img className='mb-rc24' src={SupplyChainControlTower_section_07} alt="" />
+            <div className="text-center">Video Example: Unplanned Maintenance</div>
+          </div>
+          <div className='leading-rc32 pr-rc35 flex-1'>
+            <div className='text-rc35 leading-rc43 mb-rc45'>
+              The o9 Control Tower enables companies to Sense, Translate, Solve, Execute, and Learn using a robust AI
+              enabled platform.
+            </div>
+            <div className='mb-rc27'>
+              The o9 Control Tower utilizes advanced machine learning that enables superior supply chain results. It
+              begins with “Sense” capabilities that detect internal as well as external demand and supply disruptions.
+              It is followed by “Translate” capabilities which helps to highlight risks and determine the potential
+              impact of the disruption.
+            </div>
+            <div>
+              Next, “Solve” capabilities provide decision support by prescribing resolutions to help mitigate the impact
+              of the disruption. These capabilities are enabled with workflow execution orchestration that breaks down
+              organizational silos to make informed decisions faster. Finally, the Control Tower “Learns” from past
+              decisions and resolutions that have been taken and then adjusts future resolution protocols and
+              recommendations for optimal performance.
+            </div>
+          </div>
+        </section>
+        <section className='section_08 flex'>
+              <div className='mr-rc60 flex-1'>Get real time visibility. Leverage the o9 Digital Brain in your business.</div>
+              <div className='flex-1'>
+                <Input placeholder="(Company) Email" />
+                <Input placeholder="133 667 552" />
+              </div>
         </section>
       </main>
     </div>
