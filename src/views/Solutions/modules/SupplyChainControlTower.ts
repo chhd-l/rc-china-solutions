@@ -2,6 +2,13 @@ import section_03_01 from '../../../assets/image/section_03_bg_01@2x.png'
 import section_03_02 from '../../../assets/image/section_03_bg_02@2x.png'
 import section_03_03 from '../../../assets/image/section_03_bg_03@2x.png'
 
+import SupplyChainControlTower_Topreasons_1 from '../../../assets/image/SupplyChainControlTower_Topreasons_1@2x.png'
+import SupplyChainControlTower_Topreasons_2 from '../../../assets/image/SupplyChainControlTower_Topreasons_2@2x.png'
+import SupplyChainControlTower_Topreasons_3 from '../../../assets/image/SupplyChainControlTower_Topreasons_3@2x.png'
+import SupplyChainControlTower_Topreasons_4 from '../../../assets/image/SupplyChainControlTower_Topreasons_4@2x.png'
+import SupplyChainControlTower_Topreasons_5 from '../../../assets/image/SupplyChainControlTower_Topreasons_5@2x.png'
+import SupplyChainControlTower_Topreasons_6 from '../../../assets/image/SupplyChainControlTower_Topreasons_6@2x.png'
+
 export const section_03_content = [
   {
     img: section_03_01,
@@ -19,38 +26,38 @@ export const section_03_content = [
 
 export const Topreasons_content = [
   {
-    icon: '',
+    icon: SupplyChainControlTower_Topreasons_1,
     span1: 'AI enabled ',
     strong: 'real-time visibility',
     span2: ' to risks and opportunities with ongoing machine learning and prescriptive recommendations.',
   },
   {
-    icon: '',
+    icon: SupplyChainControlTower_Topreasons_2,
     span1: 'Ability to connect to many (unstructured) internal and external ',
     strong: 'data sources.',
     span2: '',
   },
   {
-    icon: '',
+    icon: SupplyChainControlTower_Topreasons_3,
     span1: 'Ability to ',
     strong: 'shape demand in real-time',
     span2: '. Present field opportunities and execute real time D/S matching.',
   },
   {
-    icon: '',
+    icon: SupplyChainControlTower_Topreasons_4,
     span1: '',
     strong: 'Demand alerts',
     span2:
       ' (demand surge scenarios, orders exceeding forecasts, orders below forecasts, large changes to orders, etc.), scheduled receipt alerts (shipments arriving later due to bad weather or port delays), procurement alerts and production alerts.',
   },
   {
-    icon: '',
+    icon: SupplyChainControlTower_Topreasons_5,
     span1: 'Real-time ',
     strong: 'IoT sensor alerting',
     span2: ' for monitoring manufacturing resources (Maintenance, Fault alerts, Energy Consumption,etc)',
   },
   {
-    icon: '',
+    icon: SupplyChainControlTower_Topreasons_6,
     span1: 'Seamlessly ',
     strong: 'connect',
     span2: ' short-term S&OE planning to ',

@@ -80,7 +80,7 @@ const SupplyChainControlTower = () => {
             <div className="flex justify-between Resources mb-rc24">
               <div>
                 <div className="flex items-center text-rc18 mb-rc30">
-                  <span className="w-rc8 h-rc8 bg-blue-700 mr-rc15" /> Resources
+                  <span className="w-rc8 h-rc8 bg-blue-400 mr-rc15" /> Resources
                 </div>
                 <div className="text-rc35 leading-rc42">
                   View our related <span className="font-bold">white papers and use cases.</span>
@@ -108,18 +108,21 @@ const SupplyChainControlTower = () => {
         </section>
         <section className="section_04">
           <div className='flex items-center h-rc18'>
-            <div className='text-rc22 h-rc_110 pr-rc20 tracking-rc7'>Top reasons</div>
+            <div className='text-rc22 pr-rc20 tracking-rc7'>Top reasons</div>
             <div className='flex-1 h-rc1 divider' />
           </div>
-          <div className='text-rc35 mt-rc20 mb-rc45 tracking-rc5'>Why customers choose o9</div>
+          <div className='text-rc35 mt-rc25 mb-rc45 tracking-rc5'>Why customers choose o9</div>
           <div className='flex flex-wrap justify-between'>
             {
-              Topreasons_content.map((item, idx) => <div className='w-rc_30' key={idx}>
-                <div />
-                <p>{item.span1}{item.strong}{item.span2}{item?.span3}{item?.strong2}</p>
+              Topreasons_content.map((item, idx) => <div className='w-rc_30 mb-rc25' key={idx}>
+                <img className="w-rc32 mb-rc12" src={item.icon} alt="" />
+                <p className='text-rc17 leading-rc32'>{item.span1}<strong>{item.strong}</strong>{item.span2}{item?.span3}<strong>{item?.strong2}</strong></p>
               </div>)
             }
           </div>
+        </section>
+        <section className='section_05 bg-black'>
+            <div>xxx</div>
         </section>
       </main>
     </div>
