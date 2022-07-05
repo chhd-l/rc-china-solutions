@@ -108,7 +108,7 @@ const SupplyChainControlTower = () => {
           </div>
         </section>
         <section className="section_04">
-          <DividerLeft>Top reasons</DividerLeft>
+          <DividerLeft SubBox={{backgroundColor: 'rgba(0, 0, 0, 0.2)'}}>Top reasons</DividerLeft>
           <div className="text-rc35 mt-rc25 mb-rc45 tracking-rc5">Why customers choose o9</div>
           <div className="flex flex-wrap justify-between">
             {Topreasons_content.map((item, idx) => (
@@ -126,7 +126,7 @@ const SupplyChainControlTower = () => {
           </div>
         </section>
         <section className="section_05 bg-black text-white">
-          <div>xxx</div>
+          <DividerLeft SubBox={{backgroundColor: 'rgba(255, 255, 255, 0.2)'}}>Use cases</DividerLeft>
         </section>
       </main>
     </div>
