@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { Current } from '../Menu'
-import { resourcesData, solutionsData } from '../Menu/data'
+import { resourcesData, solutionsData } from '../../../../../router/MenuData'
 
 type SubMenuProps = {
   current: Current

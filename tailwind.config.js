@@ -27,7 +27,14 @@ module.exports = {
       },
       yellow: '#ffe400',
     },
-
+    flex: {
+      1: '1 1 0%',
+      auto: '1 1 auto',
+      initial: '0 1 auto',
+      inherit: 'inherit',
+      none: 'none',
+      2: '2 2 0%',
+    },
     extend: {
       width: {
         rc_30: '30%',
@@ -162,6 +169,7 @@ module.exports = {
         rc30: '30px',
         rc35: '35px',
         rc39: '39px',
+        rc40: '40px',
         rc41: '41px',
         rc43: '43px',
         rc44: '44px',
