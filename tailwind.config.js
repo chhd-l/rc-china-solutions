@@ -168,6 +168,7 @@ module.exports = {
         rc354: '354px',
       },
       margin: {
+        _rc7: '-7px',
         _rc15: '-15px',
         rc_2: '2%',
         rc_5: '5%',

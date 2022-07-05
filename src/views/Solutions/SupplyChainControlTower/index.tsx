@@ -5,6 +5,7 @@ import SupplyChainControlTower_bg_02 from '../../../assets/image/SupplyChainCont
 import SupplyChainControlTower_Resources from '../../../assets/image/SupplyChainControlTower_Resources.png'
 import './index.less'
 import { section_03_content, Topreasons_content } from '../modules/SupplyChainControlTower'
+import DividerLeft from '../../../components/DividerLeft'
 
 const SupplyChainControlTower = () => {
   return (
@@ -107,22 +108,25 @@ const SupplyChainControlTower = () => {
           </div>
         </section>
         <section className="section_04">
-          <div className='flex items-center h-rc18'>
-            <div className='text-rc22 pr-rc20 tracking-rc7'>Top reasons</div>
-            <div className='flex-1 h-rc1 divider' />
-          </div>
-          <div className='text-rc35 mt-rc25 mb-rc45 tracking-rc5'>Why customers choose o9</div>
-          <div className='flex flex-wrap justify-between'>
-            {
-              Topreasons_content.map((item, idx) => <div className='w-rc_30 mb-rc25' key={idx}>
+          <DividerLeft>Top reasons</DividerLeft>
+          <div className="text-rc35 mt-rc25 mb-rc45 tracking-rc5">Why customers choose o9</div>
+          <div className="flex flex-wrap justify-between">
+            {Topreasons_content.map((item, idx) => (
+              <div className="w-rc_30 mb-rc25" key={idx}>
                 <img className="w-rc32 mb-rc12" src={item.icon} alt="" />
-                <p className='text-rc17 leading-rc32'>{item.span1}<strong>{item.strong}</strong>{item.span2}{item?.span3}<strong>{item?.strong2}</strong></p>
-              </div>)
-            }
+                <p className="text-rc17 leading-rc32">
+                  {item.span1}
+                  <strong>{item.strong}</strong>
+                  {item.span2}
+                  <strong>{item?.strong2}</strong>
+                  {item?.span3}
+                </p>
+              </div>
+            ))}
           </div>
         </section>
-        <section className='section_05 bg-black'>
-            <div>xxx</div>
+        <section className="section_05 bg-black text-white">
+          <div>xxx</div>
         </section>
       </main>
     </div>
