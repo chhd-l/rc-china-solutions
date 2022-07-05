@@ -4,7 +4,7 @@ import SupplyChainControlTower_bg_01 from '../../../assets/image/SupplyChainCont
 import SupplyChainControlTower_bg_02 from '../../../assets/image/SupplyChainControlTower_bg_02.png'
 import SupplyChainControlTower_Resources from '../../../assets/image/SupplyChainControlTower_Resources.png'
 import './index.less'
-import { section_03_content, Topreasons_content } from '../modules/SupplyChainControlTower'
+import { section_03_content, Topreasons_content, UseCases_content } from '../modules/SupplyChainControlTower'
 import DividerLeft from '../../../components/DividerLeft'
 
 const SupplyChainControlTower = () => {
@@ -108,7 +108,7 @@ const SupplyChainControlTower = () => {
           </div>
         </section>
         <section className="section_04">
-          <DividerLeft SubBox={{backgroundColor: 'rgba(0, 0, 0, 0.2)'}}>Top reasons</DividerLeft>
+          <DividerLeft dividerColor='rgba(0, 0, 0, 0.2)'>Top reasons</DividerLeft>
           <div className="text-rc35 mt-rc25 mb-rc45 tracking-rc5">Why customers choose o9</div>
           <div className="flex flex-wrap justify-between">
             {Topreasons_content.map((item, idx) => (
@@ -126,10 +126,39 @@ const SupplyChainControlTower = () => {
           </div>
         </section>
         <section className="section_05 bg-black text-white">
-          <DividerLeft SubBox={{backgroundColor: 'rgba(255, 255, 255, 0.2)'}}>Use cases</DividerLeft>
-          <div className='text-rc45 max-w-rc1000 leading-rc55'>
-           With the o9 Supply Chain Control tower our customers are able to 
-            <span className='text-gray-999'>take fast, high quality decisions that mitigate risk and capture market opportunities.</span>
+          <DividerLeft dividerColor='rgba(255, 255, 255, 0.2)' ><h5 className='text-white'>Use cases</h5></DividerLeft>
+          <div className="text-rc45 max-w-rc1000 leading-rc55 mt-rc20 mb-rc45">
+            With the o9 Supply Chain Control tower our customers are able to
+            <span className="text-gray-999">
+              take fast, high quality decisions that mitigate risk and capture market opportunities.
+            </span>
+          </div>
+          <div className="flex flex-wrap justify-between">
+            {UseCases_content.map((item, idx) => (
+              <div className="flex w-rc_47 text-rc17 mb-rc8 leading-rc32" key={idx}>
+                <div className="pr-rc15">√</div>
+                <div>
+                  <span className="font-bold">{item.start}</span>
+                  {item.span}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+        <section className="section_06">
+          <div className='max-w-rc800 m-auto text-white'>
+            <div className='text-rc45 leading-rc55'>Plan better. Create an efficient supply chain. Make the planet a healthy place to live</div>
+            <div className='flex justify-between'>
+              <div className='w-rc_47'>
+                An efficient and proactive supply chain makes our planet a more healthy place to live and your employees
+                happier in their jobs.
+              </div>
+              <div className='w-rc_47'>
+                The o9 Control Tower can help reduce costly expediting by proactively sensing demand and supply changes
+                and then recommending optimal transportation modes and flow paths that enable you to meet your customer
+                service objectives without excessive CO2 emissions and suboptimal asset utilization.
+              </div>
+            </div>
           </div>
         </section>
       </main>
