@@ -33,7 +33,7 @@ const SupplyChainControlTower = () => {
         </div>
         <div className="mt-rc18 font-bold text-rc16 cursor-pointer">
           <span>——</span>
-          <span className="ml-rc10">Why choose o9?</span>
+          <span className="ml-rc10">Why choose Deloitte?</span>
           <NectarButton className="ml-rc25" color="#000" hoverBorderColor="red">
             Talk to an expert
           </NectarButton>
@@ -58,9 +58,9 @@ const SupplyChainControlTower = () => {
                 decisions.
               </div>
               <div className="text-rc20">
-                The o9 Supply Chain Control Tower leveraging its Digital “Supply Chain Knowledge Graph”, monitors demand
-                and supply signals in real time, detects problems early and drives automated, demand and supply shaping
-                decisions with intelligent evaluation of resolution options.
+                The Deloitte Supply Chain Control Tower leveraging its Digital “Supply Chain Knowledge Graph”, monitors
+                demand and supply signals in real time, detects problems early and drives automated, demand and supply
+                shaping decisions with intelligent evaluation of resolution options.
               </div>
             </div>
           </div>
@@ -79,9 +79,10 @@ const SupplyChainControlTower = () => {
             </div>
             <div className="border-t border-solid pt-rc20 dividon_02">
               More and more data is becoming available. Real-time signals from supply chain disruptions and market
-              opportunities should alert planners instantly. Leveraging the o9 AI scenario capabilities, solutions to
-              these disruptions are presented and highlighted with lead-time and cost implications. The o9 Control Tower
-              allows enterprises to connect and harmonize planning and execution seamlessly on a common AI platform.
+              opportunities should alert planners instantly. Leveraging the Deloitte AI scenario capabilities, solutions
+              to these disruptions are presented and highlighted with lead-time and cost implications. The Deloitte
+              Control Tower allows enterprises to connect and harmonize planning and execution seamlessly on a common AI
+              platform.
             </div>
           </div>
         </section>
@@ -120,7 +121,7 @@ const SupplyChainControlTower = () => {
           <DividerLeft dividerColor="rgba(0, 0, 0, 0.2)">
             <h5>Top reasons</h5>
           </DividerLeft>
-          <div className="text-rc35 mt-rc25 mb-rc45 tracking-rc5">Why customers choose o9</div>
+          <div className="text-rc35 mt-rc25 mb-rc45 tracking-rc5">Why customers choose Deloitte</div>
           <div className="flex flex-wrap justify-between">
             {Topreasons_content.map((item, idx) => (
               <div className="w-rc_30 mb-rc25" key={idx}>
@@ -141,7 +142,7 @@ const SupplyChainControlTower = () => {
             <h5 className="text-white">Use cases</h5>
           </DividerLeft>
           <div className="text-rc45 max-w-rc1000 leading-rc55 mt-rc20 mb-rc45">
-            With the o9 Supply Chain Control tower our customers are able to
+            With the Deloitte Supply Chain Control tower our customers are able to
             <span className="text-gray-999">
               take fast, high quality decisions that mitigate risk and capture market opportunities.
             </span>
@@ -172,9 +173,9 @@ const SupplyChainControlTower = () => {
                 happier in their jobs.
               </div>
               <div className="w-rc_47 pt-rc15 border-t border-solid border-gray-rgba209">
-                The o9 Control Tower can help reduce costly expediting by proactively sensing demand and supply changes
-                and then recommending optimal transportation modes and flow paths that enable you to meet your customer
-                service objectives without excessive CO2 emissions and suboptimal asset utilization.
+                The Deloitte Control Tower can help reduce costly expediting by proactively sensing demand and supply
+                changes and then recommending optimal transportation modes and flow paths that enable you to meet your
+                customer service objectives without excessive CO2 emissions and suboptimal asset utilization.
               </div>
             </div>
           </div>

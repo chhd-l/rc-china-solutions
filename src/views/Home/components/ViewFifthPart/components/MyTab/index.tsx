@@ -40,10 +40,10 @@ const { TabPane } = Tabs
 
 const MyTab = () => (
   <Tabs defaultActiveKey="1" centered>
-    <TabPane tab="The o9 digital brain platform" key="1">
+    <TabPane tab="The Deloitte digital brain platform" key="1">
       <TabPaneContent
         image={digital_platform}
-        text="The o9 platform uniquely enables companies to make fast and better decisions – by providing one single
+        text="The Deloitte platform uniquely enables companies to make fast and better decisions – by providing one single
           platform for commercial, forecasting, supply chain, and financial planning. All powered by real-time data,
           from internal and external sources."
         buttonText="About the platform"
@@ -52,14 +52,14 @@ const MyTab = () => (
     <TabPane tab="Fastest time-to-value" key="2">
       <TabPaneContent
         image={time_to_value}
-        text="Who has time for multi-year, big bang transformations? o9 makes transformation real with its agile, rapid and iterative delivery methodology supported by world class services and partners"
-        buttonText="Why o9"
+        text="Who has time for multi-year, big bang transformations? Deloitte makes transformation real with its agile, rapid and iterative delivery methodology supported by world class services and partners"
+        buttonText="Why Deloitte"
       />
     </TabPane>
     <TabPane tab="Adoption & Change made simpler" key="3">
       <TabPaneContent
         image={Adoption_and_chage}
-        text="User adoption, process changes, global rollouts are never easy. The o9 platform with amazing usability, embedded training features, makes global rollouts and enterprise wide adoption easier."
+        text="User adoption, process changes, global rollouts are never easy. The Deloitte platform with amazing usability, embedded training features, makes global rollouts and enterprise wide adoption easier."
         buttonText="View solutions"
       />
     </TabPane>

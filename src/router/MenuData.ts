@@ -64,7 +64,7 @@ export const resourcesData = [
         path: '',
       },
       {
-        label: ':o9 Blog',
+        label: ':Deloitte Blog',
         path: '',
       },
       {

@@ -16,7 +16,7 @@ const ViewFourthPart = () => {
         xl={{ span: 6, offset: 1 }}
       >
         <div className=" text-rc24 font-thin leading-6">Aim big, start small, iterate rapidly.</div>
-        <div className=" text-rc40 font-thin">Top 5 :o9 use cases that clients are starting with</div>
+        <div className=" text-rc40 font-thin">Top 5 :Deloitte use cases that clients are starting with</div>
       </Col>
       <Col
         xs={{ span: 18, offset: 3 }}

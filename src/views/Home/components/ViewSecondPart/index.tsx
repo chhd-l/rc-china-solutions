@@ -25,7 +25,7 @@ const ViewSecondPart = () => {
           className="border border-gray-400 border-solid pr-rc20 pl-rc41 pt-rc41 pb-rc20"
         >
           <div className=" text-rc22 mb-rc20">
-            <strong>:o9 Solutions recognized as a Leader </strong>
+            <strong>:Deloitte Solutions recognized as a Leader </strong>
             in the 2022 Gartner® Magic Quadrant™ for Supply Chain Planning Solutions
           </div>
           <SolidButton>Read the report</SolidButton>
@@ -41,7 +41,7 @@ const ViewSecondPart = () => {
           lg={{ span: 8, offset: 3 }}
           xl={{ span: 9, offset: 3 }}
         >
-          <strong>The :o9 Digital Brain:</strong> The platform at the core of your digital transformation.
+          <strong>The :Deloitte Digital Brain:</strong> The platform at the core of your digital transformation.
         </Col>
 
         <Col
@@ -71,7 +71,7 @@ const ViewSecondPart = () => {
       </Row>
       <div className=" mt-rc_2 text-center">
         <NectarButton hoverBorderColor="#000000" color="#000000">
-          Learn more about the o9 Digital Brain
+          Learn more about the Deloitte Digital Brain
         </NectarButton>
       </div>
     </div>
