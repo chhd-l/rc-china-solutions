@@ -17,6 +17,7 @@ module.exports = {
         600: '#f4f4f4',
         700: '#1A191A',
         800: '#4C4C4C',
+        999: '#999',
       },
       blue: {
         400: '#2036FF',
@@ -62,6 +63,9 @@ module.exports = {
         rc1250: '1250px',
         rc1470: '1470px',
       },
+      maxWidth: {
+        rc1000: '1000px !important'
+      },
       height: {
         rc_35: '35%',
         rc_110: '110%',
@@ -106,6 +110,7 @@ module.exports = {
         rc42: '42px',
         rc48: '48px',
         rc51: '51px',
+        rc55: '55px',
         rc60: '60px',
         rc80: '80px',
         rc111: '111px',
