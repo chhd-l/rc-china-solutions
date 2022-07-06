@@ -7,6 +7,7 @@ import Solutions from '../views/Solutions'
 import TheDigitalBrain from '../views/Solutions/TheDigitalBrain'
 import DemandPlanning from '../views/Solutions/DemandPlanning'
 import Platform from '../views/Solutions/Platform'
+import Sustainability from '../views/Solutions/Sustainability'
 
 const routers: RouteObject[] = [
   {
@@ -39,6 +40,10 @@ const routers: RouteObject[] = [
           {
             path: 'platform',
             element: <Platform />,
+          },
+          {
+            path: 'sustainability',
+            element: <Sustainability />,
           },
         ],
       },

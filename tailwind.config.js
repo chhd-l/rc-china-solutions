@@ -58,6 +58,7 @@ module.exports = {
         rc97: '97px',
         rc100: '100px',
         rc212: '212px',
+        rc200: '200px',
         rc213: '213px',
         rc250: '250px',
         rc273: '273px',
@@ -86,7 +87,7 @@ module.exports = {
         rc1470: '1470px',
       },
       maxWidth: {
-        rc800: '800px !important',
+        rc900: '900px !important',
         rc1000: '1000px !important',
       },
       height: {
@@ -184,6 +185,7 @@ module.exports = {
         rc_15: '15%',
         rc4: '4px',
         rc5: '5px',
+        rc12: '12px',
         rc14: '14px',
         rc15: '15px !important',
         rc20: '20px',

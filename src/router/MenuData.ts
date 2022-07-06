@@ -13,7 +13,7 @@ export const solutionsData = [
       },
       {
         label: 'Sustainability',
-        path: '',
+        path: '/solutions/sustainability',
       },
       {
         label: 'Supply Chain Control Tower',

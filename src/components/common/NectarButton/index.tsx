@@ -16,6 +16,7 @@ export const NectarButton = styled.div<NectarButtonProps>`
   border-radius: 30px;
   cursor: pointer;
   display: inline-block;
+  transition: all .3s ease;
   :hover {
     border: 3px solid ${(props) => props.color || '#ffffff'};
   }
