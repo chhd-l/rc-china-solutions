@@ -1,17 +1,17 @@
-import SupplyChainControlTower_bg_01 from '../../../assets/image/SupplyChainControlTower_bg_01.png'
+import DemandPlanning_section_01_bg from '../../../assets/image/DemandPlanning_section_01_bg.png'
 import SupplyChainControlTower_bg_02 from '../../../assets/image/SupplyChainControlTower_bg_02.png'
-import SupplyChainControlTower_Resources from '../../../assets/image/SupplyChainControlTower_Resources.png'
 import SupplyChainControlTower_UseCases_1 from '../../../assets/image/SupplyChainControlTower_UseCases_1.png'
 import SupplyChainControlTower_section_07 from '../../../assets/image/SupplyChainControlTower_section_07.png'
 import SupplyChainControlTower_leftIcon from '../../../assets/image/SupplyChainControlTower_leftIcon.png'
 import SupplyChainControlTowerLogo from '../../../assets/image/SupplyChainControlTower_logo@2x.png'
 import './index.less'
-import { section_03_content, Topreasons_content, UseCases_content } from '../modules/SupplyChainControlTower'
+import { Topreasons_content, UseCases_content } from '../modules/SupplyChainControlTower'
 import DividerLeft from '../../../components/DividerLeft'
 import { Input, Select } from 'antd'
 import SolutionsPlanMoudlu from '../../../components/Solutions/PlanMoudlu/SolutionsPlanMoudlu'
 import TopReasons from '../../../components/Solutions/TopReasons/TopReasons'
 import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/SolutionsHeader'
+import Sections from '../../../components/Solutions/Sections/Sections'
 
 const DemandPlanning = () => {
   return (
@@ -27,76 +27,19 @@ const DemandPlanning = () => {
         }
       />
       <main>
-        <section className="bg-black text-white section_01">
-          <div className="px-rc_15 mx-_rc15">
-            <div className="px-rc35">
-              <div className="relative bg_1">
-                <img src={SupplyChainControlTower_bg_01} alt="" />
-              </div>
-              <div className="text-rc45 mb-rc40">
-                Sense demand and supply changes across the network and respond in real time with optimal, automated
-                decisions.
-              </div>
-              <div className="text-rc20">
-                The Deloitte Supply Chain Control Tower leveraging its Digital “Supply Chain Knowledge Graph”, monitors
-                demand and supply signals in real time, detects problems early and drives automated, demand and supply
-                shaping decisions with intelligent evaluation of resolution options.
-              </div>
+        <Sections
+          section_01_video={
+            <div className="relative bg_1">
+              <img src={DemandPlanning_section_01_bg} alt="" />
             </div>
-          </div>
-        </section>
-        <section className="relative section_02">
-          <div className="absolute m-auto bg_2">
-            <img src={SupplyChainControlTower_bg_02} alt="" />
-          </div>
-          <div className="flex pl-rc_8 pr-rc_8 text-rc17">
-            <div className="pl-rc35 pr-rc35">
-              <div className="text-rc35">AI Powered Supply Chain Control Tower</div>
-              <div>
-                Disruptions and market volatility are increasing exponentially. Proactively manage risk and
-                opportunities by sensing and managing demand and supply on an AI platform.
-              </div>
-            </div>
-            <div className="border-t border-solid pt-rc20 dividon_02">
-              More and more data is becoming available. Real-time signals from supply chain disruptions and market
-              opportunities should alert planners instantly. Leveraging the Deloitte AI scenario capabilities, solutions
-              to these disruptions are presented and highlighted with lead-time and cost implications. The Deloitte
-              Control Tower allows enterprises to connect and harmonize planning and execution seamlessly on a common AI
-              platform.
-            </div>
-          </div>
-        </section>
-        <section className="section_03 text-white">
-          <div className="bg-black">
-            <div className="flex justify-between Resources mb-rc24">
-              <div>
-                <div className="flex items-center text-rc18 mb-rc30">
-                  <span className="w-rc8 h-rc8 bg-blue-400 mr-rc15" /> Resources
-                </div>
-                <div className="text-rc35 leading-rc42">
-                  View our related <span className="font-bold">white papers and use cases.</span>
-                </div>
-              </div>
-              <div className="flex-1 flex">
-                {section_03_content.map((item, idx) => (
-                  <div
-                    key={idx}
-                    className={`${idx === 1 && 'ml-rc10 mr-rc10'} bg-gray-2a2a2a h-rc300 flex flex-col justify-between`}
-                  >
-                    <img src={item.img} alt="" />
-                    <div className="flex-1 p-rc20 text-rc16">{item.span}</div>
-                    <div className="ResourceBtn text-rc14 flex items-center cursor-pointer">
-                      <img className="w-rc11 mr-rc5" src={SupplyChainControlTower_Resources} alt="" /> View Resource
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="flex justify-end items-center">
-              <div className="text-rc16 pb-rc4 cursor-pointer Allrelatedresources">All related resources</div>
-            </div>
-          </div>
-        </section>
+          }
+          section_01_text1="Improve forecast accuracy and sales adoption. Strengthen alignment of sales, product, supply chain and finance organizations."
+          section_01_text2="o9’s demand planning software is not just helping organizations predict demand better, it is also helping them sense, analyze, plan and shape demand to optimize both short-term and long-term sales and margin performance."
+          section_02_video={SupplyChainControlTower_bg_02}
+          section_02_text1="Drive significant bottom-line value"
+          section_02_text2="By improving forecasts based on leading indicators while providing early visibility to risks and opportunities."
+          section_02_text3="Scattered market visibility and spreadsheets make responding to market changes problematic. o9’s AI-powered, digital solution for demand planning features collaborative analytics, planning and continuous learning that helps your organization eliminate poorly made demand decisions."
+        />
         <TopReasons spans={Topreasons_content} />
         <section className="section_05 bg-black text-white">
           <DividerLeft dividerColor="rgba(255, 255, 255, 0.2)">

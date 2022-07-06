@@ -12,6 +12,7 @@ import { Input, Select } from 'antd'
 import SolutionsPlanMoudlu from '../../../components/Solutions/PlanMoudlu/SolutionsPlanMoudlu'
 import TopReasons from '../../../components/Solutions/TopReasons/TopReasons'
 import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/SolutionsHeader'
+import Sections from '../../../components/Solutions/Sections/Sections'
 
 const SupplyChainControlTower = () => {
   return (
@@ -27,12 +28,16 @@ const SupplyChainControlTower = () => {
         }
       />
       <main>
-        <section className="bg-black text-white section_01">
+        {/* <section className="bg-black text-white section_01">
           <div className="px-rc_15 mx-_rc15">
             <div className="px-rc35">
               <div className="relative bg_1">
                 <img src={SupplyChainControlTower_bg_01} alt="" />
               </div>
+            </div>
+          </div>
+          <div className="px-rc_15 mx-_rc15">
+            <div className="px-rc35">
               <div className="text-rc45 mb-rc40">
                 Sense demand and supply changes across the network and respond in real time with optimal, automated
                 decisions.
@@ -65,7 +70,24 @@ const SupplyChainControlTower = () => {
               platform.
             </div>
           </div>
-        </section>
+        </section> */}
+        <Sections
+          section_01_video={
+            <div className="px-rc_15 mx-_rc15">
+              <div className="px-rc35">
+                <div className="relative bg_1">
+                  <img src={SupplyChainControlTower_bg_01} alt="" />
+                </div>
+              </div>
+            </div>
+          }
+          section_01_text1="Sense demand and supply changes across the network and respond in real time with optimal, automated decisions."
+          section_01_text2="The Deloitte Supply Chain Control Tower leveraging its Digital “Supply Chain Knowledge Graph”, monitors demand and supply signals in real time, detects problems early and drives automated, demand and supply shaping decisions with intelligent evaluation of resolution options."
+          section_02_video={SupplyChainControlTower_bg_02}
+          section_02_text2="Disruptions and market volatility are increasing exponentially. Proactively manage risk and opportunities by sensing and managing demand and supply on an AI platform."
+          section_02_text1="AI Powered Supply Chain Control Tower"
+          section_02_text3="More and more data is becoming available. Real-time signals from supply chain disruptions and market opportunities should alert planners instantly. Leveraging the Deloitte AI scenario capabilities, solutions to these disruptions are presented and highlighted with lead-time and cost implications. The Deloitte Control Tower allows enterprises to connect and harmonize planning and execution seamlessly on a common AI platform."
+        />
         <section className="section_03 text-white">
           <div className="bg-black">
             <div className="flex justify-between Resources mb-rc24">
