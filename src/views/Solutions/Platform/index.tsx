@@ -40,7 +40,15 @@ const Platform = () => {
             </a>
           </div>
         </Col>
-        <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 19 }} lg={{ span: 18 }} xl={{ span: 13 }}>
+        <Col
+          xs={{ span: 18 }}
+          sm={{ span: 16 }}
+          md={{ span: 19 }}
+          lg={{ span: 18 }}
+          xl={{ span: 13 }}
+          id="content"
+          // className="animate__animated animate__fadeInDown"
+        >
           <p className=" text-white text-rc45 mt-rc_7 leading-rc56 pb-rc_7">
             Deploy out of the box planning & analytics solutions and{' '}
             <span className=" text-gray-999">
