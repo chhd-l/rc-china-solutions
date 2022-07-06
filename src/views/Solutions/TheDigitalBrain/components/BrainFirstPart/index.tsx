@@ -4,7 +4,7 @@ import { brainData } from '../../../modules/TheDigitalBrain'
 
 const BrainFirstPart = () => {
   return (
-    <Row gutter={[0, 100]} className="border-b border-gray-E4E4E4">
+    <Row gutter={[0, 100]}>
       <Col span={24}>
         <div className="">
           <video loop width={1800} autoPlay muted playsInline preload="auto" height={700}>

@@ -224,6 +224,7 @@ module.exports = {
         rc28: '28px',
         rc30: '30px',
         rc33: '33px',
+        rc35: '35px',
         rc40: '40px',
         rc43: '43px',
         rc45: '45px',
