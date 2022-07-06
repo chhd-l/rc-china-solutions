@@ -1,6 +1,7 @@
 export const solutionsData = [
   {
     title: 'Top solutions',
+    path: '/solutions',
     list: [
       {
         label: 'Demand Planning',
@@ -34,6 +35,7 @@ export const solutionsData = [
   },
   {
     title: 'Platform',
+    path: '/solutions/platform',
     list: [
       {
         label: 'DTC platform',

@@ -23,7 +23,6 @@ export const Menu = () => {
   const navigate = useNavigate()
   const [current, setCurrent] = useState<Current>('default')
   const getCurrent = (key: Current) => setCurrent(key)
-
   return (
     <div className="flex flex-row justify-center  h-full">
       {MenuData.map((item) => (
@@ -33,7 +32,7 @@ export const Menu = () => {
           onMouseEnter={() => setCurrent(item.label)}
           onMouseLeave={() => setCurrent('default')}
         >
-          <span>{item.label}</span>
+          {item.label}
           {<SubMenu current={current} getCurrent={getCurrent} subMenuData={item.children} />}
         </MenuItem>
       ))}

@@ -18,7 +18,7 @@ export const ViewPortDesktop = () => {
           </div>
           <NectarButton className="mt-rc50">Learn more</NectarButton>
         </div>
-        <video loop className="w-rc691 h-rc479" autoPlay muted playsInline preload="auto">
+        <video className="w-rc691 h-rc479" loop autoPlay muted playsInline preload="auto">
           <source src={EKG_3D_cube_animation} type="video/mp4" />
         </video>
       </div>
