@@ -7,16 +7,11 @@ import SupplyChainControlTower_UseCases_1 from '../../../assets/image/SupplyChai
 import SupplyChainControlTower_section_07 from '../../../assets/image/SupplyChainControlTower_section_07.png'
 import SupplyChainControlTower_leftIcon from '../../../assets/image/SupplyChainControlTower_leftIcon.png'
 import './index.less'
-import {
-  section_03_content,
-  Topreasons_content,
-  UseCases_content,
-} from '../modules/SupplyChainControlTower'
+import { section_03_content, Topreasons_content, UseCases_content } from '../modules/SupplyChainControlTower'
 import DividerLeft from '../../../components/DividerLeft'
-import { Input } from 'antd'
+import { Input, Select } from 'antd'
 
 const SupplyChainControlTower = () => {
-
   return (
     <div className="SupplyChainControlTower">
       <header className="pb-rc132 pl-rc90 pr-rc90">
@@ -210,17 +205,25 @@ const SupplyChainControlTower = () => {
             Get real time visibility. Leverage the o9 Digital Brain in your business.
           </div>
           <div className="flex-1">
-            <Input placeholder="(Company) Email" />
-            <Input placeholder="133 667 552" />
+            <Input className='text-rc17 py-rc15' placeholder="(Company) Email" />
+            <Input
+              placeholder='___ ___ ___'
+              className='text-rc17 inputPhont my-rc16'
+              addonBefore={
+                <Select defaultValue="http://" className="text-rc17 py-rc15">
+                  <Select.Option value="http://">http://</Select.Option>
+                  <Select.Option value="https://">https://</Select.Option>
+                </Select>
+              }
+            />
+            <div className='bg-green00c178 text-white text-rc17 flex justify-center items-center rounded-full py-rc15' >Talk to an expert</div>
           </div>
         </section>
         <section className="section_09">
           <div className="mb-rc45 text-rc35">Related Solutions</div>
           <div className="flex flex-wrap">
-            <div
-              className="group RelatedSolutions_1 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30"
-            >
-              <div className='w-rc100 h-full' />
+            <div className="group RelatedSolutions_1 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30">
+              <div className="w-rc100 h-full" />
               <div>Supply Chain Master Planning</div>
               <img
                 className="transition-all opacity-0 transform -translate-x-1/2 h-rc35 group-hover:translate-x-0 group-hover:opacity-100"
@@ -228,10 +231,8 @@ const SupplyChainControlTower = () => {
                 alt=""
               />
             </div>
-            <div
-              className="group RelatedSolutions_1 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30"
-            >
-              <div className='w-rc100 h-full' />
+            <div className="group RelatedSolutions_1 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30">
+              <div className="w-rc100 h-full" />
               <div>Supply Chain Master Planning</div>
               <img
                 className="transition-all opacity-0 transform -translate-x-1/2 h-rc35 group-hover:translate-x-0 group-hover:opacity-100"
@@ -239,10 +240,8 @@ const SupplyChainControlTower = () => {
                 alt=""
               />
             </div>
-            <div
-              className="group RelatedSolutions_2 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30"
-            >
-              <div className='w-rc100 h-full' />
+            <div className="group RelatedSolutions_2 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30">
+              <div className="w-rc100 h-full" />
               <div>Supply Chain Master Planning</div>
               <img
                 className="transition-all opacity-0 transform -translate-x-1/2 h-rc35 group-hover:translate-x-0 group-hover:opacity-100"
@@ -250,10 +249,8 @@ const SupplyChainControlTower = () => {
                 alt=""
               />
             </div>
-            <div
-              className="group RelatedSolutions_3 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30"
-            >
-              <div className='w-rc100 h-full' />
+            <div className="group RelatedSolutions_3 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30">
+              <div className="w-rc100 h-full" />
               <div>Supply Chain Master Planning</div>
               <img
                 className="transition-all opacity-0 transform -translate-x-1/2 h-rc35 group-hover:translate-x-0 group-hover:opacity-100"
@@ -261,10 +258,8 @@ const SupplyChainControlTower = () => {
                 alt=""
               />
             </div>
-            <div
-              className="group RelatedSolutions_4 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30"
-            >
-              <div className='w-rc100 h-full' />
+            <div className="group RelatedSolutions_4 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30">
+              <div className="w-rc100 h-full" />
               <div>Supply Chain Master Planning</div>
               <img
                 className="opacity-0 transform -translate-x-1/2 h-rc35 group-hover:translate-x-0 group-hover:opacity-100"
