@@ -5,6 +5,7 @@ module.exports = {
     colors: {
       bgGreen: '#EEF1E6',
       green: '#6CA100',
+      green00c178: '#00c178',
       black: '#000000',
       white: '#FFFFFF',
       gray: {
@@ -142,7 +143,7 @@ module.exports = {
         rc12: '12px',
         rc14: '14px',
         rc16: '16px',
-        rc17: '17px',
+        rc17: '17px !important',
         rc18: '18px',
         rc20: '20px',
         rc22: '22px',
@@ -173,7 +174,7 @@ module.exports = {
         rc4: '4px',
         rc5: '5px',
         rc14: '14px',
-        rc15: '15px',
+        rc15: '15px !important',
         rc20: '20px',
         rc24: '24px',
         rc25: '25px',
@@ -216,6 +217,7 @@ module.exports = {
         rc10: '10px',
         rc12: '12px',
         rc15: '15px',
+        rc16: '16px',
         rc18: '18px',
         rc20: '20px',
         rc24: '24px',
