@@ -6,29 +6,18 @@ import { NectarButton } from '../../../../../../components/common/NectarButton'
 import './index.less'
 
 type TabPaneContentProps = {
+  // tabTitle: string
   image: string
   text: string
   buttonText: string
 }
 const TabPaneContent = ({ image, text, buttonText }: TabPaneContentProps) => {
   return (
-    <Row>
-      <Col
-        xs={{ span: 18, offset: 3 }}
-        sm={{ span: 16, offset: 4 }}
-        md={{ span: 14, offset: 5 }}
-        lg={{ span: 8, offset: 3 }}
-        xl={{ span: 13, offset: 0 }}
-      >
+    <Row justify="center" gutter={40}>
+      <Col xs={{ span: 18 }} sm={{ span: 20 }} md={{ span: 20 }} lg={{ span: 12 }} xl={{ span: 13 }}>
         <img src={image} alt="" />
       </Col>
-      <Col
-        xs={{ span: 18, offset: 3 }}
-        sm={{ span: 16, offset: 4 }}
-        md={{ span: 14, offset: 5 }}
-        lg={{ span: 8, offset: 3 }}
-        xl={{ span: 10, offset: 1 }}
-      >
+      <Col xs={{ span: 18 }} sm={{ span: 20 }} md={{ span: 20 }} lg={{ span: 12 }} xl={{ span: 10 }}>
         <div className="text-rc17 font-light mb-rc30">{text}</div>
         <NectarButton color="#000000">{buttonText}</NectarButton>
       </Col>

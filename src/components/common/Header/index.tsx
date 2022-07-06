@@ -11,7 +11,8 @@ export const Header = () => {
     <HeaderBox>
       <img src={LOGO_white} alt="" className="h-rc18 w-rc97 cursor-pointer" onClick={() => navigate('/')} />
       <Menu />
-      <NectarButton borderColor="#0037ff">Request a demo</NectarButton>
+      <span></span>
+      {/* <NectarButton borderColor="#0037ff">Request a demo</NectarButton> */}
     </HeaderBox>
   )
 }

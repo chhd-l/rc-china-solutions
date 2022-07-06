@@ -7,23 +7,11 @@ import { NectarButton } from '../../../../components/common/NectarButton'
 const ViewFifthPart = () => {
   return (
     <>
-      <Row className=" bg-white text-rc40 font-light text-left mt-rc_10" gutter={[0, 48]}>
-        <Col
-          xs={{ span: 18, offset: 3 }}
-          sm={{ span: 16, offset: 4 }}
-          md={{ span: 14, offset: 5 }}
-          lg={{ span: 8, offset: 3 }}
-          xl={{ span: 16, offset: 4 }}
-        >
+      <Row className=" bg-white text-rc40 font-light text-left mt-rc_10" gutter={[0, 48]} justify="center">
+        <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 18 }} lg={{ span: 16 }} xl={{ span: 16 }}>
           Why are global companies partnering with :Deloitte for their Digital Transformation?
         </Col>
-        <Col
-          xs={{ span: 18, offset: 3 }}
-          sm={{ span: 16, offset: 4 }}
-          md={{ span: 14, offset: 5 }}
-          lg={{ span: 8, offset: 3 }}
-          xl={{ span: 16, offset: 4 }}
-        >
+        <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 18 }} lg={{ span: 16 }} xl={{ span: 16 }}>
           <MyTab />
         </Col>
       </Row>
@@ -35,7 +23,7 @@ const ViewFifthPart = () => {
                 xs={{ span: 18, offset: 3 }}
                 sm={{ span: 16, offset: 4 }}
                 md={{ span: 14, offset: 5 }}
-                lg={{ span: 8, offset: 3 }}
+                lg={{ span: 16, offset: 3 }}
                 xl={{ span: 12, offset: 1 }}
                 className="text-rc40 text-white"
               >
