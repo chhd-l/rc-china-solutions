@@ -1,7 +1,7 @@
 import { Col, Row, Tabs } from 'antd'
-import digitalbrain_data from '../../../../../../../assets/image/digitalbrain-data.svg'
-import digitalbrain_decisions from '../../../../../../../assets/image/digitalbrain-decisions.svg'
-import digitalbrain_knowledge from '../../../../../../../assets/image/digitalbrain-knowledge.svg'
+import digitalbrain_data from '../../../../../assets/image/digitalbrain-data.svg'
+import digitalbrain_decisions from '../../../../../assets/image/digitalbrain-decisions.svg'
+import digitalbrain_knowledge from '../../../../../assets/image/digitalbrain-knowledge.svg'
 import './index.less'
 
 type TabPaneContentProps = {

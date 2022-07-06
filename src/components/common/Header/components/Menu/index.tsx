@@ -33,7 +33,7 @@ export const Menu = () => {
           onMouseEnter={() => setCurrent(item.label)}
           onMouseLeave={() => setCurrent('default')}
         >
-          {item.label}
+          <span>{item.label}</span>
           {<SubMenu current={current} getCurrent={getCurrent} subMenuData={item.children} />}
         </MenuItem>
       ))}
