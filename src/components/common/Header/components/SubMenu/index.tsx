@@ -14,18 +14,26 @@ type Item = {
 }
 
 const SubMenu = ({ current, getCurrent, subMenuData }: SubMenuProps) => {
-  const navigator = useNavigate()
+  const navigate = useNavigate()
   const renderMenuList = (data: typeof subMenuData) => {
     return (
       <>
         {data.map((item) => (
           <div key={item.title} className="ml-rc43">
-            <div className=" text-gray-500 text-rc14 font-bold hover:text-black">{item.title}</div>
+            <div
+              className=" text-gray-500 text-rc14 font-bold hover:text-black"
+              onClick={(e) => {
+                e.stopPropagation()
+                navigate(item.path)
+              }}
+            >
+              {item.title}
+            </div>
             {item.list.map((child: Item) => (
               <div
                 onClick={(e) => {
                   e.stopPropagation()
-                  navigator(child.path)
+                  navigate(child.path)
                   getCurrent('default')
                 }}
                 key={child.label}
