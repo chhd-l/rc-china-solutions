@@ -1,54 +1,39 @@
-import { NectarButton } from '../../../components/common/NectarButton'
-import SupplyChainControlTowerLogo from '../../../assets/image/SupplyChainControlTower_logo@2x.png'
 import SupplyChainControlTower_bg_01 from '../../../assets/image/SupplyChainControlTower_bg_01.png'
 import SupplyChainControlTower_bg_02 from '../../../assets/image/SupplyChainControlTower_bg_02.png'
 import SupplyChainControlTower_Resources from '../../../assets/image/SupplyChainControlTower_Resources.png'
 import SupplyChainControlTower_UseCases_1 from '../../../assets/image/SupplyChainControlTower_UseCases_1.png'
 import SupplyChainControlTower_section_07 from '../../../assets/image/SupplyChainControlTower_section_07.png'
 import SupplyChainControlTower_leftIcon from '../../../assets/image/SupplyChainControlTower_leftIcon.png'
+import SupplyChainControlTowerLogo from '../../../assets/image/SupplyChainControlTower_logo@2x.png'
 import './index.less'
 import { section_03_content, Topreasons_content, UseCases_content } from '../modules/SupplyChainControlTower'
 import DividerLeft from '../../../components/DividerLeft'
 import { Input, Select } from 'antd'
+import SolutionsPlanMoudlu from '../../../components/Solutions/PlanMoudlu/SolutionsPlanMoudlu'
+import TopReasons from '../../../components/Solutions/TopReasons/TopReasons'
+import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/SolutionsHeader'
 
 const SupplyChainControlTower = () => {
   return (
     <div className="SupplyChainControlTower">
-      <header className="pb-rc132 pl-rc90 pr-rc90">
-        <div className="flex items-center justify-between text-rc14 border-b border-gray-400 border-solid pb-rc14">
-          <div className="text-rc28 font-bold">Supply Chain Control Tower Software</div>
+      <SolutionsHeader
+        borderColor="#000"
+        logoImg={SupplyChainControlTowerLogo}
+        title={
           <div>
-            <span className="cursor-pointer">Supply Chain Control Tower</span> —
-            <span className="text-black font-bold"> Supply Chain Control Tower</span>
+            <span className="font-bold">Real time visibility</span>
+            <br /> & automated response at scale
           </div>
-        </div>
-        <div className="text-rc66 leading-rc1_2 headerTitle_1">
-          <span className="font-bold text-black">Real time visibility</span>
-          <br /> & automated response at scale
-        </div>
-        <div className="mt-rc18 font-bold text-rc16 cursor-pointer">
-          <span>——</span>
-          <span className="ml-rc10">Why choose Deloitte?</span>
-          <NectarButton className="ml-rc25" color="#000" hoverBorderColor="red">
-            Talk to an expert
-          </NectarButton>
-        </div>
-        <div>
-          <img className="mt-rc65" src={SupplyChainControlTowerLogo} alt="" />
-          <div className="border border-solid mt-rc15 mb-rc10 dividon_01" />
-          <div className="text-rc14" style={{ color: '#999' }}>
-            Trusted by leaders across industry verticals.
-          </div>
-        </div>
-      </header>
+        }
+      />
       <main>
-        <section className="bg-black text-white pl-rc90 pr-rc90 section_01">
-          <div className=" pl-rc_15 pr-rc_15 ml-_rc15 mr-_rc15">
-            <div className="pl-rc35 pr-rc35">
+        <section className="bg-black text-white section_01">
+          <div className="px-rc_15 mx-_rc15">
+            <div className="px-rc35">
               <div className="relative bg_1">
                 <img src={SupplyChainControlTower_bg_01} alt="" />
               </div>
-              <div className="text-rc45 mt-rc40 mb-rc40">
+              <div className="text-rc45 mb-rc40">
                 Sense demand and supply changes across the network and respond in real time with optimal, automated
                 decisions.
               </div>
@@ -60,8 +45,8 @@ const SupplyChainControlTower = () => {
             </div>
           </div>
         </section>
-        <section className="pl-rc90 pr-rc90 relative section_02">
-          <div className="bg-red-300 absolute m-auto bg_2">
+        <section className="relative section_02">
+          <div className="absolute m-auto bg_2">
             <img src={SupplyChainControlTower_bg_02} alt="" />
           </div>
           <div className="flex pl-rc_8 pr-rc_8 text-rc17">
@@ -112,26 +97,7 @@ const SupplyChainControlTower = () => {
             </div>
           </div>
         </section>
-        <section className="section_04">
-          <DividerLeft dividerColor="rgba(0, 0, 0, 0.2)">
-            <h5>Top reasons</h5>
-          </DividerLeft>
-          <div className="text-rc35 mt-rc25 mb-rc45 tracking-rc5">Why customers choose Deloitte</div>
-          <div className="flex flex-wrap justify-between">
-            {Topreasons_content.map((item, idx) => (
-              <div className="w-rc_30 mb-rc25" key={idx}>
-                <img className="w-rc32 mb-rc12" src={item.icon} alt="" />
-                <p className="text-rc17 leading-rc32">
-                  {item.span1}
-                  <strong>{item.strong}</strong>
-                  {item.span2}
-                  <strong>{item?.strong2}</strong>
-                  {item?.span3}
-                </p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <TopReasons spans={Topreasons_content} />
         <section className="section_05 bg-black text-white">
           <DividerLeft dividerColor="rgba(255, 255, 255, 0.2)">
             <h5 className="text-white">Use cases</h5>
@@ -154,27 +120,12 @@ const SupplyChainControlTower = () => {
             ))}
           </div>
         </section>
-        <section className="section_06 relative overflow-hidden">
-          <div className="using-image absolute top-0 left-0">
-            <div className="section_06_bg" />
-          </div>
-          <div className="max-w-rc800 m-auto text-white">
-            <div className="text-rc45 leading-rc55">
-              Plan better. Create an efficient supply chain. Make the planet a healthy place to live
-            </div>
-            <div className="flex justify-between text-rc17 leading-rc32 mt-rc60">
-              <div className="w-rc_47 pt-rc15 border-t border-solid border-gray-rgba209">
-                An efficient and proactive supply chain makes our planet a more healthy place to live and your employees
-                happier in their jobs.
-              </div>
-              <div className="w-rc_47 pt-rc15 border-t border-solid border-gray-rgba209">
-                The Deloitte Control Tower can help reduce costly expediting by proactively sensing demand and supply
-                changes and then recommending optimal transportation modes and flow paths that enable you to meet your
-                customer service objectives without excessive CO2 emissions and suboptimal asset utilization.
-              </div>
-            </div>
-          </div>
-        </section>
+        <SolutionsPlanMoudlu
+          spans={[
+            'An efficient and proactive supply chain makes our planet a more healthy place to live and your employees happier in their jobs.',
+            'The Deloitte Control Tower can help reduce costly expediting by proactively sensing demand and supply changes and then recommending optimal transportation modes and flow paths that enable you to meet your customer service objectives without excessive CO2 emissions and suboptimal asset utilization.',
+          ]}
+        />
         <section className="section_07 bg-black text-rc17 text-white flex">
           <div className="w-rc517 mr-rc60">
             <img className="mb-rc24" src={SupplyChainControlTower_section_07} alt="" />
@@ -182,14 +133,14 @@ const SupplyChainControlTower = () => {
           </div>
           <div className="leading-rc32 pr-rc35 flex-1">
             <div className="text-rc35 leading-rc43 mb-rc45">
-              The o9 Control Tower enables companies to Sense, Translate, Solve, Execute, and Learn using a robust AI
-              enabled platform.
+              The Deloitte Control Tower enables companies to Sense, Translate, Solve, Execute, and Learn using a robust
+              AI enabled platform.
             </div>
             <div className="mb-rc27">
-              The o9 Control Tower utilizes advanced machine learning that enables superior supply chain results. It
-              begins with “Sense” capabilities that detect internal as well as external demand and supply disruptions.
-              It is followed by “Translate” capabilities which helps to highlight risks and determine the potential
-              impact of the disruption.
+              The Deloitte Control Tower utilizes advanced machine learning that enables superior supply chain results.
+              It begins with “Sense” capabilities that detect internal as well as external demand and supply
+              disruptions. It is followed by “Translate” capabilities which helps to highlight risks and determine the
+              potential impact of the disruption.
             </div>
             <div>
               Next, “Solve” capabilities provide decision support by prescribing resolutions to help mitigate the impact
@@ -202,13 +153,13 @@ const SupplyChainControlTower = () => {
         </section>
         <section className="section_08 flex">
           <div className="mr-rc60 flex-1 text-rc35 leading-rc43">
-            Get real time visibility. Leverage the o9 Digital Brain in your business.
+            Get real time visibility. Leverage the Deloitte Digital Brain in your business.
           </div>
           <div className="flex-1">
-            <Input className='text-rc17 py-rc15' placeholder="(Company) Email" />
+            <Input className="text-rc17 py-rc15" placeholder="(Company) Email" />
             <Input
-              placeholder='___ ___ ___'
-              className='text-rc17 inputPhont my-rc16'
+              placeholder="___ ___ ___"
+              className="text-rc17 inputPhont my-rc16"
               addonBefore={
                 <Select defaultValue="http://" className="text-rc17 py-rc15">
                   <Select.Option value="http://">http://</Select.Option>
@@ -216,7 +167,9 @@ const SupplyChainControlTower = () => {
                 </Select>
               }
             />
-            <div className='bg-green00c178 text-white text-rc17 flex justify-center items-center rounded-full py-rc15' >Talk to an expert</div>
+            <div className="bg-green00c178 text-white text-rc17 flex justify-center items-center rounded-full py-rc15">
+              Talk to an expert
+            </div>
           </div>
         </section>
         <section className="section_09">

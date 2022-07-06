@@ -55,6 +55,7 @@ module.exports = {
         rc51: '51px',
         rc97: '97px',
         rc100: '100px',
+        rc200: '200px',
         rc213: '213px',
         rc273: '273px',
         rc275: '275px',
@@ -82,7 +83,7 @@ module.exports = {
         rc1470: '1470px',
       },
       maxWidth: {
-        rc800: '800px !important',
+        rc900: '900px !important',
         rc1000: '1000px !important',
       },
       height: {
@@ -173,6 +174,7 @@ module.exports = {
         rc_15: '15%',
         rc4: '4px',
         rc5: '5px',
+        rc12: '12px',
         rc14: '14px',
         rc15: '15px !important',
         rc20: '20px',
@@ -226,6 +228,7 @@ module.exports = {
         rc28: '28px',
         rc30: '30px',
         rc33: '33px',
+        rc35: '35px',
         rc40: '40px',
         rc43: '43px',
         rc45: '45px',
