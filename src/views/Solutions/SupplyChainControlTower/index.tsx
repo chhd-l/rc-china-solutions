@@ -1,18 +1,18 @@
 import SupplyChainControlTower_bg_01 from '../../../assets/image/SupplyChainControlTower_bg_01.png'
 import SupplyChainControlTower_bg_02 from '../../../assets/image/SupplyChainControlTower_bg_02.png'
-import SupplyChainControlTower_Resources from '../../../assets/image/SupplyChainControlTower_Resources.png'
-import SupplyChainControlTower_UseCases_1 from '../../../assets/image/SupplyChainControlTower_UseCases_1.png'
-import SupplyChainControlTower_section_07 from '../../../assets/image/SupplyChainControlTower_section_07.png'
 import SupplyChainControlTower_leftIcon from '../../../assets/image/SupplyChainControlTower_leftIcon.png'
 import SupplyChainControlTowerLogo from '../../../assets/image/SupplyChainControlTower_logo@2x.png'
-import './index.less'
-import { section_03_content, Topreasons_content, UseCases_content } from '../modules/SupplyChainControlTower'
-import DividerLeft from '../../../components/DividerLeft'
-import { Input, Select } from 'antd'
+import SupplyChainControlTower_Resources from '../../../assets/image/SupplyChainControlTower_Resources.png'
+import SupplyChainControlTower_section_07 from '../../../assets/image/SupplyChainControlTower_section_07.png'
 import SolutionsPlanMoudlu from '../../../components/Solutions/PlanMoudlu/SolutionsPlanMoudlu'
-import TopReasons from '../../../components/Solutions/TopReasons/TopReasons'
-import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/SolutionsHeader'
 import Sections from '../../../components/Solutions/Sections/Sections'
+import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/SolutionsHeader'
+import TopReasons from '../../../components/Solutions/TopReasons/TopReasons'
+import WpbRow from '../../../components/Solutions/WpbRow/WpbRow'
+import { section_03_content, Topreasons_content, UseCases_content } from '../modules/SupplyChainControlTower'
+import MoudulUseCase from '../../../components/Solutions/MoudulUseCase/MoudulUseCase'
+import './index.less'
+import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
 
 const SupplyChainControlTower = () => {
   return (
@@ -28,49 +28,6 @@ const SupplyChainControlTower = () => {
         }
       />
       <main>
-        {/* <section className="bg-black text-white section_01">
-          <div className="px-rc_15 mx-_rc15">
-            <div className="px-rc35">
-              <div className="relative bg_1">
-                <img src={SupplyChainControlTower_bg_01} alt="" />
-              </div>
-            </div>
-          </div>
-          <div className="px-rc_15 mx-_rc15">
-            <div className="px-rc35">
-              <div className="text-rc45 mb-rc40">
-                Sense demand and supply changes across the network and respond in real time with optimal, automated
-                decisions.
-              </div>
-              <div className="text-rc20">
-                The Deloitte Supply Chain Control Tower leveraging its Digital “Supply Chain Knowledge Graph”, monitors
-                demand and supply signals in real time, detects problems early and drives automated, demand and supply
-                shaping decisions with intelligent evaluation of resolution options.
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="relative section_02">
-          <div className="absolute m-auto bg_2">
-            <img src={SupplyChainControlTower_bg_02} alt="" />
-          </div>
-          <div className="flex pl-rc_8 pr-rc_8 text-rc17">
-            <div className="pl-rc35 pr-rc35">
-              <div className="text-rc35">AI Powered Supply Chain Control Tower</div>
-              <div>
-                Disruptions and market volatility are increasing exponentially. Proactively manage risk and
-                opportunities by sensing and managing demand and supply on an AI platform.
-              </div>
-            </div>
-            <div className="border-t border-solid pt-rc20 dividon_02">
-              More and more data is becoming available. Real-time signals from supply chain disruptions and market
-              opportunities should alert planners instantly. Leveraging the Deloitte AI scenario capabilities, solutions
-              to these disruptions are presented and highlighted with lead-time and cost implications. The Deloitte
-              Control Tower allows enterprises to connect and harmonize planning and execution seamlessly on a common AI
-              platform.
-            </div>
-          </div>
-        </section> */}
         <Sections
           section_01_video={
             <div className="px-rc_15 mx-_rc15">
@@ -120,80 +77,21 @@ const SupplyChainControlTower = () => {
           </div>
         </section>
         <TopReasons spans={Topreasons_content} />
-        <section className="section_05 bg-black text-white">
-          <DividerLeft dividerColor="rgba(255, 255, 255, 0.2)">
-            <h5 className="text-white">Use cases</h5>
-          </DividerLeft>
-          <div className="text-rc45 max-w-rc1000 leading-rc55 mt-rc20 mb-rc45">
-            With the Deloitte Supply Chain Control tower our customers are able to
-            <span className="text-gray-999">
-              take fast, high quality decisions that mitigate risk and capture market opportunities.
-            </span>
-          </div>
-          <div className="flex flex-wrap justify-between">
-            {UseCases_content.map((item, idx) => (
-              <div className="flex w-rc_47 text-rc17 mb-rc8 leading-rc32" key={idx}>
-                <img className="mr-rc15 mt-rc10 h-rc22" src={SupplyChainControlTower_UseCases_1} alt="" />
-                <div>
-                  <span className="font-bold">{item.start}</span>
-                  {item.span}
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
+        <MoudulUseCase spans={UseCases_content} />
         <SolutionsPlanMoudlu
           spans={[
             'An efficient and proactive supply chain makes our planet a more healthy place to live and your employees happier in their jobs.',
             'The Deloitte Control Tower can help reduce costly expediting by proactively sensing demand and supply changes and then recommending optimal transportation modes and flow paths that enable you to meet your customer service objectives without excessive CO2 emissions and suboptimal asset utilization.',
           ]}
         />
-        <section className="section_07 bg-black text-rc17 text-white flex">
-          <div className="w-rc517 mr-rc60">
-            <img className="mb-rc24" src={SupplyChainControlTower_section_07} alt="" />
-            <div className="text-center">Video Example: Unplanned Maintenance</div>
-          </div>
-          <div className="leading-rc32 pr-rc35 flex-1">
-            <div className="text-rc35 leading-rc43 mb-rc45">
-              The Deloitte Control Tower enables companies to Sense, Translate, Solve, Execute, and Learn using a robust
-              AI enabled platform.
-            </div>
-            <div className="mb-rc27">
-              The Deloitte Control Tower utilizes advanced machine learning that enables superior supply chain results.
-              It begins with “Sense” capabilities that detect internal as well as external demand and supply
-              disruptions. It is followed by “Translate” capabilities which helps to highlight risks and determine the
-              potential impact of the disruption.
-            </div>
-            <div>
-              Next, “Solve” capabilities provide decision support by prescribing resolutions to help mitigate the impact
-              of the disruption. These capabilities are enabled with workflow execution orchestration that breaks down
-              organizational silos to make informed decisions faster. Finally, the Control Tower “Learns” from past
-              decisions and resolutions that have been taken and then adjusts future resolution protocols and
-              recommendations for optimal performance.
-            </div>
-          </div>
-        </section>
-        <section className="section_08 flex">
-          <div className="mr-rc60 flex-1 text-rc35 leading-rc43">
-            Get real time visibility. Leverage the Deloitte Digital Brain in your business.
-          </div>
-          <div className="flex-1">
-            <Input className="text-rc17 py-rc15" placeholder="(Company) Email" />
-            <Input
-              placeholder="___ ___ ___"
-              className="text-rc17 inputPhont my-rc16"
-              addonBefore={
-                <Select defaultValue="http://" className="text-rc17 py-rc15">
-                  <Select.Option value="http://">http://</Select.Option>
-                  <Select.Option value="https://">https://</Select.Option>
-                </Select>
-              }
-            />
-            <div className="bg-green00c178 text-white text-rc17 flex justify-center items-center rounded-full py-rc15">
-              Talk to an expert
-            </div>
-          </div>
-        </section>
+        <WpbRow
+          img={SupplyChainControlTower_section_07}
+          title="Video Example: Unplanned Maintenance"
+          span1="The Deloitte Control Tower enables companies to Sense, Translate, Solve, Execute, and Learn using a robust AI enabled platform."
+          span2="The Deloitte Control Tower utilizes advanced machine learning that enables superior supply chain results. It begins with “Sense” capabilities that detect internal as well as external demand and supply disruptions. It is followed by “Translate” capabilities which helps to highlight risks and determine the potential impact of the disruption."
+          span3="Next, “Solve” capabilities provide decision support by prescribing resolutions to help mitigate the impact of the disruption. These capabilities are enabled with workflow execution orchestration that breaks down organizational silos to make informed decisions faster. Finally, the Control Tower “Learns” from past decisions and resolutions that have been taken and then adjusts future resolution protocols and recommendations for optimal performance."
+        />
+        <UserSubmission title='Get real time visibility. Leverage the Deloitte Digital Brain in your business.' />
         <section className="section_09">
           <div className="mb-rc45 text-rc35">Related Solutions</div>
           <div className="flex flex-wrap">

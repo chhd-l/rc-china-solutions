@@ -6,7 +6,7 @@ type SolutionsHeaderType = {
   TopDividerColor?: string
   HidentilteRightText?: boolean
   borderColor?: string
-  logoImg: any
+  logoImg: string
   footerColor?: string
   footerDiviDerColor?: string
   headBg?: string
