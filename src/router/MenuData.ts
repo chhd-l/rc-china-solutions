@@ -31,6 +31,10 @@ export const solutionsData = [
         label: 'Revenue Growth Management',
         path: '',
       },
+      {
+        label: 'Supply Chain & Logistics for Retail',
+        path: '',
+      },
     ],
   },
   {
