@@ -7,7 +7,7 @@ export const ViewPortDesktop = () => {
     <div className="bg-gray-700 py-rc60  px-rc_7">
       <div className="flex flex-row items-start  flex-wrap lg:flex-nowrap">
         <div className=" text-white ">
-          <strong className=" text-7vh">The :Deloitte Digital Brain platform</strong>
+          <strong className=" text-7vh">The Deloitte Digital Brain platform</strong>
           <div className=" text-rc36 font-light leading-rc60 w-4/6">
             Because planning impacts your <strong>P&L</strong> and the <strong>planet.</strong>
           </div>

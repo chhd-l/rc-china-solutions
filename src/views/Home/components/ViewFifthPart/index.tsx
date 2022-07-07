@@ -9,7 +9,7 @@ const ViewFifthPart = () => {
     <>
       <Row className=" bg-white text-rc40 font-light text-left mt-rc_10" gutter={[0, 48]} justify="center">
         <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 18 }} lg={{ span: 16 }} xl={{ span: 16 }}>
-          Why are global companies partnering with :Deloitte for their Digital Transformation?
+          Why are global companies partnering with Deloitte for their Digital Transformation?
         </Col>
         <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 18 }} lg={{ span: 16 }} xl={{ span: 16 }}>
           <MyTab />

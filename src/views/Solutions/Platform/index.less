@@ -4,7 +4,11 @@ from {top:0px;}
 to {top:10px;}
 }
 
-
+@keyframes pulse-1
+{
+  from {top:0px;}
+to {top:10px;}
+}
 .downarrow {
   max-width: 85px !important;
   animation: updown 2s infinite ease-in-out;
@@ -12,3 +16,87 @@ to {top:10px;}
   animation-delay: 2s;
 }
 
+.rightArrow{
+  font-size: 16px;
+  height: 100%;
+  line-height: 27px;
+  position: absolute;
+  left: 0;
+  top: -5px;
+
+  &::before{
+    content: " ";
+    border: 6px solid transparent;
+    border-left-color: #000000;
+    border-radius: 0;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    padding: 0;
+
+  }
+}
+
+.radioPlay{
+  display: block;
+    padding: 12px 30px 12px 13px;
+    background: #ffffff;
+    border-radius: 100px;
+    box-shadow: #00000033 1px 1px 100px;
+    transform: scale(.8);
+    position: absolute;
+    bottom: 50px;
+   &:hover{
+    .play{
+      transform:scale(1.15);
+      transition:all 0.3s ease
+    }
+   }
+      .screen-reader-text{
+        border: 0;
+        clip: rect(1px,1px,1px,1px);
+        clip-path: inset(50%);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute!important;
+        width: 1px;
+        word-wrap: normal!important;
+      }
+      .play{
+      height: 52px;
+    width: 52px;
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    transition: all .4s cubic-bezier(.19,1,.22,1) 0s;
+    .inner-wrap{
+      height: 100%;
+      width: 100%;
+      display: block;
+      &::before{
+        border-radius: 200px;
+        backface-visibility: hidden;
+        height: 100%;
+        width: 100%;
+        display: block;
+        content: '';
+        background-color: #000000!important;
+        transition: all .45s cubic-bezier(.15,.2,.1,1) 0s;
+        -webkit-transition: all .45s cubic-bezier(.15,.2,.1,1) 0s;
+      }
+    }
+      }
+
+     
+      .link-text {
+        display: inline-block;
+        margin-left: 25px;
+        color: #000;
+        vertical-align: middle;
+        h4{
+          margin-bottom: 0 !important;
+        }
+    }
+}
