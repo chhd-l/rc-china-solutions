@@ -29,7 +29,7 @@ export const solutionsData = [
       },
       {
         label: 'Revenue Growth Management',
-        path: '',
+        path: '/solutions/revenue-growth-management',
       },
       {
         label: 'Supply Chain & Logistics for Retail',

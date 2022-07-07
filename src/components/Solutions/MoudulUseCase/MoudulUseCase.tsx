@@ -3,19 +3,21 @@ import SupplyChainControlTower_UseCases_1 from '../../../assets/image/SupplyChai
 import './index.less'
 
 type MoudulUseCaseType = {
-  spans: { start: string; span: string }[]
+  spans: { start: string; span: string; a?: string }[]
+  title?: string
+  span?: string
 }
 
-const MoudulUseCase = ({ spans }: MoudulUseCaseType) => {
+const MoudulUseCase = ({ title, span, spans }: MoudulUseCaseType) => {
   return (
     <section className="MoudulUseCase bg-black text-white">
       <DividerLeft dividerColor="rgba(255, 255, 255, 0.2)">
         <h5 className="text-white">Use cases</h5>
       </DividerLeft>
       <div className="text-rc45 max-w-rc1000 leading-rc55 mt-rc20 mb-rc45">
-        With the Deloitte Supply Chain Control tower our customers are able to
+        {title || 'With the Deloitte Supply Chain Control tower our customers are able to'}
         <span className="text-gray-999">
-          take fast, high quality decisions that mitigate risk and capture market opportunities.
+          {span || 'take fast, high quality decisions that mitigate risk and capture market opportunities.'}
         </span>
       </div>
       <div className="flex flex-wrap justify-between">
@@ -25,6 +27,7 @@ const MoudulUseCase = ({ spans }: MoudulUseCaseType) => {
             <div>
               <span className="font-bold">{item.start}</span>
               {item.span}
+              <span className='underline cursor-pointer'>{item?.a}</span>
             </div>
           </div>
         ))}

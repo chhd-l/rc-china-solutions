@@ -70,7 +70,7 @@ const Sustainability = () => {
         <TopReasons spans={Sustainability__TopReasons} />
         <SolutionsPlanMoudlu
           spans={[
-            'The o9 Sustainability Supply Chain Management capabilities have been built by a team of sustainability, supply chain, and technology experts who have decades of experience across numerous industries. They have a driving passion for enabling organizations to have a positive impact on the planet through technology. Their expertise ensures our software will drive real impact in your business.',
+            'The Deloitte Sustainability Supply Chain Management capabilities have been built by a team of sustainability, supply chain, and technology experts who have decades of experience across numerous industries. They have a driving passion for enabling organizations to have a positive impact on the planet through technology. Their expertise ensures our software will drive real impact in your business.',
           ]}
         />
       </main>
