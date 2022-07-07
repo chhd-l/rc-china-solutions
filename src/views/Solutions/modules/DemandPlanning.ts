@@ -44,3 +44,54 @@ export const DemandPlanningTopReasons = [
     span2: '. o9’s platform provides a 360 view of external and internal drivers of demand, streamlining cross-functional collaboration.',
   },
 ]
+
+export const DemandPlanningUseCase = [
+  {
+    start: '',
+    span: 'Omnichannel, multi-region, large product portfolio planning made simpler'
+  },
+  {
+    start: '',
+    span: 'Multiple types of driver-based forecasting'
+  },
+  {
+    start: '',
+    span: 'Sell-out based forecasting for retail and distribution channels'
+  },
+  {
+    start: '',
+    span: 'Incorporating opportunity pipelines in CRM systems into demand forecasts'
+  },
+  {
+    start: '',
+    span: 'Consensus forecasting made simple'
+  },
+  {
+    start: '',
+    span: 'Cycle-over-cycle forecast change assumptions tracking and collaboration'
+  },
+  {
+    start: '',
+    span: 'Forecast accuracy and bias post-game analysis – increasing accountability'
+  },
+  {
+    start: '',
+    span: 'Range based forecasts – managing risks'
+  },
+  {
+    start: '',
+    span: 'Integration of sales, supply chain and finance forecasts'
+  },
+  {
+    start: '',
+    span: 'Increased sales adoption of demand planning'
+  },
+  {
+    start: '',
+    span: 'Visibility to marketing and promotion initiatives'
+  },
+  {
+    start: '',
+    span: 'Demand-shaping based on supply constraints'
+  },
+]

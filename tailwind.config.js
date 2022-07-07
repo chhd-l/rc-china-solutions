@@ -152,6 +152,7 @@ module.exports = {
       fontSize: {
         rc12: '12px',
         rc14: '14px',
+        rc15: '15px !important',
         rc16: '16px',
         rc17: '17px !important',
         rc18: '18px',
