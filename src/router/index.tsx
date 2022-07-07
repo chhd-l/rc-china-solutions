@@ -11,6 +11,7 @@ import Sustainability from '../views/Solutions/Sustainability'
 import IntegratedBusinessPlanning from '../views/Solutions/IntegratedBusinessPlanning'
 import Security from '../views/Solutions/Security'
 import RevenueGrowthManagement from '../views/Solutions/RevenueGrowthManagement'
+import WhitePapers from '../views/Resources/WhitePapers'
 
 const routers: RouteObject[] = [
   {
@@ -64,6 +65,10 @@ const routers: RouteObject[] = [
           {
             index: true,
             element: <Resources />,
+          },
+          {
+            path: 'white-papers',
+            element: <WhitePapers />,
           },
         ],
       },

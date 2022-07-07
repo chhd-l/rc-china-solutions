@@ -68,7 +68,7 @@ export const resourcesData = [
     list: [
       {
         label: 'White Papers',
-        path: '',
+        path: '/resources/white-papers',
       },
       {
         label: 'Case Studies',
@@ -80,35 +80,6 @@ export const resourcesData = [
       },
       {
         label: 'Events',
-        path: '',
-      },
-    ],
-  },
-  {
-    title: 'aim10x',
-    list: [
-      {
-        label: 'Webinars',
-        path: '',
-      },
-      {
-        label: 'Podcast',
-        path: '',
-      },
-      {
-        label: 'Executive Council',
-        path: '',
-      },
-      {
-        label: 'Innovators Network',
-        path: '',
-      },
-      {
-        label: 'Roundtables',
-        path: '',
-      },
-      {
-        label: 'aim10x blog',
         path: '',
       },
     ],
