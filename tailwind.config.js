@@ -15,6 +15,7 @@ module.exports = {
         E4E4E4: '#E4E4E4',
         e5e6e5: '#e5e6e5',
         F7F7F7: '#F7F7F7',
+        eaeaea: '#eaeaea',
         100: '#E5E5E5',
         200: '#F1F1F1',
         300: '#F2F2F2',
@@ -87,6 +88,7 @@ module.exports = {
         rc1470: '1470px',
       },
       maxWidth: {
+        rc820: '820px !important',
         rc900: '900px !important',
         rc1000: '1000px !important',
       },
@@ -256,8 +258,10 @@ module.exports = {
         rc65: '65px',
         rc80: '80px',
         rc90: '90px',
+        rc100: '100px',
         rc112: '112px',
         rc134: '134px',
+        rc180: '180px',
       },
       textColor: {
         rc_568300: '#568300',

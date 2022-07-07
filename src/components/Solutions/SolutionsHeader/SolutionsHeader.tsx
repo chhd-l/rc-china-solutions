@@ -11,6 +11,7 @@ type SolutionsHeaderType = {
   footerDiviDerColor?: string
   headBg?: string
   title: any
+  titleRight?: any
 }
 
 const SolutionsHeader = ({
@@ -23,6 +24,7 @@ const SolutionsHeader = ({
   footerDiviDerColor,
   headBg,
   title,
+  titleRight,
 }: SolutionsHeaderType) => {
   return (
     <header
@@ -43,15 +45,18 @@ const SolutionsHeader = ({
           </div>
         )}
       </div>
-      <div className="text-rc66 leading-rc1_2 headerTitle_1">
-        {title}
-      </div>
-      <div className="mt-rc18 font-bold text-rc16 cursor-pointer">
-        <span>——</span>
-        <span className="ml-rc10">Why choose Deloitte?</span>
-        <NectarButton className="ml-rc25" color={borderColor}>
-          Talk to an expert
-        </NectarButton>
+      <div className="text-rc66 leading-rc1_2 headerTitle_1 flex items-end">
+        <div className="max-w-rc820 mt-rc180 pr-rc60">
+          {title}
+          <div className="mt-rc18 font-bold text-rc16 cursor-pointer">
+            <span>——</span>
+            <span className="ml-rc10">Why choose Deloitte?</span>
+            <NectarButton className="ml-rc25" color={borderColor}>
+              Talk to an expert
+            </NectarButton>
+          </div>
+        </div>
+        <div className="flex-1">{titleRight}</div>
       </div>
       <div>
         <img className="mt-rc65" src={logoImg} alt="" />

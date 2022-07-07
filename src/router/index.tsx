@@ -9,6 +9,7 @@ import DemandPlanning from '../views/Solutions/DemandPlanning'
 import Platform from '../views/Solutions/Platform'
 import Sustainability from '../views/Solutions/Sustainability'
 import IntegratedBusinessPlanning from '../views/Solutions/IntegratedBusinessPlanning'
+import RevenueGrowthManagement from '../views/Solutions/RevenueGrowthManagement'
 
 const routers: RouteObject[] = [
   {
@@ -49,6 +50,10 @@ const routers: RouteObject[] = [
           {
             path: 'integratedBusinessPlanning',
             element: <IntegratedBusinessPlanning />,
+          },
+          {
+            path: 'revenue-growth-management',
+            element: <RevenueGrowthManagement />,
           },
         ],
       },

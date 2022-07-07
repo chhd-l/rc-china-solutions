@@ -17,6 +17,7 @@ const TopReasons = ({title, spans}: TopReasonsType) => {
         <div className="w-rc_30 mb-rc25" key={idx}>
           <img className="w-rc32 mb-rc12" src={item.icon} alt="" />
           <p className="text-rc17 leading-rc32">
+            <strong>{item.title}</strong><br />
             {item.span1}
             <strong>{item.strong}</strong>
             {item.span2}

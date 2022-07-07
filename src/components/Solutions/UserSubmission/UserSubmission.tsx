@@ -19,7 +19,7 @@ const UserSubmission = ({ title }: { title: any }) => {
             </Select>
           }
         />
-        <div className="bg-green00c178 text-white text-rc17 flex justify-center items-center rounded-full py-rc15">
+        <div className="bg-green00c178 text-white text-rc17 flex justify-center items-center rounded-full py-rc15 hover:opacity-90 transition-all">
           Talk to an expert
         </div>
       </div>

@@ -4,6 +4,7 @@ type SectionsType = {
   section_01_video: any,
   section_01_text1: string,
   section_01_text2: string,
+  section_01_text3?: string,
   section_02_video: any,
   section_02_text1: string,
   section_02_text2: string,
@@ -14,6 +15,7 @@ const Sections = ({
   section_01_video,
   section_01_text1,
   section_01_text2,
+  section_01_text3,
   section_02_video,
   section_02_text1,
   section_02_text2,
@@ -26,7 +28,12 @@ const Sections = ({
         <div className="px-rc_15 mx-_rc15">
           <div className="px-rc35">
             <div className="text-rc45 mb-rc40 leading-rc55">{section_01_text1}</div>
-            <div className="text-rc20">{section_01_text2}</div>
+            <div className="text-rc20 flex">
+              <div className='flex-1'>{section_01_text2}</div>
+              {
+                section_01_text3 && <div className='flex-1 ml-rc60'>{section_01_text3}</div>
+              }
+            </div>
           </div>
         </div>
       </section>
@@ -35,11 +42,11 @@ const Sections = ({
           <img src={section_02_video} alt="" />
         </div>
         <div className="flex pl-rc_8 pr-rc_8 text-rc17 -mt-rc_10">
-          <div className="pl-rc35 pr-rc35">
+          <div className='w-full'>
             <div className="text-rc35 leading-rc43">{section_02_text1}</div>
             <div>{section_02_text2}</div>
           </div>
-          <div className="border-t border-solid pt-rc20 dividon_02">{section_02_text3}</div>
+          <div className="border-t border-solid pt-rc20 ml-rc60">{section_02_text3}</div>
         </div>
       </section>
     </div>
