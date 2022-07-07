@@ -4,9 +4,9 @@ import logos_home_1_1 from '../../../../assets/image/logos-home-1-1.png'
 
 export const ViewPortDesktop = () => {
   return (
-    <div className="bg-gray-700 py-rc60  px-rc_7">
+    <div className="bg-gray-700 py-rc60  px-rc_7 ">
       <div className="flex flex-row items-start  flex-wrap lg:flex-nowrap">
-        <div className=" text-white ">
+        <div className=" text-white animate__animated animate__fadeInUp">
           <strong className=" text-7vh">The Deloitte Digital Brain platform</strong>
           <div className=" text-rc36 font-light leading-rc60 w-4/6">
             Because planning impacts your <strong>P&L</strong> and the <strong>planet.</strong>

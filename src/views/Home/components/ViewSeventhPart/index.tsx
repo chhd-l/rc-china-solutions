@@ -30,23 +30,25 @@ const ViewSeventhPart = () => {
                   md={{ span: 20 }}
                   lg={{ span: 20 }}
                   xl={{ span: 7 }}
-                  className=" bg-gray-200 group mr-8  overflow-hidden"
+                  className="  group mr-8  overflow-hidden"
                   key={item.title}
                 >
-                  <Col span={24} className="relative">
-                    <img src={item.img} alt="" className="w-full h-full rounded-t-lg" />
-                    <FloatingTips className=" transform -translate-y-full group-hover:translate-y-0">
-                      {item.tip}
-                    </FloatingTips>
-                  </Col>
-                  <Col span={24} className="px-rc30 pt-rc30">
-                    <div className="pl-2" style={{ borderLeft: '1px solid #909090' }}>
-                      {item.title}
-                    </div>
-                  </Col>
-                  <Col span={24} className="cursor-pointer  text-rc18 p-rc30 group-hover:underline">
-                    {item.desc}
-                  </Col>
+                  <div className="bg-gray-200    rounded-b-lg">
+                    <Col span={24} className="relative">
+                      <img src={item.img} alt="" className="w-full h-full rounded-t-lg" />
+                      <FloatingTips className=" transform -translate-y-full group-hover:translate-y-0">
+                        {item.tip}
+                      </FloatingTips>
+                    </Col>
+                    <Col span={24} className="px-rc30 pt-rc30">
+                      <div className="pl-2" style={{ borderLeft: '1px solid #909090' }}>
+                        {item.title}
+                      </div>
+                    </Col>
+                    <Col span={24} className="cursor-pointer  text-rc18 p-rc30 group-hover:underline">
+                      {item.desc}
+                    </Col>
+                  </div>
                 </Col>
               ))}
             </Row>
