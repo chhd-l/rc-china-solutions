@@ -188,6 +188,7 @@ module.exports = {
         rc_15: '15%',
         rc4: '4px',
         rc5: '5px',
+        rc10: '10px',
         rc12: '12px',
         rc14: '14px',
         rc15: '15px !important',
