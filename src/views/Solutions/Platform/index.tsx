@@ -1,9 +1,19 @@
 import { Col, Row } from 'antd'
 import arrow_down from '../../../assets/image/arrow-down.svg'
 import The_platform_EKG_1 from '../../../assets/image/The-platform-EKG-1.svg'
-import { tabData_First, tabData_Second } from '../modules/Platform'
+import {
+  analytics_live_decisions,
+  Rapid_integration_connectors,
+  securityEncryption,
+  tabData_First,
+  tabData_Second,
+} from '../modules/Platform'
 import MyTab from './components/MyTab'
 import './index.less'
+import { NectarButton } from '../../../components/common/NectarButton'
+import BlackAndgray from './components/BlackAndgray'
+import rapid from '../../../assets/image/o9-rapid-integration-01.svg'
+import { CaretRightOutlined } from '@ant-design/icons'
 
 const Platform = () => {
   return (
@@ -24,19 +34,41 @@ const Platform = () => {
           </a>
         </Col>
       </Row>
-      <Row justify="center" className="bg-black  mt-rc_10">
-        <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 19 }} lg={{ span: 18 }} xl={{ span: 18 }}>
-          <div className=" mt-_rc10">
+      <Row justify="center" className="bg-black  mt-rc_24">
+        <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 19 }} lg={{ span: 18 }} xl={{ span: 20 }}>
+          <div className=" mt-_rc_24 relative w-full ">
             <a
               href="https://www.youtube.com/watch?v=rmLK2yNDQf8"
               className="h-rc600 w-full flex items-end justify-center"
             >
-              <video loop autoPlay muted playsInline preload="auto" className="w-full h-full">
+              <video
+                loop
+                autoPlay
+                muted
+                playsInline
+                preload="auto"
+                width={'100%'}
+                height={'100%'}
+                className="object-cover"
+              >
                 <source
                   src="https://o9solutions.com/wp-content/uploads/2020/09/o9Solutions-Home-Thumnail-1.mp4"
                   type="video/mp4"
                 ></source>
               </video>
+              <span className="radioPlay">
+                <span className="screen-reader-text" />
+                <span className="play">
+                  <span className="inner-wrap relative">
+                    <span className=" absolute block top-1/2 left-1/2 ml-rc2 transform -translate-x-1/2 -translate-y-1/2">
+                      <CaretRightOutlined style={{ fontSize: 22 }} />
+                    </span>
+                  </span>
+                </span>
+                <span className="link-text">
+                  <h4 className="text-rc24 leading-rc32">Learn about :o9</h4>
+                </span>
+              </span>
             </a>
           </div>
         </Col>
@@ -105,10 +137,10 @@ const Platform = () => {
       </Row>
       <Row justify="center" className="bg-gray-100">
         <Col xs={{ span: 18 }} sm={{ span: 22 }} md={{ span: 19 }} lg={{ span: 18 }} xl={{ span: 14 }}>
-          <p className="text-rc45  mt-rc_15 leading-rc56">
-            Activate impactful AI capabilities on a wide range of applications,{' '}
-            <span className=" text-gray-999"> from prediction to clustering & segmentation.</span>
-          </p>
+          <BlackAndgray
+            black="Activate impactful AI capabilities on a wide range of applications,"
+            gray=" from prediction to clustering & segmentation."
+          />
         </Col>
         <Col xs={{ span: 18 }} sm={{ span: 22 }} md={{ span: 19 }} lg={{ span: 18 }} xl={{ span: 14 }}>
           <Row justify="center">
@@ -152,24 +184,107 @@ const Platform = () => {
             allow to bring existing Python/R models in an easy-to-use production system
           </p>
         </Col>
-        <Col
-          xs={{ span: 18 }}
-          sm={{ span: 22 }}
-          md={{ span: 19 }}
-          lg={{ span: 18 }}
-          xl={{ span: 14 }}
-          className=" pt-rc_5"
-        >
+
+        <Col xs={{ span: 18 }} sm={{ span: 22 }} md={{ span: 19 }} lg={{ span: 18 }} xl={{ span: 14 }}>
           <MyTab paneData={tabData_Second} />
         </Col>
         <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 19 }} lg={{ span: 18 }} xl={{ span: 14 }}>
-          <p className="text-rc45  leading-rc56">
-            No more spinning cursors
-            <span className=" text-gray-999"> when you ask a question or make an edit.</span>
-          </p>
-          <p className="text-rc17 ">
+          <BlackAndgray black="No more spinning cursors" gray=" when you ask a question or make an edit." />
+          <p className="text-rc17 mb-rc50">
             Deloitte delivers unprecedented performance for analytics & live decisions on the platform
           </p>
+        </Col>
+        <Col xs={{ span: 18 }} sm={{ span: 19 }} md={{ span: 19 }} lg={{ span: 18 }} xl={{ span: 14 }}>
+          <Row justify="center" className="mb-rc_19">
+            {analytics_live_decisions.map((item) => (
+              <Col
+                xs={{ span: 18 }}
+                sm={{ span: 16 }}
+                md={{ span: 19 }}
+                lg={{ span: 18 }}
+                xl={{ span: 8 }}
+                key={item.title}
+              >
+                <p className=" text-rc15 border-t  border-black mr-rc30 pt-rc15 font-bold ">{item.title}</p>
+                <ul className=" ">
+                  {item.list.map((child) => (
+                    <li className="text-rc15 relative pl-rc24" key={child}>
+                      <li className="rightArrow" />
+                      {child}
+                    </li>
+                  ))}
+                </ul>
+              </Col>
+            ))}
+          </Row>
+        </Col>
+      </Row>
+      <Row justify="center" className=" bg-gray-100">
+        <Col xs={{ span: 18 }} sm={{ span: 19 }} md={{ span: 19 }} lg={{ span: 18 }} xl={{ span: 14 }}>
+          <p className="text-rc45  mt-rc_15 leading-rc56">
+            Highest level of security and encryption services
+            <span className=" text-gray-999"> to safeguard data whether deploying on a private or public cloud.</span>
+          </p>
+          <Row justify="center">
+            {securityEncryption.map((item) => (
+              <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 19 }} lg={{ span: 18 }} xl={{ span: 12 }}>
+                <p className=" text-rc17 border-t  border-black mr-rc30 pt-rc15 font-bold ">{item.title}</p>
+                <p className=" mb-rc50 text-rc17 ">{item.desc}</p>
+              </Col>
+            ))}
+          </Row>
+        </Col>
+        <Col
+          xs={{ span: 18 }}
+          sm={{ span: 19 }}
+          md={{ span: 19 }}
+          lg={{ span: 18 }}
+          xl={{ span: 14 }}
+          className="text-center pb-rc_10"
+        >
+          <NectarButton color="#000000">Learn more</NectarButton>
+        </Col>
+      </Row>
+      <Row justify="center">
+        <Col xs={{ span: 18 }} sm={{ span: 19 }} md={{ span: 19 }} lg={{ span: 18 }} xl={{ span: 10 }}>
+          <BlackAndgray black="Rapid integration connectors" gray="for high volume cloud and on-premise data hubs." />
+          <p className="text-rc17">
+            Bring together master data and incremental events/triggers that are needed to get comprehensive analytics &
+            visibility.
+          </p>
+
+          <Row justify="center">
+            {Rapid_integration_connectors.map((item) => (
+              <Col
+                xs={{ span: 18 }}
+                sm={{ span: 16 }}
+                md={{ span: 19 }}
+                lg={{ span: 18 }}
+                xl={{ span: 12 }}
+                key={item.title}
+              >
+                <p className=" text-rc15 mr-rc30 pt-rc15 font-bold ">{item.title}</p>
+                <ul className=" ">
+                  {item.list.map((child) => (
+                    <li className="text-rc15 relative pl-rc24" key={child}>
+                      <li className="rightArrow" />
+                      {child}
+                    </li>
+                  ))}
+                </ul>
+              </Col>
+            ))}
+          </Row>
+        </Col>
+        <Col
+          xs={{ span: 18 }}
+          sm={{ span: 19 }}
+          md={{ span: 19 }}
+          lg={{ span: 18 }}
+          xl={{ span: 11 }}
+          className="pb-rc_10"
+        >
+          <img src={rapid} alt="" width={646} height={484} className="mt-rc_15" />
         </Col>
       </Row>
     </div>
