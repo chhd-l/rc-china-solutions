@@ -9,6 +9,7 @@ import DemandPlanning from '../views/Solutions/DemandPlanning'
 import Platform from '../views/Solutions/Platform'
 import Sustainability from '../views/Solutions/Sustainability'
 import IntegratedBusinessPlanning from '../views/Solutions/IntegratedBusinessPlanning'
+import Security from '../views/Solutions/Security'
 
 const routers: RouteObject[] = [
   {
@@ -60,6 +61,10 @@ const routers: RouteObject[] = [
             element: <Resources />,
           },
         ],
+      },
+      {
+        path: 'security',
+        element: <Security />,
       },
     ],
   },

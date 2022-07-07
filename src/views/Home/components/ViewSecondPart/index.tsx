@@ -6,22 +6,16 @@ import { SolidButton } from './components/SolidButton'
 const ViewSecondPart = () => {
   return (
     <div className="bg-white py-rc50  ">
-      <Row>
-        <Col
-          xs={{ span: 16, offset: 4 }}
-          sm={{ span: 16, offset: 4 }}
-          md={{ span: 14, offset: 5 }}
-          lg={{ span: 8, offset: 3 }}
-          xl={{ span: 7, offset: 3 }}
-        >
+      <Row justify="center">
+        <Col xs={{ span: 16 }} sm={{ span: 16 }} md={{ span: 14 }} lg={{ span: 8 }} xl={{ span: 7 }}>
           <img src={leader_logo} alt="" className=" h-full w-full" />
         </Col>
         <Col
-          xs={{ span: 16, offset: 4 }}
-          sm={{ span: 16, offset: 4 }}
-          md={{ span: 14, offset: 5 }}
-          lg={{ span: 10, offset: 0 }}
-          xl={{ span: 11, offset: 0 }}
+          xs={{ span: 16 }}
+          sm={{ span: 16 }}
+          md={{ span: 14 }}
+          lg={{ span: 10 }}
+          xl={{ span: 11 }}
           className="border border-gray-400 border-solid pr-rc20 pl-rc41 pt-rc41 pb-rc20"
         >
           <div className=" text-rc22 mb-rc20">
@@ -32,25 +26,13 @@ const ViewSecondPart = () => {
         </Col>
       </Row>
 
-      <Row className=" mt-rc_11">
-        <Col
-          className=" text-rc40"
-          xs={{ span: 16, offset: 4 }}
-          sm={{ span: 16, offset: 4 }}
-          md={{ span: 14, offset: 5 }}
-          lg={{ span: 8, offset: 3 }}
-          xl={{ span: 9, offset: 3 }}
-        >
-          <strong>The Deloitte Digital Brain:</strong> The platform at the core of your digital transformation.
+      <Row justify="center" className=" mt-rc_11" gutter={20}>
+        <Col xs={{ span: 16 }} sm={{ span: 16 }} md={{ span: 14 }} lg={{ span: 8 }} xl={{ span: 9 }}>
+          <p className=" text-rc40">
+            <strong>The Deloitte Digital Brain:</strong> The platform at the core of your digital transformation.
+          </p>
         </Col>
-
-        <Col
-          xs={{ span: 16, offset: 4 }}
-          sm={{ span: 16, offset: 4 }}
-          md={{ span: 14, offset: 5 }}
-          lg={{ span: 9, offset: 1 }}
-          xl={{ span: 8, offset: 1 }}
-        >
+        <Col xs={{ span: 16 }} sm={{ span: 16 }} md={{ span: 14 }} lg={{ span: 9 }} xl={{ span: 9 }}>
           <div className=" text-rc20 font-thin leading-rc36">
             Are slow and siloed planning capabilities preventing your company from detecting market changes, forecasting
             demand accurately, evaluating demand/supply scenarios, and driving integrated commercial, supply chain and
@@ -58,16 +40,15 @@ const ViewSecondPart = () => {
           </div>
         </Col>
       </Row>
-
-      <Row className=" mt-rc_7">
-        <Col
-          xs={{ span: 16, offset: 4 }}
-          sm={{ span: 16, offset: 4 }}
-          md={{ span: 14, offset: 5 }}
-          lg={{ span: 16, offset: 4 }}
-          xl={{ span: 16, offset: 4 }}
-          className=" bg-black h-rc500"
-        ></Col>
+      <Row justify="center" className=" mt-rc_7">
+        <Col xs={{ span: 16 }} sm={{ span: 16 }} md={{ span: 14 }} lg={{ span: 16 }} xl={{ span: 16 }}>
+          <iframe
+            title="video"
+            width={960}
+            height={540}
+            src="https://fast.wistia.net/embed/iframe/vjop3ng9cl?dnt=1&wvideo=vjop3ng9cl#?secret=3Yjk7CBwwq"
+          />
+        </Col>
       </Row>
       <div className=" mt-rc_2 text-center">
         <NectarButton hoverBorderColor="#000000" color="#000000">

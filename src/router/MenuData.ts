@@ -55,6 +55,11 @@ export const solutionsData = [
       },
     ],
   },
+  {
+    title: 'Revenue Growth Management',
+    path: '/solutions/revenue-growth-management',
+    list: [],
+  },
 ]
 
 export const resourcesData = [
