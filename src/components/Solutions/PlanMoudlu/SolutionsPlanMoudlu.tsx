@@ -1,14 +1,14 @@
-
 import './index.less'
 
 type SolutionsPlanMoudluType = {
   title?: string
   spans?: string[]
+  bg?: boolean
 }
 
-const SolutionsPlanMoudlu = ({title, spans}: SolutionsPlanMoudluType) => {
+const SolutionsPlanMoudlu = ({title, spans, bg = true}: SolutionsPlanMoudluType) => {
     return <section className="SolutionsPlanMoudlu relative overflow-hidden">
-      <div className="using-image absolute top-0 left-0">
+      <div className="using-image absolute top-0 left-0" style={{filter: bg ? 'grayscale(1)' : ''}}>
         <div className="section_06_bg" />
       </div>
       <div className="max-w-rc900 m-auto text-white">

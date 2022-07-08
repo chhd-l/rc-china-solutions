@@ -11,7 +11,7 @@ const Solutions = () => {
         <span>Our solutions,</span> powered by the industry specific knowledge models.
       </div>
       <div className="headerInpput">
-        <Input placeholder="Search by solution or user role..." />
+        <Input placeholder="Search by solution or user role" />
       </div>
       <div className="Management">
         {ManagementItem.map((item, idx) => (

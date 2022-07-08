@@ -41,7 +41,7 @@ const SolutionsHeader = ({
         {!HidentilteRightText && (
           <div>
             <span className="cursor-pointer">Supply Chain Control Tower</span> —
-            <span className="text-black font-bold"> Supply Chain Control Tower</span>
+            <span className="font-bold"> Supply Chain Control Tower</span>
           </div>
         )}
       </div>

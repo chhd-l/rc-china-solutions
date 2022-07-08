@@ -46,7 +46,7 @@ const Sections = ({
             <div className="text-rc35 leading-rc43">{section_02_text1}</div>
             <div>{section_02_text2}</div>
           </div>
-          <div className="border-t border-solid pt-rc20 ml-rc60">{section_02_text3}</div>
+          <div className="border-t border-solid border-gray-999 pt-rc20 ml-rc60">{section_02_text3}</div>
         </div>
       </section>
     </div>

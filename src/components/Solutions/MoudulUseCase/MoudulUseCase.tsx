@@ -6,9 +6,10 @@ type MoudulUseCaseType = {
   spans: { start: string; span: string; a?: string }[]
   title?: string
   span?: string
+  flexOpen?: boolean
 }
 
-const MoudulUseCase = ({ title, span, spans }: MoudulUseCaseType) => {
+const MoudulUseCase = ({ title, span, spans, flexOpen = true }: MoudulUseCaseType) => {
   return (
     <section className="MoudulUseCase bg-black text-white">
       <DividerLeft dividerColor="rgba(255, 255, 255, 0.2)">
@@ -20,9 +21,9 @@ const MoudulUseCase = ({ title, span, spans }: MoudulUseCaseType) => {
           {span || 'take fast, high quality decisions that mitigate risk and capture market opportunities.'}
         </span>
       </div>
-      <div className="flex flex-wrap justify-between">
+      <div className={`${flexOpen && 'flex'} flex-wrap justify-between`}>
         {spans.map((item, idx) => (
-          <div className="flex w-rc_47 text-rc17 mb-rc8 leading-rc32" key={idx}>
+          <div className={`${flexOpen && 'w-rc_47'} flex text-rc17 mb-rc8 leading-rc32`} key={idx}>
             <img className="mr-rc15 mt-rc10 h-rc22" src={SupplyChainControlTower_UseCases_1} alt="" />
             <div>
               <span className="font-bold">{item.start}</span>

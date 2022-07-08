@@ -95,7 +95,7 @@ const SupplyChainControlTower = () => {
         <section className="section_09">
           <div className="mb-rc45 text-rc35">Related Solutions</div>
           <div className="flex flex-wrap">
-            <div className="group RelatedSolutions_1 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30">
+            <div className="transition-all group RelatedSolutions_1 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30">
               <div className="w-rc100 h-full" />
               <div>Supply Chain Master Planning</div>
               <img
@@ -104,7 +104,7 @@ const SupplyChainControlTower = () => {
                 alt=""
               />
             </div>
-            <div className="group RelatedSolutions_1 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30">
+            <div className="transition-all group RelatedSolutions_1 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30">
               <div className="w-rc100 h-full" />
               <div>Supply Chain Master Planning</div>
               <img
@@ -113,7 +113,7 @@ const SupplyChainControlTower = () => {
                 alt=""
               />
             </div>
-            <div className="group RelatedSolutions_2 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30">
+            <div className="transition-all group RelatedSolutions_2 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30">
               <div className="w-rc100 h-full" />
               <div>Supply Chain Master Planning</div>
               <img
@@ -122,7 +122,7 @@ const SupplyChainControlTower = () => {
                 alt=""
               />
             </div>
-            <div className="group RelatedSolutions_3 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30">
+            <div className="transition-all group RelatedSolutions_3 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30">
               <div className="w-rc100 h-full" />
               <div>Supply Chain Master Planning</div>
               <img
@@ -131,11 +131,11 @@ const SupplyChainControlTower = () => {
                 alt=""
               />
             </div>
-            <div className="group RelatedSolutions_4 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30">
+            <div className="transition-all group RelatedSolutions_4 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30">
               <div className="w-rc100 h-full" />
               <div>Supply Chain Master Planning</div>
               <img
-                className="opacity-0 transform -translate-x-1/2 h-rc35 group-hover:translate-x-0 group-hover:opacity-100"
+                className="transition-all opacity-0 transform -translate-x-1/2 h-rc35 group-hover:translate-x-0 group-hover:opacity-100"
                 src={SupplyChainControlTower_leftIcon}
                 alt=""
               />

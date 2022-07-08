@@ -1,5 +1,5 @@
 import logos_home_1_1 from '../../../assets/image/logos-home-1-1.png'
-import Sustainability_section_02_bg from '../../../assets/image/Sustainability_section_02_bg.png'
+import Sustainability_section_02_bg from '../../../assets/image/Sustainability_section_2_bg.png'
 import ReadOurWhitePaper from '../../../assets/image/ReadOurWhitePaper.png'
 import Sustainability_header_bg from '../../../assets/image/Sustainability_header_bg.png'
 import './index.less'
