@@ -3,17 +3,50 @@ import EKG_3D_cube_animation from '../../../assets/video/EKG-3D-cube-animation-5
 import the_digital_brain_bussiness from '../../../assets/image/the-digital-brain-bussiness.png'
 import { brainData } from '../modules/TheDigitalBrain'
 import MyTab from './components/MyTab'
+import './index.less'
 
 const TheDigitalBrain = () => {
   return (
     <>
       <Row gutter={[0, 80]} justify="center">
         <Col span={24}>
-          <video loop className="w-full" autoPlay muted playsInline preload="auto" height={700}>
-            <source src={EKG_3D_cube_animation} type="video/mp4" />
-          </video>
+          <div className=" relative px-rc90">
+            <div className="modal-ready">
+              <div className=" relative w-full pt-rc35 pb-rc70 z-50 mb-0 bg-100%">
+                <div className="video-color-overlay"></div>
+                <div className="nectar-video-wrap">
+                  <div className="h-full">
+                    <video
+                      loop
+                      autoPlay
+                      muted
+                      playsInline
+                      preload="auto"
+                      className=" object-cover opacity-100"
+                      width="100%"
+                      height={700}
+                      src={EKG_3D_cube_animation}
+                    />
+                  </div>
+                </div>
+                <Col span={24} style={{ zIndex: 10 }}>
+                  <Row>
+                    <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 12 }} xl={{ span: 7 }}>
+                      <div className=" text-rc65 text-white text-rc7 leading-rc75 mt-rc100">
+                        The Deloitte Digital Brain
+                      </div>
+                    </Col>
+                    <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 12 }} xl={{ span: 20 }}>
+                      <p className="text-2vh text-white opacity-50 mt-2">
+                        The digital brain is powered by our patented Enterprise Knowledge Graph (EKG)
+                      </p>
+                    </Col>
+                  </Row>
+                </Col>
+              </div>
+            </div>
+          </div>
         </Col>
-
         <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 14 }} lg={{ span: 20 }} xl={{ span: 20 }}>
           <p className="text-rc22 font-light  text-center mb-rc50">
             Are you also facing these common challenges in planning and decision-making?
