@@ -9,17 +9,20 @@ type MoudulUseCaseType = {
   flexOpen?: boolean
 }
 
-const MoudulUseCase = ({ title, span, spans, flexOpen = true }: MoudulUseCaseType) => {
+const MoudulUseCase = ({
+  title = 'With the Deloitte Supply Chain Control tower our customers are able to',
+  span = 'take fast, high quality decisions that mitigate risk and capture market opportunities.',
+  spans,
+  flexOpen = true,
+}: MoudulUseCaseType) => {
   return (
     <section className="MoudulUseCase bg-black text-white">
       <DividerLeft dividerColor="rgba(255, 255, 255, 0.2)">
         <h5 className="text-white">Use cases</h5>
       </DividerLeft>
       <div className="text-rc45 max-w-rc1000 leading-rc55 mt-rc20 mb-rc45">
-        {title || 'With the Deloitte Supply Chain Control tower our customers are able to'}
-        <span className="text-gray-999">
-          {span || 'take fast, high quality decisions that mitigate risk and capture market opportunities.'}
-        </span>
+        {title}
+        <span className="text-gray-999">{span}</span>
       </div>
       <div className={`${flexOpen && 'flex'} flex-wrap justify-between`}>
         {spans.map((item, idx) => (
@@ -28,7 +31,7 @@ const MoudulUseCase = ({ title, span, spans, flexOpen = true }: MoudulUseCaseTyp
             <div>
               <span className="font-bold">{item.start}</span>
               {item.span}
-              <span className='underline cursor-pointer'>{item?.a}</span>
+              <span className="underline cursor-pointer">{item?.a}</span>
             </div>
           </div>
         ))}
