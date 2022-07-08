@@ -13,6 +13,7 @@ import Security from '../views/Solutions/Security'
 import RevenueGrowthManagement from '../views/Solutions/RevenueGrowthManagement'
 import SalesOperationsPlanning from '../views/Solutions/SalesOperationsPlanning'
 import WhitePapers from '../views/Resources/WhitePapers'
+import MasterPlanning from '../views/Solutions/MasterPlanning'
 
 const routers: RouteObject[] = [
   {
@@ -61,6 +62,10 @@ const routers: RouteObject[] = [
           {
             path: 'sales-operations-planning',
             element: <SalesOperationsPlanning />,
+          },
+          {
+            path: 'supply-chain-master-planning',
+            element: <MasterPlanning />,
           },
         ],
       },

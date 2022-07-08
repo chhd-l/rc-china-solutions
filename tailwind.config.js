@@ -227,6 +227,7 @@ module.exports = {
         rc50: '50px',
         rc58: '58px',
         rc60: '60px',
+        rc65: '65px',
         rc67: '67px',
         rc70: '70px',
         rc84: '84px',
