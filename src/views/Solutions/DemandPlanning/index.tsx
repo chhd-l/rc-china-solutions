@@ -58,7 +58,7 @@ const DemandPlanning = () => {
           <span className='font-bold'>See the future. </span>
           Leve Leverage Deloitte’s digital brain in your business.
         </div>} />
-        <section className="section_09">
+        <section className="section_09 text-rc20">
           <div className="mb-rc45 text-rc35">Related Solutions</div>
           <div className="flex flex-wrap">
             <div className="transition-all group RelatedSolutions_1 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30">
