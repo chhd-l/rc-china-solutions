@@ -24,7 +24,7 @@ export const Menu = () => {
   const [current, setCurrent] = useState<Current>('default')
   const getCurrent = (key: Current) => setCurrent(key)
   return (
-    <div className="flex flex-row justify-center  h-full">
+    <div className="flex flex-row justify-center  h-full z-100">
       {MenuData.map((item) => (
         <MenuItem
           key={item.label}

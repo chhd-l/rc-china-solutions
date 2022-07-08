@@ -44,8 +44,8 @@ const ViewSecondPart = () => {
         <Col xs={{ span: 16 }} sm={{ span: 16 }} md={{ span: 14 }} lg={{ span: 16 }} xl={{ span: 16 }}>
           <iframe
             title="video"
-            width={960}
             height={540}
+            className="w-full "
             src="https://fast.wistia.net/embed/iframe/vjop3ng9cl?dnt=1&wvideo=vjop3ng9cl#?secret=3Yjk7CBwwq"
           />
         </Col>
