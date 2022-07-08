@@ -19,8 +19,8 @@ const RevenueGrowthManagement = () => {
     <div className="RevenueGrowthManagement">
       <SolutionsHeader
         borderColor="#000"
+        headerTilte={<div className="text-rc28 font-bold">Revenue Growth Management</div>}
         logoImg={SupplyChainControlTowerLogo}
-        HidentilteRightText={true}
         title={<div className='tracking-rc5'>Deloitte’s fully integrated Revenue Growth Management</div>}
         titleRight={
           <div className="bg-gray-eaeaea mt-rc100 p-rc40 text-rc24">

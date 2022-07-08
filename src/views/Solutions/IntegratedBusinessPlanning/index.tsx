@@ -19,7 +19,11 @@ const IntegratedBusinessPlanning = () => {
       <SolutionsHeader
         borderColor="#fff"
         headerClassName="text-white pb-0"
+        headerTilte={<div className="text-rc28 font-bold">Integrated Business Planning (IBP Software)</div>}
         TopDividerColor="border-gray-999"
+        headerTilteRight={<div>
+          <span className="font-bold">Integrated Business Planning (IBP)</span>
+        </div>}
         headBg={IntegratedBusinessPlanning_header_bg}
         logoImg={logos_home_1_1}
         footerColor="#fff"

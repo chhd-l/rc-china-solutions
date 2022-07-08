@@ -18,11 +18,18 @@ const DemandPlanning = () => {
     <div className="DemandPlanning">
       <SolutionsHeader
         borderColor="#000"
+        headerTilteRight={
+        <div>
+          <span className="cursor-pointer">Revenue Management</span> —
+          <span className="font-bold"> Demand Planning</span>
+        </div>
+        }
+        headerTilte={<strong className="text-rc28">Demand Planning Software</strong>}
         logoImg={SupplyChainControlTowerLogo}
         title={
           <div>
-            <span className="font-bold">Real time visibility</span>
-            <br /> & automated response at scale
+            <span className="font-bold">AI/ML-powered</span>
+            <br />demand planning
           </div>
         }
       />

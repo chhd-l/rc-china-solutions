@@ -19,7 +19,14 @@ const SupplyChainControlTower = () => {
     <div className="SupplyChainControlTower">
       <SolutionsHeader
         borderColor="#000"
+        headerTilte={<div className="text-rc28 font-bold">Supply Chain Control Tower Software</div>}
         logoImg={SupplyChainControlTowerLogo}
+        headerTilteRight={
+          <div>
+            <span className="cursor-pointer">Supply Chain Control Tower</span> —
+            <span className="font-bold"> Supply Chain Control Tower</span>
+          </div>
+        }
         title={
           <div>
             <span className="font-bold">Real time visibility</span>
@@ -91,7 +98,7 @@ const SupplyChainControlTower = () => {
           span2="The Deloitte Control Tower utilizes advanced machine learning that enables superior supply chain results. It begins with “Sense” capabilities that detect internal as well as external demand and supply disruptions. It is followed by “Translate” capabilities which helps to highlight risks and determine the potential impact of the disruption."
           span3="Next, “Solve” capabilities provide decision support by prescribing resolutions to help mitigate the impact of the disruption. These capabilities are enabled with workflow execution orchestration that breaks down organizational silos to make informed decisions faster. Finally, the Control Tower “Learns” from past decisions and resolutions that have been taken and then adjusts future resolution protocols and recommendations for optimal performance."
         />
-        <UserSubmission title='Get real time visibility. Leverage the Deloitte Digital Brain in your business.' />
+        <UserSubmission title="Get real time visibility. Leverage the Deloitte Digital Brain in your business." />
         <section className="section_09 text-rc20">
           <div className="mb-rc45 text-rc35">Related Solutions</div>
           <div className="flex flex-wrap">

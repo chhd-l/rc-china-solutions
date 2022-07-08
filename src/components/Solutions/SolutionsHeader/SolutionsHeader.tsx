@@ -4,7 +4,7 @@ import './indes.less'
 type SolutionsHeaderType = {
   headerClassName?: string
   TopDividerColor?: string
-  HidentilteRightText?: boolean
+  headerTilteRight?: any
   borderColor?: string
   logoImg: string
   footerColor?: string
@@ -12,12 +12,14 @@ type SolutionsHeaderType = {
   headBg?: string
   title: any
   titleRight?: any
+  titleBtn?: any
+  headerTilte: any
 }
 
 const SolutionsHeader = ({
   headerClassName,
   TopDividerColor,
-  HidentilteRightText,
+  headerTilteRight,
   borderColor,
   logoImg,
   footerColor,
@@ -25,6 +27,8 @@ const SolutionsHeader = ({
   headBg,
   title,
   titleRight,
+  headerTilte,
+  titleBtn
 }: SolutionsHeaderType) => {
   return (
     <header
@@ -37,24 +41,21 @@ const SolutionsHeader = ({
           TopDividerColor || 'border-gray-400'
         } border-solid pb-rc14`}
       >
-        <div className="text-rc28 font-bold">Supply Chain Control Tower Software</div>
-        {!HidentilteRightText && (
-          <div>
-            <span className="cursor-pointer">Supply Chain Control Tower</span> —
-            <span className="font-bold"> Supply Chain Control Tower</span>
-          </div>
-        )}
+        {headerTilte}
+        {headerTilteRight}
       </div>
       <div className="text-rc66 leading-rc1_2 headerTitle_1 flex items-end">
         <div className="max-w-rc820 mt-rc180 pr-rc60">
           {title}
-          <div className="mt-rc18 font-bold text-rc16 cursor-pointer">
-            <span>——</span>
-            <span className="ml-rc10">Why choose Deloitte?</span>
-            <NectarButton className="ml-rc25" color={borderColor}>
-              Talk to an expert
-            </NectarButton>
-          </div>
+          {
+            titleBtn || <div className="mt-rc18 font-bold text-rc16 cursor-pointer">
+              <span>——</span>
+              <span className="ml-rc10">Why choose Deloitte?</span>
+              <NectarButton className="ml-rc25" color={borderColor}>
+                Talk to an expert
+              </NectarButton>
+            </div>
+          }
         </div>
         <div className="flex-1">{titleRight}</div>
       </div>

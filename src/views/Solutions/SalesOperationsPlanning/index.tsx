@@ -16,8 +16,13 @@ const SalesOperationsPlanning = () => {
     <div className="SalesOperationsPlanning">
       <SolutionsHeader
         borderColor="#fff"
+        headerTilte={<div className="text-rc28 font-bold">Sales & operations planning (S&OP) software</div>}
         headerClassName="text-white"
         TopDividerColor="border-gray-999"
+        headerTilteRight={<div>
+          <span className="cursor-pointer">Integrated Business Planning (IBP)</span> —
+          <span className="font-bold"> Sales & Operations Planning (S&OP)</span>
+        </div>}
         headBg={SalesOperationsPlanning_header_bg}
         logoImg={logos_home_1_1}
         footerColor="#fff"
