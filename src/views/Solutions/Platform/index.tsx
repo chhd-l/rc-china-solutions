@@ -13,7 +13,7 @@ import { NectarButton } from '../../../components/common/NectarButton'
 import BlackAndgray from './components/BlackAndgray'
 import rapid from '../../../assets/image/o9-rapid-integration-01.svg'
 import { CaretRightOutlined } from '@ant-design/icons'
-import BrounceArrow from '../../../components/ArrowHeader'
+import BrounceArrow from '../../../components/BrounceArrow'
 import { useNavigate } from 'react-router-dom'
 
 const Platform = () => {

@@ -13,8 +13,8 @@ const Sustainability = () => {
     <div className="Sustainability">
       <SolutionsHeader
         headerClassName="text-white"
+        headerTilte={<div className="text-rc28 font-bold">Sustainability</div>}
         TopDividerColor="border-gray-999"
-        HidentilteRightText={true}
         borderColor="#fff"
         logoImg={logos_home_1_1}
         footerColor="#fff"

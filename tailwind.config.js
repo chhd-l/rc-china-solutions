@@ -37,6 +37,9 @@ module.exports = {
         600: '#058CDF',
         700: '#0037ff',
       },
+      purple: {
+        900: 'rgb(116, 51, 204)'
+      },
       yellow: '#ffe400',
     },
     flex: {
@@ -60,10 +63,13 @@ module.exports = {
       width: {
         rc_30: '30%',
         rc_47: '47%',
+        rc_120: '120%',
         rc8: '8px',
+        rc10: '10px',
         rc11: '11px',
         rc12: '12px',
         rc18: '18px',
+        rc22: '22px',
         rc28: '28px',
         rc30: '30px',
         rc32: '32px',
@@ -113,6 +119,7 @@ module.exports = {
         rc_110: '110%',
         rc1: '1px',
         rc8: '8px',
+        rc10: '10px',
         rc14: '14px',
         rc16: '16px',
         rc18: '18px',

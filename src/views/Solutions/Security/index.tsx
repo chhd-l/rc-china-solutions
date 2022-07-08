@@ -1,5 +1,5 @@
 import { Col, Row } from 'antd'
-import BrounceArrow from '../../../components/ArrowHeader'
+import BrounceArrow from '../../../components/BrounceArrow'
 import { SecurityData } from '../modules/Security'
 import soc_Service from '../../../assets/image/SOC-Service-Org_B_Marks_2c_Web-300x274-1.png'
 
