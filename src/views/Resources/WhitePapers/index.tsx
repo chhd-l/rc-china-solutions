@@ -1,5 +1,6 @@
 import { Col, Row } from 'antd'
 import BrounceArrow from '../../../components/ArrowHeader'
+import SearchAndFilter from './components/SearchAndFilter'
 import './index.less'
 
 const WhitePapers = () => {
@@ -59,6 +60,7 @@ const WhitePapers = () => {
                   </p>
                 </Col>
               </Row>
+              <SearchAndFilter />
             </div>
           </div>
         </Col>

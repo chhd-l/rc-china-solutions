@@ -193,6 +193,7 @@ module.exports = {
         rc72: '72px',
         rc86: '86px',
         '7vh': '7vh',
+        '2vh': '2vh',
       },
       letterSpacing: {
         rc5: '.5px',
