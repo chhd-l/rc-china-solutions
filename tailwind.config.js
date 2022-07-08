@@ -9,8 +9,11 @@ module.exports = {
       black: '#000000',
       white: '#FFFFFF',
       '1A191A': '#1A191A',
+      black_73: 'rgba(0,0,0,0.73)',
+      111111: '#111111',
       gray: {
         rgba209: 'rgba(209,209,209,0.38)',
+        rgba255: 'rgba(255,255,255,0.25)',
         '2a2a2a': '#2a2a2a',
         E4E4E4: '#E4E4E4',
         e5e6e5: '#e5e6e5',
@@ -43,6 +46,15 @@ module.exports = {
       inherit: 'inherit',
       none: 'none',
       2: '2 2 0%',
+    },
+    zIndex: {
+      1: 1,
+      2: 2,
+      75: 75,
+      100: 100,
+    },
+    backgroundSize: {
+      '100%': '100%',
     },
     extend: {
       width: {
@@ -88,6 +100,8 @@ module.exports = {
         rc1200: '1200px',
         rc1250: '1250px',
         rc1470: '1470px',
+        rc1800: '1800px',
+        rc100vw: '100vw',
       },
       maxWidth: {
         rc820: '820px !important',
@@ -131,6 +145,7 @@ module.exports = {
         rc480: '480px',
         rc500: '500px',
         rc600: '600px',
+        rc700: '700px',
         rc793: '793px',
         rc1080: '1080px',
         18: '300px',
@@ -210,6 +225,7 @@ module.exports = {
         rc58: '58px',
         rc60: '60px',
         rc67: '67px',
+        rc70: '70px',
         rc84: '84px',
         rc87: '87px',
         rc90: '90px',
@@ -267,6 +283,8 @@ module.exports = {
         rc112: '112px',
         rc134: '134px',
         rc180: '180px',
+        rc200: '200px',
+        _rc50vw: '-50vw !important',
       },
       textColor: {
         rc_568300: '#568300',
