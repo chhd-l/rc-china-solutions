@@ -9,7 +9,7 @@ export const solutionsData = [
       },
       {
         label: 'S&OP',
-        path: '',
+        path: '/solutions/sales-operations-planning',
       },
       {
         label: 'Sustainability',
