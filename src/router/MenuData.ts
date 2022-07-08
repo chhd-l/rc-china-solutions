@@ -25,7 +25,7 @@ export const solutionsData = [
       },
       {
         label: 'Supply Chain Master Planning',
-        path: '',
+        path: '/solutions/supply-chain-master-planning',
       },
       {
         label: 'Revenue Growth Management',
