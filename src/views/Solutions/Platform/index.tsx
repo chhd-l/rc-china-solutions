@@ -14,8 +14,10 @@ import BlackAndgray from './components/BlackAndgray'
 import rapid from '../../../assets/image/o9-rapid-integration-01.svg'
 import { CaretRightOutlined } from '@ant-design/icons'
 import BrounceArrow from '../../../components/ArrowHeader'
+import { useNavigate } from 'react-router-dom'
 
 const Platform = () => {
+  const navigate = useNavigate()
   return (
     <div>
       <Row justify="center">
@@ -225,7 +227,14 @@ const Platform = () => {
           </p>
           <Row justify="center">
             {securityEncryption.map((item) => (
-              <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 19 }} lg={{ span: 18 }} xl={{ span: 12 }}>
+              <Col
+                xs={{ span: 18 }}
+                sm={{ span: 16 }}
+                md={{ span: 19 }}
+                lg={{ span: 18 }}
+                xl={{ span: 12 }}
+                key={item.title}
+              >
                 <p className=" text-rc17 border-t  border-black mr-rc30 pt-rc15 font-bold ">{item.title}</p>
                 <p className=" mb-rc50 text-rc17 ">{item.desc}</p>
               </Col>
@@ -240,7 +249,9 @@ const Platform = () => {
           xl={{ span: 14 }}
           className="text-center pb-rc_10"
         >
-          <NectarButton color="#000000">Learn more</NectarButton>
+          <NectarButton color="#000000" onClick={() => navigate('/security')}>
+            Learn more
+          </NectarButton>
         </Col>
       </Row>
       <Row justify="center">
