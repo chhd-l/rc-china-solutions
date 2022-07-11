@@ -33,7 +33,7 @@ export const solutionsData = [
       },
       {
         label: 'Supply Chain & Logistics for Retail',
-        path: '',
+        path: '/solutions/supply-chain-logistics',
       },
     ],
   },

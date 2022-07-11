@@ -14,6 +14,7 @@ import RevenueGrowthManagement from '../views/Solutions/RevenueGrowthManagement'
 import SalesOperationsPlanning from '../views/Solutions/SalesOperationsPlanning'
 import WhitePapers from '../views/Resources/WhitePapers'
 import MasterPlanning from '../views/Solutions/MasterPlanning'
+import SupplyChainLogistics from '../views/Solutions/SupplyChainLogistics'
 
 const routers: RouteObject[] = [
   {
@@ -66,6 +67,10 @@ const routers: RouteObject[] = [
           {
             path: 'supply-chain-master-planning',
             element: <MasterPlanning />,
+          },
+          {
+            path: 'supply-chain-logistics',
+            element: <SupplyChainLogistics />,
           },
         ],
       },
