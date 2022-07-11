@@ -62,6 +62,7 @@ module.exports = {
     },
     extend: {
       width: {
+        rc_23: '23%',
         rc_30: '30%',
         rc_47: '47%',
         rc_120: '120%',
@@ -243,6 +244,7 @@ module.exports = {
         rc65: '65px',
         rc67: '67px',
         rc70: '70px',
+        rc75: '75px',
         rc84: '84px',
         rc87: '87px',
         rc90: '90px',
@@ -257,6 +259,7 @@ module.exports = {
         rc242: '242px',
         rc325: '325px',
         rc354: '354px',
+        rc415: '415px',
       },
       margin: {
         _rc7: '-7px',
@@ -301,6 +304,7 @@ module.exports = {
         rc64: '64px',
         rc65: '65px',
         rc74: '74px',
+        rc75: '75px',
         rc80: '80px',
         rc90: '90px',
         rc100: '100px',

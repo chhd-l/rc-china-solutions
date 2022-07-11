@@ -15,6 +15,11 @@ import SalesOperationsPlanning from '../views/Solutions/SalesOperationsPlanning'
 import WhitePapers from '../views/Resources/WhitePapers'
 import MasterPlanning from '../views/Solutions/MasterPlanning'
 import SupplyChainLogistics from '../views/Solutions/SupplyChainLogistics'
+import NPI from '../views/Solutions/NPI'
+import MarketIntelligence from '../views/Solutions/MarketIntelligence'
+import CommercialAnalytics from '../views/Solutions/CommercialAnalytics'
+import SMI from '../views/Solutions/SMI'
+import ProductionScheduling from '../views/Solutions/ProductionScheduling'
 
 const routers: RouteObject[] = [
   {
@@ -71,6 +76,26 @@ const routers: RouteObject[] = [
           {
             path: 'supply-chain-logistics',
             element: <SupplyChainLogistics />,
+          },
+          {
+            path: 'npi-planning',
+            element: <NPI />,
+          },
+          {
+            path: 'market-intelligence',
+            element: <MarketIntelligence />,
+          },
+          {
+            path: 'commercial-analytics',
+            element: <CommercialAnalytics />,
+          },
+          {
+            path: 'marketing-effectiveness-planning',
+            element: <SMI />,
+          },
+          {
+            path: 'production-scheduling',
+            element: <ProductionScheduling />,
           },
         ],
       },

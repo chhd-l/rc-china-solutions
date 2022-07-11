@@ -3,7 +3,7 @@ import SupplyChainControlTower_UseCases_1 from '../../../assets/image/SupplyChai
 import './index.less'
 
 type MoudulUseCaseType = {
-  spans: { start: string; span: string; a?: string }[]
+  spans: { title?: string; start: string; span: string; a?: string }[]
   title?: string
   span?: string
   flexOpen?: boolean
@@ -29,6 +29,7 @@ const MoudulUseCase = ({
           <div className={`${flexOpen && 'w-rc_47'} flex text-rc17 mb-rc8 leading-rc32`} key={idx}>
             <img className="mr-rc15 mt-rc10 h-rc22" src={SupplyChainControlTower_UseCases_1} alt="" />
             <div>
+              {item?.title}
               <span className="font-bold">{item.start}</span>
               {item.span}
               <span className="underline cursor-pointer">{item?.a}</span>
