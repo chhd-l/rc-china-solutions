@@ -3,7 +3,7 @@ import BrounceArrow from '../../../components/BounceArrow'
 import SearchAndFilter from './components/SearchAndFilter'
 import './index.less'
 
-const WhitePapers = () => {
+const CaseStudies = () => {
   return (
     <div className=" bg-111111">
       <Row>
@@ -22,15 +22,13 @@ const WhitePapers = () => {
                       className=" object-contain opacity-100"
                       width="100%"
                       height={605}
-                      src="https://o9solutions.com/wp-content/uploads/2020/08/Home-Web-1.mp4"
+                      src="https://o9solutions.com/wp-content/uploads/2021/11/Industry-Header-1.mp4"
                     />
                   </div>
                 </div>
                 <Col span={24} style={{ zIndex: 10 }}>
                   <div>
-                    <p className="text-white text-rc20 border-gray-rgba255 border-b pb-rc20 mb-rc200">
-                      Powered by the Deloitte Digital Brain
-                    </p>
+                    <p className="text-white text-rc20 border-gray-rgba255 border-b pb-rc20 mb-rc60">Case Studies</p>
                   </div>
                   <Row>
                     <Col
@@ -38,28 +36,26 @@ const WhitePapers = () => {
                       sm={{ span: 16 }}
                       md={{ span: 11 }}
                       lg={{ span: 11 }}
-                      xl={{ span: 11 }}
+                      xl={{ span: 14 }}
                       style={{ zIndex: 10 }}
                     >
-                      <p className="text-rc72 text-white text-rc7 leading-rc75">We create awesome content.</p>
+                      <p className="text-rc72 text-white text-rc7 leading-rc75">
+                        Delivering value across industries with the Deloitte Digital Brain
+                      </p>
                     </Col>
-                    <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 12 }}>
+                    <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 10 }}>
                       <BrounceArrow type="white" />
                     </Col>
                   </Row>
                 </Col>
               </div>
-              <Row justify="center" className="mt-rc100">
-                <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 8 }}>
-                  <p className="text-rc45 text-white font-light">Resources</p>
-                </Col>
-                <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 16 }}>
-                  <p className="text-rc17 text-white ">
-                    Read our white papers, use cases, and reports. Filter by your industry, solution, and resource type
-                    to find the content that you are looking for.
+              {/* <Row justify="center" className="mt-rc100">
+                <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 4 }}>
+                  <p className=" text-rc35 text-white font-light  text-left">
+                    Search and <span className=" font-semibold">filter</span> case studies
                   </p>
                 </Col>
-              </Row>
+              </Row> */}
               <SearchAndFilter />
             </div>
           </div>
@@ -69,4 +65,4 @@ const WhitePapers = () => {
   )
 }
 
-export default WhitePapers
+export default CaseStudies

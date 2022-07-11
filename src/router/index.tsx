@@ -15,6 +15,9 @@ import SalesOperationsPlanning from '../views/Solutions/SalesOperationsPlanning'
 import WhitePapers from '../views/Resources/WhitePapers'
 import MasterPlanning from '../views/Solutions/MasterPlanning'
 import SupplyChainLogistics from '../views/Solutions/SupplyChainLogistics'
+import CaseStudies from '../views/Resources/CaseStudies'
+import Blog from '../views/Resources/Blog'
+import Technology from '../views/Solutions/Technology'
 import NPI from '../views/Solutions/NPI'
 import MarketIntelligence from '../views/Solutions/MarketIntelligence'
 import CommercialAnalytics from '../views/Solutions/CommercialAnalytics'
@@ -82,6 +85,10 @@ const routers: RouteObject[] = [
             element: <SupplyChainLogistics />,
           },
           {
+            path: 'technology',
+            element: <Technology />,
+          },
+          {
             path: 'npi-planning',
             element: <NPI />,
           },
@@ -129,6 +136,14 @@ const routers: RouteObject[] = [
           {
             path: 'white-papers',
             element: <WhitePapers />,
+          },
+          {
+            path: 'case-studies',
+            element: <CaseStudies />,
+          },
+          {
+            path: 'blog',
+            element: <Blog />,
           },
         ],
       },

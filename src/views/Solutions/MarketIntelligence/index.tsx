@@ -1,7 +1,7 @@
 import MasterPlanning_Sections_02 from '../../../assets/image/MasterPlanning_Sections_02.png'
 import DemandPlanning_leftIcon from '../../../assets/image/DemandPlanning_leftIcon.png'
 import SupplyChainControlTowerLogo from '../../../assets/image/SupplyChainControlTower_logo@2x.png'
-import BrounceArrow from '../../../components/BrounceArrow'
+import BrounceArrow from '../../../components/BounceArrow'
 import SolutionSEcyion3s from '../../../components/Solutions/SolutionSEcyion3s/SolutionSEcyion3s'
 import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/SolutionsHeader'
 import { MarketIntelligence_Ecyion3s_2, MarketIntelligence_Ecyion3s_3 } from '../modules/MarketIntelligence'
@@ -73,10 +73,12 @@ const MarketIntelligence = () => {
               Click to experience an interactive demo of the art-of-the-possible on o9’s next generation solution for
               Market Intelligence. You will see “live” some of the favored use cases of our clients.
             </div>
-          <NectarButton className="" color="#000">
-            Talk to an expert
-          </NectarButton>
-          <div className='mt-rc15'>The link will require you to login using your existing Microsoft account or you can create one for free</div>
+            <NectarButton className="" color="#000">
+              Talk to an expert
+            </NectarButton>
+            <div className="mt-rc15">
+              The link will require you to login using your existing Microsoft account or you can create one for free
+            </div>
           </div>
         </section>
         <section className="section_09 text-rc20">

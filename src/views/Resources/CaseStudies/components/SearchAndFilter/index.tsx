@@ -1,12 +1,13 @@
-import { Col, Row } from 'antd'
+import { Col, Row, TreeSelect } from 'antd'
 import { SearchInput } from '../SearchInput'
 import { Wrapper } from '../Wrapper'
-import { searchContent, searchItem, SearchValue } from './mockData'
+import { searchContent, searchItem, SearchValue, treeData } from './mockData'
 import { useRequest, useSelections } from 'ahooks'
 import { MyCheckBox } from '../MyCheckBox'
-import MyCart from '../MyCart'
+import CaseStudiesCart from '../CaseStudiesCart'
 import { useState } from 'react'
 import { toLower } from 'lodash'
+import './index.less'
 
 const SearchAndFilter = () => {
   const { isSelected, toggle } = useSelections(SearchValue)
@@ -24,11 +25,28 @@ const SearchAndFilter = () => {
   )
 
   return (
-    <Row>
+    <Row className="my-rc100">
       <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 8 }}>
+        <p className=" text-rc35 text-white font-light  text-left w-rc315">
+          Search and <span className=" font-semibold">filter</span> case studies
+        </p>
         <Wrapper>
-          <p className=" text-rc18">Search Resources</p>
+          <p className=" text-rc18">Search Case Studies</p>
           <SearchInput placeholder="Type to search ..." onChange={(e) => run(e.target.value)} />
+        </Wrapper>
+        <Wrapper>
+          <p className=" text-rc18">Industry</p>
+          {/* <SearchInput placeholder="Type to search ..." onChange={(e) => run(e.target.value)} /> */}
+          <TreeSelect
+            style={{ width: '100%' }}
+            // value={value}
+            showArrow
+            dropdownStyle={{ maxHeight: 400, overflow: 'auto' }}
+            treeData={treeData}
+            placeholder="Please select"
+            treeDefaultExpandAll
+            // onChange={onChange}
+          />
         </Wrapper>
         {searchItem.map((item) => (
           <Wrapper key={item.title}>
@@ -55,7 +73,7 @@ const SearchAndFilter = () => {
         <Row gutter={[20, 20]} align="top">
           {searchData.map((item) => (
             <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 8 }}>
-              <MyCart {...item} />
+              <CaseStudiesCart {...item} />
             </Col>
           ))}
         </Row>

@@ -51,7 +51,7 @@ export const solutionsData = [
       },
       {
         label: 'Technology',
-        path: '',
+        path: '/solutions/technology',
       },
     ],
   },
@@ -72,11 +72,11 @@ export const resourcesData = [
       },
       {
         label: 'Case Studies',
-        path: '',
+        path: '/resources/case-studies',
       },
       {
         label: 'Deloitte Blog',
-        path: '',
+        path: '/resources/blog',
       },
       {
         label: 'Events',

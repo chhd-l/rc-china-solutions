@@ -1,7 +1,7 @@
 import SMI_section_03_img from '../../../assets/image/SMI_section_03_img.png'
 import DemandPlanning_leftIcon from '../../../assets/image/DemandPlanning_leftIcon.png'
 import SupplyChainControlTowerLogo from '../../../assets/image/SupplyChainControlTower_logo@2x.png'
-import BrounceArrow from '../../../components/BrounceArrow'
+import BrounceArrow from '../../../components/BounceArrow'
 import SolutionSEcyion3s from '../../../components/Solutions/SolutionSEcyion3s/SolutionSEcyion3s'
 import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/SolutionsHeader'
 import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
@@ -19,7 +19,8 @@ const SMI = () => {
         logoImg={SupplyChainControlTowerLogo}
         title={
           <div className="w-rc_120 -mt-rc90">
-            Deploy effective marketing <br />initiatives
+            Deploy effective marketing <br />
+            initiatives
           </div>
         }
         titleRight={<BrounceArrow />}

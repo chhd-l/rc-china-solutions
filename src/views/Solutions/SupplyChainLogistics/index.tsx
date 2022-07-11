@@ -1,8 +1,8 @@
 import SupplyChainControlTowerLogo from '../../../assets/image/SupplyChainControlTower_logo@2x.png'
+import BrounceArrow from '../../../components/BounceArrow'
 import blue_left_icon from '../../../assets/image/blue_left_icon@2x.png'
 import bule_1 from '../../../assets/image/bule_1@2x.png'
 import bule_2 from '../../../assets/image/bule_2@2x.png'
-import BrounceArrow from '../../../components/BrounceArrow'
 import { NectarButton } from '../../../components/common/NectarButton'
 import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/SolutionsHeader'
 import { SupplyChainLogistics_content } from '../modules/SupplyChainLogistics'
@@ -57,20 +57,18 @@ const SupplyChainLogistics = () => {
         ))}
       </section>
       <section className="px-rc90 py-rc100 bg-black text-white">
-        <div className='flex'>
-          <div className='text-rc35 leading-rc42 flex-1'>Supply Chain & Logistics Solutions</div>
-          <div className='text-rc17 leading-rc32 flex-1 border-t border-solid border-white'>
-            <div className='py-rc20'>Visualize the Future to Build Iteratively and Rapidly towards the vision. It is the practical way.</div>
+        <div className="flex">
+          <div className="text-rc35 leading-rc42 flex-1">Supply Chain & Logistics Solutions</div>
+          <div className="text-rc17 leading-rc32 flex-1 border-t border-solid border-white">
+            <div className="py-rc20">
+              Visualize the Future to Build Iteratively and Rapidly towards the vision. It is the practical way.
+            </div>
             <div>Departments: CRO, Sales, Marketing, Category Management, Finance</div>
           </div>
         </div>
         <div className="flex flex-wrap mt-rc74">
           <div className="transition-all group RelatedSolutions_1 hover:bg-black flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30">
-            <img
-              className="w-rc100 h-full"
-              src={bule_1}
-              alt=""
-            />
+            <img className="w-rc100 h-full" src={bule_1} alt="" />
             <div>Supply Chain Master Planning</div>
             <img
               className="transition-all opacity-0 transform -translate-x-1/2 h-rc35 group-hover:translate-x-0 group-hover:opacity-100"
@@ -79,11 +77,7 @@ const SupplyChainLogistics = () => {
             />
           </div>
           <div className="transition-all group RelatedSolutions_2 hover:bg-black flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30">
-            <img
-              className="w-rc100 h-full"
-              src={bule_2}
-              alt=""
-            />
+            <img className="w-rc100 h-full" src={bule_2} alt="" />
             <div>Supply Chain Master Planning</div>
             <img
               className="transition-all opacity-0 transform -translate-x-1/2 h-rc35 group-hover:translate-x-0 group-hover:opacity-100"

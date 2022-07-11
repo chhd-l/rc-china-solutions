@@ -1,0 +1,66 @@
+.modal-ready{
+
+  &::selection{
+      background: var(--blue);
+      color: black !important;
+  }
+
+  .using-image{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    .img{
+      background-image: url(https://o9solutions.com/wp-content/uploads/2021/09/alex-knight-2EJCSULRwC8-unsplash.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-color: #000000;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+  }
+    }
+    .video-color-overlay{
+      opacity: 0.7;
+      margin-left: -50vw !important;
+    width: 100vw !important;
+    position: absolute;
+    backface-visibility: hidden;
+    top: 0;
+    padding-bottom: 0;
+    z-index: 3;
+    height: 100%;
+    }
+    .nectar-video-wrap{
+      opacity: 1;
+    height: 100%;
+    margin-left: -50vw;
+    left: 50%;
+    width: 100vw!important;
+    padding-bottom: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    // transition: opacity .25s ease;
+    }
+}
+
+.row-bg-overlay{
+  background-color: rgba(0,0,0,0.73);
+  opacity: 0.5;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: ' ';
+  z-index: 2;
+  backface-visibility: hidden;
+}

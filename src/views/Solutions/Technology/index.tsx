@@ -16,7 +16,7 @@ import { CaretRightOutlined } from '@ant-design/icons'
 import BrounceArrow from '../../../components/BounceArrow'
 import { useNavigate } from 'react-router-dom'
 
-const Platform = () => {
+const Technology = () => {
   const navigate = useNavigate()
   return (
     <div>
@@ -300,4 +300,4 @@ const Platform = () => {
   )
 }
 
-export default Platform
+export default Technology
