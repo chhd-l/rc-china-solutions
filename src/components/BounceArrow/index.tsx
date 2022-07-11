@@ -4,10 +4,11 @@ import './index.less'
 
 type BrounceArrowProps = {
   type?: 'white' | 'black'
+  isPaddingBottom?: boolean
 }
-const BrounceArrow = ({ type }: BrounceArrowProps) => {
+const BrounceArrow = ({ type, isPaddingBottom }: BrounceArrowProps) => {
   return (
-    <a href="#content" className="h-full pb-rc58 flex items-end justify-end w-full ">
+    <a href="#content" className={`h-full ${isPaddingBottom ? '' : 'pb-rc58'} flex items-end justify-end w-full`}>
       <img
         src={type === 'white' ? arrow_down_white : arrow_down}
         alt=""

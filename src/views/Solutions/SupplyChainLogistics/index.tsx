@@ -1,5 +1,5 @@
 import SupplyChainControlTowerLogo from '../../../assets/image/SupplyChainControlTower_logo@2x.png'
-import BrounceArrow from '../../../components/BrounceArrow'
+import BrounceArrow from '../../../components/BounceArrow'
 import { NectarButton } from '../../../components/common/NectarButton'
 import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/SolutionsHeader'
 import './index.less'
@@ -28,16 +28,20 @@ const SupplyChainLogistics = () => {
       />
       <section className="bg-black px-rc90 py-rc125 text-white">
         <div className="px-rc242 text-rc45">
-            Use instant flow and constraints visibility across all merchandising desks.
+          Use instant flow and constraints visibility across all merchandising desks.
         </div>
       </section>
       <section>
-        <div className='flex'>
-            <div>Knowledge driven Supply Chain Digital Twin</div>
+        <div className="flex">
+          <div>Knowledge driven Supply Chain Digital Twin</div>
+          <div>
             <div>
-                <div>Build an Enterprise Knowledge Graph, representing the end to end business processes. Create a common planning language to be used by all processes. Store all planning data, using rules and algorithms to turn data into enterprise knowledge. All based on a Digital Twin.</div>
-                <div></div>
+              Build an Enterprise Knowledge Graph, representing the end to end business processes. Create a common
+              planning language to be used by all processes. Store all planning data, using rules and algorithms to turn
+              data into enterprise knowledge. All based on a Digital Twin.
             </div>
+            <div></div>
+          </div>
         </div>
       </section>
     </div>

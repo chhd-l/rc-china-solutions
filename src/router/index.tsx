@@ -15,6 +15,9 @@ import SalesOperationsPlanning from '../views/Solutions/SalesOperationsPlanning'
 import WhitePapers from '../views/Resources/WhitePapers'
 import MasterPlanning from '../views/Solutions/MasterPlanning'
 import SupplyChainLogistics from '../views/Solutions/SupplyChainLogistics'
+import CaseStudies from '../views/Resources/CaseStudies'
+import Blog from '../views/Resources/Blog'
+import Technology from '../views/Solutions/Technology'
 
 const routers: RouteObject[] = [
   {
@@ -72,6 +75,10 @@ const routers: RouteObject[] = [
             path: 'supply-chain-logistics',
             element: <SupplyChainLogistics />,
           },
+          {
+            path: 'technology',
+            element: <Technology />,
+          },
         ],
       },
       {
@@ -84,6 +91,14 @@ const routers: RouteObject[] = [
           {
             path: 'white-papers',
             element: <WhitePapers />,
+          },
+          {
+            path: 'case-studies',
+            element: <CaseStudies />,
+          },
+          {
+            path: 'blog',
+            element: <Blog />,
           },
         ],
       },
