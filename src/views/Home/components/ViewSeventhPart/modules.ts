@@ -4,19 +4,19 @@ import insights_3 from '../../../../assets/image/insights_3.png'
 
 export const sightsList = [
   {
-    img: insights_1,
+    path: insights_1,
     title: 'Simon Joiner',
     desc: 'RFPs Part I: Why this vendor selection approach is damaging business',
     tip: 'Best Practices',
   },
   {
-    img: insights_2,
+    path: insights_2,
     title: 'Deloitte Solutions',
     tip: 'News',
     desc: 'Deloitte Solutions Supports Chow Sang Sang’s Expansion in Greater China With the Digital Transformation of Its Planning and Decision-Making Processes',
   },
   {
-    img: insights_3,
+    path: insights_3,
     title: ' Shravya Srinivas ',
     desc: 'Transforming Lives: Partnership with Foundation for Excellence in India',
     tip: 'Socail Impact',

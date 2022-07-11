@@ -1,16 +1,16 @@
 import { useSelections } from 'ahooks'
 import { Col, Row, Input } from 'antd'
 import BrounceArrow from '../../../components/BounceArrow'
+import FloadCard from '../../../components/FloatCard'
 import BlobCheckBox from './components/BlobCheckBox'
 import './index.less'
-import { CheckBoxData } from './mock'
+import { CheckBoxData, searchDara } from './mock'
 
-const { TextArea } = Input
 const Blog = () => {
   const { isSelected, toggle } = useSelections(CheckBoxData)
 
   return (
-    <div className=" bg-111111">
+    <div className=" bg-181818">
       <Row justify="center">
         <Col span={24}>
           <div className=" relative ">
@@ -43,9 +43,9 @@ const Blog = () => {
                   </Col>
                 </Row>
               </div>
-              <Row justify="center" gutter={20}>
+              <Row justify="center">
                 <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 20 }}>
-                  <Row justify="center" className="bg-black  ">
+                  <Row justify="center" className="bg-black ">
                     <Col
                       xs={{ span: 18 }}
                       sm={{ span: 16 }}
@@ -54,7 +54,7 @@ const Blog = () => {
                       xl={{ span: 3 }}
                       className="py-rc36"
                     >
-                      <p className="  w-full text-white text-rc22">
+                      <p className="  w-full text-white text-rc22 mr-rc_5">
                         Search and <strong>filter</strong> articles
                       </p>
                     </Col>
@@ -63,18 +63,32 @@ const Blog = () => {
                       sm={{ span: 16 }}
                       md={{ span: 11 }}
                       lg={{ span: 11 }}
-                      xl={{ span: 21 }}
-                      className="py-rc20"
+                      xl={{ span: 19 }}
+                      className="py-rc20 "
                     >
                       <div className="flex flex-row">
                         {CheckBoxData.map((item) => (
-                          <BlobCheckBox onClick={() => toggle(item)} selected={isSelected(item)}>
+                          <BlobCheckBox onClick={() => toggle(item)} selected={isSelected(item)} key={item}>
                             {item}
                           </BlobCheckBox>
                         ))}
-                        <Input placeholder="Basic usage" />
+                        <Input
+                          placeholder="Search articles …"
+                          style={{
+                            width: 306,
+                            marginLeft: 30,
+                          }}
+                          className="blogInput"
+                        />
                       </div>
                     </Col>
+                  </Row>
+                </Col>
+                <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 24 }}>
+                  <Row justify="center" align="top">
+                    {searchDara.map((item, index) => (
+                      <FloadCard {...item} key={index} type="black" />
+                    ))}
                   </Row>
                 </Col>
               </Row>

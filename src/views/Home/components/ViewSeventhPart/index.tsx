@@ -1,5 +1,6 @@
 import { Col, Row } from 'antd'
 import DividerLeft from '../../../../components/DividerLeft'
+import FloadCard from '../../../../components/FloatCard'
 import { Arrow } from './components/Arrow'
 import { FloatingTips } from './components/FloatingTips'
 import { sightsList } from './modules'
@@ -24,32 +25,7 @@ const ViewSeventhPart = () => {
           <Col span={24}>
             <Row justify="center" align="top">
               {sightsList.map((item) => (
-                <Col
-                  xs={{ span: 20 }}
-                  sm={{ span: 20 }}
-                  md={{ span: 20 }}
-                  lg={{ span: 20 }}
-                  xl={{ span: 7 }}
-                  className="  group mr-8  overflow-hidden"
-                  key={item.title}
-                >
-                  <div className="bg-gray-200    rounded-b-lg">
-                    <Col span={24} className="relative">
-                      <img src={item.img} alt="" className="w-full h-full rounded-t-lg" />
-                      <FloatingTips className=" transform -translate-y-full group-hover:translate-y-0">
-                        {item.tip}
-                      </FloatingTips>
-                    </Col>
-                    <Col span={24} className="px-rc30 pt-rc30">
-                      <div className="pl-2" style={{ borderLeft: '1px solid #909090' }}>
-                        {item.title}
-                      </div>
-                    </Col>
-                    <Col span={24} className="cursor-pointer  text-rc18 p-rc30 group-hover:underline">
-                      {item.desc}
-                    </Col>
-                  </div>
-                </Col>
+                <FloadCard {...item} />
               ))}
             </Row>
           </Col>
