@@ -1,7 +1,7 @@
 import SMI_section_03_img from '../../../assets/image/SMI_section_03_img.png'
 import DemandPlanning_leftIcon from '../../../assets/image/DemandPlanning_leftIcon.png'
 import SupplyChainControlTowerLogo from '../../../assets/image/SupplyChainControlTower_logo@2x.png'
-import BrounceArrow from '../../../components/BounceArrow'
+import BounceArrow from '../../../components/BounceArrow'
 import SolutionSEcyion3s from '../../../components/Solutions/SolutionSEcyion3s/SolutionSEcyion3s'
 import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/SolutionsHeader'
 import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
@@ -23,7 +23,7 @@ const SMI = () => {
             initiatives
           </div>
         }
-        titleRight={<BrounceArrow />}
+        titleRight={<BounceArrow />}
       />
       <main>
         <SolutionSEcyion3s

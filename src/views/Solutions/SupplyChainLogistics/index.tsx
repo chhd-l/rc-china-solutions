@@ -1,5 +1,5 @@
 import SupplyChainControlTowerLogo from '../../../assets/image/SupplyChainControlTower_logo@2x.png'
-import BrounceArrow from '../../../components/BounceArrow'
+import BounceArrow from '../../../components/BounceArrow'
 import blue_left_icon from '../../../assets/image/blue_left_icon@2x.png'
 import bule_1 from '../../../assets/image/bule_1@2x.png'
 import bule_2 from '../../../assets/image/bule_2@2x.png'
@@ -34,7 +34,7 @@ const SupplyChainLogistics = () => {
             planning across the complete supply chain.
           </div>
         }
-        titleRight={<BrounceArrow />}
+        titleRight={<BounceArrow />}
       />
       <section className="bg-black px-rc90 py-rc125 text-white">
         <div className="px-rc242 text-rc45">

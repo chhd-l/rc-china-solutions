@@ -1,7 +1,7 @@
 import MasterPlanning_Sections_02 from '../../../assets/image/MasterPlanning_Sections_02.png'
 import DemandPlanning_leftIcon from '../../../assets/image/DemandPlanning_leftIcon.png'
 import SupplyChainControlTowerLogo from '../../../assets/image/SupplyChainControlTower_logo@2x.png'
-import BrounceArrow from '../../../components/BounceArrow'
+import BounceArrow from '../../../components/BounceArrow'
 import SolutionSEcyion3s from '../../../components/Solutions/SolutionSEcyion3s/SolutionSEcyion3s'
 import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/SolutionsHeader'
 import { MarketIntelligence_Ecyion3s_2, MarketIntelligence_Ecyion3s_3 } from '../modules/MarketIntelligence'
@@ -20,7 +20,7 @@ const MarketIntelligence = () => {
         headerClassName="pb-rc65"
         logoImg={SupplyChainControlTowerLogo}
         title={<div className="w-rc_120 -mt-rc90">Apply industry insights towards impactful decisions</div>}
-        titleRight={<BrounceArrow />}
+        titleRight={<BounceArrow />}
       />
       <main>
         <SolutionSEcyion3s

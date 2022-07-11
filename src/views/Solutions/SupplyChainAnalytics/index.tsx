@@ -1,24 +1,25 @@
 import SupplyChainControlTower_leftIcon from '../../../assets/image/SupplyChainControlTower_leftIcon.png'
+import SupplyChainAnalytics_Ecyion3s_3_img from '../../../assets/image/SupplyChainAnalytics_Ecyion3s_3_img.png'
 import SupplyChainControlTowerLogo from '../../../assets/image/SupplyChainControlTower_logo@2x.png'
 import BounceArrow from '../../../components/BounceArrow'
 import SolutionSEcyion3s from '../../../components/Solutions/SolutionSEcyion3s/SolutionSEcyion3s'
 import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/SolutionsHeader'
 import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
-import { DigitalSupplierCollaboration_Ecyion3s_2, DigitalSupplierCollaboration_Ecyion3s_3 } from '../modules/DigitalSupplierCollaboration'
 import './index.less'
+import { SupplyChainAnalytics_Ecyion3s_2, SupplyChainAnalytics_Ecyion3s_3 } from '../modules/SupplyChainAnalytics'
 
-const DigitalSupplierCollaboration = () => {
+const SupplyChainAnalytics = () => {
   return (
-    <div className="DigitalSupplierCollaboration">
+    <div className="SupplyChainAnalytics">
       <SolutionsHeader
         TopDividerColor="border-black"
-        headerTilte={<strong className="text-rc20">Digital Supplier Collaboration</strong>}
+        headerTilte={<strong className="text-rc20">Supply Chain Analytics</strong>}
         titleBtn={<div></div>}
         headerClassName="pb-rc65"
         logoImg={SupplyChainControlTowerLogo}
         title={
           <div className="w-rc_120 -mt-rc90">
-            Seamless coordination with<br/> supply chain partners
+            Informed Supply Chain<br/> Policies
           </div>
         }
         titleRight={<BounceArrow />}
@@ -30,8 +31,8 @@ const DigitalSupplierCollaboration = () => {
           section_01_span="The :o9 Digital Supplier Collaboration solution makes it simple to bring all your suppliers into one collaborative process. These include processes around direct material inventory visibility, forecasts, orders and costs. This will help you drive early warnings, improvement actions and joint business plan reviews with the extended supplier network."
           section_02_title="Top reasons organizations are upgrading"
           section_02_title2=" their Supply Chain Master Planning capabilities"
-          section_02_spans={DigitalSupplierCollaboration_Ecyion3s_2}
-          section_03_img={<div />}
+          section_02_spans={SupplyChainAnalytics_Ecyion3s_2}
+          section_03_img={SupplyChainAnalytics_Ecyion3s_3_img}
           section_03_title={
             <div>
               Use cases favored by our
@@ -39,7 +40,7 @@ const DigitalSupplierCollaboration = () => {
               clients
             </div>
           }
-          section_03_spans={DigitalSupplierCollaboration_Ecyion3s_3}
+          section_03_spans={SupplyChainAnalytics_Ecyion3s_3}
         />
         <UserSubmission title={<strong>Looking for a next-generation Digital Supplier Collaboration solution?</strong>} />
         <section className="section_09 text-rc20">
@@ -97,4 +98,4 @@ const DigitalSupplierCollaboration = () => {
   )
 }
 
-export default DigitalSupplierCollaboration
+export default SupplyChainAnalytics

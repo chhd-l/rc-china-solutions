@@ -1,5 +1,5 @@
 import { Col, Row } from 'antd'
-import BrounceArrow from '../../../components/BounceArrow'
+import BounceArrow from '../../../components/BounceArrow'
 import SearchAndFilter from './components/SearchAndFilter'
 import './index.less'
 
@@ -44,7 +44,7 @@ const CaseStudies = () => {
                       </p>
                     </Col>
                     <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 10 }}>
-                      <BrounceArrow type="white" />
+                      <BounceArrow type="white" />
                     </Col>
                   </Row>
                 </Col>
