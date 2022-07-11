@@ -15,6 +15,7 @@ module.exports = {
         rgba209: 'rgba(209,209,209,0.38)',
         rgba255: 'rgba(255,255,255,0.25)',
         '2a2a2a': '#2a2a2a',
+        575757: '#575757',
         E4E4E4: '#E4E4E4',
         e5e6e5: '#e5e6e5',
         F7F7F7: '#F7F7F7',
@@ -163,6 +164,7 @@ module.exports = {
       lineHeight: {
         rc1_2: '1.2',
         rc16: '16px',
+        rc18: '18px',
         rc26: '26px',
         rc32: '32px',
         rc36: '36px',
