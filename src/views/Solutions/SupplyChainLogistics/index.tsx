@@ -1,7 +1,11 @@
 import SupplyChainControlTowerLogo from '../../../assets/image/SupplyChainControlTower_logo@2x.png'
 import BrounceArrow from '../../../components/BounceArrow'
+import blue_left_icon from '../../../assets/image/blue_left_icon@2x.png'
+import bule_1 from '../../../assets/image/bule_1@2x.png'
+import bule_2 from '../../../assets/image/bule_2@2x.png'
 import { NectarButton } from '../../../components/common/NectarButton'
 import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/SolutionsHeader'
+import { SupplyChainLogistics_content } from '../modules/SupplyChainLogistics'
 import './index.less'
 
 const SupplyChainLogistics = () => {
@@ -9,9 +13,10 @@ const SupplyChainLogistics = () => {
     <div className="SupplyChainLogistics">
       <SolutionsHeader
         TopDividerColor="border-black"
-        headerTilte={<strong className="text-rc20">Supply Chain Master Planning</strong>}
+        headerTilte={<strong className="text-rc20">Supply Chain & Logistics Management for Retail</strong>}
+        headerTilteRight={<div className="text-rc14 text-white font-bold">Merchandising & Assortment Management</div>}
         titleBtn={
-          <div className="flex items-center">
+          <div className="flex items-center mt-rc35">
             <NectarButton className="ml-rc25" color="#000">
               Talk to an expert
             </NectarButton>
@@ -23,7 +28,12 @@ const SupplyChainLogistics = () => {
         }
         headerClassName="pb-rc65 bg-gray-100"
         logoImg={SupplyChainControlTowerLogo}
-        title={<div className="w-rc_120 -mt-rc90">Delight customers at optimal costs and inventory.</div>}
+        title={
+          <div className="w-rc_120 -mt-rc90">
+            <span className="border-b-4 border-purple-900 border-solid inline-block">End-to-end</span> constraint-based
+            planning across the complete supply chain.
+          </div>
+        }
         titleRight={<BrounceArrow />}
       />
       <section className="bg-black px-rc90 py-rc125 text-white">
@@ -32,15 +42,48 @@ const SupplyChainLogistics = () => {
         </div>
       </section>
       <section>
-        <div className="flex">
-          <div>Knowledge driven Supply Chain Digital Twin</div>
-          <div>
+        {SupplyChainLogistics_content.map((item, idx) => (
+          <div key={idx} className={`flex px-rc90 py-rc150 ${idx % 2 === 0 ? 'bg-white' : 'bg-gray-300'}`}>
+            <div className="text-rc35 font-bold leading-rc43 mr-rc60">{item.title}</div>
             <div>
-              Build an Enterprise Knowledge Graph, representing the end to end business processes. Create a common
-              planning language to be used by all processes. Store all planning data, using rules and algorithms to turn
-              data into enterprise knowledge. All based on a Digital Twin.
+              <div className="pt-rc30 border-t border-solid border-black text-rc17 leading-rc32 mb-rc25">
+                {item.span}
+              </div>
+              <div>
+                <img src={item.img} alt="" />
+              </div>
             </div>
-            <div></div>
+          </div>
+        ))}
+      </section>
+      <section className="px-rc90 py-rc100 bg-black text-white">
+        <div className="flex">
+          <div className="text-rc35 leading-rc42 flex-1">Supply Chain & Logistics Solutions</div>
+          <div className="text-rc17 leading-rc32 flex-1 border-t border-solid border-white">
+            <div className="py-rc20">
+              Visualize the Future to Build Iteratively and Rapidly towards the vision. It is the practical way.
+            </div>
+            <div>Departments: CRO, Sales, Marketing, Category Management, Finance</div>
+          </div>
+        </div>
+        <div className="flex flex-wrap mt-rc74">
+          <div className="transition-all group RelatedSolutions_1 hover:bg-black flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30">
+            <img className="w-rc100 h-full" src={bule_1} alt="" />
+            <div>Supply Chain Master Planning</div>
+            <img
+              className="transition-all opacity-0 transform -translate-x-1/2 h-rc35 group-hover:translate-x-0 group-hover:opacity-100"
+              src={blue_left_icon}
+              alt=""
+            />
+          </div>
+          <div className="transition-all group RelatedSolutions_2 hover:bg-black flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30">
+            <img className="w-rc100 h-full" src={bule_2} alt="" />
+            <div>Supply Chain Master Planning</div>
+            <img
+              className="transition-all opacity-0 transform -translate-x-1/2 h-rc35 group-hover:translate-x-0 group-hover:opacity-100"
+              src={blue_left_icon}
+              alt=""
+            />
           </div>
         </div>
       </section>

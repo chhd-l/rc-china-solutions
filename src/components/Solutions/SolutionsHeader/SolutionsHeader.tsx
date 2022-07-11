@@ -32,10 +32,10 @@ const SolutionsHeader = ({
 }: SolutionsHeaderType) => {
   return (
     <header
-      className={`pb-rc132 px-rc90 pt-rc35 relative SolutionsHeader ${headerClassName}`}
+      className={`pb-rc100 px-rc90 pt-rc35 relative SolutionsHeader ${headerClassName}`}
       style={{ backgroundColor: headBg ? 'rgba(0, 0, 0, 0.4)' : '' }}
     >
-      <img style={{ zIndex: '-1' }} className="absolute top-0 left-0 h-full" src={headBg} alt="" />
+      <img style={{ zIndex: '-1' }} className="absolute top-0 left-0 w-full h-full" src={headBg} alt="" />
       <div
         className={`flex items-center justify-between text-rc14 border-b ${
           TopDividerColor || 'border-gray-400'
@@ -48,7 +48,7 @@ const SolutionsHeader = ({
         <div className="max-w-rc820 mt-rc180 pr-rc60">
           {title}
           {
-            titleBtn || <div className="mt-rc18 font-bold text-rc16 cursor-pointer">
+            titleBtn || <div className="mt-rc35 font-bold text-rc16 cursor-pointer">
               <span>——</span>
               <span className="ml-rc10">Why choose Deloitte?</span>
               <NectarButton className="ml-rc25" color={borderColor}>

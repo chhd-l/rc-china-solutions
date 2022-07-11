@@ -18,6 +18,11 @@ import SupplyChainLogistics from '../views/Solutions/SupplyChainLogistics'
 import CaseStudies from '../views/Resources/CaseStudies'
 import Blog from '../views/Resources/Blog'
 import Technology from '../views/Solutions/Technology'
+import NPI from '../views/Solutions/NPI'
+import MarketIntelligence from '../views/Solutions/MarketIntelligence'
+import CommercialAnalytics from '../views/Solutions/CommercialAnalytics'
+import SMI from '../views/Solutions/SMI'
+import ProductionScheduling from '../views/Solutions/ProductionScheduling'
 
 const routers: RouteObject[] = [
   {
@@ -78,6 +83,26 @@ const routers: RouteObject[] = [
           {
             path: 'technology',
             element: <Technology />,
+          },
+          {
+            path: 'npi-planning',
+            element: <NPI />,
+          },
+          {
+            path: 'market-intelligence',
+            element: <MarketIntelligence />,
+          },
+          {
+            path: 'commercial-analytics',
+            element: <CommercialAnalytics />,
+          },
+          {
+            path: 'marketing-effectiveness-planning',
+            element: <SMI />,
+          },
+          {
+            path: 'production-scheduling',
+            element: <ProductionScheduling />,
           },
         ],
       },
