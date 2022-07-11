@@ -1,18 +1,18 @@
 export const SMI_Ecyion3s_2 = [
     {
-        strat: 'Consolidate Initiatives across the organization',
+        start: 'Consolidate Initiatives across the organization',
         span: 'Increase productivity without scattered spreadsheets for better ideation, planning and post execution ROI measurement.',
     },
     {
-        strat: 'Obtain a consistent view to revisions',
+        start: 'Obtain a consistent view to revisions',
         span: 'Understand changes in assumptions & execution around marketing, distribution and other sales initiatives.',
     },
     {
-        strat: 'Improve organizational learning on revenue impact ',
+        start: 'Improve organizational learning on revenue impact ',
         span: 'Systematic learnings about actual vs. planned ROI',
     },
     {
-        strat: 'Deepen collaboration across functional teams',
+        start: 'Deepen collaboration across functional teams',
         span: 'Overcome challenges in activating marketing and sales decisions with effective synchronization.',
     },
 ]

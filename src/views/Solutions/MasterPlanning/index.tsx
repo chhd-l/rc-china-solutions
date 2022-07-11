@@ -1,7 +1,7 @@
 import MasterPlanning_Sections_02 from '../../../assets/image/MasterPlanning_Sections_02.png'
 import SupplyChainControlTower_leftIcon from '../../../assets/image/SupplyChainControlTower_leftIcon.png'
 import SupplyChainControlTowerLogo from '../../../assets/image/SupplyChainControlTower_logo@2x.png'
-import BrounceArrow from '../../../components/BounceArrow'
+import BounceArrow from '../../../components/BounceArrow'
 import SolutionSEcyion3s from '../../../components/Solutions/SolutionSEcyion3s/SolutionSEcyion3s'
 import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/SolutionsHeader'
 import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
@@ -23,7 +23,7 @@ const MasterPlanning = () => {
             <span className="border-b-4 border-purple-900 border-solid inline-block">end-to-end</span> Supply Chain
           </div>
         }
-        titleRight={<BrounceArrow />}
+        titleRight={<BounceArrow />}
       />
       <main>
         <SolutionSEcyion3s

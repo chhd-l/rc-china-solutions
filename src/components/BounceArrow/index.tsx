@@ -2,11 +2,11 @@ import arrow_down from '../../assets/image/arrow-down.svg'
 import arrow_down_white from '../../assets/image/arrow_down_white.png'
 import './index.less'
 
-type BrounceArrowProps = {
+type BounceArrowProps = {
   type?: 'white' | 'black'
   isPaddingBottom?: boolean
 }
-const BrounceArrow = ({ type, isPaddingBottom }: BrounceArrowProps) => {
+const BounceArrow = ({ type, isPaddingBottom }: BounceArrowProps) => {
   return (
     <a href="#content" className={`h-full ${isPaddingBottom ? '' : 'pb-rc58'} flex items-end justify-end w-full`}>
       <img
@@ -20,4 +20,4 @@ const BrounceArrow = ({ type, isPaddingBottom }: BrounceArrowProps) => {
   )
 }
 
-export default BrounceArrow
+export default BounceArrow

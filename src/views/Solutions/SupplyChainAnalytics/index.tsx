@@ -1,7 +1,7 @@
 import SupplyChainControlTower_leftIcon from '../../../assets/image/SupplyChainControlTower_leftIcon.png'
 import SupplyChainAnalytics_Ecyion3s_3_img from '../../../assets/image/SupplyChainAnalytics_Ecyion3s_3_img.png'
 import SupplyChainControlTowerLogo from '../../../assets/image/SupplyChainControlTower_logo@2x.png'
-import BrounceArrow from '../../../components/BrounceArrow'
+import BounceArrow from '../../../components/BounceArrow'
 import SolutionSEcyion3s from '../../../components/Solutions/SolutionSEcyion3s/SolutionSEcyion3s'
 import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/SolutionsHeader'
 import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
@@ -22,7 +22,7 @@ const SupplyChainAnalytics = () => {
             Informed Supply Chain<br/> Policies
           </div>
         }
-        titleRight={<BrounceArrow />}
+        titleRight={<BounceArrow />}
       />
       <main>
         <SolutionSEcyion3s

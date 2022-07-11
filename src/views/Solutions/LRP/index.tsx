@@ -1,12 +1,12 @@
-import section_09_left_icon from '../../../assets/image/section_09_left_icon.png'
 import MasterPlanning_Sections_02 from '../../../assets/image/MasterPlanning_Sections_02.png'
+import section_09_left_icon from '../../../assets/image/section_09_left_icon.png'
 import SupplyChainControlTowerLogo from '../../../assets/image/SupplyChainControlTower_logo@2x.png'
-import BrounceArrow from '../../../components/BrounceArrow'
+import BounceArrow from '../../../components/BounceArrow'
 import SolutionSEcyion3s from '../../../components/Solutions/SolutionSEcyion3s/SolutionSEcyion3s'
 import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/SolutionsHeader'
 import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
+import { LRP_Ecyion3s_2 } from '../modules/LRP'
 import './index.less'
-import { AOP_Ecyion3s_2 } from '../modules/AOP'
 
 const LRP = () => {
   return (
@@ -18,7 +18,7 @@ const LRP = () => {
         headerClassName="pb-rc65"
         logoImg={SupplyChainControlTowerLogo}
         title={<div className="w-rc_120 -mt-rc80 mb-rc60">Uncover Growth Opportunities.</div>}
-        titleRight={<BrounceArrow />}
+        titleRight={<BounceArrow />}
       />
       <main>
         <SolutionSEcyion3s
@@ -27,9 +27,9 @@ const LRP = () => {
           section_01_span="Deploy the “Digital Market Knowledge” model from :o9. Bring together rich Market Data, Advanced Analytics and Integrated Planning capabilities. Transform unmanageable and uncertain revenue planning & budgeting processes. Drive growth based on facts and data."
           section_02_title="Top reasons organizations are upgrading"
           section_02_title2=" their long range planning (LRP) capabilities"
-          section_02_spans={AOP_Ecyion3s_2}
+          section_02_spans={LRP_Ecyion3s_2}
           section_03_img={MasterPlanning_Sections_02}
-          section_03_title=''
+          section_03_title=""
           section_03_spans={[]}
         />
         <UserSubmission

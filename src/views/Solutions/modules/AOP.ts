@@ -1,14 +1,14 @@
 export const AOP_Ecyion3s_2 = [
     {
-        strat: 'Integrated Strategic Plans',
+        start: 'Integrated Strategic Plans',
         span: 'Align S&OP and AOP processes onto one platform to become a more responsive organization',
     },
     {
-        strat: 'Always synchronized Annual Plans',
+        start: 'Always synchronized Annual Plans',
         span: 'Reduce time and costs of AOP by moving to a digital collaborative platform',
     },
     {
-        strat: 'KPIs tied to Strategy',
+        start: 'KPIs tied to Strategy',
         span: 'Transform functional measurements and performance management to center around business goals',
     },
 ]

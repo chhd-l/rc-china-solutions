@@ -1,6 +1,6 @@
 import { useSelections } from 'ahooks'
 import { Col, Row, Input } from 'antd'
-import BrounceArrow from '../../../components/BounceArrow'
+import BounceArrow from '../../../components/BounceArrow'
 import BlobCheckBox from './components/BlobCheckBox'
 import './index.less'
 import { CheckBoxData } from './mock'
@@ -37,7 +37,7 @@ const Blog = () => {
                         </p>
                       </Col>
                       <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 7 }}>
-                        <BrounceArrow type="white" />
+                        <BounceArrow type="white" />
                       </Col>
                     </Row>
                   </Col>

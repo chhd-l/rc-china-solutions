@@ -1,5 +1,5 @@
 import { Col, Row } from 'antd'
-import BrounceArrow from '../../../components/BounceArrow'
+import BounceArrow from '../../../components/BounceArrow'
 import { SecurityData } from '../modules/Security'
 import soc_Service from '../../../assets/image/SOC-Service-Org_B_Marks_2c_Web-300x274-1.png'
 
@@ -19,7 +19,7 @@ const Security = () => {
           </p>
         </Col>
         <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 19 }} lg={{ span: 5 }} xl={{ span: 5 }}>
-          <BrounceArrow />
+          <BounceArrow />
         </Col>
       </Row>
       <Row justify="center" className="mt-rc_7">

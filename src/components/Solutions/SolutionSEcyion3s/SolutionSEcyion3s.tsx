@@ -6,7 +6,7 @@ type SolutionSEcyion3sType = {
   section_01_span: string
   section_02_title: string
   section_02_title2: string
-  section_02_spans: any[]
+  section_02_spans: {start: string, span: string,}[]
   section_03_img: any
   section_03_title: any
   section_03_spans: any[]
@@ -48,7 +48,7 @@ const SolutionSEcyion3s = ({
               <span className="text-gray-999">{section_02_title2}</span>
             </div>
             {section_02_spans.length && (
-              <div className={`mt-rc40 mb-rc27 grid grid-cols-${section_02_spans.length} gap-10`}>
+              <div className={`mt-rc40 mb-rc27 grid ${'grid-cols-' + section_02_spans.length} gap-10`}>
                 {section_02_spans.map((item, idx) => (
                   <div className="border-t pt-rc20 border-solid border-black" key={idx}>
                     <strong>

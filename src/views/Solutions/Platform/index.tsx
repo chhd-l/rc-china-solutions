@@ -13,7 +13,7 @@ import { NectarButton } from '../../../components/common/NectarButton'
 import BlackAndgray from './components/BlackAndgray'
 import rapid from '../../../assets/image/o9-rapid-integration-01.svg'
 import { CaretRightOutlined } from '@ant-design/icons'
-import BrounceArrow from '../../../components/BounceArrow'
+import BounceArrow from '../../../components/BounceArrow'
 import { useNavigate } from 'react-router-dom'
 
 const Platform = () => {
@@ -31,7 +31,7 @@ const Platform = () => {
           </p>
         </Col>
         <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 19 }} lg={{ span: 5 }} xl={{ span: 5 }}>
-          <BrounceArrow />
+          <BounceArrow />
         </Col>
       </Row>
       <Row justify="center" className="bg-black  mt-rc_24">

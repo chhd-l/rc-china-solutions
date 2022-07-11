@@ -1,7 +1,7 @@
 import section_09_left_icon from '../../../assets/image/section_09_left_icon.png'
 import AOP_Ecyion3s_3_img from '../../../assets/image/AOP_Ecyion3s_3_img.png'
 import SupplyChainControlTowerLogo from '../../../assets/image/SupplyChainControlTower_logo@2x.png'
-import BrounceArrow from '../../../components/BrounceArrow'
+import BounceArrow from '../../../components/BounceArrow'
 import SolutionSEcyion3s from '../../../components/Solutions/SolutionSEcyion3s/SolutionSEcyion3s'
 import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/SolutionsHeader'
 import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
@@ -18,7 +18,7 @@ const AOP = () => {
         headerClassName="pb-rc65"
         logoImg={SupplyChainControlTowerLogo}
         title={<div className="w-rc_120 w-rc_120 -mt-rc80 mb-rc60">Go beyond Financial Planning</div>}
-        titleRight={<BrounceArrow />}
+        titleRight={<BounceArrow />}
       />
       <main>
         <SolutionSEcyion3s
