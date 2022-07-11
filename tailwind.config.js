@@ -123,6 +123,7 @@ module.exports = {
         rc14: '14px',
         rc16: '16px',
         rc18: '18px',
+        rc20: '20px',
         rc22: '22px',
         rc26: '26px',
         rc30: '30px',
@@ -242,8 +243,10 @@ module.exports = {
         rc90: '90px',
         rc92: '92px',
         rc110: '110px !important',
+        rc125: '125px',
         rc132: '132px',
         rc152: '152px',
+        rc242: '242px',
         rc354: '354px',
       },
       margin: {
