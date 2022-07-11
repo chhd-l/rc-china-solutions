@@ -1,37 +1,34 @@
-import SupplyChainControlTower_leftIcon from '../../../assets/image/SupplyChainControlTower_leftIcon.png'
+import section_09_left_icon from '../../../assets/image/section_09_left_icon.png'
+import AOP_Ecyion3s_3_img from '../../../assets/image/AOP_Ecyion3s_3_img.png'
 import SupplyChainControlTowerLogo from '../../../assets/image/SupplyChainControlTower_logo@2x.png'
 import BrounceArrow from '../../../components/BrounceArrow'
 import SolutionSEcyion3s from '../../../components/Solutions/SolutionSEcyion3s/SolutionSEcyion3s'
 import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/SolutionsHeader'
 import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
-import { DigitalSupplierCollaboration_Ecyion3s_2, DigitalSupplierCollaboration_Ecyion3s_3 } from '../modules/DigitalSupplierCollaboration'
 import './index.less'
+import { AOP_Ecyion3s_2, AOP_Ecyion3s_3 } from '../modules/AOP'
 
-const DigitalSupplierCollaboration = () => {
+const AOP = () => {
   return (
-    <div className="DigitalSupplierCollaboration">
+    <div className="AOP">
       <SolutionsHeader
         TopDividerColor="border-black"
-        headerTilte={<strong className="text-rc20">Digital Supplier Collaboration</strong>}
+        headerTilte={<strong className="text-rc20">Annual Operating Plan (AOP) & Budgeting</strong>}
         titleBtn={<div></div>}
         headerClassName="pb-rc65"
         logoImg={SupplyChainControlTowerLogo}
-        title={
-          <div className="w-rc_120 -mt-rc90">
-            Seamless coordination with<br/> supply chain partners
-          </div>
-        }
+        title={<div className="w-rc_120 w-rc_120 -mt-rc80 mb-rc60">Go beyond Financial Planning</div>}
         titleRight={<BrounceArrow />}
       />
       <main>
         <SolutionSEcyion3s
-          section_01_title="Increase agility by bringing your suppliers and contract manufacturers"
-          section_01_title2=" into your planning process with rich, secure collaboration workflows."
-          section_01_span="The :o9 Digital Supplier Collaboration solution makes it simple to bring all your suppliers into one collaborative process. These include processes around direct material inventory visibility, forecasts, orders and costs. This will help you drive early warnings, improvement actions and joint business plan reviews with the extended supplier network."
+          section_01_title="Set the cross-functional business goals "
+          section_01_title2="with a unified view across the strategic planning horizon."
+          section_01_span="Deploy the “Digital Market Knowledge” model from :o9. Bring together rich Market Data, Advanced Analytics and Integrated Planning capabilities. Transform unmanageable and uncertain revenue planning & budgeting processes. Drive growth based on facts and data."
           section_02_title="Top reasons organizations are upgrading"
           section_02_title2=" their Supply Chain Master Planning capabilities"
-          section_02_spans={DigitalSupplierCollaboration_Ecyion3s_2}
-          section_03_img={<div />}
+          section_02_spans={AOP_Ecyion3s_2}
+          section_03_img={AOP_Ecyion3s_3_img}
           section_03_title={
             <div>
               Use cases favored by our
@@ -39,9 +36,16 @@ const DigitalSupplierCollaboration = () => {
               clients
             </div>
           }
-          section_03_spans={DigitalSupplierCollaboration_Ecyion3s_3}
+          section_03_spans={AOP_Ecyion3s_3}
         />
-        <UserSubmission title={<strong>Looking for a next-generation Digital Supplier Collaboration solution?</strong>} />
+        <UserSubmission
+          title={
+            <strong>
+              Looking for a next-generation AOP and <span className="underline">budgeting</span>{' '}
+              <span className="underline">solution</span>
+            </strong>
+          }
+        />
         <section className="section_09 text-rc20">
           <div className="mb-rc45 text-rc35">Related Solutions</div>
           <div className="flex flex-wrap">
@@ -50,16 +54,7 @@ const DigitalSupplierCollaboration = () => {
               <div>Supply Chain Master Planning</div>
               <img
                 className="transition-all opacity-0 transform -translate-x-1/2 h-rc35 group-hover:translate-x-0 group-hover:opacity-100"
-                src={SupplyChainControlTower_leftIcon}
-                alt=""
-              />
-            </div>
-            <div className="transition-all group RelatedSolutions_1 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30">
-              <div className="w-rc100 h-full" />
-              <div>Supply Chain Master Planning</div>
-              <img
-                className="transition-all opacity-0 transform -translate-x-1/2 h-rc35 group-hover:translate-x-0 group-hover:opacity-100"
-                src={SupplyChainControlTower_leftIcon}
+                src={section_09_left_icon}
                 alt=""
               />
             </div>
@@ -68,7 +63,7 @@ const DigitalSupplierCollaboration = () => {
               <div>Supply Chain Master Planning</div>
               <img
                 className="transition-all opacity-0 transform -translate-x-1/2 h-rc35 group-hover:translate-x-0 group-hover:opacity-100"
-                src={SupplyChainControlTower_leftIcon}
+                src={section_09_left_icon}
                 alt=""
               />
             </div>
@@ -77,16 +72,7 @@ const DigitalSupplierCollaboration = () => {
               <div>Supply Chain Master Planning</div>
               <img
                 className="transition-all opacity-0 transform -translate-x-1/2 h-rc35 group-hover:translate-x-0 group-hover:opacity-100"
-                src={SupplyChainControlTower_leftIcon}
-                alt=""
-              />
-            </div>
-            <div className="transition-all group RelatedSolutions_4 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30">
-              <div className="w-rc100 h-full" />
-              <div>Supply Chain Master Planning</div>
-              <img
-                className="transition-all opacity-0 transform -translate-x-1/2 h-rc35 group-hover:translate-x-0 group-hover:opacity-100"
-                src={SupplyChainControlTower_leftIcon}
+                src={section_09_left_icon}
                 alt=""
               />
             </div>
@@ -97,4 +83,4 @@ const DigitalSupplierCollaboration = () => {
   )
 }
 
-export default DigitalSupplierCollaboration
+export default AOP

@@ -20,6 +20,10 @@ import MarketIntelligence from '../views/Solutions/MarketIntelligence'
 import CommercialAnalytics from '../views/Solutions/CommercialAnalytics'
 import SMI from '../views/Solutions/SMI'
 import ProductionScheduling from '../views/Solutions/ProductionScheduling'
+import DigitalSupplierCollaboration from '../views/Solutions/DigitalSupplierCollaboration'
+import SupplyChainAnalytics from '../views/Solutions/SupplyChainAnalytics'
+import AOP from '../views/Solutions/AOP'
+import LRP from '../views/Solutions/LRP'
 
 const routers: RouteObject[] = [
   {
@@ -96,6 +100,22 @@ const routers: RouteObject[] = [
           {
             path: 'production-scheduling',
             element: <ProductionScheduling />,
+          },
+          {
+            path: 'digital-supplier-collaboration',
+            element: <DigitalSupplierCollaboration />,
+          },
+          {
+            path: 'supply-chain-analytics',
+            element: <SupplyChainAnalytics />,
+          },
+          {
+            path: 'annual-operating-plan-budgeting',
+            element: <AOP />,
+          },
+          {
+            path: 'long-range-planning-lrp',
+            element: <LRP />,
           },
         ],
       },
