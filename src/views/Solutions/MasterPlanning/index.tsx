@@ -11,14 +11,15 @@ const MasterPlanning = () => {
   return (
     <div className="MasterPlanning">
       <SolutionsHeader
-        TopDividerColor='border-black'
+        TopDividerColor="border-black"
         headerTilte={<strong className="text-rc20">Supply Chain Master Planning</strong>}
         titleBtn={<div></div>}
         headerClassName="pb-rc65"
         logoImg={SupplyChainControlTowerLogo}
         title={
-          <div className='w-rc_120 -mt-rc90'>
-             Optimized Demand/Supply balancing across <span className='border-b-4 border-purple-900 border-solid inline-block'>end-to-end</span> Supply Chain
+          <div className="w-rc_120 -mt-rc90">
+            Optimized Demand/Supply balancing across{' '}
+            <span className="border-b-4 border-purple-900 border-solid inline-block">end-to-end</span> Supply Chain
           </div>
         }
         titleRight={<BrounceArrow />}
@@ -33,7 +34,7 @@ const MasterPlanning = () => {
               </div>
               <div className="mt-rc40 mb-rc27 text-gray-999">
                 Powered by a Digital “Supply Chain Knowledge Graph” model, with advanced data management, high
-                performance demand/supply match solvers, rapid what-if scenario planning capabilities, :o9’s Supply
+                performance demand/supply match solvers, rapid what-if scenario planning capabilities, Deloitte’s Supply
                 Chain Master Planning makes your supply chain more agile and cost effective in responding to market
                 demand
               </div>
@@ -71,9 +72,9 @@ const MasterPlanning = () => {
               <br />
               clients
             </div>
-            <div className='grid grid-cols-2'>
+            <div className="grid grid-cols-2">
               {MasterPlanningUseCases.map((item, idx) => (
-                <div className='flex items-center mb-rc15'>
+                <div className="flex items-center mb-rc15">
                   {/* <img className="mr-rc15 mt-rc10 h-rc22" src={SupplyChainControlTower_UseCases_1} alt="" /> */}
                   <div className="mr-rc15 w-rc10 h-rc10 bg-white rounded-full" />
                   <div>{item}</div>
