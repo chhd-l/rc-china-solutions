@@ -66,7 +66,7 @@ const Platform = () => {
                   </span>
                 </span>
                 <span className="link-text">
-                  <h4 className="text-rc24 leading-rc32">Learn about :o9</h4>
+                  <h4 className="text-rc24 leading-rc32">Learn about Deloitte</h4>
                 </span>
               </span>
             </a>

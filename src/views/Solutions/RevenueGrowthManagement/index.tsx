@@ -21,7 +21,7 @@ const RevenueGrowthManagement = () => {
         borderColor="#000"
         headerTilte={<div className="text-rc28 font-bold">Revenue Growth Management</div>}
         logoImg={SupplyChainControlTowerLogo}
-        title={<div className='tracking-rc5'>Deloitte’s fully integrated Revenue Growth Management</div>}
+        title={<div className="tracking-rc5">Deloitte’s fully integrated Revenue Growth Management</div>}
         titleRight={
           <div className="bg-gray-eaeaea mt-rc100 p-rc40 text-rc24">
             <div style={{ transform: 'translateY(-20%)' }}>
@@ -61,7 +61,7 @@ const RevenueGrowthManagement = () => {
           title="Plan better. Reduce waste. Reinvest back into business for growth for a sustainable future."
           spans={[
             'Global corporations are the largest consumers of the Earth’s resources. Good planning means enterprises can achieve their goals while using less of the Earth’s precious resources.',
-            'The integrated planning efficiencies delivered by :o9 is helping corporations do more, be more and mean more, internally and to the world at large.',
+            'The integrated planning efficiencies delivered by Deloitte is helping corporations do more, be more and mean more, internally and to the world at large.',
           ]}
         />
         <UserSubmission title="Get real time visibility. Leverage the Deloitte Digital Brain in your business." />

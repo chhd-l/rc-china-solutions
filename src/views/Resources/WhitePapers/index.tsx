@@ -29,7 +29,7 @@ const WhitePapers = () => {
                 <Col span={24} style={{ zIndex: 10 }}>
                   <div>
                     <p className="text-white text-rc20 border-gray-rgba255 border-b pb-rc20 mb-rc200">
-                      Powered by the :o9 Digital Brain
+                      Powered by the Deloitte Digital Brain
                     </p>
                   </div>
                   <Row>

@@ -39,7 +39,7 @@ module.exports = {
         700: '#0037ff',
       },
       purple: {
-        900: 'rgb(116, 51, 204)'
+        900: 'rgb(116, 51, 204)',
       },
       yellow: '#ffe400',
     },
@@ -142,6 +142,7 @@ module.exports = {
         rc97: '97px',
         rc111: '111px',
         rc135: '135px',
+        rc142: '142px',
         rc148: '148px',
         rc160: '160px',
         rc200: '200px',

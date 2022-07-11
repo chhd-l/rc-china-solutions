@@ -69,7 +69,7 @@ const TheDigitalBrain = () => {
         <Col span={12}>
           <h3 className="text-rc22 font-light pb-rc_7">
             The solution: Next-generation Integrated Business Planning (IBP) capabilities enabled by a platform like
-            o9’s Digital Brain. The human brain was our inspiration.
+            Deloitte’s Digital Brain. The human brain was our inspiration.
           </h3>
         </Col>
       </Row>
@@ -91,7 +91,7 @@ const TheDigitalBrain = () => {
             <strong>
               <span className=" font-medium cursor-pointer">Chakri</span> Gottemukkala
             </strong>{' '}
-            (CEO and founder – o9 Solutions) on “Why every business needs a digital brain”
+            (CEO and founder – Deloitte Solutions) on “Why every business needs a digital brain”
           </p>
         </Col>
       </Row>
@@ -121,16 +121,16 @@ const TheDigitalBrain = () => {
         <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 14 }} lg={{ span: 16 }} xl={{ span: 17 }}>
           <h2 className="text-rc40 font-light mt-rc_10">Future-proof platform</h2>
           <p className="text-rc17 font-light leading-rc32">
-            As a cloud-native application running on any of the 3 major cloud providers, the o9 platform can{' '}
-            <strong className=" font-semibold">scale</strong> without constraints. Furthermore, the o9 platform was
-            designed as an <strong className=" font-semibold">open platform</strong>, allowing companies to leverage new
-            sources of data – from customer data coming from smart phone apps to IoT data from connected machines – and
-            new algorithms for completely new use cases.
+            As a cloud-native application running on any of the 3 major cloud providers, the Deloitte platform can{' '}
+            <strong className=" font-semibold">scale</strong> without constraints. Furthermore, the Deloitte platform
+            was designed as an <strong className=" font-semibold">open platform</strong>, allowing companies to leverage
+            new sources of data – from customer data coming from smart phone apps to IoT data from connected machines –
+            and new algorithms for completely new use cases.
           </p>
           <p className="text-rc17 font-light leading-rc32 mb-rc_10">
-            The o9 Digital Brain is the <strong className=" font-semibold">Most Valuable Platform (MVP)</strong> for
-            companies. It allows non digital-native companies to also leverage the power of data – both to digitalize
-            their existing business and for the future digital operating models that are emerging.
+            The Deloitte Digital Brain is the <strong className=" font-semibold">Most Valuable Platform (MVP)</strong>{' '}
+            for companies. It allows non digital-native companies to also leverage the power of data – both to
+            digitalize their existing business and for the future digital operating models that are emerging.
           </p>
         </Col>
       </Row>
