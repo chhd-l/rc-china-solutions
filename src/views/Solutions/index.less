@@ -1,5 +1,5 @@
 .Solutions {
-  padding: 103px 115px 145px;
+  padding: 103px 0 145px;
   background: #111;
   color: #fff;
   .header {
@@ -97,6 +97,27 @@
   .hoverBlue {
     &:hover {
       border-color: blue;
+    }
+  }
+  .solutionsFooter {
+    .inputPhont {
+      .ant-input {
+        border-left-color: transparent !important;
+        font-size: 17px !important;
+      }
+    }
+    .ant-input {
+      border-color: #999 !important;
+      height: 62px;
+      &::placeholder {
+        color: #000;
+      }
+    }
+    .ant-input-group-addon {
+      border-color: #999;
+    }
+    .ant-select-selector {
+      color: #000 !important;
     }
   }
 }

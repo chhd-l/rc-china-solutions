@@ -163,6 +163,7 @@ module.exports = {
         18: '300px',
       },
       lineHeight: {
+        normal: 'normal',
         rc1_2: '1.2',
         rc16: '16px',
         rc18: '18px',
@@ -245,11 +246,14 @@ module.exports = {
         rc87: '87px',
         rc90: '90px',
         rc92: '92px',
+        rc115: '115px',
         rc110: '110px !important',
         rc125: '125px',
         rc132: '132px',
+        rc150: '150px',
         rc152: '152px',
         rc242: '242px',
+        rc325: '325px',
         rc354: '354px',
       },
       margin: {
