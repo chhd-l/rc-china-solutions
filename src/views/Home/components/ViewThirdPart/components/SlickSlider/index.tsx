@@ -32,6 +32,7 @@ const SlickSlider = ({ sliderRef, setSlideIndex }: SlickSliderProps) => {
     speed: 500,
     slidesToShow: 4,
     swipeToSlide: true,
+    arrows: false,
     beforeChange: (_: number, next: number) => setSlideIndex(next),
     responsive: [
       {
@@ -65,17 +66,17 @@ const SlickSlider = ({ sliderRef, setSlideIndex }: SlickSliderProps) => {
     <div>
       <Slider ref={(slider) => (sliderRef.current = slider!)} {...settings}>
         {slickImgList.map((item) => (
-          <div className=" py-rc_10" key={item.title}>
+          <div className="group py-rc_10" key={item.title}>
             <div className="owl-item">
               <div className="item">
                 <div className="w-full">
                   <div className="industry-image">
-                    <a href="">
+                    <span>
                       <img src={item.path} alt="" className=" block" />
-                    </a>
+                    </span>
                   </div>
                   <div className="industry-title">
-                    <a href="">{item.title}</a>
+                    <span className=" group-hover:underline">{item.title}</span>
                   </div>
                 </div>
               </div>
