@@ -27,6 +27,7 @@ import DigitalSupplierCollaboration from '../views/Solutions/DigitalSupplierColl
 import SupplyChainAnalytics from '../views/Solutions/SupplyChainAnalytics'
 import AOP from '../views/Solutions/AOP'
 import LRP from '../views/Solutions/LRP'
+import Events from '../views/Resources/Events'
 
 const routers: RouteObject[] = [
   {
@@ -144,6 +145,10 @@ const routers: RouteObject[] = [
           {
             path: 'blog',
             element: <Blog />,
+          },
+          {
+            path: 'events',
+            element: <Events />,
           },
         ],
       },

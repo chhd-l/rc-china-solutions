@@ -67,4 +67,10 @@ export const searchDara = [
     desc: 'RFPs Part II: How to solve this damaging vendor selection approach',
     title: 'Simon Joiner',
   },
+  {
+    tip: 'Trending',
+    path: 'https://o9solutions.com/wp-content/uploads/2022/05/Placeholder-Image-copy-1024x655.jpg',
+    title: 'Simon Joiner',
+    desc: 'RFPs Part II: How to solve this damaging vendor selection approach',
+  },
 ]

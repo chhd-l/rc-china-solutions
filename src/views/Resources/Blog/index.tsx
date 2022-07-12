@@ -87,7 +87,7 @@ const Blog = () => {
                 <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 24 }}>
                   <Row justify="center" align="top">
                     {searchDara.map((item, index) => (
-                      <FloadCard {...item} key={index} type="black" />
+                      <FloadCard {...item} key={index} bgColor="black" textColor="white" />
                     ))}
                   </Row>
                 </Col>
