@@ -80,7 +80,7 @@ export const resourcesData = [
       },
       {
         label: 'Events',
-        path: '',
+        path: '/resources/events',
       },
     ],
   },
