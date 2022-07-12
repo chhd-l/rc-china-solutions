@@ -24,8 +24,8 @@ const SearchAndFilter = () => {
   )
 
   return (
-    <Row>
-      <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 8 }}>
+    <Row className=" px-rc90">
+      <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 6 }}>
         <Wrapper>
           <p className=" text-rc18">Search Resources</p>
           <SearchInput placeholder="Type to search ..." onChange={(e) => run(e.target.value)} />
@@ -51,8 +51,8 @@ const SearchAndFilter = () => {
         ))}
       </Col>
 
-      <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 16 }}>
-        <Row gutter={[20, 20]} align="top">
+      <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 18 }}>
+        <Row gutter={[0, 20]} align="top">
           {searchData.map((item) => (
             <Col
               xs={{ span: 18 }}
