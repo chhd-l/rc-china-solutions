@@ -1,5 +1,6 @@
 import { Anchor, Col, Row } from 'antd'
 import { AnchorContainer } from 'antd/lib/anchor/Anchor'
+import { useEffect, useState } from 'react'
 import BrounceArrow from '../../../components/BounceArrow'
 import EventsCard from './components/EventsCard'
 import './index.less'
@@ -7,8 +8,13 @@ import { eventsData } from './mock'
 
 const { Link } = Anchor
 const Events = () => {
+  const [targetOffset, setTargetOffset] = useState<number | undefined>(undefined)
+
+  useEffect(() => {
+    setTargetOffset(window.innerHeight / 2)
+  }, [])
   return (
-    <div>
+    <div id="">
       <Row justify="center">
         <Col span={24}>
           <div className=" relative ">
@@ -17,10 +23,12 @@ const Events = () => {
                 <div className="using-image">
                   <div className="img"></div>
                 </div>
-                {/* <div className="row-bg-overlay"></div> */}
                 <Row justify="center">
                   <Col span={20} style={{ zIndex: 10 }}>
-                    <p className=" text-rc20 border-black border-b pb-rc20 mb-rc100 font-bold">Events</p>
+                    <p className="  border-black border-b pb-rc15 mb-rc100 flex flex-row justify-between">
+                      <span className=" text-rc20 font-bold">Events</span>
+                      <span className="text-white text-rc14">Events</span>
+                    </p>
                     <Row justify="center">
                       <Col
                         xs={{ span: 18 }}
@@ -45,13 +53,17 @@ const Events = () => {
               <Row justify="center" className="bg-gray-300 " id="anchor-content">
                 <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 20 }} xl={{ span: 20 }}>
                   <Row justify="center" className=" mt-rc_10">
-                    <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 4 }} xl={{ span: 4 }}>
-                      <Anchor getContainer={() => document.querySelector('#anchor-content') as AnchorContainer} affix>
+                    <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 2 }} lg={{ span: 4 }} xl={{ span: 4 }}>
+                      <Anchor
+                        targetOffset={targetOffset}
+                        getContainer={() => document.querySelector('#anchor-content') as AnchorContainer}
+                        // affix
+                      >
                         <Link href="#Upcoming" title="Upcoming" />
                         <Link href="#PastEvents" title="PastEvents" />
                       </Anchor>
                     </Col>
-                    <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 20 }} xl={{ span: 20 }}>
+                    <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 22 }} lg={{ span: 20 }} xl={{ span: 20 }}>
                       <Row justify="center" gutter={10} className="afterline" id="Upcoming">
                         {eventsData.Upcoming.map((item, index) => (
                           <Col
