@@ -6,6 +6,7 @@ module.exports = {
       bgGreen: '#EEF1E6',
       green: '#6CA100',
       green00c178: '#00c178',
+      green300: 'rgb(0, 193, 120)',
       black: '#000000',
       black_111: '#111',
       white: '#FFFFFF !important',

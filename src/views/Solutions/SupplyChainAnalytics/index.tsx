@@ -19,7 +19,7 @@ const SupplyChainAnalytics = () => {
         logoImg={SupplyChainControlTowerLogo}
         title={
           <div className="w-rc_120 -mt-rc90">
-            Informed Supply Chain<br/> Policies
+            Informed <span className="border-b-4 border-purple-900 border-solid inline-block">Supply</span> Chain<br/> Policies
           </div>
         }
         titleRight={<BounceArrow />}
@@ -30,7 +30,7 @@ const SupplyChainAnalytics = () => {
           section_01_title2=" into your planning process with rich, secure collaboration workflows."
           section_01_span="The Deloitte Digital Supplier Collaboration solution makes it simple to bring all your suppliers into one collaborative process. These include processes around direct material inventory visibility, forecasts, orders and costs. This will help you drive early warnings, improvement actions and joint business plan reviews with the extended supplier network."
           section_02_title="Top reasons organizations are upgrading"
-          section_02_title2=" their Supply Chain Master Planning capabilities"
+          section_02_title2=" their Supply Chain Analytics capabilitiess"
           section_02_spans={SupplyChainAnalytics_Ecyion3s_2}
           section_03_img={SupplyChainAnalytics_Ecyion3s_3_img}
           section_03_title={

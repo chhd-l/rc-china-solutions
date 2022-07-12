@@ -17,7 +17,11 @@ const AOP = () => {
         titleBtn={<div></div>}
         headerClassName="pb-rc65"
         logoImg={SupplyChainControlTowerLogo}
-        title={<div className="w-rc_120 w-rc_120 -mt-rc80 mb-rc60">Go beyond Financial Planning</div>}
+        title={
+          <div className="w-rc_120 w-rc_120 -mt-rc80 mb-rc60">
+            Go <span className="border-b-4 border-green300 border-solid inline-block">beyond</span> Financial Planning
+          </div>
+        }
         titleRight={<BounceArrow />}
       />
       <main>
@@ -26,7 +30,7 @@ const AOP = () => {
           section_01_title2="with a unified view across the strategic planning horizon."
           section_01_span="Deploy the “Digital Market Knowledge” model from Deloitte. Bring together rich Market Data, Advanced Analytics and Integrated Planning capabilities. Transform unmanageable and uncertain revenue planning & budgeting processes. Drive growth based on facts and data."
           section_02_title="Top reasons organizations are upgrading"
-          section_02_title2=" their Supply Chain Master Planning capabilities"
+          section_02_title2=" with an Operating Plan that captures strategic intent."
           section_02_spans={AOP_Ecyion3s_2}
           section_03_img={AOP_Ecyion3s_3_img}
           section_03_title={
