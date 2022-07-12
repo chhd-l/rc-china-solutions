@@ -1,0 +1,29 @@
+.Revenuemanagementsolutions {
+    @keyframes herderIconBotmHover {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(100%);
+      }
+      51% {
+        transform: translateY(-100%);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+    .titleBtnRight:hover {
+      .herderIconBotm {
+        animation-name: herderIconBotmHover;
+      }
+    }
+    .herderIconBotm {
+      background: url(../../../assets/image/IconBotm.png) no-repeat center;
+      background-size: 100%;
+      animation-duration: 0.3s;
+      animation-iteration-count: 1;
+      animation-direction: alternate;
+    }
+  }
+  

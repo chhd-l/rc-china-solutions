@@ -7,6 +7,7 @@ module.exports = {
       green: '#6CA100',
       green00c178: '#00c178',
       black: '#000000',
+      black_111: '#111',
       white: '#FFFFFF !important',
       '1A191A': '#1A191A',
       black_73: 'rgba(0,0,0,0.73)',
@@ -35,6 +36,9 @@ module.exports = {
         800: '#4C4C4C',
         999: '#999',
         979797: '#979797',
+      },
+      red: {
+        300: 'rgb(255, 30, 57)'
       },
       blue: {
         400: '#2036FF',
@@ -69,6 +73,7 @@ module.exports = {
         rc_23: '23%',
         rc_30: '30%',
         rc_47: '47%',
+        rc_75: '75%',
         rc_120: '120%',
         rc8: '8px',
         rc10: '10px',
@@ -123,6 +128,7 @@ module.exports = {
         rc1000: '1000px !important',
       },
       height: {
+        rc_30: '30%',
         rc_35: '35%',
         rc_110: '110%',
         rc1: '1px',
