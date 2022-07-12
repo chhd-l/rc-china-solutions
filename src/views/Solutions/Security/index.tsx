@@ -24,9 +24,9 @@ const Security = () => {
       </Row>
       <Row justify="center" className="mt-rc_7">
         <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 19 }} lg={{ span: 15 }} xl={{ span: 16 }}>
-          <p className="text-rc24  ">o9 SOC-2 Attestation</p>
+          <p className="text-rc24  ">Deloitte SOC-2 Attestation</p>
           <span className="text-rc17">
-            o9 Solutions has been attested by independent 3rd party to conform to SSAE 16 / SOC-2 controls.
+            Deloitte Solutions has been attested by independent 3rd party to conform to SSAE 16 / SOC-2 controls.
           </span>
           <p className="text-rc24 mt-rc26">Physical Security</p>
           <span className="text-rc17">

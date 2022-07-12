@@ -30,7 +30,7 @@ const NPI = () => {
           section_01_text1="Balance market needs versus operations complexity."
           section_01_text2="Increase success of new product introduction with smoother launches and transitions. Optimize your product portfolio range with Advanced Segmentation, Analytics and Scenario Planning capabilities. Use cross-functional planning and collaborate across Product, Marketing, Sales & Supply Chain functions."
           section_02_video={<div className="h-rc242" />}
-          section_02_text1="o9’s NPI software shows a comprehensive view of the New Product Introduction planning process."
+          section_02_text1="Deloitte’s NPI software shows a comprehensive view of the New Product Introduction planning process."
           section_02_text2=""
           section_02_text3="Addressing common problems by creating placeholder SKUs before the product is created in the ERP system. Using like products and various planning parameters it can generate a new product forecast and determine the cannibalization impact of the new product."
         />
@@ -46,13 +46,13 @@ const NPI = () => {
         <SolutionsPlanMoudlu
           spans={[
             'Deloitte’s next-generation demand planning software capabilities are helping global enterprises improve forecast accuracy, which directly correlates to better plans and improved financial performance. And when a business plans better, it creates operational efficiencies that significantly reduce wastage.',
-            'The integrated planning efficiencies delivered by o9 is helping corporations do more, be more and mean more, internally and to the world at large.',
+            'The integrated planning efficiencies delivered by Deloitte is helping corporations do more, be more and mean more, internally and to the world at large.',
           ]}
           title='Plan better. Reduce waste. Create an efficient business for a better planet.'
           bg={false}
         />
         <UserSubmission
-          title={<strong>Introduce new products with a holistic view. Leverage the :o9 Digital Brain in your business.</strong>}
+          title={<strong>Introduce new products with a holistic view. Leverage the Deloitte Digital Brain in your business.</strong>}
         />
         <section className="section_09 text-rc20">
           <div className="mb-rc45 text-rc35">Related Solutions</div>

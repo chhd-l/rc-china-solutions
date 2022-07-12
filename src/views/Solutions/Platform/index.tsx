@@ -52,7 +52,7 @@ const Platform = () => {
                 className="object-cover"
               >
                 <source
-                  src="https://o9solutions.com/wp-content/uploads/2020/09/o9Solutions-Home-Thumnail-1.mp4"
+                  src="https://Deloittesolutions.com/wp-content/uploads/2020/09/DeloitteSolutions-Home-Thumnail-1.mp4"
                   type="video/mp4"
                 ></source>
               </video>

@@ -22,7 +22,7 @@ const CaseStudies = () => {
                       className=" object-contain opacity-100"
                       width="100%"
                       height={605}
-                      src="https://o9solutions.com/wp-content/uploads/2021/11/Industry-Header-1.mp4"
+                      src="https://Deloittesolutions.com/wp-content/uploads/2021/11/Industry-Header-1.mp4"
                     />
                   </div>
                 </div>

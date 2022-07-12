@@ -35,11 +35,6 @@ const SupplyChainLogistics = () => {
         }
         titleRight={<BounceArrow />}
       />
-      <section className="bg-black px-rc90 py-rc125 text-white">
-        <div className="px-rc242 text-rc45">
-          Use instant flow and constraints visibility across all merchandising desks.
-        </div>
-      </section>
       <Breadcrumbs
         title="Use instant flow and constraints visibility across all merchandising desks."
         bodys={SupplyChainLogistics_content}

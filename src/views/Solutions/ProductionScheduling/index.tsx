@@ -68,7 +68,7 @@ const ProductionScheduling = () => {
         <SolutionsPlanMoudlu
           spans={[
             'Deloitte’s next-generation production scheduling software capabilities are helping global enterprises improve planning accuracy, which leads to better plans and improved financial performance. And when a business plans better, it creates operational efficiencies that significantly reduce wastage.',
-            'The integrated planning efficiencies delivered by o9 is helping corporations do more, be more and mean more, internally and to the world at large.',
+            'The integrated planning efficiencies delivered by Deloitte is helping corporations do more, be more and mean more, internally and to the world at large.',
           ]}
           title='Take the first step to natively integrate production scheduling
           into your planning workflows'
