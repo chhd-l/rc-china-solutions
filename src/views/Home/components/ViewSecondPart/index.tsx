@@ -26,9 +26,9 @@ const ViewSecondPart = () => {
         </Col>
       </Row>
 
-      <Row justify="center" className=" mt-rc_11" gutter={20}>
+      <Row justify="center" className=" mt-rc_11">
         <Col xs={{ span: 16 }} sm={{ span: 16 }} md={{ span: 14 }} lg={{ span: 8 }} xl={{ span: 9 }}>
-          <p className=" text-rc40">
+          <p className=" text-rc40 mr-rc20">
             <strong>The Deloitte Digital Brain:</strong> The platform at the core of your digital transformation.
           </p>
         </Col>

@@ -12,7 +12,6 @@ const MenuItem = styled.div`
   font-size: 14px;
   font-weight: 600;
   padding: 0 42px;
-  cursor: pointer;
   line-height: 62px;
   :hover {
     color: var(--primary-color);
@@ -28,9 +27,15 @@ export const Menu = () => {
       {MenuData.map((item) => (
         <MenuItem
           key={item.label}
-          onClick={() => navigate(item.path)}
+          onClick={() => {
+            if (item.label === 'Resources') {
+              return false
+            }
+            navigate(item.path)
+          }}
           onMouseEnter={() => setCurrent(item.label)}
           onMouseLeave={() => setCurrent('default')}
+          className={`${item.label === 'Solutions' && 'cursor-pointer'}`}
         >
           {item.label}
           {<SubMenu current={current} getCurrent={getCurrent} subMenuData={item.children} />}
