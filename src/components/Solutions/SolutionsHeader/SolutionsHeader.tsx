@@ -14,6 +14,7 @@ type SolutionsHeaderType = {
   titleRight?: any
   titleBtn?: any
   headerTilte: any
+  hiderMask?: boolean
 }
 
 const SolutionsHeader = ({
@@ -28,12 +29,13 @@ const SolutionsHeader = ({
   title,
   titleRight,
   headerTilte,
-  titleBtn
+  titleBtn,
+  hiderMask=false,
 }: SolutionsHeaderType) => {
   return (
     <header
       className={`pb-rc100 px-rc90 pt-rc35 relative SolutionsHeader ${headerClassName}`}
-      style={{ backgroundColor: headBg ? 'rgba(0, 0, 0, 0.4)' : '' }}
+      style={{ backgroundColor: headBg ? hiderMask ? '' : 'rgba(0, 0, 0, 0.4)' : '' }}
     >
       <img style={{ zIndex: '-1' }} className="absolute top-0 left-0 w-full h-full" src={headBg} alt="" />
       <div

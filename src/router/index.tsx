@@ -29,6 +29,12 @@ import AOP from '../views/Solutions/AOP'
 import LRP from '../views/Solutions/LRP'
 import Revenuemanagementsolutions from '../views/Solutions/Revenuemanagementsolutions'
 import Events from '../views/Resources/Events'
+import SupplyChainManagementSolutions from '../views/Solutions/SupplyChainManagementSolutions'
+import MAM from '../views/Solutions/M&AM'
+import MFP from '../views/Solutions/MFP'
+import AssortmentPlanning from '../views/Solutions/AssortmentPlanning'
+import RDP from '../views/Solutions/RDP'
+import RetailAnalytics from '../views/Solutions/RetailAnalytics'
 
 const routers: RouteObject[] = [
   {
@@ -67,7 +73,7 @@ const routers: RouteObject[] = [
             element: <Sustainability />,
           },
           {
-            path: 'integratedBusinessPlanning',
+            path: 'integrated-business-planning',
             element: <IntegratedBusinessPlanning />,
           },
           {
@@ -129,6 +135,30 @@ const routers: RouteObject[] = [
           {
             path: 'long-range-planning-lrp',
             element: <LRP />,
+          },
+          {
+            path: 'supply-chain',
+            element: <SupplyChainManagementSolutions />,
+          },
+          {
+            path: 'merchandising',
+            element: <MAM />,
+          },
+          {
+            path: 'merchandise-financial-planning',
+            element: <MFP />,
+          },
+          {
+            path: 'assortment-planning',
+            element: <AssortmentPlanning />,
+          },
+          {
+            path: 'retail-demand-planning',
+            element: <RDP />,
+          },
+          {
+            path: 'retail-analytics',
+            element: <RetailAnalytics />,
           },
         ],
       },

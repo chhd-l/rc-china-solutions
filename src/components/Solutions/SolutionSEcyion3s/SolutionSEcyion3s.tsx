@@ -1,6 +1,7 @@
 import './index.less'
 
 type SolutionSEcyion3sType = {
+  section_01_img?: string
   section_01_title: string
   section_01_title2: string
   section_01_span: string
@@ -10,9 +11,12 @@ type SolutionSEcyion3sType = {
   section_03_img: any
   section_03_title: any
   section_03_spans: any[]
+  section_01_span2?: string
+  section_01_span3?: string
 }
 
 const SolutionSEcyion3s = ({
+  section_01_img,
   section_01_title,
   section_01_title2,
   section_01_span,
@@ -22,17 +26,28 @@ const SolutionSEcyion3s = ({
   section_03_img,
   section_03_title,
   section_03_spans,
+  section_01_span2,
+  section_01_span3,
 }: SolutionSEcyion3sType) => {
   return (
     <div className="SolutionSEcyion3s">
-      <section className="bg-black text-white section_01 px-rc90 py-rc150">
+      <section className={`bg-black text-white section_01 px-rc90 pb-rc150 ${section_01_img ? 'pt-rc40' : 'pt-rc150'}`}>
+        {
+          section_01_img 
+          ? <div className="relative px-rc_10 -top-rc90">
+          <img className='px-rc35 w-full' src={section_01_img} alt="" />
+        </div>
+          : null
+        }
         <div className=" pl-rc_15 pr-rc_15 ml-_rc15 mr-_rc15">
           <div className="pl-rc35 pr-rc35 text-rc20">
-            <div className="text-rc45">
+            <div className="text-rc45 leading-rc55">
               {section_01_title}
-              <span className="text-gray-999">{section_01_title2}</span>
+              <span className="text-gray-999 leading-rc55">{section_01_title2}</span>
             </div>
-            <div className="mt-rc40 mb-rc27 text-gray-999">{section_01_span}</div>
+            <div className="mt-rc40 mb-rc27 text-gray-999 leading-rc32">{section_01_span}</div>
+            <div className="mt-rc40 mb-rc27 text-gray-999 leading-rc32">{section_01_span2}</div>
+            <div className="mt-rc40 mb-rc27 text-gray-999 leading-rc32">{section_01_span3}</div>
           </div>
         </div>
       </section>
@@ -77,12 +92,12 @@ const SolutionSEcyion3s = ({
         )}
         <div className={`${typeof section_03_img === 'string' && '-mt-rc_10'}`}>
           <div className="text-rc45 mb-rc75">{section_03_title}</div>
-          <div className="grid grid-cols-2">
+          <div className="grid grid-cols-2 gap-x-10 relative">
             {section_03_spans.map((item, idx) => (
               <div className="flex items-center mb-rc20">
                 {/* <img className="mr-rc15 mt-rc10 h-rc22" src={SupplyChainControlTower_UseCases_1} alt="" /> */}
-                <div className="mr-rc15 w-rc10 h-rc10 bg-white rounded-full" />
-                <div>{item}</div>
+                <div className="w-rc10 h-rc10 bg-white rounded-full absolute" />
+                <div className='ml-rc35'>{item}</div>
               </div>
             ))}
           </div>

@@ -1,18 +1,18 @@
 import SupplyChainControlTowerLogo from '../../../assets/image/SupplyChainControlTower_logo@2x.png'
 import BounceArrow from '../../../components/BounceArrow'
-import blue_left_icon from '../../../assets/image/blue_left_icon@2x.png'
+import orange_left_icon from '../../../assets/image/orange_left_icon.png'
 import { NectarButton } from '../../../components/common/NectarButton'
 import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/SolutionsHeader'
-import { SupplyChainLogistics_content } from '../modules/SupplyChainLogistics'
 import './index.less'
 import Breadcrumbs from '../../../components/Solutions/Breadcrumbs/Breadcrumbs'
+import { MAM_bodys } from '../modules/MAM'
 
-const SupplyChainLogistics = () => {
+const MAM = () => {
   return (
-    <div className="SupplyChainLogistics">
+    <div className="MAM">
       <SolutionsHeader
         TopDividerColor="border-black"
-        headerTilte={<strong className="text-rc20">Supply Chain & Logistics Management for Retail</strong>}
+        headerTilte={<strong className="text-rc20">Merchandise & Assortment Management</strong>}
         headerTilteRight={<div className="text-rc14 text-white font-bold">Merchandising & Assortment Management</div>}
         titleBtn={
           <div className="flex items-center mt-rc35">
@@ -29,24 +29,41 @@ const SupplyChainLogistics = () => {
         logoImg={SupplyChainControlTowerLogo}
         title={
           <div className="w-rc_120 -mt-rc90">
-            <span className="border-b-4 border-purple-900 border-solid inline-block">End-to-end</span> constraint-based
-            planning across the complete supply chain.
+            Build and manage customer-centric{' '}
+            <span className="border-b-4 border-orange-900 border-solid inline-block">merchandising</span> plans.
           </div>
         }
         titleRight={<BounceArrow />}
       />
       <Breadcrumbs
-        title="Use instant flow and constraints visibility across all merchandising desks."
-        bodys={SupplyChainLogistics_content}
-        footerTitle='Supply Chain & Logistics Solutions'
-        footerP='Visualize the Future to Build Iteratively and Rapidly towards the vision. It is the practical way.'
-        footerSpan='Departments: CRO, Sales, Marketing, Category Management, Finance'
-        footerHover={['RelatedSolutions_1', 'RelatedSolutions_2']}
-        footerHover_icon={blue_left_icon}
-        footerClassName='Bule_Footer_hover'
+        bodys={MAM_bodys}
+        title={
+          <div>
+            Improve alignment with strategic mix and assortment goals.
+          </div>
+        }
+        img="https://o9solutions.com/wp-content/uploads/2020/07/M-Hero-graph.svg"
+        footerTitle="Revenue
+        management
+        solutions"
+        footerP="Visualize the future to build iteratively and rapidly towards the vision. It is the practical way."
+        footerSpan={
+          <div>
+            <strong>Departments: </strong>
+            CRO, Sales, Marketing, Category Management, Finance
+          </div>
+        }
+        footerHover={[
+          'RelatedSolutions_1',
+          'RelatedSolutions_2',
+          'RelatedSolutions_3',
+          'RelatedSolutions_4',
+        ]}
+        footerHover_icon={orange_left_icon}
+        footerClassName="Orange_Footer_hover_black"
       />
     </div>
   )
 }
 
-export default SupplyChainLogistics
+export default MAM
