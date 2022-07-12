@@ -5,8 +5,8 @@ import BounceArrow from '../../../components/BounceArrow'
 import SolutionSEcyion3s from '../../../components/Solutions/SolutionSEcyion3s/SolutionSEcyion3s'
 import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/SolutionsHeader'
 import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
+import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
 import { LRP_Ecyion3s_2 } from '../modules/LRP'
-import './index.less'
 
 const LRP = () => {
   return (
@@ -39,38 +39,11 @@ const LRP = () => {
             </div>
           }
         />
-        <section className="section_09 text-rc20">
-          <div className="mb-rc45 text-rc35">Related Solutions</div>
-          <div className="flex flex-wrap">
-            <div className="transition-all group RelatedSolutions_1 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30">
-              <div className="w-rc100 h-full" />
-              <div>Supply Chain Master Planning</div>
-              <img
-                className="transition-all opacity-0 transform -translate-x-1/2 h-rc35 group-hover:translate-x-0 group-hover:opacity-100"
-                src={section_09_left_icon}
-                alt=""
-              />
-            </div>
-            <div className="transition-all group RelatedSolutions_2 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30">
-              <div className="w-rc100 h-full" />
-              <div>Supply Chain Master Planning</div>
-              <img
-                className="transition-all opacity-0 transform -translate-x-1/2 h-rc35 group-hover:translate-x-0 group-hover:opacity-100"
-                src={section_09_left_icon}
-                alt=""
-              />
-            </div>
-            <div className="transition-all group RelatedSolutions_3 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30">
-              <div className="w-rc100 h-full" />
-              <div>Supply Chain Master Planning</div>
-              <img
-                className="transition-all opacity-0 transform -translate-x-1/2 h-rc35 group-hover:translate-x-0 group-hover:opacity-100"
-                src={section_09_left_icon}
-                alt=""
-              />
-            </div>
-          </div>
-        </section>
+        <WpbWrapper
+          leftIcon={section_09_left_icon}
+          footerClassName="Greed_Footer_hover"
+          footerHover={['RelatedSolutions_1', 'RelatedSolutions_2', 'RelatedSolutions_3']}
+        />
       </main>
     </div>
   )

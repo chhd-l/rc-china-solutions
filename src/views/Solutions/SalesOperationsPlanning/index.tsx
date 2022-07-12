@@ -7,9 +7,9 @@ import Sections from '../../../components/Solutions/Sections/Sections'
 import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/SolutionsHeader'
 import TopReasons from '../../../components/Solutions/TopReasons/TopReasons'
 import MoudulUseCase from '../../../components/Solutions/MoudulUseCase/MoudulUseCase'
-import './index.less'
 import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
 import { SalesOperationsPlanning_TopReasons, SalesOperationsPlanning_UseCase } from '../modules/SalesOperationsPlanning'
+import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
 
 const SalesOperationsPlanning = () => {
   return (
@@ -56,56 +56,18 @@ const SalesOperationsPlanning = () => {
           bg={false}
         />
         <UserSubmission title={<strong>Take the first step to redefining your Sales & Operations Planning workflows</strong>} />
-        <section className="section_09 text-rc20">
-          <div className="mb-rc45 text-rc35">Related Solutions</div>
-          <div className="flex flex-wrap">
-            <div className="transition-all group RelatedSolutions_1 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30">
-              <div className="w-rc100 h-full" />
-              <div>Supply Chain Master Planning</div>
-              <img
-                className="transition-all opacity-0 transform -translate-x-1/2 h-rc35 group-hover:translate-x-0 group-hover:opacity-100"
-                src={section_09_left_icon}
-                alt=""
-              />
-            </div>
-            <div className="transition-all group RelatedSolutions_1 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30">
-              <div className="w-rc100 h-full" />
-              <div>Supply Chain Master Planning</div>
-              <img
-                className="transition-all opacity-0 transform -translate-x-1/2 h-rc35 group-hover:translate-x-0 group-hover:opacity-100"
-                src={section_09_left_icon}
-                alt=""
-              />
-            </div>
-            <div className="transition-all group RelatedSolutions_2 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30">
-              <div className="w-rc100 h-full" />
-              <div>Supply Chain Master Planning</div>
-              <img
-                className="transition-all opacity-0 transform -translate-x-1/2 h-rc35 group-hover:translate-x-0 group-hover:opacity-100"
-                src={section_09_left_icon}
-                alt=""
-              />
-            </div>
-            <div className="transition-all group RelatedSolutions_3 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30">
-              <div className="w-rc100 h-full" />
-              <div>Supply Chain Master Planning</div>
-              <img
-                className="transition-all opacity-0 transform -translate-x-1/2 h-rc35 group-hover:translate-x-0 group-hover:opacity-100"
-                src={section_09_left_icon}
-                alt=""
-              />
-            </div>
-            <div className="transition-all group RelatedSolutions_4 hover:bg-black hover:text-white flex items-center justify-between w-1/2 border border-solid border-gray-e5e6e5 py-rc25 pl-rc15 pr-rc30">
-              <div className="w-rc100 h-full" />
-              <div>Supply Chain Master Planning</div>
-              <img
-                className="opacity-0 transform -translate-x-1/2 h-rc35 group-hover:translate-x-0 group-hover:opacity-100"
-                src={section_09_left_icon}
-                alt=""
-              />
-            </div>
-          </div>
-        </section>
+        <WpbWrapper
+          leftIcon={section_09_left_icon}
+          footerClassName="Purple_Footer_hover"
+          footerHover={[
+            'RelatedSolutions_1',
+            'RelatedSolutions_2',
+            'RelatedSolutions_3',
+            'RelatedSolutions_4',
+            'RelatedSolutions_5',
+            'RelatedSolutions_6',
+          ]}
+        />
       </main>
     </div>
   )
