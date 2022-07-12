@@ -9,7 +9,7 @@ const WhitePapers = () => {
       <Row>
         <Col span={24}>
           <div className=" relative px-rc90">
-            <div className="modal-ready">
+            <div className="whitePaper-ready">
               <div className=" relative w-full pt-rc35 pb-rc70 z-50 mb-0 bg-100%">
                 <div className="nectar-video-wrap">
                   <div className="h-full">

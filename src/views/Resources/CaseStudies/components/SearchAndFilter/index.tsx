@@ -48,12 +48,12 @@ const SearchAndFilter = () => {
             // onChange={onChange}
           />
         </Wrapper>
-        {searchItem.map((item) => (
-          <Wrapper key={item.title}>
+        {searchItem.map((item, index) => (
+          <Wrapper key={index}>
             <p className=" text-rc18">{item.title}</p>
-            {item.list.map((child) => (
+            {item.list.map((child, idx) => (
               <p
-                key={child.label}
+                key={idx}
                 onClick={() => {
                   toggle(child.value)
                   const res = searchData.filter((it) => toLower(it.desc).indexOf(toLower(child.value)) > -1)
@@ -71,8 +71,8 @@ const SearchAndFilter = () => {
 
       <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 16 }}>
         <Row gutter={[20, 20]} align="top">
-          {searchData.map((item) => (
-            <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 8 }}>
+          {searchData.map((item, index) => (
+            <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 8 }} key={index}>
               <CaseStudiesCart {...item} />
             </Col>
           ))}

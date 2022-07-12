@@ -54,7 +54,14 @@ const SearchAndFilter = () => {
       <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 16 }}>
         <Row gutter={[20, 20]} align="top">
           {searchData.map((item) => (
-            <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 8 }}>
+            <Col
+              xs={{ span: 18 }}
+              sm={{ span: 16 }}
+              md={{ span: 11 }}
+              lg={{ span: 11 }}
+              xl={{ span: 8 }}
+              key={item.path}
+            >
               <MyCart {...item} />
             </Col>
           ))}
