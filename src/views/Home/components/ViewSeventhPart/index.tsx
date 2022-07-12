@@ -25,7 +25,7 @@ const ViewSeventhPart = () => {
           <Col span={24}>
             <Row justify="center" align="top">
               {sightsList.map((item) => (
-                <FloadCard {...item} bgColor="white" textColor="black" />
+                <FloadCard {...item} bgColor="white" textColor="black" key={item.title} />
               ))}
             </Row>
           </Col>
