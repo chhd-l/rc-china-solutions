@@ -1,7 +1,11 @@
-import { Col, Row } from 'antd'
+import { Anchor, Col, Row } from 'antd'
+import { AnchorContainer } from 'antd/lib/anchor/Anchor'
 import BrounceArrow from '../../../components/BounceArrow'
+import EventsCard from './components/EventsCard'
 import './index.less'
+import { eventsData } from './mock'
 
+const { Link } = Anchor
 const Events = () => {
   return (
     <div>
@@ -27,8 +31,8 @@ const Events = () => {
                         style={{ zIndex: 10 }}
                       >
                         <p className="text-rc72  text-rc7 leading-rc75 animate__animated animate__fadeInDown font-light">
-                          Come meet us <span className="animation_underline relative">digitally</span> in industry
-                          events
+                          Come meet us <span className="animation_underline relative inline-block">digitally</span> in
+                          industry events
                         </p>
                       </Col>
                       <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 7 }}>
@@ -38,6 +42,48 @@ const Events = () => {
                   </Col>
                 </Row>
               </div>
+              <Row justify="center" className="bg-gray-300 " id="anchor-content">
+                <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 20 }} xl={{ span: 20 }}>
+                  <Row justify="center" className=" mt-rc_10">
+                    <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 4 }} xl={{ span: 4 }}>
+                      <Anchor getContainer={() => document.querySelector('#anchor-content') as AnchorContainer} affix>
+                        <Link href="#Upcoming" title="Upcoming" />
+                        <Link href="#PastEvents" title="PastEvents" />
+                      </Anchor>
+                    </Col>
+                    <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 20 }} xl={{ span: 20 }}>
+                      <Row justify="center" gutter={10} className="afterline" id="Upcoming">
+                        {eventsData.Upcoming.map((item, index) => (
+                          <Col
+                            key={index}
+                            xs={{ span: 18 }}
+                            sm={{ span: 16 }}
+                            md={{ span: 11 }}
+                            lg={{ span: 11 }}
+                            xl={{ span: 12 }}
+                          >
+                            <EventsCard {...item} />
+                          </Col>
+                        ))}
+                      </Row>
+                      <Row justify="center" gutter={10} className=" mt-rc_5 pb-rc_15" id="PastEvents">
+                        {eventsData.PastEvents.map((item, index) => (
+                          <Col
+                            key={index}
+                            xs={{ span: 18 }}
+                            sm={{ span: 16 }}
+                            md={{ span: 11 }}
+                            lg={{ span: 11 }}
+                            xl={{ span: 12 }}
+                          >
+                            <EventsCard {...item} />
+                          </Col>
+                        ))}
+                      </Row>
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
             </div>
           </div>
         </Col>
