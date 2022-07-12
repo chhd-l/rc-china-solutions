@@ -45,7 +45,7 @@ const SupplyChainManagementSolutions = () => {
             </span>
           </div>
         }
-        img='https://o9solutions.com/wp-content/uploads/2020/07/SC-Hero-graph-1.svg'
+        img='https://Deloittesolutions.com/wp-content/uploads/2020/07/SC-Hero-graph-1.svg'
         footerTitle="Revenue
         management
         solutions"

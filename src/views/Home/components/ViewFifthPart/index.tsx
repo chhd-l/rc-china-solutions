@@ -1,7 +1,7 @@
 import { Col, Row } from 'antd'
 import { MyImage } from './components/MyImage'
 import MyTab from './components/MyTab'
-import hiring_home from '../../../../assets/image/o9-hiring-home.jpg'
+import hiring_home from '../../../../assets/image/Deloitte-hiring-home.jpg'
 import { NectarButton } from '../../../../components/common/NectarButton'
 
 const ViewFifthPart = () => {

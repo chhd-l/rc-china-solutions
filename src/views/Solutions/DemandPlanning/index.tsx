@@ -41,18 +41,18 @@ const DemandPlanning = () => {
             </div>
           }
           section_01_text1="Improve forecast accuracy and sales adoption. Strengthen alignment of sales, product, supply chain and finance organizations."
-          section_01_text2="o9’s demand planning software is not just helping organizations predict demand better, it is also helping them sense, analyze, plan and shape demand to optimize both short-term and long-term sales and margin performance."
+          section_01_text2="Deloitte’s demand planning software is not just helping organizations predict demand better, it is also helping them sense, analyze, plan and shape demand to optimize both short-term and long-term sales and margin performance."
           section_02_video={DemandPlanning_section_2_bg}
           section_02_text1="Drive significant bottom-line value"
           section_02_text2="By improving forecasts based on leading indicators while providing early visibility to risks and opportunities."
-          section_02_text3="Scattered market visibility and spreadsheets make responding to market changes problematic. o9’s AI-powered, digital solution for demand planning features collaborative analytics, planning and continuous learning that helps your organization eliminate poorly made demand decisions."
+          section_02_text3="Scattered market visibility and spreadsheets make responding to market changes problematic. Deloitte’s AI-powered, digital solution for demand planning features collaborative analytics, planning and continuous learning that helps your organization eliminate poorly made demand decisions."
         />
         <TopReasons spans={DemandPlanningTopReasons} />
         <MoudulUseCase spans={DemandPlanningUseCase} />
         <SolutionsPlanMoudlu
           spans={[
             'Deloitte’s next-generation demand planning software capabilities are helping global enterprises improve forecast accuracy, which directly correlates to better plans and improved financial performance. And when a business plans better, it creates operational efficiencies that significantly reduce wastage.',
-            'The integrated planning efficiencies delivered by o9 is helping corporations do more, be more and mean more, internally and to the world at large.',
+            'The integrated planning efficiencies delivered by Deloitte is helping corporations do more, be more and mean more, internally and to the world at large.',
           ]}
         />
         <WpbRow

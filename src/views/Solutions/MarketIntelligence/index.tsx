@@ -70,7 +70,7 @@ const MarketIntelligence = () => {
           <div className="pl-rc35">
             <strong className="text-rc22">Live demo</strong>
             <div className="my-rc15">
-              Click to experience an interactive demo of the art-of-the-possible on o9’s next generation solution for
+              Click to experience an interactive demo of the art-of-the-possible on Deloitte’s next generation solution for
               Market Intelligence. You will see “live” some of the favored use cases of our clients.
             </div>
             <NectarButton className="" color="#000">

@@ -39,14 +39,14 @@ const IntegratedBusinessPlanning = () => {
         <Sections
           section_01_video={<div className="relative w-full h-rc90" />}
           section_01_text1="Cross funtional collaboration for world class decision making"
-          section_01_text2="o9’s Integrated Business Planning solution uses automation to bring together finance, marketing, sales, and supply chain to address risk and opportunities in an online live platform. Provide full visibility and complete transparency on the gap vs. the annual plan in revenues, cost, margin, and volumes. Resulting in profitable growth that balances strategic, financial and operational objectives."
+          section_01_text2="Deloitte’s Integrated Business Planning solution uses automation to bring together finance, marketing, sales, and supply chain to address risk and opportunities in an online live platform. Provide full visibility and complete transparency on the gap vs. the annual plan in revenues, cost, margin, and volumes. Resulting in profitable growth that balances strategic, financial and operational objectives."
           section_02_video={IntegratedBusinessPlanning_Sections_bg}
           section_02_text1="Integrated business planning to mitigate risks"
           section_02_text2=""
           section_02_text3="Model risks and opportunities to build end to end impact analysis. Simulate proposals, gap closure initiatives, scenario planning, cost take outs, inventory planning, and process improvements to understand overall future demand supportability and KPI impact"
         />
         <TopReasons
-          p="Why customers choose o9 for their Integrated Business Planning (IBP)"
+          p="Why customers choose Deloitte for their Integrated Business Planning (IBP)"
           spans={IntegratedBusinessPlanning_TopReasons}
         />
         <MoudulUseCase
@@ -58,7 +58,7 @@ const IntegratedBusinessPlanning = () => {
         <SolutionsPlanMoudlu
           spans={[
             'Deloitte’s Integrated Business planning software capabilities including S&OP are helping global enterprises improve the overall plan, which directly correlates to better and improved financial performance. And when a business plans better, it creates operational efficiencies that significantly reduce wastage.',
-            'The integrated planning efficiencies delivered by o9 is helping corporations do more, be more and mean more, internally and to the world at large.',
+            'The integrated planning efficiencies delivered by Deloitte is helping corporations do more, be more and mean more, internally and to the world at large.',
           ]}
           bg={false}
         />

@@ -42,7 +42,7 @@ const MAM = () => {
             Improve alignment with strategic mix and assortment goals.
           </div>
         }
-        img="https://o9solutions.com/wp-content/uploads/2020/07/M-Hero-graph.svg"
+        img="https://Deloittesolutions.com/wp-content/uploads/2020/07/M-Hero-graph.svg"
         footerTitle="Revenue
         management
         solutions"

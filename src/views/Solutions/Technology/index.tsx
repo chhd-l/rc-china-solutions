@@ -11,7 +11,7 @@ import MyTab from './components/MyTab'
 import './index.less'
 import { NectarButton } from '../../../components/common/NectarButton'
 import BlackAndgray from './components/BlackAndgray'
-import rapid from '../../../assets/image/o9-rapid-integration-01.svg'
+import rapid from '../../../assets/image/Deloitte-rapid-integration-01.svg'
 import { CaretRightOutlined } from '@ant-design/icons'
 import BounceArrow from '../../../components/BounceArrow'
 import { useNavigate } from 'react-router-dom'
@@ -52,7 +52,7 @@ const Technology = () => {
                 className="object-cover"
               >
                 <source
-                  src="https://o9solutions.com/wp-content/uploads/2020/09/o9Solutions-Home-Thumnail-1.mp4"
+                  src="https://Deloittesolutions.com/wp-content/uploads/2020/09/DeloitteSolutions-Home-Thumnail-1.mp4"
                   type="video/mp4"
                 ></source>
               </video>
