@@ -43,7 +43,7 @@ const Sustainability = () => {
           </div>
           <div className="flex pl-rc_8 pr-rc_8 text-rc17">
             <div className="w-1/2 mr-rc60">
-              <div className="text-rc35 leading-rc43">Sustainability done better with the o9 platform</div>
+              <div className="text-rc35 leading-rc43">Sustainability done better with the Deloitte platform</div>
               <div className="py-rc20">
                 Our industry-leading software digitally transforms operations to address the end-to-end environmental,
                 social, and governance footprint of your organization.

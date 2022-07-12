@@ -37,7 +37,7 @@ const Solutions = () => {
       </div>
       <div className="py-rc150 px-rc325 solutionsFooter bg-white text-black text-rc48 leading-rc55 letterSpacing-rc5">
         <div className="text-gray-999">
-          <span className="text-black">Imagine the power of :o9 in your enterprise, </span>
+          <span className="text-black">Imagine the power of Deloitte in your enterprise, </span>
           request a demo to highlight the capabilities that matter to you.
         </div>
         <div className="grid grid-cols-2 gap-8 my-rc35">

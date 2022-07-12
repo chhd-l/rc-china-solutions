@@ -5,7 +5,7 @@ import './index.less'
 const UserSubmission = ({ title }: { title: any }) => {
   return (
     <section className="UserSubmission flex bg-gray-300">
-      <div className="mr-rc60 flex-1 text-rc35 leading-rc43">{title}</div>
+      <div className="mr-rc60 pr-rc60 flex-1 text-rc35 leading-rc43">{title}</div>
       <div className="flex-1">
         <Input className="text-rc15 bg-gray-300" placeholder="(Company) Email" />
         <Input
