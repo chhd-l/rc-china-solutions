@@ -19,7 +19,7 @@ const CommercialAnalytics = () => {
         title={
           <div className="w-rc_120 -mt-rc90">
             Strengthen <br />
-            intuition backed by data
+            <span className="border-b-4 border-red-300 border-solid inline-block">intuition backed by data</span>
           </div>
         }
         titleRight={<div />}
@@ -31,7 +31,7 @@ const CommercialAnalytics = () => {
           initiatives and spend."
           section_01_span="Leverage Deloitte’s “Market and Demand Knowledge Graph” model and advanced AI/ML algorithms. Create predictive and prescriptive insights to guide Product Assortment, Pricing, Promotion, Distribution Investments and Initiatives to optimize Revenue and Margin."
           section_02_title="Top reasons organizations are upgrading "
-          section_02_title2=" their Supply Chain Master Planning capabilities"
+          section_02_title2=" their revenue planning capabilities"
           section_02_spans={CommercialAnalytics_Ecyion3s_2}
           section_03_img={CommercialAnalytics_section_03_img}
           section_03_title={

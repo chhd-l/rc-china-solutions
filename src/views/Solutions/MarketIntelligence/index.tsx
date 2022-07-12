@@ -28,7 +28,7 @@ const MarketIntelligence = () => {
           section_01_title2=""
           section_01_span="Collect and connect data from external and enterprise data sources. Create insightful category, customer, competitor and channel intelligence. Support revenue management and demand planning processes."
           section_02_title="Top reasons organizations are upgrading "
-          section_02_title2=" their Supply Chain Master Planning capabilities"
+          section_02_title2=" their revenue planning capabilities"
           section_02_spans={MarketIntelligence_Ecyion3s_2}
           section_03_img={MasterPlanning_Sections_02}
           section_03_title={

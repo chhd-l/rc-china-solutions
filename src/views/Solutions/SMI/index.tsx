@@ -13,13 +13,13 @@ const SMI = () => {
     <div className="SMI">
       <SolutionsHeader
         TopDividerColor="border-black"
-        headerTilte={<strong className="text-rc20">Market Intelligence</strong>}
+        headerTilte={<strong className="text-rc20">Sales & Marketing Initiatives</strong>}
         titleBtn={<div></div>}
         headerClassName="pb-rc65"
         logoImg={SupplyChainControlTowerLogo}
         title={
           <div className="w-rc_120 -mt-rc90">
-            Deploy effective marketing <br />
+            Deploy effective <span className="border-b-4 border-orange-900 border-solid inline-block">marketing</span> <br />
             initiatives
           </div>
         }
@@ -31,7 +31,7 @@ const SMI = () => {
           section_01_title2="for all Spend and Sales & Marketing initiatives (Marketing, Trade Promotions, Pricing, Distribution, and more)."
           section_01_span="Move various marketing, trade promotion, pricing, distribution and other sales initiatives from scattered spreadsheets to a system of record. Use it for ideation, planning and post execution ROI measurement"
           section_02_title="Top reasons organizations are upgrading "
-          section_02_title2=" their Supply Chain Master Planning capabilities"
+          section_02_title2=" their marketing initiatives management capabilities"
           section_02_spans={SMI_Ecyion3s_2}
           section_03_img={SMI_section_03_img}
           section_03_title={

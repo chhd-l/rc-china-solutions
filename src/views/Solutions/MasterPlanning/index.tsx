@@ -34,7 +34,7 @@ const MasterPlanning = () => {
           Chain Master Planning makes your supply chain more agile and cost effective in responding to market
           demand"
           section_02_title="Top reasons organizations are upgrading"
-          section_02_title2=" their Supply Chain Master Planning capabilities"
+          section_02_title2="  their Supply Chain Master Planning capabilities"
           section_02_spans={MasterPlanningsection_03}
           section_03_img={MasterPlanning_Sections_02}
           section_03_title={

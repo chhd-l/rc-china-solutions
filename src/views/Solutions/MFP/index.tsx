@@ -45,7 +45,7 @@ const MFP = () => {
             <div className='mt-rc40'>Deloitte’s AI platform can upgrade your revenue planning to empower channel, sales, finance and product marketing to collaborate, plan and align on plans, initiatives and resources to optimize revenue and margin performance.</div>
           </div>}
           section_02_title="Top reasons organizations are upgrading"
-          section_02_title2=" their Supply Chain Master Planning capabilities"
+          section_02_title2=" their Merchandise Financial Planning capabilities"
           section_02_spans={MFP_Ecyion3s_2}
           section_03_img={AOP_Ecyion3s_3_img}
           section_03_title={
