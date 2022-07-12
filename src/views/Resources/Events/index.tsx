@@ -2,6 +2,7 @@ import { Anchor, Col, Row } from 'antd'
 import { AnchorContainer } from 'antd/lib/anchor/Anchor'
 import { useEffect, useState } from 'react'
 import BrounceArrow from '../../../components/BounceArrow'
+import BlackAndgray from '../../Solutions/Platform/components/BlackAndgray'
 import EventsCard from './components/EventsCard'
 import './index.less'
 import { eventsData } from './mock'
@@ -94,6 +95,13 @@ const Events = () => {
                       </Row>
                     </Col>
                   </Row>
+                </Col>
+              </Row>
+              <Row justify="center" className="bg-111111">
+                <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 18 }}>
+                  <p className="text-rc45 text-gray-999999 text-center mt-rc_15 ">
+                    <span className="text-white">Get in touch</span> with our event specialists
+                  </p>
                 </Col>
               </Row>
             </div>

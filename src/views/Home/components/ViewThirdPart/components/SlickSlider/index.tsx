@@ -1,6 +1,8 @@
+import { MutableRefObject } from 'react'
 import Slider from 'react-slick'
 import styled from 'styled-components'
 import { slickImgList } from '../../module'
+import './index.less'
 
 type ImgProps = {
   backgroundImg: string
@@ -16,30 +18,22 @@ const Img = styled.div<ImgProps>`
   color: var(--primary-color);
   cursor: pointer;
   position: relative;
-  /* span {
-    border-bottom: 3px solid transparent;
-  }
-  :hover {
-    span {
-      border-bottom: 3px solid var(--primary-color);
-    }
-  } */
 `
 
 type SlickSliderProps = {
-  slickGoTo: (e: any) => void
   setSlideIndex: (count: any) => void
+  sliderRef: MutableRefObject<Slider | undefined>
 }
 
-const SlickSlider = ({ slickGoTo, setSlideIndex }: SlickSliderProps) => {
+const SlickSlider = ({ sliderRef, setSlideIndex }: SlickSliderProps) => {
   const settings = {
     dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 1,
-    // afterChange: () => setUpdateCount(),
-    // beforeChange: (_, next) => setSlideIndex(next),
+    swipeToSlide: true,
+    arrows: false,
+    beforeChange: (_: number, next: number) => setSlideIndex(next),
     responsive: [
       {
         breakpoint: 1024,
@@ -70,16 +64,29 @@ const SlickSlider = ({ slickGoTo, setSlideIndex }: SlickSliderProps) => {
 
   return (
     <div>
-      <Slider ref={(sliderParams) => slickGoTo(sliderParams)} {...settings}>
+      <Slider ref={(slider) => (sliderRef.current = slider!)} {...settings}>
         {slickImgList.map((item) => (
-          <div key={item.path} style={{ width: 480, height: 565 }} className="group">
-            <Img backgroundImg={item.path}>
-              <span className="text-rc24 absolute left-rc10 bottom-4  group-hover:underline">{item.title}</span>
-              {/* <div className=" text-rc24 absolute left-rc10 h-rc_35 my-rc_10 bottom-0  text-left">
-                <a className=" inline-flex items-end">{item.title}</a>
-              </div> */}
-            </Img>
+          <div className="group py-rc_10" key={item.title}>
+            <div className="owl-item">
+              <div className="item">
+                <div className="w-full">
+                  <div className="industry-image">
+                    <span>
+                      <img src={item.path} alt="" className=" block" />
+                    </span>
+                  </div>
+                  <div className="industry-title">
+                    <span className=" group-hover:underline">{item.title}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          // <div key={item.path} style={{ width: 384, height: 251 }} className="group ">
+          //   <Img backgroundImg={item.path} className="industry-image">
+          //     <span className="text-rc24 absolute left-rc10 bottom-4  group-hover:underline">{item.title}</span>
+          //   </Img>
+          // </div>
         ))}
       </Slider>
     </div>

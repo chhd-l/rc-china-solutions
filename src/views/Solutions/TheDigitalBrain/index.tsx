@@ -10,7 +10,46 @@ const TheDigitalBrain = () => {
     <>
       <Row gutter={[0, 80]} justify="center">
         <Col span={24}>
-          <div className=" relative px-rc90">
+          <div className="brain_ready">
+            <div className="item">
+              <div className="row-bg-wrap">
+                <div className="inner-wrap">
+                  <div className="viewport-desktop"></div>
+                </div>
+              </div>
+              <div className="video-color-overlay"></div>
+              <div className="nectar-video-wrap">
+                <div className="nectar-video-inner">
+                  <video
+                    loop
+                    autoPlay
+                    muted
+                    playsInline
+                    preload="auto"
+                    className=" object-cover"
+                    width="100%"
+                    height={700}
+                    src={EKG_3D_cube_animation}
+                    style={{ visibility: 'visible', height: '100%', opacity: 1 }}
+                  />
+                </div>
+              </div>
+              <Col span={20} style={{ zIndex: 10 }}>
+                <Row className=" px-rc_10">
+                  <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 12 }} xl={{ span: 10 }}>
+                    <div className=" text-rc65 text-white text-rc7 leading-rc75 ">The Deloitte Digital Brain</div>
+                  </Col>
+                  <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 12 }} xl={{ span: 20 }}>
+                    <p className="text-2vh text-white opacity-50 mt-2">
+                      The digital brain is powered by our patented Enterprise Knowledge Graph (EKG)
+                    </p>
+                  </Col>
+                </Row>
+              </Col>
+            </div>
+          </div>
+
+          {/* <div className=" relative px-rc90">
             <div className="modal-ready">
               <div className=" relative w-full pt-rc35 pb-rc70 z-50 mb-0 bg-100%">
                 <div className="video-color-overlay"></div>
@@ -45,7 +84,7 @@ const TheDigitalBrain = () => {
                 </Col>
               </div>
             </div>
-          </div>
+          </div> */}
         </Col>
         <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 14 }} lg={{ span: 20 }} xl={{ span: 20 }}>
           <p className="text-rc22 font-light  text-center mb-rc50">
