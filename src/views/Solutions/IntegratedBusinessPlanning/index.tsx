@@ -50,7 +50,7 @@ const IntegratedBusinessPlanning = () => {
           spans={IntegratedBusinessPlanning_TopReasons}
         />
         <MoudulUseCase
-          title="With o9 Integrated Business Planning, customers are able to reach a new level of collaboration in their planning process."
+          title="With Deloitte Integrated Business Planning, customers are able to reach a new level of collaboration in their planning process."
           flexOpen={false}
           span=''
           spans={IBPSolutionsPlanMoudlu}

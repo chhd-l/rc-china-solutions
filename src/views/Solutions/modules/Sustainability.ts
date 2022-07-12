@@ -10,7 +10,7 @@ export const Sustainability_section_01_content = {
     'Supply chains are the largest contributors of negative environmental impact to our planet. Technology can walk us back from the edge.',
   span: 'Historically, supply chain sustainability has been addressed as a disconnected, forensic exercise focused on quantifying annual performance in response to bad press. Legacy supply networks weren’t built to proactively monitor sustainability KPIs and influence the decisions that make supply chains greener and more equitable. This approach is no longer viable.',
   span2:
-    'o9 is creating a platform that natively and seamlessly embeds sustainable processes and metrics into best-in-class supply chain planning.',
+    'Deloitte is creating a platform that natively and seamlessly embeds sustainable processes and metrics into best-in-class supply chain planning.',
 }
 
 export const Sustainability__TopReasons = [
