@@ -44,11 +44,20 @@ const RetailAnalytics = () => {
           }
           section_03_spans={RetailAnalytics_Ecyion3s_3}
         />
-        <UserSubmission title={<strong>Looking for retail analytics solution to get unprecedented insights tied to plan?</strong>} />
+        <UserSubmission
+          title={<strong>Looking for retail analytics solution to get unprecedented insights tied to plan?</strong>}
+        />
         <WpbWrapper
           leftIcon={orange_left_icon}
-          footerClassName="Orange_Footer_hover"
-          footerHover={['RelatedSolutions_1', 'RelatedSolutions_2', 'RelatedSolutions_3', 'RelatedSolutions_4']}
+          footerClassName="Red_Footer_hover"
+          footerHover={[
+            'RelatedSolutions_1',
+            'RelatedSolutions_2',
+            'RelatedSolutions_3',
+            'RelatedSolutions_4',
+            'RelatedSolutions_5',
+            'RelatedSolutions_6',
+          ]}
         />
       </main>
     </div>
