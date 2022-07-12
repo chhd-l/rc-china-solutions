@@ -27,8 +27,6 @@ const RDP = () => {
           section_01_title="Improve forecast accuracy, alignment and accountability. "
           section_01_title2="Build accurate forecasts using predictive analytics to forecast fashion, seasonal and long lifecycle products."
           section_01_span="Predict accurate demand to plan receipts and maintain optimal inventory levels. Use AI/ML driven forecasts to drive Merchandise, Assortment and Allocation planning. Adapt to recent trends, seasonality, stock positions, and promotions during In-season to, and reflect retailers’ unique demand drivers to maximize profitability."
-          section_01_span2=''
-          section_01_span3=''
           section_02_title="Top reasons organizations are upgrading"
           section_02_title2=" their Retail Demand Planning capabilities"
           section_02_spans={RDP_Ecyion3s_2}

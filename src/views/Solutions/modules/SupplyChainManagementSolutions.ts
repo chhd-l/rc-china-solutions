@@ -9,7 +9,7 @@ export const SMS_bodys = [
     {
         img: SMS_bodys_1,
         title: 'Knowledge driven Supply Chain Digital Twin',
-        span: ' its EKG model, :o9 builds a Digital Twin of your physical Supply Chain. Activate a scalable, extensible, in-memory system for maintaining and managing master and operational data. Build true knowledge about each node in the end-to-end network.',
+        span: ' its EKG model, Deloitte builds a Digital Twin of your physical Supply Chain. Activate a scalable, extensible, in-memory system for maintaining and managing master and operational data. Build true knowledge about each node in the end-to-end network.',
         strong: 'Master & Operations data. Collect, cleanse & connect at scale into digital knowledge.  With',
     },
     {
@@ -22,24 +22,24 @@ export const SMS_bodys = [
         img: SMS_bodys_3,
         title: 'High Performance Demand/Supply Match Solvers',
         strong: 'Optimal and explainable, interactive and performant. ',
-        span: ':o9 employs best-in class heuristic & optimization solvers that provide the most optimal plan quality. Use root cause insights to explain constraints and excesses. Planning is increasingly automated and planners focus just on policies and priorities to meet business goals.',
+        span: 'Deloitte employs best-in class heuristic & optimization solvers that provide the most optimal plan quality. Use root cause insights to explain constraints and excesses. Planning is increasingly automated and planners focus just on policies and priorities to meet business goals.',
     },
     {
         img: SMS_bodys_4,
         title: 'Detailed-to-aggregate Models across Planning Horizon',
-        span: 'No fake details. :o9’s EKG can plan at the lowest level in the near term horizon. Create aggregated models farther out, for performant demand/supply matching and scenario planning without losing any precision.',
+        span: 'No fake details. Deloitte’s EKG can plan at the lowest level in the near term horizon. Create aggregated models farther out, for performant demand/supply matching and scenario planning without losing any precision.',
         strong: 'All time horizons. Right level model for each Horizon. ',
     },
     {
         img: SMS_bodys_5,
         title: 'Real Time Scenario Planning, What-ifs & Collaboration',
-        span: ':o9 has unique scenario planning capabilities that make it simple for planners to evaluate what-if questions. Cross-functional teams can collaborate on multiple scenarios and make smarter decisions together.',
+        span: 'Deloitte has unique scenario planning capabilities that make it simple for planners to evaluate what-if questions. Cross-functional teams can collaborate on multiple scenarios and make smarter decisions together.',
         strong: 'What-if questions with real time answers to make collaborative decisions. ',
     },
     {
         img: SMS_bodys_6,
         title: 'Supply Chain Control Tower',
-        span: ':o9’s EKG connects in real time to demand and supply events. Automated algorithms and scenarios evaluate impacts & options, Drive automated decision making based on stored knowledge of risks and costs. It is a whole new ball game.',
+        span: 'Deloitte’s EKG connects in real time to demand and supply events. Automated algorithms and scenarios evaluate impacts & options, Drive automated decision making based on stored knowledge of risks and costs. It is a whole new ball game.',
         strong: 'Automated decisions at scale to shape Demand and Supply and drive operations. ',
     },
 ]

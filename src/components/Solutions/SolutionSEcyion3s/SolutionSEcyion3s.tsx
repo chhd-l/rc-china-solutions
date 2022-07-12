@@ -4,15 +4,13 @@ type SolutionSEcyion3sType = {
   section_01_img?: string
   section_01_title: string
   section_01_title2: string
-  section_01_span: string
+  section_01_span: any
   section_02_title: string
   section_02_title2: string
   section_02_spans: {start: string, span: string,}[]
   section_03_img: any
   section_03_title: any
   section_03_spans: any[]
-  section_01_span2?: string
-  section_01_span3?: string
 }
 
 const SolutionSEcyion3s = ({
@@ -26,8 +24,6 @@ const SolutionSEcyion3s = ({
   section_03_img,
   section_03_title,
   section_03_spans,
-  section_01_span2,
-  section_01_span3,
 }: SolutionSEcyion3sType) => {
   return (
     <div className="SolutionSEcyion3s">
@@ -46,8 +42,6 @@ const SolutionSEcyion3s = ({
               <span className="text-gray-999 leading-rc55">{section_01_title2}</span>
             </div>
             <div className="mt-rc40 mb-rc27 text-gray-999 leading-rc32">{section_01_span}</div>
-            <div className="mt-rc40 mb-rc27 text-gray-999 leading-rc32">{section_01_span2}</div>
-            <div className="mt-rc40 mb-rc27 text-gray-999 leading-rc32">{section_01_span3}</div>
           </div>
         </div>
       </section>

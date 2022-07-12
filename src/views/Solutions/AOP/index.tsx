@@ -24,7 +24,7 @@ const AOP = () => {
         <SolutionSEcyion3s
           section_01_title="Set the cross-functional business goals "
           section_01_title2="with a unified view across the strategic planning horizon."
-          section_01_span="Deploy the “Digital Market Knowledge” model from :o9. Bring together rich Market Data, Advanced Analytics and Integrated Planning capabilities. Transform unmanageable and uncertain revenue planning & budgeting processes. Drive growth based on facts and data."
+          section_01_span="Deploy the “Digital Market Knowledge” model from Deloitte. Bring together rich Market Data, Advanced Analytics and Integrated Planning capabilities. Transform unmanageable and uncertain revenue planning & budgeting processes. Drive growth based on facts and data."
           section_02_title="Top reasons organizations are upgrading"
           section_02_title2=" their Supply Chain Master Planning capabilities"
           section_02_spans={AOP_Ecyion3s_2}

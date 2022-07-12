@@ -29,8 +29,6 @@ const RetailAnalytics = () => {
           section_01_title2="powered analytics to improve alignment of plans to business strategies and market 
           needs."
           section_01_span="Leverage embedded retail analytics to drive improvements to retail planning processes such as merchandise financial planning . Incorporate insights into market size, share and trends, assortment and buying towards better localization and competitive positioning. Pricing and promotion planning with improving ASP and promotional effectiveness. Allocation and replenishment planning by improve in-stock and forecast accuracy."
-          section_01_span2=""
-          section_01_span3=""
           section_02_title="Top reasons organizations are upgrading"
           section_02_title2=" their retail analytics capabilities"
           section_02_spans={RetailAnalytics_Ecyion3s_2}

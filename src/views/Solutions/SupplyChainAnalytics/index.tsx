@@ -28,7 +28,7 @@ const SupplyChainAnalytics = () => {
         <SolutionSEcyion3s
           section_01_title="Increase agility by bringing your suppliers and contract manufacturers"
           section_01_title2=" into your planning process with rich, secure collaboration workflows."
-          section_01_span="The :o9 Digital Supplier Collaboration solution makes it simple to bring all your suppliers into one collaborative process. These include processes around direct material inventory visibility, forecasts, orders and costs. This will help you drive early warnings, improvement actions and joint business plan reviews with the extended supplier network."
+          section_01_span="The Deloitte Digital Supplier Collaboration solution makes it simple to bring all your suppliers into one collaborative process. These include processes around direct material inventory visibility, forecasts, orders and costs. This will help you drive early warnings, improvement actions and joint business plan reviews with the extended supplier network."
           section_02_title="Top reasons organizations are upgrading"
           section_02_title2=" their Supply Chain Master Planning capabilities"
           section_02_spans={SupplyChainAnalytics_Ecyion3s_2}

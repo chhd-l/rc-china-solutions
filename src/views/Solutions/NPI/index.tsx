@@ -52,7 +52,7 @@ const NPI = () => {
           bg={false}
         />
         <UserSubmission
-          title={<strong>Introduce new products with a holistic view. Leverage the :o9 Digital Brain in your business.</strong>}
+          title={<strong>Introduce new products with a holistic view. Leverage the Deloitte Digital Brain in your business.</strong>}
         />
         <section className="section_09 text-rc20">
           <div className="mb-rc45 text-rc35">Related Solutions</div>

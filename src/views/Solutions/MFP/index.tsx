@@ -40,8 +40,10 @@ const MFP = () => {
         <SolutionSEcyion3s
           section_01_title="Build and manage customer-centric Merchandise Financial Plans. "
           section_01_title2="Struggle to reconcile top down targets with bottom up forecasts? Find it difficult to understand the margin impact of mix changes? Don’t have good visibility to the assumptions and initiatives driving bottom up forecasts?"
-          section_01_span2=':o9’s AI platform can upgrade your revenue planning to empower channel, sales, finance and product marketing to collaborate, plan and align on plans, initiatives and resources to optimize revenue and margin performance.'
-          section_01_span="Deploy the “Digital Market Knowledge” model from :o9. Bring together rich Market Data, Advanced Analytics and Integrated Planning capabilities. Transform unmanageable and uncertain revenue planning & budgeting processes. Drive growth based on facts and data."
+          section_01_span={<div>
+            Deploy the “Digital Market Knowledge” model from Deloitte. Bring together rich Market Data, Advanced Analytics and Integrated Planning capabilities. Transform unmanageable and uncertain revenue planning & budgeting processes. Drive growth based on facts and data.
+            <div className='mt-rc40'>Deloitte’s AI platform can upgrade your revenue planning to empower channel, sales, finance and product marketing to collaborate, plan and align on plans, initiatives and resources to optimize revenue and margin performance.</div>
+          </div>}
           section_02_title="Top reasons organizations are upgrading"
           section_02_title2=" their Supply Chain Master Planning capabilities"
           section_02_spans={MFP_Ecyion3s_2}

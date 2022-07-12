@@ -8,7 +8,7 @@ export const MAM_bodys = [
     {
         img: MAM_bodys_1,
         title: 'Lossless representation of network, assortment & market knowledge',
-        span: 'Model the complete distribution and retail network with :o9’s Enterprise Knowledge Graph. Include products at the level required to support all decisions. Incorporate external and unstructured information to determine the most competitive offering.',
+        span: 'Model the complete distribution and retail network with Deloitte’s Enterprise Knowledge Graph. Include products at the level required to support all decisions. Incorporate external and unstructured information to determine the most competitive offering.',
         strong: '',
     },
     {

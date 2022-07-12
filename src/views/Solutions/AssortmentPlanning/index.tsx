@@ -27,9 +27,13 @@ const AssortmentPlanning = () => {
           section_01_img='https://embed-ssl.wistia.com/deliveries/d4377278bdb848a3488a600822d7fcfb.webp?image_crop_resized=640x268'
           section_01_title="Build Assortments to develop optimal product mix for both Pre and In season."
           section_01_title2=""
-          section_01_span="Deploy AI/ML based algorithms to recommend assortment to maximize profits and minimize markdowns."
-          section_01_span2='Build customized Assortments for targeted customer segments to achieve the product mix that maximizes profitability while maintaining optimum Inventory levels.'
-          section_01_span3='Simplify decision-making with ML and AI based analytics and highly visual user interface to review and analyze assortments.'
+          section_01_span={
+            <div>
+              Deploy AI/ML based algorithms to recommend assortment to maximize profits and minimize markdowns.
+              <div className='mt-rc40 mb-rc27'>Build customized Assortments for targeted customer segments to achieve the product mix that maximizes profitability while maintaining optimum Inventory levels.</div>
+              <div className='mt-rc40'>Simplify decision-making with ML and AI based analytics and highly visual user interface to review and analyze assortments.</div>
+            </div>
+          }
           section_02_title="Top reasons organizations are upgrading"
           section_02_title2=" their Assortment Planning capabilities"
           section_02_spans={AssortmentPlanning_Ecyion3s_2}
