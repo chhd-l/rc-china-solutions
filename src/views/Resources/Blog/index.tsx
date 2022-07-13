@@ -53,8 +53,8 @@ const Blog = () => {
                       <Col
                         xs={{ span: 18 }}
                         sm={{ span: 16 }}
-                        md={{ span: 11 }}
-                        lg={{ span: 11 }}
+                        md={{ span: 22 }}
+                        lg={{ span: 20 }}
                         xl={{ span: 17 }}
                         style={{ zIndex: 10 }}
                       >
@@ -62,7 +62,7 @@ const Blog = () => {
                           Thought leadership that will inspire your digital transformation journey.
                         </p>
                       </Col>
-                      <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 7 }}>
+                      <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 22 }} lg={{ span: 11 }} xl={{ span: 7 }}>
                         <BounceArrow type="white" />
                       </Col>
                     </Row>
@@ -78,44 +78,65 @@ const Blog = () => {
                   xl={{ span: 21 }}
                   className="relative"
                 >
-                  <Row
-                    justify="center"
-                    className="bg-black absolute z-2 top-_rc43 py-rc20 transform -translate-x-1/2 left-rc_50 w-full"
-                  >
-                    <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 3 }} xl={{ span: 3 }}>
+                  <Row className="bg-black absolute z-2 top-_rc43 py-rc20 transform -translate-x-1/2 left-rc_50 w-full">
+                    <Col
+                      xs={{ span: 18 }}
+                      sm={{ span: 16 }}
+                      md={{ span: 11 }}
+                      lg={{ span: 3 }}
+                      xl={{ span: 3 }}
+                      className=" ml-rc45 mr-rc120"
+                    >
                       <p className="  w-full text-white text-rc22 mr-rc_5">
                         Search and <strong>filter</strong> articles
                       </p>
                     </Col>
-                    <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 20 }} xl={{ span: 20 }}>
-                      <div className="flex flex-row justify-end">
-                        {CheckBoxData.map((item) => (
-                          <BlobCheckBox
-                            onClick={() => {
-                              toggle(item)
-                              setSearchData({ ...searchData, check: item })
-                            }}
-                            selected={isSelected(item)}
-                            key={item}
-                          >
-                            {item}
-                          </BlobCheckBox>
-                        ))}
-                        <Input
-                          placeholder="Search articles …"
-                          style={{
-                            width: 306,
-                            marginLeft: 30,
+                    {CheckBoxData.map((item) => (
+                      <Col
+                        xs={{ span: 18 }}
+                        sm={{ span: 16 }}
+                        md={{ span: 24 }}
+                        lg={{ span: 20 }}
+                        xl={{ span: 2 }}
+                        className=" mr-0 lg:mr-rc20"
+                      >
+                        <BlobCheckBox
+                          className="w-full lg:w-rc119"
+                          onClick={() => {
+                            toggle(item)
+                            setSearchData({ ...searchData, check: item })
                           }}
-                          onChange={(e) => setSearchData({ ...searchData, keyWords: e.target.value })}
-                          className="blogInput"
-                        />
-                      </div>
+                          selected={isSelected(item)}
+                          key={item}
+                        >
+                          {item}
+                        </BlobCheckBox>
+                      </Col>
+                    ))}
+
+                    <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 20 }} xl={{ span: 3 }}>
+                      <Input
+                        placeholder="Search articles …"
+                        style={{
+                          width: 306,
+                          marginLeft: 25,
+                          height: 96,
+                        }}
+                        onChange={(e) => setSearchData({ ...searchData, keyWords: e.target.value })}
+                        className="blogInput w-full lg:w-rc306"
+                      />
                     </Col>
                   </Row>
                 </Col>
-                <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 16 }} lg={{ span: 21 }} xl={{ span: 21 }}>
-                  <Row align="top" className=" mt-rc_10 relative" gutter={25}>
+                <Col
+                  xs={{ span: 18 }}
+                  sm={{ span: 16 }}
+                  md={{ span: 16 }}
+                  lg={{ span: 21 }}
+                  xl={{ span: 21 }}
+                  id="content"
+                >
+                  <Row align="top" className=" mt-rc_15 relative" gutter={25}>
                     {data &&
                       data?.map((item: ItemType, index: number) => (
                         <FloadCard {...item} key={index} bgColor="black" textColor="white" />

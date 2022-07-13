@@ -25,8 +25,8 @@ const SearchAndFilter = () => {
   )
 
   return (
-    <Row className="my-rc100">
-      <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 8 }}>
+    <Row className="my-rc100 px-rc90" id="content">
+      <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 7 }}>
         <p className=" text-rc35 text-white font-light  text-left w-rc315">
           Search and <span className=" font-semibold">filter</span> case studies
         </p>
@@ -69,7 +69,7 @@ const SearchAndFilter = () => {
         ))}
       </Col>
 
-      <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 16 }}>
+      <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 17 }}>
         <Row gutter={[20, 20]} align="top">
           {searchData.map((item, index) => (
             <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 8 }} key={index}>
