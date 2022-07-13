@@ -143,6 +143,7 @@ const Blog = () => {
                       ))}
                     {loading && <div className=" bg-black absolute h-full w-full z-2 opacity-50" />}
                   </Row>
+                  {data.length === 0 && <div className="text-gray-999 text-center text-rc18 w-full">No post found</div>}
                 </Col>
               </Row>
             </div>
