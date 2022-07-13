@@ -8,22 +8,30 @@ import { CheckBoxData, searchList } from './mock'
 import { useState } from 'react'
 import { toLower } from 'lodash'
 
+type ItemType = typeof searchList[0]
 const Blog = () => {
-  const { isSelected, toggle } = useSelections(CheckBoxData)
-  const [searchData, setSearchData] = useState(searchList)
-
-  const { loading, run } = useRequest(
-    (val) =>
-      new Promise(() => {
-        let result = searchList.filter((item) => toLower(item.title).indexOf(val.target.value) > -1)
-        if (val.target.value === '') {
-          result = searchList
-        }
-        setSearchData(result)
-      }),
+  const { isSelected, toggle, selected } = useSelections(CheckBoxData)
+  const [searchData, setSearchData] = useState({ check: '', keyWords: '' })
+  const { loading, data } = useRequest(
+    async () => {
+      const res: any = await new Promise((resolve) => {
+        setTimeout(() => {
+          let search = searchList.filter((item) => toLower(item.desc).indexOf(toLower(searchData.keyWords)) > -1)
+          if (searchData.keyWords === '') {
+            search = searchList
+          }
+          console.log('search', search, selected)
+          if (selected.length) {
+            search = search.filter((item) => selected.includes(item.tip))
+          }
+          resolve(search)
+        }, 1000)
+      })
+      return res
+    },
     {
-      debounceWait: 500,
-      manual: true,
+      debounceWait: 1000,
+      refreshDeps: [searchData],
     },
   )
 
@@ -37,7 +45,7 @@ const Blog = () => {
                 <div className="using-image">
                   <div className="img"></div>
                 </div>
-                <div className="row-bg-overlay"></div>
+                <div className="row-bg-overlay" />
                 <Row justify="center">
                   <Col span={20} style={{ zIndex: 10 }}>
                     <p className="text-white text-rc20 border-gray-rgba255 border-b pb-rc20 mb-rc100">Deloitte Blog</p>
@@ -82,7 +90,14 @@ const Blog = () => {
                     <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 20 }} xl={{ span: 20 }}>
                       <div className="flex flex-row justify-end">
                         {CheckBoxData.map((item) => (
-                          <BlobCheckBox onClick={() => toggle(item)} selected={isSelected(item)} key={item}>
+                          <BlobCheckBox
+                            onClick={() => {
+                              toggle(item)
+                              setSearchData({ ...searchData, check: item })
+                            }}
+                            selected={isSelected(item)}
+                            key={item}
+                          >
                             {item}
                           </BlobCheckBox>
                         ))}
@@ -92,7 +107,7 @@ const Blog = () => {
                             width: 306,
                             marginLeft: 30,
                           }}
-                          onChange={run}
+                          onChange={(e) => setSearchData({ ...searchData, keyWords: e.target.value })}
                           className="blogInput"
                         />
                       </div>
@@ -100,10 +115,12 @@ const Blog = () => {
                   </Row>
                 </Col>
                 <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 16 }} lg={{ span: 21 }} xl={{ span: 21 }}>
-                  <Row align="top" className=" mt-rc_10" gutter={25}>
-                    {searchData.map((item, index) => (
-                      <FloadCard {...item} key={index} bgColor="black" textColor="white" />
-                    ))}
+                  <Row align="top" className=" mt-rc_10 relative" gutter={25}>
+                    {data &&
+                      data?.map((item: ItemType, index: number) => (
+                        <FloadCard {...item} key={index} bgColor="black" textColor="white" />
+                      ))}
+                    {loading && <div className=" bg-black absolute h-full w-full z-2 opacity-50" />}
                   </Row>
                 </Col>
               </Row>

@@ -73,4 +73,16 @@ export const searchList = [
     title: 'Simon Joiner',
     desc: 'RFPs Part II: How to solve this damaging vendor selection approach',
   },
+  {
+    tip: 'aim10x',
+    path: 'https://o9solutions.com/wp-content/uploads/2022/06/aim10xGlobal_Blog_1280x536_Recap-1024x429.jpg',
+    title: 'Cameron Chang',
+    desc: 'Get all the insights from the Innovators Connect sessions',
+  },
+  {
+    tip: 'Knowledge',
+    path: 'https://o9solutions.com/wp-content/uploads/2022/02/What-is-demand-forecasting-1024x512.jpg',
+    title: 'Solutions',
+    desc: 'What is demand forecasting?',
+  },
 ]
