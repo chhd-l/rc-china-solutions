@@ -1,6 +1,6 @@
 export const CheckBoxData = ['aim10x', 'Best Practices', 'Knowledge', 'Social Impact', 'Trending']
 
-export const searchDara = [
+export const searchList = [
   {
     tip: 'Best practices',
     path: 'https://o9solutions.com/wp-content/uploads/2022/07/global-shortages-blog-2-header-1024x559.jpg',
