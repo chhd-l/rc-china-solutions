@@ -53,8 +53,8 @@ module.exports = {
       },
       yellow: '#ffe400',
       orange: {
-        900: 'rgb(255, 115, 17)'
-      }
+        900: 'rgb(255, 115, 17)',
+      },
     },
     flex: {
       1: '1 1 0%',
@@ -103,6 +103,7 @@ module.exports = {
         rc275: '275px',
         rc282: '282px',
         rc284: '284px',
+        rc299: '299px',
         rc315: '315px',
         rc384: '384px',
         rc242: '242px',

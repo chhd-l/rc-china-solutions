@@ -2,6 +2,7 @@ import { Col, Row } from 'antd'
 import BounceArrow from '../../../components/BounceArrow'
 import SearchAndFilter from './components/SearchAndFilter'
 import './index.less'
+import Industry_Header from '../../../assets/video/Industry-Header-1.mp4'
 
 const CaseStudies = () => {
   return (
@@ -22,7 +23,7 @@ const CaseStudies = () => {
                       className=" object-contain opacity-100"
                       width="100%"
                       height={605}
-                      src="https://Deloittesolutions.com/wp-content/uploads/2021/11/Industry-Header-1.mp4"
+                      src={Industry_Header}
                     />
                   </div>
                 </div>
