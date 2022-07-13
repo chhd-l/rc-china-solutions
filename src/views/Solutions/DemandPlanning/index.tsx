@@ -13,6 +13,7 @@ import MoudulUseCase from '../../../components/Solutions/MoudulUseCase/MoudulUse
 import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
 import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
 import { useNavigate } from 'react-router-dom'
+import { Red_footerIcons } from '../modules/footerIcons'
 
 const DemandPlanning = () => {
   const navigate = useNavigate()
@@ -71,14 +72,7 @@ const DemandPlanning = () => {
         <WpbWrapper
           leftIcon={DemandPlanning_leftIcon}
           footerClassName="Red_Footer_hover"
-          footerHover={[
-            'RelatedSolutions_1',
-            'RelatedSolutions_2',
-            'RelatedSolutions_3',
-            'RelatedSolutions_4',
-            'RelatedSolutions_5',
-            'RelatedSolutions_6',
-          ]}
+          footerHover={Red_footerIcons}
         />
       </main>
     </div>

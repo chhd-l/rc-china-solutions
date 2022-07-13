@@ -6,6 +6,7 @@ import SolutionSEcyion3s from '../../../components/Solutions/SolutionSEcyion3s/S
 import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/SolutionsHeader'
 import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
 import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
+import { Greed_footerIcons } from '../modules/footerIcons'
 import { LRP_Ecyion3s_2 } from '../modules/LRP'
 
 const LRP = () => {
@@ -42,7 +43,7 @@ const LRP = () => {
         <WpbWrapper
           leftIcon={section_09_left_icon}
           footerClassName="Greed_Footer_hover"
-          footerHover={['RelatedSolutions_1', 'RelatedSolutions_2', 'RelatedSolutions_3']}
+          footerHover={Greed_footerIcons}
         />
       </main>
     </div>

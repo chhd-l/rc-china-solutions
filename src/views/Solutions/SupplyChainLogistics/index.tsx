@@ -6,6 +6,7 @@ import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/Solut
 import { SupplyChainLogistics_content } from '../modules/SupplyChainLogistics'
 import './index.less'
 import Breadcrumbs from '../../../components/Solutions/Breadcrumbs/Breadcrumbs'
+import { Bule_footerIcons } from '../modules/footerIcons'
 
 const SupplyChainLogistics = () => {
   
@@ -52,7 +53,7 @@ const SupplyChainLogistics = () => {
         footerTitle='Supply Chain & Logistics Solutions'
         footerP='Visualize the Future to Build Iteratively and Rapidly towards the vision. It is the practical way.'
         footerSpan='Departments: CRO, Sales, Marketing, Category Management, Finance'
-        footerHover={['RelatedSolutions_1', 'RelatedSolutions_2']}
+        footerHover={Bule_footerIcons}
         footerHover_icon={blue_left_icon}
         footerClassName='Bule_Footer_hover_black'
       />

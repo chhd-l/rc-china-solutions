@@ -6,6 +6,7 @@ import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/Solut
 import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
 import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
 import { DigitalSupplierCollaboration_Ecyion3s_2, DigitalSupplierCollaboration_Ecyion3s_3 } from '../modules/DigitalSupplierCollaboration'
+import { Purple_footerIcons } from '../modules/footerIcons'
 import './index.less'
 
 const DigitalSupplierCollaboration = () => {
@@ -46,13 +47,7 @@ const DigitalSupplierCollaboration = () => {
         <WpbWrapper
           leftIcon={SupplyChainControlTower_leftIcon}
           footerClassName="Purple_Footer_hover"
-          footerHover={[
-            'RelatedSolutions_1',
-            'RelatedSolutions_2',
-            'RelatedSolutions_3',
-            'RelatedSolutions_4',
-            'RelatedSolutions_5',
-          ]}
+          footerHover={Purple_footerIcons}
         />
       </main>
     </div>

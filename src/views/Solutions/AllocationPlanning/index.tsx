@@ -6,6 +6,7 @@ import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/Solut
 import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
 import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
 import { AllocationPlanning_Ecyion3s_2, AllocationPlanning_Ecyion3s_3 } from '../modules/AllocationPlanning'
+import { Bule_footerIcons } from '../modules/footerIcons'
 
 const AllocationPlanning = () => {
   return (
@@ -48,10 +49,7 @@ const AllocationPlanning = () => {
         <WpbWrapper
           leftIcon={blue_left_icon}
           footerClassName="Bule_Footer_hover"
-          footerHover={[
-            'RelatedSolutions_1',
-            'RelatedSolutions_2',
-          ]}
+          footerHover={Bule_footerIcons}
         />
       </main>
     </div>

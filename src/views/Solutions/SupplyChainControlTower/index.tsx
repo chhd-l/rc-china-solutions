@@ -15,6 +15,7 @@ import UserSubmission from '../../../components/Solutions/UserSubmission/UserSub
 import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
 import './index.less'
 import { useNavigate } from 'react-router-dom'
+import { Purple_footerIcons } from '../modules/footerIcons'
 
 const SupplyChainControlTower = () => {
   const navigate = useNavigate()
@@ -107,13 +108,7 @@ const SupplyChainControlTower = () => {
         <WpbWrapper
           leftIcon={SupplyChainControlTower_leftIcon}
           footerClassName="Purple_Footer_hover"
-          footerHover={[
-            'RelatedSolutions_1',
-            'RelatedSolutions_2',
-            'RelatedSolutions_3',
-            'RelatedSolutions_4',
-            'RelatedSolutions_5',
-          ]}
+          footerHover={Purple_footerIcons}
         />
       </main>
       </div>

@@ -6,6 +6,7 @@ import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/Solut
 import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
 import { CommercialAnalytics_Ecyion3s_2, CommercialAnalytics_Ecyion3s_3 } from '../modules/CommercialAnalytics'
 import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
+import { Red_footerIcons } from '../modules/footerIcons'
 
 const CommercialAnalytics = () => {
   return (
@@ -47,14 +48,7 @@ const CommercialAnalytics = () => {
         <WpbWrapper
           leftIcon={DemandPlanning_leftIcon}
           footerClassName="Red_Footer_hover"
-          footerHover={[
-            'RelatedSolutions_1',
-            'RelatedSolutions_2',
-            'RelatedSolutions_3',
-            'RelatedSolutions_4',
-            'RelatedSolutions_5',
-            'RelatedSolutions_6',
-          ]}
+          footerHover={Red_footerIcons}
         />
       </main>
     </div>

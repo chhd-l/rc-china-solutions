@@ -11,6 +11,7 @@ import UserSubmission from '../../../components/Solutions/UserSubmission/UserSub
 import { SalesOperationsPlanning_TopReasons, SalesOperationsPlanning_UseCase } from '../modules/SalesOperationsPlanning'
 import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
 import { useNavigate } from 'react-router-dom'
+import { Purple_footerIcons } from '../modules/footerIcons'
 
 const SalesOperationsPlanning = () => {
   const navigate = useNavigate()
@@ -66,13 +67,7 @@ const SalesOperationsPlanning = () => {
         <WpbWrapper
           leftIcon={section_09_left_icon}
           footerClassName="Purple_Footer_hover"
-          footerHover={[
-            'RelatedSolutions_1',
-            'RelatedSolutions_2',
-            'RelatedSolutions_3',
-            'RelatedSolutions_4',
-            'RelatedSolutions_5',
-          ]}
+          footerHover={Purple_footerIcons}
         />
       </main>
     </div>

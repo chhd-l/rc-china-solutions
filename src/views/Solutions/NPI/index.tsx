@@ -8,6 +8,7 @@ import MoudulUseCase from '../../../components/Solutions/MoudulUseCase/MoudulUse
 import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
 import { NPI_MoudulUseCase, NPI_TRP } from '../modules/SolutionsNpi'
 import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
+import { Red_footerIcons } from '../modules/footerIcons'
 
 const NPI = () => {
   return (
@@ -57,14 +58,7 @@ const NPI = () => {
         <WpbWrapper
           leftIcon={DemandPlanning_leftIcon}
           footerClassName="Red_Footer_hover"
-          footerHover={[
-            'RelatedSolutions_1',
-            'RelatedSolutions_2',
-            'RelatedSolutions_3',
-            'RelatedSolutions_4',
-            'RelatedSolutions_5',
-            'RelatedSolutions_6',
-          ]}
+          footerHover={Red_footerIcons}
         />
       </main>
     </div>

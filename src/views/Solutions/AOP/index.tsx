@@ -7,6 +7,7 @@ import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/Solut
 import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
 import { AOP_Ecyion3s_2, AOP_Ecyion3s_3 } from '../modules/AOP'
 import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
+import { Greed_footerIcons } from '../modules/footerIcons'
 
 const AOP = () => {
   return (
@@ -53,7 +54,7 @@ const AOP = () => {
         <WpbWrapper
           leftIcon={section_09_left_icon}
           footerClassName="Greed_Footer_hover"
-          footerHover={['RelatedSolutions_1', 'RelatedSolutions_2', 'RelatedSolutions_3']}
+          footerHover={Greed_footerIcons}
         />
       </main>
     </div>

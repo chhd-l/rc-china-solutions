@@ -11,6 +11,7 @@ import './index.less'
 import { ProductionScheduling_case, ProductionScheduling_TRP } from '../modules/ProductionScheduling'
 import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
 import { useNavigate } from 'react-router-dom'
+import { Purple_footerIcons } from '../modules/footerIcons'
 
 const ProductionScheduling = () => {
   const navigate = useNavigate()
@@ -83,13 +84,7 @@ const ProductionScheduling = () => {
         <WpbWrapper
           leftIcon={SupplyChainControlTower_leftIcon}
           footerClassName="Purple_Footer_hover"
-          footerHover={[
-            'RelatedSolutions_1',
-            'RelatedSolutions_2',
-            'RelatedSolutions_3',
-            'RelatedSolutions_4',
-            'RelatedSolutions_5',
-          ]}
+          footerHover={Purple_footerIcons}
         />
       </main>
     </div>

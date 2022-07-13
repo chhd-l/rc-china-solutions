@@ -10,6 +10,7 @@ import { Input, Select } from 'antd'
 import { UserSubmissionbody } from '../modules/UserSubmisstion'
 import { NectarButton } from '../../../components/common/NectarButton'
 import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
+import { Red_footerIcons } from '../modules/footerIcons'
 
 const MarketIntelligence = () => {
   return (
@@ -85,14 +86,7 @@ const MarketIntelligence = () => {
         <WpbWrapper
           leftIcon={DemandPlanning_leftIcon}
           footerClassName="Red_Footer_hover"
-          footerHover={[
-            'RelatedSolutions_1',
-            'RelatedSolutions_2',
-            'RelatedSolutions_3',
-            'RelatedSolutions_4',
-            'RelatedSolutions_5',
-            'RelatedSolutions_6',
-          ]}
+          footerHover={Red_footerIcons}
         />
       </main>
     </div>

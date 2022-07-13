@@ -5,6 +5,7 @@ import SolutionSEcyion3s from '../../../components/Solutions/SolutionSEcyion3s/S
 import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/SolutionsHeader'
 import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
 import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
+import { Bule_footerIcons } from '../modules/footerIcons'
 import { ReplenishmentPlanning_Ecyion3s_2, ReplenishmentPlanning_Ecyion3s_3 } from '../modules/ReplenishmentPlanning'
 
 const ReplenishmentPlanning = () => {
@@ -46,10 +47,7 @@ const ReplenishmentPlanning = () => {
         <WpbWrapper
           leftIcon={blue_left_icon}
           footerClassName="Bule_Footer_hover"
-          footerHover={[
-            'RelatedSolutions_1',
-            'RelatedSolutions_2',
-          ]}
+          footerHover={Bule_footerIcons}
         />
       </main>
     </div>

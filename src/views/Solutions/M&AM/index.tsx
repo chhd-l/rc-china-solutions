@@ -6,6 +6,7 @@ import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/Solut
 import './index.less'
 import Breadcrumbs from '../../../components/Solutions/Breadcrumbs/Breadcrumbs'
 import { MAM_bodys } from '../modules/MAM'
+import { Orange_footerIcons } from '../modules/footerIcons'
 
 const MAM = () => {
   return (
@@ -63,12 +64,7 @@ const MAM = () => {
             CRO, Sales, Marketing, Category Management, Finance
           </div>
         }
-        footerHover={[
-          'RelatedSolutions_1',
-          'RelatedSolutions_2',
-          'RelatedSolutions_3',
-          'RelatedSolutions_4',
-        ]}
+        footerHover={Orange_footerIcons}
         footerHover_icon={orange_left_icon}
         footerClassName="Orange_Footer_hover_black"
       />

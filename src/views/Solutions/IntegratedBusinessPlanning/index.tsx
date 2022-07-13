@@ -12,6 +12,7 @@ import UserSubmission from '../../../components/Solutions/UserSubmission/UserSub
 import { IBPSolutionsPlanMoudlu, IntegratedBusinessPlanning_TopReasons } from '../modules/IntegratedBusinessPlanning'
 import WpbRow from '../../../components/Solutions/WpbRow/WpbRow'
 import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
+import { Greed_footerIcons } from '../modules/footerIcons'
 
 const IntegratedBusinessPlanning = () => {
   return (
@@ -75,7 +76,7 @@ const IntegratedBusinessPlanning = () => {
         <WpbWrapper
           leftIcon={section_09_left_icon}
           footerClassName="Greed_Footer_hover"
-          footerHover={['RelatedSolutions_1', 'RelatedSolutions_2', 'RelatedSolutions_3']}
+          footerHover={Greed_footerIcons}
         />
       </main>
     </div>
