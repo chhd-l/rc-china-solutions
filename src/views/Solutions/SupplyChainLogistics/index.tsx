@@ -29,7 +29,7 @@ const SupplyChainLogistics = () => {
         logoImg={SupplyChainControlTowerLogo}
         title={
           <div className="w-rc_120 -mt-rc90">
-            <span className="border-b-4 border-purple-900 border-solid inline-block">End-to-end</span> constraint-based
+            <span className="border-b-4 border-blue-900 border-solid inline-block">End-to-end</span> constraint-based
             planning across the complete supply chain.
           </div>
         }
@@ -43,7 +43,7 @@ const SupplyChainLogistics = () => {
         footerSpan='Departments: CRO, Sales, Marketing, Category Management, Finance'
         footerHover={['RelatedSolutions_1', 'RelatedSolutions_2']}
         footerHover_icon={blue_left_icon}
-        footerClassName='Bule_Footer_hover'
+        footerClassName='Bule_Footer_hover_black'
       />
     </div>
   )
