@@ -10,8 +10,11 @@ import MoudulUseCase from '../../../components/Solutions/MoudulUseCase/MoudulUse
 import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
 import { SalesOperationsPlanning_TopReasons, SalesOperationsPlanning_UseCase } from '../modules/SalesOperationsPlanning'
 import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
+import { useNavigate } from 'react-router-dom'
 
 const SalesOperationsPlanning = () => {
+  const navigate = useNavigate()
+
   return (
     <div className="SalesOperationsPlanning">
       <SolutionsHeader
@@ -19,16 +22,20 @@ const SalesOperationsPlanning = () => {
         headerTilte={<div className="text-rc28 font-bold">Sales & operations planning (S&OP) software</div>}
         headerClassName="text-white"
         TopDividerColor="border-gray-999"
-        headerTilteRight={<div>
-          <span className="cursor-pointer">Integrated Business Planning (IBP)</span> —
-          <span className="font-bold"> Sales & Operations Planning (S&OP)</span>
-        </div>}
+        headerTilteRight={
+          <div>
+            <span className="cursor-pointer" onClick={() => navigate('/solutions/integrated-business-planning')}>
+              Integrated Business Planning (IBP)
+            </span>{' '}
+            —<span className="font-bold"> Sales & Operations Planning (S&OP)</span>
+          </div>
+        }
         headBg={SalesOperationsPlanning_header_bg}
         logoImg={logos_home_1_1}
         footerColor="#fff"
         footerDiviDerColor="rgba(255,255,255,.5)"
         title={
-          <div className='text-rc45 whitespace-nowrap'>
+          <div className="text-rc45 whitespace-nowrap">
             Reimagine
             <strong> Sales & Operations Planning</strong>
           </div>
@@ -36,14 +43,12 @@ const SalesOperationsPlanning = () => {
       />
       <main>
         <Sections
-          section_01_video={
-            <div className="relative w-full h-rc160" />
-          }
+          section_01_video={<div className="relative w-full h-rc160" />}
           section_01_text1="Redefine Sales & Operations Planning with in-line collaboration"
           section_01_text2="Deloitte is helping organizations move from executive dash-boarding to a collaborative, analytic insights driven platform for alignment of cross-functional plans and initiatives. Enable your digital transformation of S&OP by integrating commercial planning and finance into an existing S&OP with on system meetings."
           section_02_video={SalesOperationsPlanning_section_02_bg}
           section_02_text1="Create a unified plan with live data"
-          section_02_text2=''
+          section_02_text2=""
           section_02_text3="Integrate all plans with the flexibility to model different sources of data, and accommodate the different granularity of the plans and understand the gaps between the plans. Resulting in a unified plan, in volume and value, constrained and fully financialized. Use the S&OP dashboard as a part of the full Integrated Business Planning (IBP) solution from Deloitte."
         />
         <TopReasons spans={SalesOperationsPlanning_TopReasons} />
@@ -55,7 +60,9 @@ const SalesOperationsPlanning = () => {
           ]}
           bg={false}
         />
-        <UserSubmission title={<strong>Take the first step to redefining your Sales & Operations Planning workflows</strong>} />
+        <UserSubmission
+          title={<strong>Take the first step to redefining your Sales & Operations Planning workflows</strong>}
+        />
         <WpbWrapper
           leftIcon={section_09_left_icon}
           footerClassName="Purple_Footer_hover"
@@ -65,7 +72,6 @@ const SalesOperationsPlanning = () => {
             'RelatedSolutions_3',
             'RelatedSolutions_4',
             'RelatedSolutions_5',
-            'RelatedSolutions_6',
           ]}
         />
       </main>

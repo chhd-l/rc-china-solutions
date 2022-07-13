@@ -247,6 +247,7 @@ module.exports = {
         rc5: '5px',
         rc10: '10px',
         rc12: '12px',
+        rc13: '13px',
         rc14: '14px',
         rc15: '15px !important',
         rc20: '20px',

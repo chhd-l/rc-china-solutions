@@ -8,8 +8,11 @@ import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/Solut
 import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
 import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
 import { MFP_Ecyion3s_2, MFP_Ecyion3s_3 } from '../modules/MFP'
+import { useNavigate } from 'react-router-dom'
 
 const MFP = () => {
+  const navigate = useNavigate()
+
   return (
     <div className="MFP">
       <SolutionsHeader
@@ -22,7 +25,7 @@ const MFP = () => {
         TopDividerColor="border-gray-999"
         headerTilteRight={
           <div>
-            <span className="cursor-pointer">Merchandising & Assortment Management</span> —
+            <span className="cursor-pointer" onClick={() => navigate('/solutions/merchandising')}>Merchandising & Assortment Management</span> —
             <span className="font-bold"> Merchandise Financial Planning</span>
           </div>
         }

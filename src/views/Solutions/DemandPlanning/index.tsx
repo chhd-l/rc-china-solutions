@@ -12,15 +12,18 @@ import { DemandPlanningTopReasons, DemandPlanningUseCase } from '../modules/Dema
 import MoudulUseCase from '../../../components/Solutions/MoudulUseCase/MoudulUseCase'
 import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
 import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
+import { useNavigate } from 'react-router-dom'
 
 const DemandPlanning = () => {
+  const navigate = useNavigate()
+
   return (
     <div className="DemandPlanning">
       <SolutionsHeader
         borderColor="#000"
         headerTilteRight={
         <div>
-          <span className="cursor-pointer">Revenue Management</span> —
+          <span className="cursor-pointer" onClick={() => navigate('/solutions/revenue')}>Revenue Management</span> —
           <span className="font-bold"> Demand Planning</span>
         </div>
         }

@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import orange_left_icon from '../../../assets/image/orange_left_icon.png'
 import SupplyChainControlTowerLogo from '../../../assets/image/SupplyChainControlTower_logo@2x.png'
 import BounceArrow from '../../../components/BounceArrow'
@@ -8,6 +9,8 @@ import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
 import { RetailAnalytics_Ecyion3s_2, RetailAnalytics_Ecyion3s_3 } from '../modules/RetailAnalytics'
 
 const RetailAnalytics = () => {
+  const navigate = useNavigate()
+
   return (
     <div className="RetailAnalytics">
       <SolutionsHeader
@@ -28,7 +31,15 @@ const RetailAnalytics = () => {
           section_01_title="Transform retail planning with AI and M/L "
           section_01_title2="powered analytics to improve alignment of plans to business strategies and market 
           needs."
-          section_01_span="Leverage embedded retail analytics to drive improvements to retail planning processes such as merchandise financial planning . Incorporate insights into market size, share and trends, assortment and buying towards better localization and competitive positioning. Pricing and promotion planning with improving ASP and promotional effectiveness. Allocation and replenishment planning by improve in-stock and forecast accuracy."
+          section_01_span={
+            <div className='text-white'>
+              Leverage embedded retail analytics to drive improvements to retail planning processes such as{' '}
+              <span className='text-gray-999 cursor-pointer transition-colors duration-300 hover:text-white' onClick={() => navigate('/solutions/merchandise-financial-planning')}>merchandise financial planning.</span> Incorporate insights into market size, share and trends,{' '}
+              <span className='text-gray-999 cursor-pointer transition-colors duration-300 hover:text-white' onClick={() => navigate('/solutions/assortment-planning')}>assortment</span> and buying towards better localization and competitive positioning. Pricing and
+              promotion planning with improving ASP and promotional effectiveness. Allocation and{' '}
+              <span className='text-gray-999 cursor-pointer transition-colors duration-300 hover:text-white' onClick={() => navigate('/solutions/replenishment-flow-planning')}>replenishment planning</span> by improve in-stock and forecast accuracy.
+            </div>
+          }
           section_02_title="Top reasons organizations are upgrading"
           section_02_title2=" their retail analytics capabilities"
           section_02_spans={RetailAnalytics_Ecyion3s_2}

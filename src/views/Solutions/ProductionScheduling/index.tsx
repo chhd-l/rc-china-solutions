@@ -10,8 +10,11 @@ import UserSubmission from '../../../components/Solutions/UserSubmission/UserSub
 import './index.less'
 import { ProductionScheduling_case, ProductionScheduling_TRP } from '../modules/ProductionScheduling'
 import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
+import { useNavigate } from 'react-router-dom'
 
 const ProductionScheduling = () => {
+  const navigate = useNavigate()
+
   return (
     <div className="ProductionScheduling">
       <SolutionsHeader
@@ -22,7 +25,7 @@ const ProductionScheduling = () => {
         TopDividerColor="border-gray-999"
         headerTilteRight={
           <div>
-            <span className="cursor-pointer">Supply Chain Management </span> —
+            <span className="cursor-pointer" onClick={() => navigate('/solutions/supply-chain')}>Supply Chain Management </span> —
             <span className="font-bold"> Production Scheduling</span>
           </div>
         }

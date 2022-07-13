@@ -14,17 +14,21 @@ import MoudulUseCase from '../../../components/Solutions/MoudulUseCase/MoudulUse
 import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
 import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
 import './index.less'
+import { useNavigate } from 'react-router-dom'
 
 const SupplyChainControlTower = () => {
+  const navigate = useNavigate()
+
   return (
     <div className="SupplyChainControlTower">
+      <div>
       <SolutionsHeader
         borderColor="#000"
         headerTilte={<div className="text-rc28 font-bold">Supply Chain Control Tower Software</div>}
         logoImg={SupplyChainControlTowerLogo}
         headerTilteRight={
           <div>
-            <span className="cursor-pointer">Supply Chain Control Tower</span> —
+            <span className="cursor-pointer" onClick={() => navigate('/solutions/supply-chain')}>Supply Chain Control Tower</span> —
             <span className="font-bold"> Supply Chain Control Tower</span>
           </div>
         }
@@ -112,6 +116,7 @@ const SupplyChainControlTower = () => {
           ]}
         />
       </main>
+      </div>
     </div>
   )
 }

@@ -3,8 +3,11 @@ import './index.less'
 import { ManagementItem } from './modules/solutions'
 import SolutionsLeft from '../../assets/image/SolutionsLeft.png'
 import { UserSubmissionbody } from './modules/UserSubmisstion'
+import { useNavigate } from 'react-router-dom'
 
 const Solutions = () => {
+  const navigate = useNavigate()
+
   return (
     <div className="Solutions">
       <div className="header px-rc115">
@@ -13,15 +16,22 @@ const Solutions = () => {
       <div className="headerInpput px-rc115">
         <Input placeholder="Search by solution or user role" />
       </div>
-      <div className="Management px-rc115">
+      <div className="Management px-rc115 pb-rc132">
         {ManagementItem.map((item, idx) => (
           <div key={idx}>
-            <div className={`flex items-center justify-between Managementlable ${item.color}`}>
+            <div 
+              className={`cursor-pointer flex items-center justify-between Managementlable ${item.color}`}
+              onClick={() => navigate(item.url)}
+            >
               <span>{item.title}</span> <img src={SolutionsLeft} alt="" className="w-10" />
             </div>
             <div className="grid grid-cols-4 gap-4 flex items-center flex-wrap">
               {item.children.map((subitem, key) => (
-                <div key={key} className="flex flex-col ManagementItem justify-between">
+                <div 
+                  key={key}
+                  className="cursor-pointer flex flex-col ManagementItem justify-between"
+                  onClick={() => navigate(subitem.url)}
+                >
                   <div>
                     <img src={subitem.icon} alt="" className="w-full h-full" />
                   </div>
@@ -41,7 +51,7 @@ const Solutions = () => {
           request a demo to highlight the capabilities that matter to you.
         </div>
         <div className="grid grid-cols-2 gap-8 my-rc35">
-          <Input className="text-rc15 bg-gray-300" placeholder="(Company) Email" />
+          <Input className="text-rc15" placeholder="(Company) Email" />
           <Input
             placeholder="___ ___ ___"
             className="inputPhont"
@@ -57,7 +67,7 @@ const Solutions = () => {
           />
         </div>
         <div 
-          className="leading-normal bg-green00c178 text-white text-rc17 flex justify-center items-center rounded-full py-rc10 hover:opacity-90 transition-all mt-rc20"
+          className="leading-normal bg-green00c178 font-bold text-white text-rc17 flex justify-center items-center rounded-full py-rc13 hover:opacity-90 transition-all mt-rc20"
         >
           Talk to an expert
         </div>

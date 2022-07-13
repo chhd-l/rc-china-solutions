@@ -21,7 +21,7 @@ export const solutionsData = [
       },
       {
         label: 'Integrated Business Planning (IBP)',
-        path: '/solutions/integratedBusinessPlanning',
+        path: '/solutions/integrated-business-planning',
       },
       {
         label: 'Supply Chain Master Planning',

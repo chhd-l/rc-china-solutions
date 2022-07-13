@@ -21,34 +21,41 @@ import bule_2 from '../../../assets/image/bule_2@2x.png'
 export const ManagementItem = [
     {
         title: 'Revenue Management',
+        url: '/solutions/revenue',
         color: 'hoverRed',
         children: [
             {
+                url: '/solutions/revenue-growth-management',
                 icon: red_1,
                 span: 'Revenue Management',
                 plan: 'Revenue Growth Management'
             },
             {
+                url: '/solutions/demand-planning',
                 icon: red_2,
                 span: 'Revenue Management',
                 plan: 'Demand Planning'
             },
             {
+                url: '/solutions/npi-planning',
                 icon: red_3,
                 span: 'Revenue Management',
                 plan: 'Npl Planning'
             },
             {
+                url: '/solutions/market-intelligence',
                 icon: red_4,
                 span: 'Revenue Management',
                 plan: 'Market Intelligence'
             },
             {
+                url: '/solutions/commercial-analytics',
                 icon: red_5,
                 span: 'Revenue Management',
                 plan: 'Commercial Analytics'
             },
             {
+                url: '/solutions/marketing-effectiveness-planning',
                 icon: red_6,
                 span: 'Revenue Management',
                 plan: 'Sales & Marketing Initiatives'
@@ -57,50 +64,60 @@ export const ManagementItem = [
     },
     {
         title: 'Supply Chain Management',
+        url: '/solutions/supply-chain',
         color: 'hoverPurple',
         children: [
             {
+                url: '/solutions/supply-chain-master-planning',
                 icon: Purple_1,
                 span: 'Supply Chain',
                 plan: 'Supply Chain Master Planning'
             },
             {
+                url: '/solutions/production-scheduling',
                 icon: Purple_1,
-                span: 'Supply Chain',
-                plan: 'Supply Chain Analytics'
-            },
-            {
-                icon: Purple_2,
                 span: 'Supply Chain',
                 plan: 'Production Scheduling'
             },
             {
-                icon: Purple_3,
+                url: '/solutions/supply-chain-control-tower',
+                icon: Purple_2,
                 span: 'Supply Chain',
                 plan: 'Supply chain Control Tower'
             },
             {
-                icon: Purple_4,
+                url: '/solutions/digital-supplier-collaboration',
+                icon: Purple_3,
                 span: 'Supply Chain',
                 plan: 'Digital Supplier Collaboration'
+            },
+            {
+                url: '/solutions/supply-chain-analytics',
+                icon: Purple_4,
+                span: 'Supply Chain',
+                plan: 'Supply Chain Analytics'
             },
         ]
     },
     {
         title: 'Integrated Business Planning ( IBP )',
+        url: '/solutions/integrated-business-planning',
         color: 'hoverGreed',
         children: [
             {
+                url: '/solutions/sales-operations-planning',
                 icon: greed_1,
                 span: 'IBP',
                 plan: 'Sales & Operations Planning (S&OP)'
             },
             {
+                url: '/solutions/annual-operating-plan-budgeting',
                 icon: greed_2,
                 span: 'IBP',
                 plan: 'Annual Operating Plan (AOP) & Budaeting'
             },
             {
+                url: '/solutions/long-range-planning-lrp',
                 icon: greed_3,
                 span: 'IBP',
                 plan: 'Long Range Planning (LRP)'
@@ -109,24 +126,29 @@ export const ManagementItem = [
     },
     {
         title: 'Merchandising & Assortment Management',
+        url: '/solutions/merchandising',
         color: 'hoverOrange',
         children: [
             {
+                url: '/solutions/merchandise-financial-planning',
                 icon: orange_1,
                 span: 'Merchandising',
                 plan: 'Merchandise Financial Planning'
             },
             {
+                url: '/solutions/assortment-planning',
                 icon: orange_2,
                 span: 'Merchandising',
                 plan: 'Assortment Planning'
             },
             {
+                url: '/solutions/retail-demand-planning',
                 icon: orange_3,
                 span: 'Merchandising',
                 plan: 'Retail Demand Planning'
             },
             {
+                url: '/solutions/retail-analytics',
                 icon: orange_4,
                 span: 'Merchandising',
                 plan: 'Retail Analytics'
@@ -135,14 +157,17 @@ export const ManagementItem = [
     },
     {
         title: 'Retail Analytics',
+        url: '/solutions/supply-chain-logistics',
         color: 'hoverBlue',
         children: [
             {
+                url: '/solutions/replenishment-flow-planning',
                 icon: bule_1,
                 span: 'Supply Chain Logistics',
                 plan: 'Replenishment Planning'
             },
             {
+                url: '/solutions/allocation-planning',
                 icon: bule_2,
                 span: 'Supply Chain Logistics',
                 plan: 'Allocation Planning'
