@@ -5,7 +5,7 @@ type WpbWrapperType = {
 }
 
 const WpbWrapper = ({leftIcon, footerClassName, footerHover}: WpbWrapperType) => {
-    return <section className="text-rc20 px-rc90 py-rc150" id="RelatedSolutions">
+    return <section className="text-rc20 px-rc90 py-rc150">
       <div className="mb-rc45 text-rc35">Related Solutions</div>
       <div className={`flex flex-wrap ${footerClassName}`}>
       {footerHover.map((item, idx) => (
