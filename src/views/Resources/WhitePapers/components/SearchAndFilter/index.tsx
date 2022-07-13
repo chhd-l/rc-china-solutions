@@ -16,6 +16,9 @@ const SearchAndFilter = () => {
       const res: any = await new Promise((resolve) => {
         setTimeout(() => {
           let search = searchContent.filter((item) => toLower(item.desc).indexOf(toLower(searchData.keyWords)) > -1)
+          if (searchData.keyWords === '') {
+            search = searchContent
+          }
           if (selected.length) {
             search = search.filter((item) => selected.includes(item.desc))
           }
