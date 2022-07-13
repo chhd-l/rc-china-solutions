@@ -50,7 +50,7 @@ const WhitePapers = () => {
                   </Row>
                 </Col>
               </div>
-              <Row justify="center" className="mt-rc100  px-rc90">
+              <Row justify="center" className="mt-rc100  px-rc90" id="content">
                 <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 6 }}>
                   <p className="text-rc45 text-white font-light">Resources</p>
                 </Col>

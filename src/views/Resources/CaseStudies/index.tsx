@@ -9,7 +9,7 @@ const CaseStudies = () => {
     <div className=" bg-111111">
       <Row>
         <Col span={24}>
-          <div className=" relative px-rc90">
+          <div className=" relative ">
             <div className="CaseStudies-ready">
               <div className=" relative w-full pt-rc35 pb-rc70 z-50 mb-0 bg-100%">
                 <div className="nectar-video-wrap">
@@ -27,7 +27,7 @@ const CaseStudies = () => {
                     />
                   </div>
                 </div>
-                <Col span={24} style={{ zIndex: 10 }}>
+                <Col span={24} style={{ zIndex: 10 }} className="px-rc90">
                   <div>
                     <p className="text-white text-rc20 border-gray-rgba255 border-b pb-rc20 mb-rc60">Case Studies</p>
                   </div>
@@ -50,13 +50,6 @@ const CaseStudies = () => {
                   </Row>
                 </Col>
               </div>
-              {/* <Row justify="center" className="mt-rc100">
-                <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 4 }}>
-                  <p className=" text-rc35 text-white font-light  text-left">
-                    Search and <span className=" font-semibold">filter</span> case studies
-                  </p>
-                </Col>
-              </Row> */}
               <SearchAndFilter />
             </div>
           </div>
