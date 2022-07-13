@@ -7,6 +7,7 @@ import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/Solut
 import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
 import { SupplyChainAnalytics_Ecyion3s_2, SupplyChainAnalytics_Ecyion3s_3 } from '../modules/SupplyChainAnalytics'
 import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
+import { Purple_footerIcons } from '../modules/footerIcons'
 
 const SupplyChainAnalytics = () => {
   return (
@@ -46,13 +47,7 @@ const SupplyChainAnalytics = () => {
         <WpbWrapper
           leftIcon={SupplyChainControlTower_leftIcon}
           footerClassName="Purple_Footer_hover"
-          footerHover={[
-            'RelatedSolutions_1',
-            'RelatedSolutions_2',
-            'RelatedSolutions_3',
-            'RelatedSolutions_4',
-            'RelatedSolutions_5',
-          ]}
+          footerHover={Purple_footerIcons}
         />
       </main>
     </div>

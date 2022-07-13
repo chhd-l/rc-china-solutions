@@ -6,6 +6,7 @@ import SolutionSEcyion3s from '../../../components/Solutions/SolutionSEcyion3s/S
 import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/SolutionsHeader'
 import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
 import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
+import { Red_footerIcons } from '../modules/footerIcons'
 import { RetailAnalytics_Ecyion3s_2, RetailAnalytics_Ecyion3s_3 } from '../modules/RetailAnalytics'
 
 const RetailAnalytics = () => {
@@ -59,14 +60,7 @@ const RetailAnalytics = () => {
         <WpbWrapper
           leftIcon={orange_left_icon}
           footerClassName="Red_Footer_hover"
-          footerHover={[
-            'RelatedSolutions_1',
-            'RelatedSolutions_2',
-            'RelatedSolutions_3',
-            'RelatedSolutions_4',
-            'RelatedSolutions_5',
-            'RelatedSolutions_6',
-          ]}
+          footerHover={Red_footerIcons}
         />
       </main>
     </div>

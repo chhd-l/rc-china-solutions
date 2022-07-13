@@ -7,6 +7,7 @@ import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/Solut
 import './index.less'
 import Breadcrumbs from '../../../components/Solutions/Breadcrumbs/Breadcrumbs'
 import { Revenuemanagementsolutions_bodys } from '../modules/Revenuemanagementsolutions'
+import { Red_footerIcons } from '../modules/footerIcons'
 
 const Revenuemanagementsolutions = () => {
   return (
@@ -68,14 +69,7 @@ const Revenuemanagementsolutions = () => {
             CRO, Sales, Marketing, Category Management, Finance
           </div>
         }
-        footerHover={[
-          'RelatedSolutions_1',
-          'RelatedSolutions_2',
-          'RelatedSolutions_3',
-          'RelatedSolutions_4',
-          'RelatedSolutions_5',
-          'RelatedSolutions_6',
-        ]}
+        footerHover={Red_footerIcons}
         footerHover_icon={DemandPlanning_leftIcon}
         footerClassName="Red_Footer_hover_black"
       />

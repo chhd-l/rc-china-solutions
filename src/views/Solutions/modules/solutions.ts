@@ -156,7 +156,7 @@ export const ManagementItem = [
         ]
     },
     {
-        title: 'Retail Analytics',
+        title: 'Supply Chain Logistics for Retail',
         url: '/solutions/supply-chain-logistics',
         color: 'hoverBlue',
         children: [

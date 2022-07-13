@@ -6,6 +6,7 @@ import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/Solut
 import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
 import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
 import { AssortmentPlanning_Ecyion3s_2, AssortmentPlanning_Ecyion3s_3 } from '../modules/AssortmentPlanning'
+import { Orange_footerIcons } from '../modules/footerIcons'
 
 const AssortmentPlanning = () => {
   return (
@@ -57,7 +58,7 @@ const AssortmentPlanning = () => {
         <WpbWrapper
           leftIcon={orange_left_icon}
           footerClassName="Orange_Footer_hover"
-          footerHover={['RelatedSolutions_1', 'RelatedSolutions_2', 'RelatedSolutions_3', 'RelatedSolutions_4']}
+          footerHover={Orange_footerIcons}
         />
       </main>
     </div>

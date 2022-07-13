@@ -9,6 +9,7 @@ import UserSubmission from '../../../components/Solutions/UserSubmission/UserSub
 import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
 import { MFP_Ecyion3s_2, MFP_Ecyion3s_3 } from '../modules/MFP'
 import { useNavigate } from 'react-router-dom'
+import { Orange_footerIcons } from '../modules/footerIcons'
 
 const MFP = () => {
   const navigate = useNavigate()
@@ -71,7 +72,7 @@ const MFP = () => {
         <WpbWrapper
           leftIcon={orange_left_icon}
           footerClassName="Orange_Footer_hover"
-          footerHover={['RelatedSolutions_1', 'RelatedSolutions_2', 'RelatedSolutions_3', 'RelatedSolutions_4']}
+          footerHover={Orange_footerIcons}
         />
       </main>
     </div>
