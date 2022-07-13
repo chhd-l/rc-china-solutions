@@ -35,6 +35,8 @@ import MFP from '../views/Solutions/MFP'
 import AssortmentPlanning from '../views/Solutions/AssortmentPlanning'
 import RDP from '../views/Solutions/RDP'
 import RetailAnalytics from '../views/Solutions/RetailAnalytics'
+import ReplenishmentPlanning from '../views/Solutions/ReplenishmentPlanning'
+import AllocationPlanning from '../views/Solutions/AllocationPlanning'
 
 const routers: RouteObject[] = [
   {
@@ -159,6 +161,14 @@ const routers: RouteObject[] = [
           {
             path: 'retail-analytics',
             element: <RetailAnalytics />,
+          },
+          {
+            path: 'replenishment-flow-planning',
+            element: <ReplenishmentPlanning />,
+          },
+          {
+            path: 'allocation-planning',
+            element: <AllocationPlanning />,
           },
         ],
       },
