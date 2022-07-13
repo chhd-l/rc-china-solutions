@@ -8,7 +8,6 @@ import Sections from '../../../components/Solutions/Sections/Sections'
 import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/SolutionsHeader'
 import TopReasons from '../../../components/Solutions/TopReasons/TopReasons'
 import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
-import './index.less'
 import {
   RevenueGrowthManagement_Topreasons_content,
   RevenueGrowthManagement_UseCases_content,
