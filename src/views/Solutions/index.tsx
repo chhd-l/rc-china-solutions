@@ -4,9 +4,12 @@ import { ManagementItem } from './modules/solutions'
 import SolutionsLeft from '../../assets/image/SolutionsLeft.png'
 import { UserSubmissionbody } from './modules/UserSubmisstion'
 import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
 
 const Solutions = () => {
   const navigate = useNavigate()
+  const [bodys, steBodys] = useState(ManagementItem)
+  const [seachrOpen, steSeachrOpen] = useState(false)
 
   return (
     <div className="Solutions">
@@ -14,12 +17,26 @@ const Solutions = () => {
         <span>Our solutions,</span> powered by the industry specific knowledge models.
       </div>
       <div className="headerInpput px-rc115">
-        <Input placeholder="Search by solution or user role" />
+        <Input
+          onChange={(e) => {
+            steSeachrOpen(true)
+            let timer = null
+            if (timer) {
+              clearTimeout(timer)
+            }
+            timer = setTimeout(() => {
+              let arr = ManagementItem.filter((str) => str.title.indexOf(e.target.value) !== -1)
+              steBodys(arr)
+              steSeachrOpen(false)
+            }, 1000)
+          }}
+          placeholder="Search by solution or user role"
+        />
       </div>
-      <div className="Management px-rc115 pb-rc132">
-        {ManagementItem.map((item, idx) => (
-          <div key={idx}>
-            <div 
+      <div className={`Management px-rc115 pb-rc132 ${seachrOpen && 'opacity-40'}`}>
+        {bodys.map((item, idx) => (
+          <div className="mt-rc90" key={idx}>
+            <div
               className={`cursor-pointer flex items-center justify-between Managementlable ${item.color}`}
               onClick={() => navigate(item.url)}
             >
@@ -27,7 +44,7 @@ const Solutions = () => {
             </div>
             <div className="grid grid-cols-4 gap-4 flex items-center flex-wrap">
               {item.children.map((subitem, key) => (
-                <div 
+                <div
                   key={key}
                   className="cursor-pointer flex flex-col ManagementItem justify-between"
                   onClick={() => navigate(subitem.url)}
@@ -44,6 +61,7 @@ const Solutions = () => {
             </div>
           </div>
         ))}
+        {!bodys.length && <div className="text-center text-rc18 text-gray-999 mt-rc90">No post found</div>}
       </div>
       <div className="py-rc150 px-rc325 solutionsFooter bg-white text-black text-rc48 leading-rc55 letterSpacing-rc5">
         <div className="text-gray-999">
@@ -66,9 +84,7 @@ const Solutions = () => {
             }
           />
         </div>
-        <div 
-          className="leading-normal bg-green00c178 font-bold text-white text-rc17 flex justify-center items-center rounded-full py-rc13 hover:opacity-90 transition-all mt-rc20"
-        >
+        <div className="leading-normal bg-green00c178 font-bold text-white text-rc17 flex justify-center items-center rounded-full py-rc13 hover:opacity-90 transition-all mt-rc20">
           Talk to an expert
         </div>
       </div>
