@@ -1,0 +1,62 @@
+.SupplyChainControlTower {
+  @keyframes AllrelatedresourcesMoveOut {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes AllrelatedresourcesMoveIn {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  .section_03 {
+    .Resources {
+      > div {
+        &:first-child {
+          width: 21%;
+          margin-right: 55px;
+        }
+      }
+      .ResourceBtn {
+        padding: 8px 20px;
+        background-color: #414141;
+        transition: all 0.3s ease;
+        &:hover {
+          padding-left: 30px;
+          background-color: blue;
+        }
+      }
+    }
+    .Allrelatedresources {
+      position: relative;
+      padding-bottom: 4px;
+      overflow: hidden;
+      &:hover {
+        &::after {
+          animation-name: AllrelatedresourcesMoveIn !important;
+          transform: translateX(100%);
+        }
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        transition: all 0.3s;
+        height: 1px;
+        background-color: #fff;
+        animation-duration: 0.3s;
+        animation-name: AllrelatedresourcesMoveOut;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+      }
+    }
+  }
+}

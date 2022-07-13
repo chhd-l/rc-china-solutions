@@ -259,6 +259,7 @@ module.exports = {
         rc43: '43px',
         rc44: '44px',
         rc45: '45px',
+        rc55: '55px',
         rc57: '57px',
         rc50: '50px',
         rc58: '58px',

@@ -13,6 +13,7 @@ import { section_03_content, Topreasons_content, UseCases_content } from '../mod
 import MoudulUseCase from '../../../components/Solutions/MoudulUseCase/MoudulUseCase'
 import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
 import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
+import './index.less'
 
 const SupplyChainControlTower = () => {
   return (
@@ -52,8 +53,8 @@ const SupplyChainControlTower = () => {
           section_02_text1="AI Powered Supply Chain Control Tower"
           section_02_text3="More and more data is becoming available. Real-time signals from supply chain disruptions and market opportunities should alert planners instantly. Leveraging the Deloitte AI scenario capabilities, solutions to these disruptions are presented and highlighted with lead-time and cost implications. The Deloitte Control Tower allows enterprises to connect and harmonize planning and execution seamlessly on a common AI platform."
         />
-        <section className="section_03 text-white">
-          <div className="bg-black">
+        <section className="section_03 text-white px-rc90 py-rc55">
+          <div className="bg-black p-rc55">
             <div className="flex justify-between Resources mb-rc24">
               <div>
                 <div className="flex items-center text-rc18 mb-rc30">
