@@ -176,6 +176,7 @@ module.exports = {
         rc268: '268px',
         rc272: '272px',
         rc300: '300px',
+        rc417: '417px',
         rc479: '479px',
         rc480: '480px',
         rc500: '500px',
@@ -352,8 +353,10 @@ module.exports = {
         rc_058CDF: '#058CDF',
       },
       inset: {
+        rc_50: '50%',
         _rc19: '-19px',
         _rc60: '-60px',
+        _rc43: '-43px',
         rc10: '10px',
         rc20: '20px',
         rc30: '30px',

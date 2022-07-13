@@ -1,4 +1,4 @@
-import _, { toLower } from 'lodash'
+import _ from 'lodash'
 import retail_campaign_grocery_blog2 from '../../../../../assets/image/retail-campaign-grocery-blog2-670x335.jpg'
 import light_house from '../../../../../assets/image/light-house-670x335.png'
 import im_whitepaper_header from '../../../../../assets/image/im-ct-whitepaper-header-670x335.jpg'
@@ -63,31 +63,31 @@ export const searchItem = [
 export const SearchValue = _.flatten(searchItem.map((item) => item.list.map((child) => child.label)))
 export const searchContent = [
   {
-    path: retail_campaign_grocery_blog2,
+    path: retail_campaign_grocery_blog2 as string,
     desc: 'Cheat sheet: Learn how to build a superior demand forecasting model using AI/ML',
   },
   {
-    path: light_house,
+    path: light_house as string,
     desc: 'Report: 2022 Gartner® Magic Quadrant™ for Supply Chain Planning Solutions',
   },
   {
-    path: im_whitepaper_header,
+    path: im_whitepaper_header as string,
     desc: 'Use Case: Can AI/ML forecasting help improve your forecast accuracy rapidly?',
   },
   {
-    path: control_tower,
+    path: control_tower as string,
     desc: 'White Paper: The Cure For Broken Apparel, Fashion & Luxury Supply Chains',
   },
   {
-    path: IBM_whitepaper,
+    path: IBM_whitepaper as string,
     desc: 'White Paper: Building a superior forecasting model with AI/ML',
   },
   {
-    path: paid_ads,
+    path: paid_ads as string,
     desc: 'White Paper: Managing volatile retail demand with Control Towers for capacity and flow planning.',
   },
   {
-    path: TradePromo_Image2,
+    path: TradePromo_Image2 as string,
     desc: 'White Paper: The future of trade promotions',
   },
   {

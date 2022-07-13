@@ -9,17 +9,24 @@ import { useState } from 'react'
 import { toLower } from 'lodash'
 
 const SearchAndFilter = () => {
-  const { isSelected, toggle } = useSelections(SearchValue)
-  const [searchData, setSearchData] = useState(searchContent)
-  const { loading, run } = useRequest(
-    (val) =>
-      new Promise(() => {
-        const search = searchContent.filter((item) => toLower(item.desc).indexOf(val) > -1)
-        setSearchData(search)
-      }),
+  const { isSelected, toggle, selected } = useSelections(SearchValue)
+  const [searchData, setSearchData] = useState({ check: '', keyWords: '' })
+  const { loading, data } = useRequest(
+    async () => {
+      const res: any = await new Promise((resolve) => {
+        setTimeout(() => {
+          let search = searchContent.filter((item) => toLower(item.desc).indexOf(toLower(searchData.keyWords)) > -1)
+          if (selected.length) {
+            search = search.filter((item) => selected.includes(item.desc))
+          }
+          resolve(search)
+        }, 1000)
+      })
+      return res
+    },
     {
       debounceWait: 1000,
-      manual: true,
+      refreshDeps: [searchData],
     },
   )
 
@@ -28,7 +35,11 @@ const SearchAndFilter = () => {
       <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 6 }}>
         <Wrapper>
           <p className=" text-rc18">Search Resources</p>
-          <SearchInput placeholder="Type to search ..." onChange={(e) => run(e.target.value)} />
+          <SearchInput
+            placeholder="Type to search ..."
+            onChange={(e) => setSearchData({ ...searchData, keyWords: e.target.value })}
+            disabled={loading}
+          />
         </Wrapper>
         {searchItem.map((item) => (
           <Wrapper key={item.title}>
@@ -38,8 +49,7 @@ const SearchAndFilter = () => {
                 key={child.label}
                 onClick={() => {
                   toggle(child.value)
-                  const res = searchData.filter((it) => toLower(it.desc).indexOf(toLower(child.value)) > -1)
-                  setSearchData(res)
+                  setSearchData({ ...searchData, check: child.label })
                 }}
               >
                 <MyCheckBox checked={isSelected(child.value)}>
@@ -52,19 +62,21 @@ const SearchAndFilter = () => {
       </Col>
 
       <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 18 }}>
-        <Row gutter={[0, 20]} align="top">
-          {searchData.map((item) => (
-            <Col
-              xs={{ span: 18 }}
-              sm={{ span: 16 }}
-              md={{ span: 11 }}
-              lg={{ span: 11 }}
-              xl={{ span: 8 }}
-              key={item.path}
-            >
-              <MyCart {...item} />
-            </Col>
-          ))}
+        <Row gutter={[20, 20]} align="top" className="relative">
+          {data &&
+            data?.map((item: { path: string; desc: string }) => (
+              <Col
+                xs={{ span: 18 }}
+                sm={{ span: 16 }}
+                md={{ span: 11 }}
+                lg={{ span: 11 }}
+                xl={{ span: 8 }}
+                key={item.path}
+              >
+                <MyCart {...item} />
+              </Col>
+            ))}
+          {loading && <div className=" bg-black absolute h-full w-full z-2 opacity-50" />}
         </Row>
       </Col>
     </Row>
