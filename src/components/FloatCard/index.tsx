@@ -37,7 +37,6 @@ const FloadCard = ({ title, path, desc, tip, bgColor, textColor }: FloadCardProp
           className={`cursor-pointer  text-rc18 p-rc30 group-hover:underline 
           ${textColor === 'white' ? 'text-white' : 'text-black'}`}
         >
-          {' '}
           {desc}
         </div>
         <FloatingTips className=" transform -translate-y-full group-hover:translate-y-0">{tip}</FloatingTips>
