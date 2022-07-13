@@ -22,14 +22,14 @@ const Breadcrumbs = ({
   footerClassName,
 }: breadcrumbsType) => {
   return (
-    <div>
+    <div id="content">
       <section className="bg-black px-rc90 py-rc125 text-white">
         <div className="px-rc242 text-rc45">
           {title}
           <img src={img} alt="" />
         </div>
       </section>
-      <section>
+      <section id="capabilities">
         {bodys.map((item, idx) => (
           <div key={idx} className={`flex px-rc90 py-rc150 ${idx % 2 === 0 ? 'bg-white' : 'bg-gray-300'}`}>
             <div className="w-rc_75 text-rc35 font-bold leading-rc43 mr-rc60">{item.title}</div>
@@ -45,7 +45,7 @@ const Breadcrumbs = ({
           </div>
         ))}
       </section>
-      <section className="px-rc90 py-rc100 bg-black_111 text-white">
+      <section className="px-rc90 py-rc100 bg-black_111 text-white" id='solutions'>
         <div className="flex">
           <div className="w-rc_30 text-rc35 leading-rc42 mr-rc60">{footerTitle}</div>
           <div className="text-rc17 leading-rc32 border-t border-solid border-white">

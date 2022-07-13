@@ -16,10 +16,20 @@ const MAM = () => {
         headerTilteRight={<div className="text-rc14 text-white font-bold">Merchandising & Assortment Management</div>}
         titleBtn={
           <div className="flex items-center mt-rc35">
-            <NectarButton className="ml-rc25" color="#000">
+            <NectarButton onClick={() => {
+              let anchorElement = document.getElementById('capabilities')
+              if (anchorElement) {
+                anchorElement.scrollIntoView({ inline: 'start', block: 'start', behavior: 'smooth' })
+              }
+            }} className="ml-rc25" color="#000">
               Talk to an expert
             </NectarButton>
-            <div className="text-rc16 flex items-center ml-rc30 titleBtnRight cursor-pointer overflow-hidden">
+            <div onClick={() => {
+                  let anchorElement = document.getElementById('solutions')
+                  if (anchorElement) {
+                    anchorElement.scrollIntoView({ inline: 'start', block: 'start', behavior: 'smooth' })
+                  }
+            }} className="text-rc16 flex items-center ml-rc30 titleBtnRight cursor-pointer overflow-hidden">
               <div className="herderIconBotm w-rc12 h-rc20" />
               <strong className="ml-rc8">Solutions</strong>
             </div>

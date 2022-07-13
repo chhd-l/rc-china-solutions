@@ -26,7 +26,7 @@ const SolutionSEcyion3s = ({
   section_03_spans,
 }: SolutionSEcyion3sType) => {
   return (
-    <div className="SolutionSEcyion3s">
+    <div id='content' className="SolutionSEcyion3s">
       <section className={`bg-black text-white section_01 px-rc90 pb-rc150 ${section_01_img ? 'pt-rc40' : 'pt-rc150'}`}>
         {
           section_01_img 

@@ -8,7 +8,12 @@ type BounceArrowProps = {
 }
 const BounceArrow = ({ type, isPaddingBottom }: BounceArrowProps) => {
   return (
-    <a href="#content" className={`h-full ${isPaddingBottom ? '' : 'pb-rc58'} flex items-end justify-end w-full`}>
+    <a onClick={() => {
+      let anchorElement = document.getElementById('content')
+                  if (anchorElement) {
+                    anchorElement.scrollIntoView({ inline: 'start', block: 'start', behavior: 'smooth' })
+                  }
+    }} className={`h-full ${isPaddingBottom ? '' : 'pb-rc58'} flex items-end justify-end w-full`}>
       <img
         src={type === 'white' ? arrow_down_white : arrow_down}
         alt=""

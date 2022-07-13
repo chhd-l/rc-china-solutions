@@ -1,7 +1,10 @@
+import { useNavigate } from 'react-router-dom'
 import './index.less'
 import { LeftContent } from './modules/footer'
 
 const Footer = () => {
+  const navigate = useNavigate()
+
   return (
     <div className='Footer'>
       <div className="flex">
@@ -9,12 +12,12 @@ const Footer = () => {
           <div className="flex-1 flex">
             {LeftContent.map((item, idx) => (
               <div key={idx} className={`${idx !== 0 && 'flex-1'} LeftContent`}>
-                <div className={`${idx === 0 && 'hover:cursor-pointer hover:underline'} title mb-rc20`}>
-                  {item.title}
+                <div className='title mb-rc20'>
+                  <span onClick={() => item.url && navigate(item.url)} className={`${item.url && 'cursor-pointer hover:underline'}`}>{item.title}</span>
                 </div>
                 {item.span.map((str, index) => (
-                  <div key={index} className="h-rc38 hover:cursor-pointer hover:underline">
-                    {str}
+                  <div key={index} className="h-rc38">
+                    <span onClick={() => str.url && navigate(str.url)} className={`${str.url && 'cursor-pointer hover:underline'}`}>{str.span}</span>
                   </div>
                 ))}
               </div>
