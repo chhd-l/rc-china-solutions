@@ -201,6 +201,7 @@ const routers: RouteObject[] = [
         path: 'security',
         element: <Security />,
       },
+      { path: '*', element: <Home /> },
     ],
   },
 ]
