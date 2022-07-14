@@ -27,28 +27,30 @@ const CaseStudies = () => {
                     />
                   </div>
                 </div>
-                <Col span={24} style={{ zIndex: 10 }} className="px-rc90">
-                  <div>
-                    <p className="text-white text-rc20 border-gray-rgba255 border-b pb-rc20 mb-rc60">Case Studies</p>
-                  </div>
-                  <Row>
-                    <Col
-                      xs={{ span: 18 }}
-                      sm={{ span: 16 }}
-                      md={{ span: 11 }}
-                      lg={{ span: 11 }}
-                      xl={{ span: 14 }}
-                      style={{ zIndex: 10 }}
-                    >
-                      <p className="text-rc72 text-white text-rc7 leading-rc75">
-                        Delivering value across industries with the Deloitte Digital Brain
-                      </p>
-                    </Col>
-                    <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 10 }}>
-                      <BounceArrow type="white" />
-                    </Col>
-                  </Row>
-                </Col>
+                <Row justify="center">
+                  <Col span={21} style={{ zIndex: 10 }}>
+                    <div>
+                      <p className="text-white text-rc20 border-gray-rgba255 border-b pb-rc20 mb-rc60">Case Studies</p>
+                    </div>
+                    <Row>
+                      <Col
+                        xs={{ span: 18 }}
+                        sm={{ span: 24 }}
+                        md={{ span: 24 }}
+                        lg={{ span: 24 }}
+                        xl={{ span: 14 }}
+                        style={{ zIndex: 10 }}
+                      >
+                        <p className="text-rc72 text-white text-rc7 leading-rc75">
+                          Delivering value across industries with the Deloitte Digital Brain
+                        </p>
+                      </Col>
+                      <Col xs={{ span: 18 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 11 }} xl={{ span: 10 }}>
+                        <BounceArrow type="white" />
+                      </Col>
+                    </Row>
+                  </Col>
+                </Row>
               </div>
               <SearchAndFilter />
             </div>

@@ -25,14 +25,18 @@ const SearchAndFilter = () => {
   )
 
   return (
-    <Row className="my-rc100 px-rc90" id="content">
-      <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 7 }}>
-        <p className=" text-rc35 text-white font-light  text-left w-rc315">
+    <Row className="my-rc100" id="content" justify="center">
+      <Col xs={{ span: 18 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 6 }} xl={{ span: 5 }}>
+        <p className=" text-rc35 text-white font-light  text-left w-full">
           Search and <span className=" font-semibold">filter</span> case studies
         </p>
         <Wrapper>
           <p className=" text-rc18">Search Case Studies</p>
-          <SearchInput placeholder="Type to search ..." onChange={(e) => run(e.target.value)} />
+          <SearchInput
+            placeholder="Type to search ..."
+            onChange={(e) => run(e.target.value)}
+            style={{ width: '100%' }}
+          />
         </Wrapper>
         <Wrapper>
           <p className=" text-rc18">Industry</p>
@@ -69,10 +73,10 @@ const SearchAndFilter = () => {
         ))}
       </Col>
 
-      <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 17 }}>
-        <Row gutter={[20, 20]} align="top">
+      <Col xs={{ span: 18 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 17 }} xl={{ span: 17 }}>
+        <Row gutter={[20, 20]} align="top" className=" pl-0 lg:pl-rc80">
           {searchData.map((item, index) => (
-            <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 8 }} key={index}>
+            <Col xs={{ span: 18 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 11 }} xl={{ span: 8 }} key={index}>
               <CaseStudiesCart {...item} />
             </Col>
           ))}

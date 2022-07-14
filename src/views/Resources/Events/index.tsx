@@ -51,13 +51,13 @@ const Events = () => {
                   </Col>
                 </Row>
               </div>
-              <Row justify="center" className="bg-gray-300 " id="anchor-content">
+              <Row justify="center" className="bg-gray-300 " id="content">
                 <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 20 }} xl={{ span: 20 }}>
                   <Row justify="center" className=" mt-rc_10">
                     <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 2 }} lg={{ span: 4 }} xl={{ span: 4 }}>
                       <Anchor
                         targetOffset={targetOffset}
-                        getContainer={() => document.querySelector('#anchor-content') as AnchorContainer}
+                        getContainer={() => document.querySelector('#content') as AnchorContainer}
                         // affix
                       >
                         <Link href="#Upcoming" title="Upcoming" />
