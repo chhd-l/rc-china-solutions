@@ -57,7 +57,7 @@ const SubMenu = ({ current, getCurrent, subMenuData }: SubMenuProps) => {
     <>
       {current !== 'default' && (
         <div
-          className="w-full h-rc500 bg-white  fixed z-10 left-0  top-rc62 flex flex-row justify-center py-rc60  animate__animated animate__fadeIn"
+          className="w-full h-rc500 bg-white  fixed z-10 left-0  top-rc62 flex flex-row justify-center pt-rc30 pb-rc60  animate__animated animate__fadeIn"
           onMouseEnter={() => getCurrent(current)}
           onMouseLeave={() => getCurrent('default')}
         >

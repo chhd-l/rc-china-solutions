@@ -11,9 +11,9 @@ type Item = {
 type MyTabProps = {
   paneData: Item[]
 }
-const MyTab = ({ paneData }: MyTabProps) => {
+const TechTab = ({ paneData }: MyTabProps) => {
   return (
-    <Tabs defaultActiveKey="1" centered className="tab">
+    <Tabs defaultActiveKey="1" centered className="TechTab">
       {paneData.map((item) => (
         <TabPane tab={item.title} key={item.title}>
           <img src={item.img} alt="" className="w-full h-full" />
@@ -23,4 +23,4 @@ const MyTab = ({ paneData }: MyTabProps) => {
   )
 }
 
-export default MyTab
+export default TechTab

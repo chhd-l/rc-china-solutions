@@ -7,7 +7,7 @@ import {
   tabData_First,
   tabData_Second,
 } from '../modules/Platform'
-import MyTab from './components/MyTab'
+import TechTab from './components/TechTab'
 import './index.less'
 import { NectarButton } from '../../../components/common/NectarButton'
 import BlackAndgray from './components/BlackAndgray'
@@ -167,7 +167,7 @@ const Technology = () => {
           xl={{ span: 14 }}
           className=" pb-rc_7"
         >
-          <MyTab paneData={tabData_First} />
+          <TechTab paneData={tabData_First} />
         </Col>
       </Row>
       <Row justify="center">
@@ -186,7 +186,7 @@ const Technology = () => {
         </Col>
 
         <Col xs={{ span: 18 }} sm={{ span: 22 }} md={{ span: 19 }} lg={{ span: 18 }} xl={{ span: 14 }}>
-          <MyTab paneData={tabData_Second} />
+          <TechTab paneData={tabData_Second} />
         </Col>
         <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 19 }} lg={{ span: 18 }} xl={{ span: 14 }}>
           <BlackAndgray black="No more spinning cursors" gray=" when you ask a question or make an edit." />

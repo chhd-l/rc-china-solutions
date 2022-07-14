@@ -85,9 +85,9 @@ const Blog = () => {
                       md={{ span: 11 }}
                       lg={{ span: 3 }}
                       xl={{ span: 3 }}
-                      className=" ml-rc45 mr-rc120"
+                      className=" ml-rc45 mr-rc30 md:mr-rc60 xl:mr-rc60 2xl:mr-rc120"
                     >
-                      <p className="  w-full text-white text-rc22 mr-rc_5">
+                      <p className="  w-full text-white text-rc22 ">
                         Search and <strong>filter</strong> articles
                       </p>
                     </Col>
@@ -97,12 +97,12 @@ const Blog = () => {
                         xs={{ span: 18 }}
                         sm={{ span: 16 }}
                         md={{ span: 24 }}
-                        lg={{ span: 20 }}
+                        lg={{ span: 3 }}
                         xl={{ span: 2 }}
-                        className=" mr-0 lg:mr-rc20"
+                        className=" mr-0 md:mr-rc5 lg:mr-rc10  xl:mr-rc25 2xl:mr-rc20"
                       >
                         <BlobCheckBox
-                          className="w-full lg:w-rc119"
+                          className="w-full md:w-full lg:w-rc119"
                           onClick={() => {
                             toggle(item)
                             setSearchData({ ...searchData, check: item })
@@ -114,17 +114,16 @@ const Blog = () => {
                         </BlobCheckBox>
                       </Col>
                     ))}
-
-                    <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 20 }} xl={{ span: 3 }}>
+                    <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 22 }} xl={{ span: 5 }}>
                       <Input
                         placeholder="Search articles …"
                         style={{
-                          width: 306,
+                          width: '100%',
                           marginLeft: 25,
                           height: 96,
                         }}
                         onChange={(e) => setSearchData({ ...searchData, keyWords: e.target.value })}
-                        className="blogInput w-full lg:w-rc306"
+                        className="blogInput "
                       />
                     </Col>
                   </Row>

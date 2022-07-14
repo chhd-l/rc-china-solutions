@@ -50,8 +50,13 @@ const ViewSixthPart = () => {
               md={{ span: 18, offset: 3 }}
               lg={{ span: 20, offset: 2 }}
               xl={{ span: 12, offset: 0 }}
-              className=" bg-white"
-            ></Col>
+            >
+              <img
+                src="https://embed-ssl.wistia.com/deliveries/2e05dc37704bb9640195c689aec61cd9.webp?image_crop_resized=1920x804"
+                alt=""
+                className="w-full h-full"
+              />
+            </Col>
             <Col
               xs={{ span: 18, offset: 3 }}
               sm={{ span: 18, offset: 3 }}

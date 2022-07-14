@@ -35,7 +35,7 @@ export const Menu = () => {
           }}
           onMouseEnter={() => setCurrent(item.label)}
           onMouseLeave={() => setCurrent('default')}
-          className={`${item.label === 'Solutions' && 'cursor-pointer'}`}
+          className={`${item.label === 'Solutions' ? 'cursor-pointer' : 'cursor-default'}`}
         >
           {item.label}
           {<SubMenu current={current} getCurrent={getCurrent} subMenuData={item.children} />}
