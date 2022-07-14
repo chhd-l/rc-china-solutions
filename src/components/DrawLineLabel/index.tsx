@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
-type DrawLineElementProps = {
+type DrawLineLabelProps = {
   backGroundColor?: string
 }
-export const DrawLineElement = styled.span<DrawLineElementProps>`
+export const DrawLineLabel = styled.span<DrawLineLabelProps>`
   @keyframes drawline {
     0% {
       width: 0%;

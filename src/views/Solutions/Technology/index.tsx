@@ -15,6 +15,7 @@ import rapid from '../../../assets/image/o9-rapid-integration-01.svg'
 import { CaretRightOutlined } from '@ant-design/icons'
 import BounceArrow from '../../../components/BounceArrow'
 import { useNavigate } from 'react-router-dom'
+import { DrawLineLabel } from '../../../components/DrawLineLabel'
 
 const Technology = () => {
   const navigate = useNavigate()
@@ -26,8 +27,8 @@ const Technology = () => {
         </Col>
         <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 19 }} lg={{ span: 18 }} xl={{ span: 15 }}>
           <p className=" text-rc72 animate__animated animate__fadeInUp leading-rc75">
-            A cloud-native platform built to <span className="text-black underline">scale</span>. Essential to your
-            digital transformation vision
+            A cloud-native platform built to <DrawLineLabel>scale</DrawLineLabel>. Essential to your digital
+            transformation vision
           </p>
         </Col>
         <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 19 }} lg={{ span: 5 }} xl={{ span: 5 }}>
