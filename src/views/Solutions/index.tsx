@@ -13,7 +13,7 @@ const Solutions = () => {
 
   return (
     <div className="Solutions">
-      <div className="header px-rc115">
+      <div className="header px-rc115 leading-rc55 letterSpacing-rc5">
         <span>Our solutions,</span> powered by the industry specific knowledge models.
       </div>
       <div className="headerInpput px-rc115">
