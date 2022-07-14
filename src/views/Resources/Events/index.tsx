@@ -2,6 +2,7 @@ import { Anchor, Col, Row } from 'antd'
 import { AnchorContainer } from 'antd/lib/anchor/Anchor'
 import { useEffect, useState } from 'react'
 import BrounceArrow from '../../../components/BounceArrow'
+import { DrawLineElement } from '../../../components/DrawLineElement'
 import BlackAndgray from '../../Solutions/Platform/components/BlackAndgray'
 import EventsCard from './components/EventsCard'
 import './index.less'
@@ -40,8 +41,7 @@ const Events = () => {
                         style={{ zIndex: 10 }}
                       >
                         <p className="text-rc72  text-rc7 leading-rc75 animate__animated animate__fadeInDown font-light">
-                          Come meet us <span className="animation_underline relative inline-block">digitally</span> in
-                          industry events
+                          Come meet us <DrawLineElement>digitally</DrawLineElement> in industry events
                         </p>
                       </Col>
                       <Col xs={{ span: 18 }} sm={{ span: 16 }} md={{ span: 11 }} lg={{ span: 11 }} xl={{ span: 7 }}>
