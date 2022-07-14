@@ -7,6 +7,7 @@ import './index.less'
 import Breadcrumbs from '../../../components/Solutions/Breadcrumbs/Breadcrumbs'
 import { SMS_bodys } from '../modules/SupplyChainManagementSolutions'
 import { Purple_footerIcons } from '../modules/footerIcons'
+import { DrawLineLabel } from '../../../components/DrawLineLabel'
 
 const SupplyChainManagementSolutions = () => {
   return (
@@ -40,7 +41,7 @@ const SupplyChainManagementSolutions = () => {
         logoImg={SupplyChainControlTowerLogo}
         title={
           <div className="w-rc_120 -mt-rc90">
-            Delight customers at <span className="border-b-4 border-purple-900 border-solid inline-block">optimal</span>{' '}
+            Delight customers at <DrawLineLabel backGroundColor='rgb(116, 51, 204)'>optimal</DrawLineLabel>{' '}
             costs and inventory.
           </div>
         }

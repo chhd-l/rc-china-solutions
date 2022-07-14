@@ -1,14 +1,14 @@
-import SupplyChainControlTowerLogo from '../../../assets/image/SupplyChainControlTower_logo@2x.png'
-import BounceArrow from '../../../components/BounceArrow'
 import DemandPlanning_leftIcon from '../../../assets/image/DemandPlanning_leftIcon.png'
 import Revenuemanagementsolutions_Breadcrumbs_img from '../../../assets/image/Revenuemanagementsolutions_Breadcrumbs_img.svg'
+import SupplyChainControlTowerLogo from '../../../assets/image/SupplyChainControlTower_logo@2x.png'
+import BounceArrow from '../../../components/BounceArrow'
 import { NectarButton } from '../../../components/common/NectarButton'
-import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/SolutionsHeader'
-import './index.less'
+import { DrawLineLabel } from '../../../components/DrawLineLabel'
 import Breadcrumbs from '../../../components/Solutions/Breadcrumbs/Breadcrumbs'
-import { Revenuemanagementsolutions_bodys } from '../modules/Revenuemanagementsolutions'
+import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/SolutionsHeader'
 import { Red_footerIcons } from '../modules/footerIcons'
-import { DrawLineElement } from '../../../components/DrawLineElement'
+import { Revenuemanagementsolutions_bodys } from '../modules/Revenuemanagementsolutions'
+import './index.less'
 
 const Revenuemanagementsolutions = () => {
   return (
@@ -42,9 +42,9 @@ const Revenuemanagementsolutions = () => {
         logoImg={SupplyChainControlTowerLogo}
         title={
           <div className="w-rc_120 -mt-rc90">
-            Transform your offense to <DrawLineElement backGroundColor='rgb(255, 115, 17)'>drive</DrawLineElement>{' '}
-            <DrawLineElement backGroundColor='rgb(255, 115, 17)'>revenue</DrawLineElement>{' '}
-            <DrawLineElement backGroundColor='rgb(255, 115, 17)'>growth</DrawLineElement> and hit the plan.
+            Transform your offense to <DrawLineLabel backGroundColor='rgb(255, 115, 17)'>drive</DrawLineLabel>{' '}
+            <DrawLineLabel backGroundColor='rgb(255, 115, 17)'>revenue</DrawLineLabel>{' '}
+            <DrawLineLabel backGroundColor='rgb(255, 115, 17)'>growth</DrawLineLabel> and hit the plan.
           </div>
         }
         titleRight={<BounceArrow />}

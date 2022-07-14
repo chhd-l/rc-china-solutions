@@ -2,6 +2,7 @@ import MasterPlanning_Sections_02 from '../../../assets/image/MasterPlanning_Sec
 import SupplyChainControlTower_leftIcon from '../../../assets/image/SupplyChainControlTower_leftIcon.png'
 import SupplyChainControlTowerLogo from '../../../assets/image/SupplyChainControlTower_logo@2x.png'
 import BounceArrow from '../../../components/BounceArrow'
+import { DrawLineLabel } from '../../../components/DrawLineLabel'
 import SolutionSEcyion3s from '../../../components/Solutions/SolutionSEcyion3s/SolutionSEcyion3s'
 import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/SolutionsHeader'
 import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
@@ -21,7 +22,7 @@ const MasterPlanning = () => {
         title={
           <div className="w-rc_120 -mt-rc90">
             Optimized Demand/Supply balancing across{' '}
-            <span className="border-b-4 border-purple-900 border-solid inline-block">end-to-end</span> Supply Chain
+            <DrawLineLabel backGroundColor='rgb(116, 51, 204)'>end-to-end</DrawLineLabel> Supply Chain
           </div>
         }
         titleRight={<BounceArrow />}

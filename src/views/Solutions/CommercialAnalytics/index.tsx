@@ -7,6 +7,7 @@ import UserSubmission from '../../../components/Solutions/UserSubmission/UserSub
 import { CommercialAnalytics_Ecyion3s_2, CommercialAnalytics_Ecyion3s_3 } from '../modules/CommercialAnalytics'
 import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
 import { Red_footerIcons } from '../modules/footerIcons'
+import { DrawLineLabel } from '../../../components/DrawLineLabel'
 
 const CommercialAnalytics = () => {
   return (
@@ -20,7 +21,7 @@ const CommercialAnalytics = () => {
         title={
           <div className="w-rc_120 -mt-rc90">
             Strengthen <br />
-            <span className="border-b-4 border-red-300 border-solid inline-block">intuition backed by data</span>
+            <DrawLineLabel backGroundColor='rgb(255, 30, 57)'>intuition backed by data</DrawLineLabel>
           </div>
         }
         titleRight={<div />}

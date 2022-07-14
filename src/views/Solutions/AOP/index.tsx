@@ -8,6 +8,7 @@ import UserSubmission from '../../../components/Solutions/UserSubmission/UserSub
 import { AOP_Ecyion3s_2, AOP_Ecyion3s_3 } from '../modules/AOP'
 import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
 import { Greed_footerIcons } from '../modules/footerIcons'
+import { DrawLineLabel } from '../../../components/DrawLineLabel'
 
 const AOP = () => {
   return (
@@ -20,7 +21,7 @@ const AOP = () => {
         logoImg={SupplyChainControlTowerLogo}
         title={
           <div className="w-rc_120 w-rc_120 -mt-rc80 mb-rc60">
-            Go <span className="border-b-4 border-green300 border-solid inline-block">beyond</span> Financial Planning
+            Go <DrawLineLabel backGroundColor='rgb(0, 193, 120)'>beyond</DrawLineLabel> Financial Planning
           </div>
         }
         titleRight={<BounceArrow />}

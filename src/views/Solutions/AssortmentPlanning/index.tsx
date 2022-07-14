@@ -1,6 +1,7 @@
 import orange_left_icon from '../../../assets/image/orange_left_icon.png'
 import SupplyChainControlTowerLogo from '../../../assets/image/SupplyChainControlTower_logo@2x.png'
 import BounceArrow from '../../../components/BounceArrow'
+import { DrawLineLabel } from '../../../components/DrawLineLabel'
 import SolutionSEcyion3s from '../../../components/Solutions/SolutionSEcyion3s/SolutionSEcyion3s'
 import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/SolutionsHeader'
 import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
@@ -18,7 +19,7 @@ const AssortmentPlanning = () => {
         titleRight={<BounceArrow />}
         title={
           <div className="w-rc_120 w-rc_120 -mt-rc80 mb-rc60">
-            Assortments that <span className="border-b-4 border-orange-900 border-solid inline-block">grow</span><br /> market share
+            Assortments that <DrawLineLabel backGroundColor='rgb(255, 115, 17)'>grow</DrawLineLabel><br /> market share
           </div>
         }
         titleBtn={<div></div>}

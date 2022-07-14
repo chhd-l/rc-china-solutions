@@ -8,6 +8,7 @@ import UserSubmission from '../../../components/Solutions/UserSubmission/UserSub
 import { SMI_Ecyion3s_2, SMI_Ecyion3s_3 } from '../modules/SMI'
 import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
 import { Red_footerIcons } from '../modules/footerIcons'
+import { DrawLineLabel } from '../../../components/DrawLineLabel'
 
 const SMI = () => {
   return (
@@ -20,7 +21,7 @@ const SMI = () => {
         logoImg={SupplyChainControlTowerLogo}
         title={
           <div className="w-rc_120 -mt-rc90">
-            Deploy effective <span className="border-b-4 border-orange-900 border-solid inline-block">marketing</span> <br />
+            Deploy effective <DrawLineLabel backGroundColor='rgb(255, 115, 17)'>marketing</DrawLineLabel> <br />
             initiatives
           </div>
         }

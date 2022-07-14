@@ -1,6 +1,7 @@
 import blue_left_icon from '../../../assets/image/blue_left_icon@2x.png'
 import SupplyChainControlTowerLogo from '../../../assets/image/SupplyChainControlTower_logo@2x.png'
 import BounceArrow from '../../../components/BounceArrow'
+import { DrawLineLabel } from '../../../components/DrawLineLabel'
 import SolutionSEcyion3s from '../../../components/Solutions/SolutionSEcyion3s/SolutionSEcyion3s'
 import SolutionsHeader from '../../../components/Solutions/SolutionsHeader/SolutionsHeader'
 import UserSubmission from '../../../components/Solutions/UserSubmission/UserSubmission'
@@ -18,7 +19,7 @@ const ReplenishmentPlanning = () => {
         titleRight={<BounceArrow />}
         title={
           <div className="w-rc_120 w-rc_120 -mt-rc80 mb-rc60 letterSpacing-rc5">
-            <span className="border-b-4 border-blue-900 border-solid inline-block">Responsive</span>, multi-tier aware replenishments
+            <DrawLineLabel backGroundColor='rgb(0, 55, 255)'>Responsive</DrawLineLabel>, multi-tier aware replenishments
           </div>
         }
         titleBtn={<div></div>}

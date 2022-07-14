@@ -7,6 +7,7 @@ import { SupplyChainLogistics_content } from '../modules/SupplyChainLogistics'
 import './index.less'
 import Breadcrumbs from '../../../components/Solutions/Breadcrumbs/Breadcrumbs'
 import { Bule_footerIcons } from '../modules/footerIcons'
+import { DrawLineLabel } from '../../../components/DrawLineLabel'
 
 const SupplyChainLogistics = () => {
   
@@ -41,7 +42,7 @@ const SupplyChainLogistics = () => {
         logoImg={SupplyChainControlTowerLogo}
         title={
           <div className="w-rc_120 -mt-rc90">
-            <span className="border-b-4 border-blue-900 border-solid inline-block">End-to-end</span> constraint-based
+            <DrawLineLabel backGroundColor='rgb(0, 55, 255)'>End-to-end</DrawLineLabel> constraint-based
             planning across the complete supply chain.
           </div>
         }

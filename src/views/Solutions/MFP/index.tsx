@@ -10,6 +10,7 @@ import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
 import { MFP_Ecyion3s_2, MFP_Ecyion3s_3 } from '../modules/MFP'
 import { useNavigate } from 'react-router-dom'
 import { Orange_footerIcons } from '../modules/footerIcons'
+import { DrawLineLabel } from '../../../components/DrawLineLabel'
 
 const MFP = () => {
   const navigate = useNavigate()
@@ -34,7 +35,7 @@ const MFP = () => {
         logoImg={logos_home_1_1}
         title={
           <div className="w-rc_120 w-rc_120 -mt-rc80 mb-rc60">
-            Develop <span className="border-b-4 border-orange-900 border-solid inline-block">groundbreaking</span>{' '}
+            Develop  <DrawLineLabel backGroundColor='rgb(255, 115, 17)'>groundbreaking</DrawLineLabel>{' '}
             omni-channel strategies
           </div>
         }

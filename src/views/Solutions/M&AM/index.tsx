@@ -7,6 +7,7 @@ import './index.less'
 import Breadcrumbs from '../../../components/Solutions/Breadcrumbs/Breadcrumbs'
 import { MAM_bodys } from '../modules/MAM'
 import { Orange_footerIcons } from '../modules/footerIcons'
+import { DrawLineLabel } from '../../../components/DrawLineLabel'
 
 const MAM = () => {
   return (
@@ -41,7 +42,7 @@ const MAM = () => {
         title={
           <div className="w-rc_120 -mt-rc90">
             Build and manage customer-centric{' '}
-            <span className="border-b-4 border-orange-900 border-solid inline-block">merchandising</span> plans.
+            <DrawLineLabel backGroundColor='rgb(255, 115, 17)'>merchandising</DrawLineLabel> plans.
           </div>
         }
         titleRight={<BounceArrow />}

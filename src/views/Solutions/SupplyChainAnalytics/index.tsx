@@ -8,6 +8,7 @@ import UserSubmission from '../../../components/Solutions/UserSubmission/UserSub
 import { SupplyChainAnalytics_Ecyion3s_2, SupplyChainAnalytics_Ecyion3s_3 } from '../modules/SupplyChainAnalytics'
 import WpbWrapper from '../../../components/Solutions/WpbWrapper/WpbWrapper'
 import { Purple_footerIcons } from '../modules/footerIcons'
+import { DrawLineLabel } from '../../../components/DrawLineLabel'
 
 const SupplyChainAnalytics = () => {
   return (
@@ -20,7 +21,7 @@ const SupplyChainAnalytics = () => {
         logoImg={SupplyChainControlTowerLogo}
         title={
           <div className="w-rc_120 -mt-rc90">
-            Informed <span className="border-b-4 border-purple-900 border-solid inline-block">Supply</span> Chain<br/> Policies
+            Informed <DrawLineLabel backGroundColor='rgb(116, 51, 204)'>Supply</DrawLineLabel> Chain<br/> Policies
           </div>
         }
         titleRight={<BounceArrow />}
