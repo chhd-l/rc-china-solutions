@@ -8,6 +8,7 @@ import './index.less'
 import Breadcrumbs from '../../../components/Solutions/Breadcrumbs/Breadcrumbs'
 import { Revenuemanagementsolutions_bodys } from '../modules/Revenuemanagementsolutions'
 import { Red_footerIcons } from '../modules/footerIcons'
+import { DrawLineElement } from '../../../components/DrawLineElement'
 
 const Revenuemanagementsolutions = () => {
   return (
@@ -41,9 +42,9 @@ const Revenuemanagementsolutions = () => {
         logoImg={SupplyChainControlTowerLogo}
         title={
           <div className="w-rc_120 -mt-rc90">
-            Transform your offense to <span className="border-b-4 border-red-300 border-solid inline-block">drive</span>{' '}
-            <span className="border-b-4 border-red-300 border-solid inline-block">revenue</span>{' '}
-            <span className="border-b-4 border-red-300 border-solid inline-block">growth</span> and hit the plan.
+            Transform your offense to <DrawLineElement backGroundColor='rgb(255, 115, 17)'>drive</DrawLineElement>{' '}
+            <DrawLineElement backGroundColor='rgb(255, 115, 17)'>revenue</DrawLineElement>{' '}
+            <DrawLineElement backGroundColor='rgb(255, 115, 17)'>growth</DrawLineElement> and hit the plan.
           </div>
         }
         titleRight={<BounceArrow />}

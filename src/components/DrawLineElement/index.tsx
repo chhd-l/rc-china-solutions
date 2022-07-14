@@ -25,6 +25,5 @@ export const DrawLineElement = styled.span<DrawLineElementProps>`
     animation: 1s drawline;
     animation-fill-mode: forwards;
     animation-delay: 1s;
-    z-index: -1;
   }
 `
