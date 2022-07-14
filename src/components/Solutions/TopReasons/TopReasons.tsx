@@ -8,7 +8,7 @@ type TopReasonsType = {
 }
 
 const TopReasons = ({title, p='Why customers choose Deloitte',  spans}: TopReasonsType) => {
-    return <section className="TopReasonsType">
+    return <section className="TopReasonsType" id='WhyDeloitte'>
     <DividerLeft dividerColor="rgba(0, 0, 0, 0.2)">
       <h5>Top reasons</h5>
     </DividerLeft>

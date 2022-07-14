@@ -10,6 +10,19 @@ const Solutions = () => {
   const navigate = useNavigate()
   const [bodys, steBodys] = useState(ManagementItem)
   const [seachrOpen, steSeachrOpen] = useState(false)
+  const [timer, setTimer] = useState<any>(null)
+
+  const seachBodys = (val: string) => {
+    steSeachrOpen(true)
+    if (timer) {
+      clearTimeout(timer)
+    }
+    setTimer(setTimeout(() => {
+      let arr = ManagementItem.filter((str) => str.title.indexOf(val) !== -1)
+      steBodys(arr)
+      steSeachrOpen(false)
+    }, 1000))
+  }
 
   return (
     <div className="Solutions">
@@ -18,18 +31,12 @@ const Solutions = () => {
       </div>
       <div className="headerInpput px-rc115">
         <Input
-          onChange={(e) => {
-            steSeachrOpen(true)
-            let timer = null
-            if (timer) {
-              clearTimeout(timer)
+          onKeyDown={(e: any) => {
+            if(e.keyCode === 13) {
+              seachBodys(e.target.value)
             }
-            timer = setTimeout(() => {
-              let arr = ManagementItem.filter((str) => str.title.indexOf(e.target.value) !== -1)
-              steBodys(arr)
-              steSeachrOpen(false)
-            }, 1000)
           }}
+          onChange={(e) => seachBodys(e.target.value)}
           placeholder="Search by solution or user role"
         />
       </div>

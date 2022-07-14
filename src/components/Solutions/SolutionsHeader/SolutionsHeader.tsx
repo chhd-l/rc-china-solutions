@@ -52,7 +52,12 @@ const SolutionsHeader = ({
           {titleBtn || (
             <div className="mt-rc35 font-bold text-rc16 cursor-pointer">
               <span>——</span>
-              <span className="ml-rc10">Why choose Deloitte?</span>
+              <span className="ml-rc10" onClick={() => {
+                  let anchorElement = document.getElementById('WhyDeloitte')
+                  if (anchorElement) {
+                    anchorElement.scrollIntoView({ inline: 'start', block: 'start', behavior: 'smooth' })
+                  }
+              }}>Why choose Deloitte?</span>
               <NectarButton
                 onClick={() => {
                   let anchorElement = document.getElementById('RelatedSolutions')
