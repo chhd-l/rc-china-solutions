@@ -99,6 +99,7 @@ module.exports = {
         rc212: '212px',
         rc200: '200px',
         rc213: '213px',
+        rc230: '230px',
         rc250: '250px',
         rc273: '273px',
         rc275: '275px',

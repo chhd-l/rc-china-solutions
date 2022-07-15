@@ -51,7 +51,7 @@ const SolutionsHeader = ({
           {title}
           {titleBtn || (
             <div className="mt-rc35 font-bold text-rc16 cursor-pointer flex items-center">
-              <div className="flex items-center WhyChooseDeloitte">
+              <div className="flex items-center WhyChooseDeloitte w-rc230">
                 <span className={`leftArrow ${headBg ? '' : 'leftArrowAfiter'}`}>
                   <div className='flex justify-between items-center'>
                     <i className="flex-1" />
@@ -77,7 +77,7 @@ const SolutionsHeader = ({
                     anchorElement.scrollIntoView({ inline: 'center', block: 'center', behavior: 'smooth' })
                   }
                 }}
-                className="ml-rc25"
+                className="ml-rc6"
                 color={borderColor}
               >
                 Talk to an expert
