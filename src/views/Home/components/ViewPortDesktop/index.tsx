@@ -16,7 +16,17 @@ export const ViewPortDesktop = () => {
             <strong>supply chain, revenue, P&L planning, and decision-making</strong> for digital age volatility and
             complexity.
           </div>
-          <NectarButton className="mt-rc50">Learn more</NectarButton>
+          <NectarButton
+            className="mt-rc50"
+            onClick={() => {
+              let anchorElement = document.getElementById('learnmore')
+              if (anchorElement) {
+                anchorElement.scrollIntoView({ inline: 'start', block: 'start', behavior: 'smooth' })
+              }
+            }}
+          >
+            Learn more
+          </NectarButton>
         </div>
         <video className="w-rc691 h-rc479" loop autoPlay muted playsInline preload="auto">
           <source src={EKG_3D_cube_animation} type="video/mp4" />

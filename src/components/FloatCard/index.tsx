@@ -18,7 +18,7 @@ const FloadCard = ({ title, path, desc, tip, bgColor, textColor }: FloadCardProp
       md={{ span: 12 }}
       lg={{ span: 8 }}
       xl={{ span: 8 }}
-      className={`group mb-rc50  `}
+      className={`group mb-rc50`}
       key={title}
     >
       <div

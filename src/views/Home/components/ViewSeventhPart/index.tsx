@@ -23,7 +23,7 @@ const ViewSeventhPart = () => {
             </h2>
           </Col>
           <Col span={24}>
-            <Row justify="center" align="top">
+            <Row justify="center" align="top" gutter={20}>
               {sightsList.map((item) => (
                 <FloadCard {...item} bgColor="white" textColor="black" key={item.title} />
               ))}
