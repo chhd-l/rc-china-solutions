@@ -51,9 +51,12 @@ const SolutionsHeader = ({
           {title}
           {titleBtn || (
             <div className="mt-rc35 font-bold text-rc16 cursor-pointer flex items-center">
-              <div className='flex items-center WhyChooseDeloitte'>
-                <span className="leftArrow">
-                  <i />
+              <div className="flex items-center WhyChooseDeloitte">
+                <span className={`leftArrow ${headBg ? '' : 'leftArrowAfiter'}`}>
+                  <div className='flex justify-between items-center'>
+                    <i className="flex-1" />
+                    <i className="flex-1" />
+                  </div>
                 </span>
                 <span
                   className="ml-rc15"
