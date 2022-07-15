@@ -1,5 +1,87 @@
 .SolutionsHeader {
-    header {
-      padding-top: 35px;
+  @keyframes leftArrow {
+    100% {
+      left: 32px;
     }
+  }
+  @keyframes leftArrowIcon {
+    0% {
+      opacity: 0;
+      width: 0px;
+      height: 0px;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      width: 8px;
+      height: 8px;
+    }
+  }
+  header {
+    padding-top: 35px;
+  }
+  .WhyChooseDeloitte {
+    &:hover {
+      .leftArrow {
+        width: 32px;
+        &::after {
+        animation-name: leftArrowIcon;
+        opacity: 1;
+        width: 8px;
+        height: 8px;
+        }
+        > i {
+          animation-name: leftArrow;
+        }
+      }
+    }
+  }
+  .leftArrow {
+    width: 25px;
+    height: 20px;
+    position: relative;
+    transition: all 0.3s;
+    &::after {
+      content: '';
+      opacity: 0;
+      transition: all .4s;
+      animation-timing-function: linear;
+      animation-duration: .4s;
+      animation-iteration-count: 1;
+      animation-direction: alternate;
+      position: absolute;
+      top: 50%;
+      right: 0px;
+      width: 0px;
+      height: 0px;
+      border-top: 1px solid black;
+      border-right: 1px solid black;
+      transform: translateY(-50%) matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%;
+      height: 1px;
+      background-color: black;
+    }
+    > i {
+      animation-timing-function: linear;
+      animation-duration: .3s;
+      animation-iteration-count: 1;
+      animation-direction: alternate;
+      position: absolute;
+      top: 0;
+      left: -9px;
+      width: 9px;
+      height: 99%;
+      background-color: white;
+      z-index: 9;
+    }
+  }
 }

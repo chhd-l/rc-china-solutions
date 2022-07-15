@@ -50,14 +50,23 @@ const SolutionsHeader = ({
         <div className="max-w-rc820 mt-rc180 pr-rc60">
           {title}
           {titleBtn || (
-            <div className="mt-rc35 font-bold text-rc16 cursor-pointer">
-              <span>——</span>
-              <span className="ml-rc10" onClick={() => {
-                  let anchorElement = document.getElementById('WhyDeloitte')
-                  if (anchorElement) {
-                    anchorElement.scrollIntoView({ inline: 'start', block: 'start', behavior: 'smooth' })
-                  }
-              }}>Why choose Deloitte?</span>
+            <div className="mt-rc35 font-bold text-rc16 cursor-pointer flex items-center">
+              <div className='flex items-center WhyChooseDeloitte'>
+                <span className="leftArrow">
+                  <i />
+                </span>
+                <span
+                  className="ml-rc15"
+                  onClick={() => {
+                    let anchorElement = document.getElementById('WhyDeloitte')
+                    if (anchorElement) {
+                      anchorElement.scrollIntoView({ inline: 'start', block: 'start', behavior: 'smooth' })
+                    }
+                  }}
+                >
+                  Why choose Deloitte?
+                </span>
+              </div>
               <NectarButton
                 onClick={() => {
                   let anchorElement = document.getElementById('RelatedSolutions')
